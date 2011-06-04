@@ -4,6 +4,8 @@
 #include <cstring>
 #include <iostream>
 
+#include "third_party/rabinhash-64/rabinhash64.h"
+
 ////////////////////////////////////////////////////////////////////////////////
 const char* DOCNO_START_TAG = "<DOCNO>";
 const char* DOCNO_END_TAG = "</DOCNO>";
@@ -16,7 +18,7 @@ const char* DOC_END_TAG = "</DOC>";
 // Work in progress. This just emits the pair <docId,1> for now.
 void emitKeyValuePairs(const std::string& doc) {
     size_t docnoStart = doc.find(DOCNO_START_TAG);
-    size_t docnoEnd = doc.find(DOCNO_END_TAG, 0);
+    size_t docnoEnd = doc.find(DOCNO_END_TAG, docnoStart + DOCNO_START_LEN);
 
     // TODO: Use boost to trim id string.
     std::string docId = doc.substr(docnoStart + DOCNO_START_LEN, docnoEnd - docnoStart - DOCNO_START_LEN);

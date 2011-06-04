@@ -4,6 +4,10 @@ CFLAGS = -Wall -Wextra
 S3_BIN = s3://davidhu-mr1/bin
 S3_INPUT = s3://davidhu-aquaint
 S3_OUTPUT = s3://davidhu-mr1/output
+# We need a unique output directory name, otherwise AWS complains about
+# existing output directory. Override this from the command line, as in
+# $ make S3_OUTDIR=out_dir_name <target>
+S3_OUTDIR = $(shell date +'%Y%m%d%H%M%S')
 S3_LOG = s3://mapreduce-log-uri
 EMR = /home/david/bin/elastic-mapreduce-ruby/elastic-mapreduce
 
@@ -18,8 +22,7 @@ run: mapper-up
 		--mapper $(S3_BIN)/mapper \
 		--input $(S3_INPUT) \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR) \
-		--reducer aggregate \
-		--log-uri $(S3_LOG)
+		--reducer aggregate
 
 # TODO: Figure out why StreamXmlRecordReader + StreamInputFormat doesn't seem
 #     to be working... perhaps try on a local Hadoop install
@@ -40,7 +43,10 @@ start:
 mapper-up: mapper
 	s3cmd put $< $(S3_BIN)/$<
 
-mapper: mapper.cpp
+mapper: mapper.cpp rabinhash64.o
 	$(CC) $(CFLAGS) -o $@ $^
+
+rabinhash64.o: third_party/rabinhash-64/rabinhash64.cpp
+	$(CC) $(CFLAGS) -c $^
 
 .PHONY: mapper-up
