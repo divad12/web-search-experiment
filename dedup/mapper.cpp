@@ -47,11 +47,16 @@ void emitKeyValuePairs(const std::string& doc) {
     // TODO: need to worry about unicode?
 
     std::tr1::unordered_set<long long> shingleSet;
-    size_t textStart = doc.find(TEXT_START_TAG);
-    size_t textEnd = doc.find(TEXT_END_TAG, textStart + TEXT_START_LEN);
+    size_t textStart = doc.find(TEXT_START_TAG) + TEXT_START_LEN;
+    size_t textEnd = doc.find(TEXT_END_TAG, textStart);
+
+    // TODO: should probably clean up xml if this is not done for actual input
+    //     i.e. remove tags, collapse whitespace
 
     // Get the set of all shingles in this document
-    for (size_t i = textStart; i < textEnd; ) {
+    // NOTE: This will not output any shingles for documents of size less than
+    //      SHINGLE_SIZE
+    for (size_t i = textStart; i + SHINGLE_SIZE < textEnd; ) {
         long long shingle = rabinHash.hash(doc.c_str() + i, SHINGLE_SIZE);
         shingleSet.insert(shingle);
 
@@ -62,11 +67,9 @@ void emitKeyValuePairs(const std::string& doc) {
     }
 
     // Get the document ID string concatenated with the # of unique shingles
-    // TODO: Repetitive code with finding text between tags. Use compile-time
-    //     templates to DRY.
-    size_t docnoStart = doc.find(DOCNO_START_TAG);
-    size_t docnoEnd = doc.find(DOCNO_END_TAG, docnoStart + DOCNO_START_LEN);
-    std::string docId = doc.substr(docnoStart + DOCNO_START_LEN, docnoEnd - docnoStart - DOCNO_START_LEN);
+    size_t docnoStart = doc.find(DOCNO_START_TAG) + DOCNO_START_LEN;
+    size_t docnoEnd = doc.find(DOCNO_END_TAG, docnoStart);
+    std::string docId = doc.substr(docnoStart, docnoEnd - docnoStart);
     trim(docId);
     docId += DOC_ID_SEP;
     docId += numToStr(shingleSet.size());
@@ -92,6 +95,7 @@ int main() {
         // Assumptions: no nested docs; doc tags are uppercase
         if (inDoc) {
             doc += line;
+            doc += '\n';
             if (strstr(line, DOC_END_TAG)) {
                 inDoc = false;
                 emitKeyValuePairs(doc);
@@ -99,6 +103,7 @@ int main() {
         } else if (strstr(line, DOC_START_TAG)) {
             inDoc = true;
             doc = line;
+            doc += '\n';
         }
     }
 
