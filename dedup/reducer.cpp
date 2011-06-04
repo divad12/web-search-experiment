@@ -9,12 +9,14 @@ typedef std::set<std::string> StringSet;
 
 ////////////////////////////////////////////////////////////////////////////////
 void emitAllPairs(const StringSet& docSet) {
+    if (docSet.size() < 2) return;  // No pairs to emit
+
     for (StringSet::iterator it1 = docSet.begin();
             it1 != docSet.end(); ++it1) {
 
         StringSet::iterator it2 = it1;
         for (++it2; it2 != docSet.end(); ++it2) {
-            printf("%s-%s\t1\n", it1->c_str(), it2->c_str());
+            printf("LongValueSum:%s-%s\t1\n", it1->c_str(), it2->c_str());
         }
     }
 }
@@ -26,19 +28,15 @@ int main() {
     std::set<std::string> docSet;
     std::string prevKey;
     while (scanf("%s\t%s\n", key, value) != EOF) {
-        docSet.insert(value);
         if (prevKey != key) {
-            if (docSet.size() > 1) {
-                emitAllPairs(docSet);
-            }
+            emitAllPairs(docSet);
             docSet.clear();
         }
+        docSet.insert(value);
         prevKey = key;
     }
 
-    if (docSet.size() > 1) {
-        emitAllPairs(docSet);
-    }
+    emitAllPairs(docSet);
 
     // TODO: do a preliminary reduce right here, before this data gets sent
     // over the network
