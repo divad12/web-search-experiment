@@ -15,6 +15,8 @@ const size_t DOCNO_START_LEN = strlen(DOCNO_START_TAG);
 const char* DOC_START_TAG = "<DOC>";
 const char* DOC_END_TAG = "</DOC>";
 
+// TODO: it seems like in some articles that the main article is within the
+//     HEADLINE tags, not the TEXT tags.
 const char* TEXT_START_TAG = "<TEXT>";
 const char* TEXT_END_TAG = "</TEXT>";
 const size_t TEXT_START_LEN = strlen(TEXT_START_TAG);
@@ -30,7 +32,6 @@ RabinHashFunction64 rabinHash(1);
 const int SHINGLE_SIZE = 64;
 
 ////////////////////////////////////////////////////////////////////////////////
-// TODO: Use trim from Boost. This is pretty efficient tho.
 void trim(std::string& str) {
     str.erase(str.find_last_not_of(' ') + 1);
     str.erase(0, str.find_first_not_of(' '));
