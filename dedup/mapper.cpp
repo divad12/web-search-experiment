@@ -55,10 +55,10 @@ void emitKeyValuePairs(const std::string& doc) {
         long long shingle = rabinHash.hash(doc.c_str() + i, SHINGLE_SIZE);
         shingleSet.insert(shingle);
 
-        // Since there's always a closing </TEXT> on its own line, we don't
-        // have to worry about not finding whitespace / non-whitespace below.
         i = doc.find_first_of(WHITESPACE, i + 1);
+        if (i == std::string::npos) break;
         i = doc.find_first_not_of(WHITESPACE, i + 1);
+        if (i == std::string::npos) break;
     }
 
     // Get the document ID string concatenated with the # of unique shingles
