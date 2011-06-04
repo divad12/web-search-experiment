@@ -1,14 +1,14 @@
-// TODO: comment and clean up
+// This essentially implements the LongValueSum reducer in Hadoop's aggregate
+// class, but with a few changes.
 
 #include <cstdio>
 #include <string>
 
-void emitJaccard(const std::string& key, int intersection) {
-    static char doc1[1000], doc2[1000];
-    static int size1, size2;
-    sscanf(key.c_str(), "%[^|]|%d-%[^|]|%d", doc1, &size1, doc2, &size2);
-    double jaccard = static_cast<double>(intersection) / (size1 + size2 - intersection);
-    printf("%s-%s\t%g\n", doc1, doc2, jaccard);
+void emitSumOfKeys(const char* key, int value) {
+    // Only emit those docs that share quite a bit of shingles in common.
+    if (value > 1) {
+        printf("%s\t%d\n", key, value);
+    }
 }
 
 int main() {
@@ -16,16 +16,17 @@ int main() {
     int value;
     std::string prevKey;
     int inCommon = 0;
-    while (scanf("%s\t%d\n", key, &value) != EOF) {
-        inCommon++;
-        if (prevKey != key) {
-            emitJaccard(prevKey, inCommon);
+
+    while (scanf("LongValueSum:%s\t%d\n", key, &value) != EOF) {
+        if (prevKey != key && !prevKey.empty()) {
+            emitSumOfKeys(prevKey.c_str(), inCommon);
             inCommon = 0;
         }
+        inCommon += value;
         prevKey = key;
     }
 
-    emitJaccard(prevKey, inCommon);
+    emitSumOfKeys(prevKey.c_str(), inCommon);
 
     return 0;
 }
