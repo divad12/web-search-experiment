@@ -11,5 +11,10 @@
 *.la
 *.a
 
-# elastic-mapreduce-ruby command line tool credentials files
+# credentials files
 credentials.json
+david-aws-keys.csv
+
+# Makefile/test artifacts
+bin-up
+*.tmp
