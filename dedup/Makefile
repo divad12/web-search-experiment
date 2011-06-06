@@ -22,6 +22,7 @@ TESTS := tests/*.in
 # TODO: README file
 # TODO: Instead of identity mapper, can we just get Hadoop to omit a map/reduce step?
 # TODO: add dependent tools (elastic-mapreduce, credentials file, etc.) to repo, s3cmd
+# TODO: instead of requirng user to pass in JOB_ID, just create a file with the job id in its contents (or as part of filename). then create a stop target
 
 all: $(ALL_BINS)
 
@@ -53,36 +54,36 @@ emr-run: job3
 job3: job2
 	$(EMR) -j $(JOB_ID) \
 		--stream \
+		--step-name "<docId pair, # common shingles> --> <docId pair, jaccard similarity>" \
 		--mapper $(S3_BIN)/mapper3 \
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
-		--reducer cat \
-		--jobconf 'mapred.task.timeout=60000'
+		--reducer cat
 
 # Second job: Just a reduce that sums all the docId pairs that share shingles,
 # so we get <docId pair, # of common shingles>
 job2: job1
 	$(EMR) -j $(JOB_ID) \
 		--stream \
+		--step-name "<docId pair, 1> --> <docId pair, # common shingles>" \
 		--mapper cat \
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
 		--reducer $(S3_BIN)/reducer2 \
-		--jobconf 'mapred.task.timeout=60000'
 
 # First job: a map-reduce that takes in documents and outputs <docId pair, 1>
 # for all pairs of documents that share a shingle, for each shingle they share
 job1: bin-up
 	$(EMR) -j $(JOB_ID) \
 		--stream \
+		--step-name "docs --> <docId pair, 1>" \
 		--mapper $(S3_BIN)/mapper1 \
 		--input $(S3_INPUT) \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
-		--reducer $(S3_BIN)/reducer1 \
-		--jobconf 'mapred.task.timeout=60000'
+		--reducer $(S3_BIN)/reducer1
 
 start:
-	$(EMR) --create --alive --enable-debugging --log-uri $(S3_LOG)
+	$(EMR) --create --alive --log-uri $(S3_LOG)
 
 bin-up: $(ALL_BINS)
 	$(S3CMD) put $^ $(S3_BIN)/
