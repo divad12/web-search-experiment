@@ -5,8 +5,9 @@
 #include <string>
 
 void emitSumOfKeys(const char* key, int value) {
-    // Only emit those docs that share quite a bit of shingles in common.
-    if (value > 1) {
+    // TODO: As an optimization, don't print doc pairs sharing less than two
+    //     shingles in common. However, this nixes all docs < SHINGLE_SIZE
+    if (value > 0) {
         printf("%s\t%d\n", key, value);
     }
 }

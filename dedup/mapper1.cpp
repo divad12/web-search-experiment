@@ -1,8 +1,11 @@
 // Mapper for Amazon Elastic Map Reduce using Hadoop streaming
 
+#include <cassert>
 #include <cstdio>
 #include <cstring>
+#include <iomanip>
 #include <iostream>
+#include <sstream>
 #include <tr1/unordered_set>
 
 #include "third_party/rabinhash-64/rabinhash64.h"
@@ -29,7 +32,7 @@ const char* DOC_ID_SEP = "|";
 //     hashes (just 32-bit).
 RabinHashFunction64 rabinHash(1);
 
-const int SHINGLE_SIZE = 64;
+const size_t SHINGLE_SIZE = 64;
 
 ////////////////////////////////////////////////////////////////////////////////
 void trim(std::string& str) {
@@ -43,7 +46,12 @@ std::string numToStr(long long num) {
     return std::string(str);
 }
 
-// Work in progress. This just emits the pair <docId,1> for now.
+std::string padStr(const std::string& str, size_t size, char paddingChar) {
+    std::stringstream ss;
+    ss << std::setfill(paddingChar) << std::setw(size) << str;
+    return ss.str();
+}
+
 void emitKeyValuePairs(const std::string& doc) {
     // TODO: need to worry about unicode?
 
@@ -51,12 +59,10 @@ void emitKeyValuePairs(const std::string& doc) {
     size_t textStart = doc.find(TEXT_START_TAG) + TEXT_START_LEN;
     size_t textEnd = doc.find(TEXT_END_TAG, textStart);
 
-    // TODO: should probably clean up xml if this is not done for actual input
-    //     i.e. remove tags, collapse whitespace
+    // TODO: could clean up xml if this is not done for actual input i.e.
+    //     remove tags, collapse whitespace
 
     // Get the set of all shingles in this document
-    // NOTE: This will not output any shingles for documents of size less than
-    //      SHINGLE_SIZE
     for (size_t i = textStart; i + SHINGLE_SIZE < textEnd; ) {
         long long shingle = rabinHash.hash(doc.c_str() + i, SHINGLE_SIZE);
         shingleSet.insert(shingle);
@@ -65,6 +71,12 @@ void emitKeyValuePairs(const std::string& doc) {
         if (i == std::string::npos) break;
         i = doc.find_first_not_of(WHITESPACE, i + 1);
         if (i == std::string::npos) break;
+    }
+
+    if (textEnd - textStart < SHINGLE_SIZE) {
+        std::string padded = padStr(doc.substr(textStart, textEnd - textStart), SHINGLE_SIZE, 'x');
+        long long shingle = rabinHash.hash(padded.c_str(), SHINGLE_SIZE);
+        shingleSet.insert(shingle);
     }
 
     // Get the document ID string concatenated with the # of unique shingles
