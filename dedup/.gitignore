@@ -14,6 +14,7 @@
 # credentials files
 credentials.json
 david-aws-keys.csv
+.s3cfg
 
 # Makefile/test artifacts
 bin-up
