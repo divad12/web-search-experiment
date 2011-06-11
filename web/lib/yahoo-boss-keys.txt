@@ -1,2 +1,0 @@
-<cc_key>
-<cc_secret>
