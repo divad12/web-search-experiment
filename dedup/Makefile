@@ -1,7 +1,7 @@
 CC := g++
 CFLAGS := -Wall -Wextra
 
-ALL_BINS := mapper1 reducer1 reducer2 mapper3
+ALL_BINS := mapper1 reducer1 reducer2 mapper3 mapper-cluster reducer-cluster
 
 S3CMD := third_party/s3cmd/s3cmd -c third_party/s3cmd/.s3cfg
 EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce
@@ -22,8 +22,10 @@ JOB_ID = $(shell cat job-id)
 AWS_ACCESS_KEY_ID := $(shell sed '1q;d' aws-keys)
 AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
 
-# TODO: Instead of identity mapper, can we just get Hadoop to omit a map/reduce step?
-# TODO: terminate target
+# TODO: Instead of identity mapper, can we just get Hadoop to omit a map or a reduce step?
+# TODO: Split out common code to utils file
+# TODO: Add more tests
+# TODO: better names for mapper/reducer binaries
 
 all: $(ALL_BINS)
 
@@ -45,21 +47,24 @@ local: $(ALL_BINS)
 		| ./reducer1 \
 		| sort \
 		| ./reducer2 \
-		| ./mapper3 \
-		| sort -n -k 2
+		| ./mapper-cluster \
+		| sort \
+		| ./reducer-cluster
+
+stop:
+	$(EMR) -j $(JOB_ID) --terminate
 
 run: job3
 
-# Third job: Map that outputs the Jaccard similarity between all pairs of
-# documents that share a shingle
+# Third job: Output clusters (of size > 1) of docs that are near-duplicates.
 job3: job2
 	$(EMR) -j $(JOB_ID) \
 		--stream \
-		--step-name "<docId pair, # common shingles> --> <docId pair, jaccard similarity>" \
-		--mapper $(S3_BIN)/mapper3 \
+		--step-name "<docId pair, # common shingles> --> clusters of similar docs" \
+		--mapper $(S3_BIN)/mapper-cluster \
+		--reducer $(S3_BIN)/reducer-cluster \
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
-		--reducer cat
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3
 
 # Second job: Just a reduce that sums all the docId pairs that share shingles,
 # so we get <docId pair, # of common shingles>
@@ -107,6 +112,12 @@ config-up: core-site.xml
 bin-up: $(ALL_BINS)
 	$(S3CMD) put $^ $(S3_BIN)/
 	touch $@
+
+mapper-reducer: mapper-reducer.cpp
+	$(CC) $(CFLAGS) -o $@ $^
+
+mapper-cluster: mapper-cluster.cpp
+	$(CC) $(CFLAGS) -o $@ $^
 
 mapper3: mapper3.cpp
 	$(CC) $(CFLAGS) -o $@ $^

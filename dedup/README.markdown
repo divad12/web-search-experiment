@@ -7,11 +7,12 @@ A MapReduce for Amazon Web Services Elastic MapReduce to find near-duplicate fil
 # Setup
 1. Insert your AWS credentials in third\_party/elastic-mapreduce-ruby/credentials.json. See credentials.json.example for a sample.
 2. Insert AWS credentials in third\_party/s3cmd/.s3cfg. See s3cfg.example for a sample. Alternatively, run `s3cmd --configure`.
-3. Change the Makefile variables to your S3 directories where the MapReduce will take input and output to.
+3. Insert AWS credentials in file aws-keys (see aws-keys.example).
+4. Change the Makefile variables to your S3 directories where the MapReduce will take input and output to.
 
 # Running
 1. `make start` to start a new jobflow. This will stay alive until you terminate it (see step 3).
-2. `make JOB_ID=<Job ID that was outputted from previous step> emr-run` to run a job on AWS. You can run multiple jobs per jobflow.
+2. `make run` to run a job on AWS. You can run multiple jobs per jobflow.
 3. `third_party/elastic-mapreduce-ruby/elastic-mapreduce -j <Job ID> --terminate` will terminate the jobflow when you are done running jobs.
 
 (TODO: I'll add a makefile target for terminating and not require you to enter job id for each command.)
