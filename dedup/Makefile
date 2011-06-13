@@ -7,9 +7,10 @@ S3CMD := third_party/s3cmd/s3cmd -c third_party/s3cmd/.s3cfg
 EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce
 
 S3_BIN := s3://smucker-mr/bin
-S3_INPUT := s3://smuckerdata/aquaint/small
+S3_INPUT := s3://smucker-mr/aquaint/small
 S3_OUTPUT := s3://smucker-mr/output
 S3_LOG := s3://smucker-mr/log
+S3_CONF := s3://smucker-mr/conf
 # We need a unique output directory name, otherwise AWS complains about
 # existing output directory. Override this from the command line, as in
 # $ make S3_OUTDIR=out_dir_name <target>
@@ -17,12 +18,12 @@ S3_OUTDIR := $(shell date +'%Y%m%d%H%M%S')
 
 LOCAL_INPUT := samples/*.gz
 TESTS := tests/*.in
+JOB_ID = $(shell cat job-id)
+AWS_ACCESS_KEY_ID := $(shell sed '1q;d' aws-keys)
+AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
 
-# TODO: create more variables and reduce code duplication
-# TODO: README file
 # TODO: Instead of identity mapper, can we just get Hadoop to omit a map/reduce step?
-# TODO: add dependent tools (elastic-mapreduce, credentials file, etc.) to repo, s3cmd
-# TODO: instead of requirng user to pass in JOB_ID, just create a file with the job id in its contents (or as part of filename). then create a stop target
+# TODO: terminate target
 
 all: $(ALL_BINS)
 
@@ -47,7 +48,7 @@ local: $(ALL_BINS)
 		| ./mapper3 \
 		| sort -n -k 2
 
-emr-run: job3
+run: job3
 
 # Third job: Map that outputs the Jaccard similarity between all pairs of
 # documents that share a shingle
@@ -82,8 +83,26 @@ job1: bin-up
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--reducer $(S3_BIN)/reducer1
 
-start:
-	$(EMR) --create --alive --log-uri $(S3_LOG)
+# Create a jobflow, configured with our supplied S3 keys.
+# We don't put configuration keys in core-site.xml file on S3, because hadoop
+# can't access S3 yet without these credentials.
+start: config-up
+	$(EMR) --create \
+		--alive \
+		--log-uri $(S3_LOG) \
+		--bootstrap-action "s3://elasticmapreduce/bootstrap-actions/configure-hadoop" \
+		--args "--core-key-value,fs.s3.awsAccessKeyId=$(AWS_ACCESS_KEY_ID)" \
+		--args "--core-key-value,fs.s3.awsSecretAccessKey=$(AWS_SECRET_ACCESS_KEY)" \
+		--args "--core-key-value,fs.s3n.awsAccessKeyId=$(AWS_ACCESS_KEY_ID)" \
+		--args "--core-key-value,fs.s3n.awsSecretAccessKey=$(AWS_SECRET_ACCESS_KEY)" \
+		--args "--core-key-value,fs.s3bfs.awsAccessKeyId=$(AWS_ACCESS_KEY_ID)" \
+		--args "--core-key-value,fs.s3bfs.awsSecretAccessKey=$(AWS_SECRET_ACCESS_KEY)" \
+		| tee /dev/tty \
+		| cut -d' ' -f 4 > job-id
+
+config-up: core-site.xml
+	$(S3CMD) put $^ $(S3_CONF)/
+	touch $@
 
 bin-up: $(ALL_BINS)
 	$(S3CMD) put $^ $(S3_BIN)/
