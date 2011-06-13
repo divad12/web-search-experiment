@@ -3,13 +3,13 @@ CFLAGS := -Wall -Wextra
 
 ALL_BINS := mapper1 reducer1 reducer2 mapper3
 
-S3CMD := s3cmd
-EMR := /home/david/bin/elastic-mapreduce-ruby/elastic-mapreduce
+S3CMD := third_party/s3cmd/s3cmd -c third_party/s3cmd/.s3cfg
+EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce
 
-S3_BIN := s3://davidhu-mr1/bin
-S3_INPUT := s3://davidhu-aquaint
-S3_OUTPUT := s3://davidhu-mr1/output
-S3_LOG := s3://mapreduce-log-uri
+S3_BIN := s3://smucker-mr/bin
+S3_INPUT := s3://smuckerdata/aquaint/small
+S3_OUTPUT := s3://smucker-mr/output
+S3_LOG := s3://smucker-mr/log
 # We need a unique output directory name, otherwise AWS complains about
 # existing output directory. Override this from the command line, as in
 # $ make S3_OUTDIR=out_dir_name <target>
