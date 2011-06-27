@@ -11,6 +11,10 @@
 *.la
 *.a
 
+# Python compiled
+*.pyc
+
+
 samples/
 
 # credentials files
