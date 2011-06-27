@@ -66,8 +66,6 @@ $(function() {
 			name: 'click',
 			url: $(this).attr('href')
 		});
-    e.stopPropagation();
-    e.preventDefault();
 	});
 
   // track clicking changing page links
@@ -112,13 +110,16 @@ $(function() {
 			var force = options && options.force;
 			var sync = options && options.sync;
 
+      // TODO: remove short circuit of batch sending
 			if (true || /*actions.length % freq === 0 ||*/ force) {
 
         var postData = actions;
         actions = [];
 
+        console.log('sending data:', postData);
+
 				$.ajax(url, {
-					name: 'POST',
+					type: 'POST',
 					async: !sync,
 					data: {
 						//sid: $.cookies.get('sid'),
