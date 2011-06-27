@@ -18,7 +18,7 @@ void emitAllPairs(const StringSet& docSet) {
         for (++it2; it2 != docSet.end(); ++it2) {
             // TODO: optimziation: Don't print string "LongValueSum" and use
             //     our own reducer
-            printf("LongValueSum:%s-%s\t1\n", it1->c_str(), it2->c_str());
+            printf("%s-%s\t1\n", it1->c_str(), it2->c_str());
         }
     }
 }

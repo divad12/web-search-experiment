@@ -18,7 +18,7 @@ int main() {
     std::string prevKey;
     int inCommon = 0;
 
-    while (scanf("LongValueSum:%s\t%d\n", key, &value) != EOF) {
+    while (scanf("%s\t%d\n", key, &value) != EOF) {
         if (prevKey != key && !prevKey.empty()) {
             emitSumOfKeys(prevKey.c_str(), inCommon);
             inCommon = 0;

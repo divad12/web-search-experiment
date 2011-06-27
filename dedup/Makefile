@@ -4,19 +4,31 @@
 # instances are 32-bit Debian; medium and large instances are 64-bit Debian
 # !!!
 
+# Configure the parameters below
+JOBFLOW_NAME := "4-large"
+NUM_INSTANCES := 4
+MASTER_TYPE := m1.large
+SLAVE_TYPE := m2.4xlarge
+
+S3_INPUT := s3://smucker-mr/aquaint/all/nyt/1998  # 155 mb
+#S3_INPUT := s3://smucker-mr/aquaint/all/xie/2000  # 41 mb
+#S3_INPUT := s3://smucker-mr/aquaint/10mb
+#S3_INPUT := s3://smucker-mr/aquaint/small
+
+S3_OUTPUT := s3://smucker-mr/output
+S3_LOG := s3://smucker-mr/log
+S3_BIN := s3://smucker-mr/bin
+S3_SRC := s3://smucker-mr/src
+
+
 CC := g++
-CFLAGS := -Wall -Wextra
+CFLAGS := -Wall -Wextra -O3
 
 ALL_BINS := mapper1 reducer1 reducer2 mapper3 mapper-cluster reducer-cluster
 
 S3CMD := third_party/s3cmd/s3cmd -c third_party/s3cmd/.s3cfg
 EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce
 
-S3_BIN := s3://smucker-mr/bin
-S3_INPUT := s3://smucker-mr/aquaint/small
-S3_OUTPUT := s3://smucker-mr/output
-S3_LOG := s3://smucker-mr/log
-S3_CONF := s3://smucker-mr/conf
 # We need a unique output directory name, otherwise AWS complains about
 # existing output directory. Override this from the command line, as in
 # $ make S3_OUTDIR=out_dir_name <target>
@@ -32,6 +44,7 @@ AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
 # TODO: Split out common code to utils file
 # TODO: Add more tests
 # TODO: better names for mapper/reducer binaries
+# TODO: Hadoop configuration options (See Hani's thesis)
 
 all: $(ALL_BINS)
 
@@ -57,8 +70,32 @@ local: $(ALL_BINS)
 		| sort \
 		| ./reducer-cluster
 
+local-debug: $(ALL_BINS)
+	./mapper1 | sort > out/mapper1.out
+	./reducer1 < out/mapper1.out | sort > out/reducer1.out
+	./reducer2 < out/reducer1.out > out/reducer2.out
+	./mapper-cluster < out/reducer2.out | sort > out/mapper-cluster.out
+	./reducer-cluster < out/mapper-cluster.out > out/reducer-cluster.out
+
 stop:
 	$(EMR) -j $(JOB_ID) --terminate
+	rm job-id
+
+ssh:
+	$(EMR) -j $(JOB_ID) --ssh
+
+# Parse and output runnning job data in a readable form
+report:
+	$(MAKE) -s describe > reports/$(JOB_ID).json
+	./parse-data.py < reports/$(JOB_ID).json > reports/$(JOB_ID)-report
+
+# Describe the running jobs in detail. Returns JSON
+describe:
+	$(EMR) -j $(JOB_ID) --describe --active
+
+# List the active jobs in the current jobflow
+list:
+	$(EMR) -j $(JOB_ID) --list --active
 
 run: job3
 
@@ -85,7 +122,7 @@ job2: job1
 
 # First job: a map-reduce that takes in documents and outputs <docId pair, 1>
 # for all pairs of documents that share a shingle, for each shingle they share
-job1: bin-up
+job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "docs --> <docId pair, 1>" \
@@ -97,10 +134,15 @@ job1: bin-up
 # Create a jobflow, configured with our supplied S3 keys.
 # We don't put configuration keys in core-site.xml file on S3, because hadoop
 # can't access S3 yet without these credentials.
-start: config-up
+start:
 	$(EMR) --create \
 		--alive \
+		--name $(JOBFLOW_NAME) \
 		--log-uri $(S3_LOG) \
+		--num-instances $(NUM_INSTANCES) \
+		--master-instance-type $(MASTER_TYPE) \
+		--slave-instance-type $(SLAVE_TYPE) \
+		--plain-output \
 		--bootstrap-action "s3://elasticmapreduce/bootstrap-actions/configure-hadoop" \
 		--args "--core-key-value,fs.s3.awsAccessKeyId=$(AWS_ACCESS_KEY_ID)" \
 		--args "--core-key-value,fs.s3.awsSecretAccessKey=$(AWS_SECRET_ACCESS_KEY)" \
@@ -108,15 +150,20 @@ start: config-up
 		--args "--core-key-value,fs.s3n.awsSecretAccessKey=$(AWS_SECRET_ACCESS_KEY)" \
 		--args "--core-key-value,fs.s3bfs.awsAccessKeyId=$(AWS_ACCESS_KEY_ID)" \
 		--args "--core-key-value,fs.s3bfs.awsSecretAccessKey=$(AWS_SECRET_ACCESS_KEY)" \
-		| tee /dev/tty \
-		| cut -d' ' -f 4 > job-id
+		| tee /dev/tty > job-id
 
-config-up: core-site.xml
-	$(S3CMD) put $^ $(S3_CONF)/
-	touch $@
-
+# This is to be run on the Hadoop master instance
 bin-up: $(ALL_BINS)
-	$(S3CMD) put $^ $(S3_BIN)/
+	# Hadoop is so stupid to require 3 steps for this...
+	hadoop fs -rmr $(S3_BIN)
+	hadoop fs -mkdir $(S3_BIN)
+	hadoop fs -put $^ $(S3_BIN)
+
+# Copy files (via s3) to the Hadoop master instance, build there, and then upload to s3
+build-on-master: $(ALL_BINS)
+	$(S3CMD) put Makefile *.cpp $(S3_SRC)/
+	$(S3CMD) -r put third_party/rabinhash-64/ $(S3_SRC)/third_party/rabinhash-64/
+	$(EMR) -j $(JOB_ID) --ssh '"rm -rf src; hadoop fs -get $(S3_SRC) src; cd src; make bin-up"'
 	touch $@
 
 mapper-reducer: mapper-reducer.cpp

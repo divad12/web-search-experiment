@@ -21,9 +21,12 @@ for jobflow in data['JobFlows']:
 
   for step in jobflow['Steps']:
     detail = step['ExecutionStatusDetail']
-    elapsed = str(int(detail['EndDateTime']) - int(detail['StartDateTime'])) if (detail['EndDateTime'] and detail['StartDateTime']) else 'Not done'
+    if not (detail['EndDateTime'] and detail['StartDateTime'] and detail['State'] == 'COMPLETED'):
+      continue
+
+    elapsed = str(int(detail['EndDateTime']) - int(detail['StartDateTime']))
     inputLocation = step['StepConfig']['HadoopJarStep']['Args'][1]
-    # FIXME HACK HACK HACK hardcoded
+    # HACK HACK HACK hardcoded
     if inputLocation.find('output') != -1:
       inputLocation = ''
     else:

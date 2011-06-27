@@ -16,6 +16,7 @@
 
 
 samples/
+aquaint/
 
 # credentials files
 credentials.json
