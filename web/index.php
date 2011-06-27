@@ -81,7 +81,7 @@ if ($query) {
 
   $results = array();
   if ($src === 'yahoo') {
-    $json = json_decode(file_get_contents('lib/yahoo-boss-keys.txt'));
+    $json = json_decode(file_get_contents('lib/yahoo-boss-keys.json'));
     $cc_key = $json->key;
     $cc_secret = $json->secret;
 

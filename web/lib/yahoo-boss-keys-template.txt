@@ -1,3 +1,0 @@
-# rename this file to yahoo-boss-keys.txt and fill in the cc_key and cc_secret information for yahoo boss; also remove this line
-<cc_key>
-<cc_secret>

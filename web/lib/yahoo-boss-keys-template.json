@@ -1,0 +1,5 @@
+{
+	comment: 'rename this file to yahoo-boss-keys.json and fill in cc_key and cc_secret; this line may be removed',
+	cc_key: <your key>,
+	cc_secret: <your secret>
+}
