@@ -1,3 +1,9 @@
+# !!!
+# NOTE: You must run this on the same architecture as that of the amazon
+# machine instance that will be running these mapreduces. As of writing, small
+# instances are 32-bit Debian; medium and large instances are 64-bit Debian
+# !!!
+
 CC := g++
 CFLAGS := -Wall -Wextra
 
@@ -135,4 +141,4 @@ rabinhash64.o: third_party/rabinhash-64/rabinhash64.cpp
 	$(CC) $(CFLAGS) -c $^
 
 clean:
-	rm -r *.test.out *.o $(ALL_BINS)
+	rm -rfv *.tmp *.o $(ALL_BINS)

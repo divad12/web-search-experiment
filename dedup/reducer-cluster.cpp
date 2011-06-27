@@ -33,7 +33,9 @@ int main() {
         prevKey = doc1;
     }
 
-    emitCluster(prevKey, cluster);
+    if (!cluster.empty()) {
+      emitCluster(prevKey, cluster);
+    }
 
     return 0;
 }
