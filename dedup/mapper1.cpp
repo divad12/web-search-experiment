@@ -18,11 +18,9 @@ const size_t DOCNO_START_LEN = strlen(DOCNO_START_TAG);
 const char* DOC_START_TAG = "<DOC>";
 const char* DOC_END_TAG = "</DOC>";
 
-// TODO: it seems like in some articles that the main article is within the
-//     HEADLINE tags, not the TEXT tags.
-const char* TEXT_START_TAG = "<TEXT>";
-const char* TEXT_END_TAG = "</TEXT>";
-const size_t TEXT_START_LEN = strlen(TEXT_START_TAG);
+const char* BODY_START_TAG = "<BODY>";
+const char* BODY_END_TAG = "</BODY>";
+const size_t BODY_START_LEN = strlen(BODY_START_TAG);
 
 const char* WHITESPACE = " \t\n";
 const char* DOC_ID_SEP = "|";
@@ -56,14 +54,14 @@ void emitKeyValuePairs(const std::string& doc) {
     // TODO: need to worry about unicode?
 
     std::tr1::unordered_set<long long> shingleSet;
-    size_t textStart = doc.find(TEXT_START_TAG) + TEXT_START_LEN;
-    size_t textEnd = doc.find(TEXT_END_TAG, textStart);
+    size_t bodyStart = doc.find(BODY_START_TAG) + BODY_START_LEN;
+    size_t bodyEnd = doc.find(BODY_END_TAG, bodyStart);
 
     // TODO: could clean up xml if this is not done for actual input i.e.
     //     remove tags, collapse whitespace
 
     // Get the set of all shingles in this document
-    for (size_t i = textStart; i + SHINGLE_SIZE < textEnd; ) {
+    for (size_t i = bodyStart; i + SHINGLE_SIZE < bodyEnd; ) {
         long long shingle = rabinHash.hash(doc.c_str() + i, SHINGLE_SIZE);
         shingleSet.insert(shingle);
 
@@ -73,8 +71,8 @@ void emitKeyValuePairs(const std::string& doc) {
         if (i == std::string::npos) break;
     }
 
-    if (textEnd - textStart < SHINGLE_SIZE) {
-        std::string padded = padStr(doc.substr(textStart, textEnd - textStart), SHINGLE_SIZE, 'x');
+    if (bodyEnd - bodyStart < SHINGLE_SIZE) {
+        std::string padded = padStr(doc.substr(bodyStart, bodyEnd - bodyStart), SHINGLE_SIZE, 'x');
         long long shingle = rabinHash.hash(padded.c_str(), SHINGLE_SIZE);
         shingleSet.insert(shingle);
     }

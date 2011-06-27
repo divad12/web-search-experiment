@@ -11,6 +11,8 @@
 *.la
 *.a
 
+samples/
+
 # credentials files
 credentials.json
 david-aws-keys.csv
