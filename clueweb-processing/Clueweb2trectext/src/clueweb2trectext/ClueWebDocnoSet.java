@@ -1,0 +1,86 @@
+package clueweb2trectext;
+
+import java.io.* ;
+import java.util.* ;
+import java.util.Arrays ;
+import java.util.zip.GZIPInputStream;
+
+/**
+ * holds a set of clueweb docnos
+ * 
+ * internally maps docno to unique id using Jimmy Lin's code
+ * 
+ * keeps the ids in a sorted array
+ * 
+ * uses binary search to quickly find ids
+ * 
+ * @author Mark D. Smucker
+ */
+public class ClueWebDocnoSet
+{   
+    private ClueWebDocnoMapping mapper ;
+    // apologies for the cheat, and
+    //private ArrayList<Integer> hamIds = new ArrayList<Integer>( 150955774 ) ; // cat clueweb09spam.Fusion.ge70.gz | gunzip -c | wc -l
+    private int [] hamIds = new int[150955774] ; // cat clueweb09spam.Fusion.ge70.gz | gunzip -c | wc -l
+    private int count = 0 ;
+    private Boolean sorted = false ;
+       
+    public ClueWebDocnoSet(String gzipFileWithDocnos, ClueWebDocnoMapping mapper) 
+            throws FileNotFoundException, Exception
+    {
+        this.mapper = mapper ;
+        LoadDocnos( gzipFileWithDocnos ) ;
+        if ( count != hamIds.length )
+        {
+            throw new Exception("wrong count in ClueWebDocnoSet") ;
+        }
+    }
+    
+    public void AddDocno( String docno ) throws Exception
+    {
+        int id = mapper.ConvertToInt( docno );
+        hamIds[count] = id ;
+        ++count ;
+        //hamIds.add( id );         
+        sorted = false ;
+    }
+    
+    public Boolean DocnoExists( String docno ) throws Exception
+    {
+        if ( ! sorted ) 
+        {
+             //Collections.sort( hamIds );
+             Arrays.sort( hamIds ) ;
+             sorted = true ;
+        }
+        int id = mapper.ConvertToInt( docno ) ;
+        //int index = Collections.binarySearch( hamIds, id ) ;
+        int index = Arrays.binarySearch( hamIds, id ) ;
+        return index >= 0 ;       
+    }
+
+
+    private void LoadDocnos( String gzipFileWithDocnos ) throws IOException, Exception
+    {
+        GZIPInputStream gzInputStream = new GZIPInputStream(
+                    new FileInputStream( gzipFileWithDocnos ) );
+        
+        Scanner input = new Scanner( gzInputStream ) ;
+        while ( input.hasNext() )
+        {
+            String docno = input.next() ;
+            AddDocno( docno );
+            //if ( count % 1000000 == 0 )
+            //{
+            //    System.err.println( count );
+           // }
+            
+//            if ( hamIds.size() % 1000000 == 0 )
+//            {
+//                System.err.println( hamIds.size() );
+//            }
+        }            
+    }
+    
+    
+}
