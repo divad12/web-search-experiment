@@ -74,13 +74,14 @@ print "</form>";
 print "</div>";
 
 if ($query) {
-  require_once("lib/OAuth.php");
 
   $count = validIntParam('count', 10);
   $offset = validIntParam('offset', 0);
 
   $results = array();
   if ($src === 'yahoo') {
+    require_once("lib/OAuth.php");
+
     $json = json_decode(file_get_contents('lib/yahoo-boss-keys.json'));
     $cc_key = $json->key;
     $cc_secret = $json->secret;
@@ -160,7 +161,7 @@ if ($query) {
 
   foreach ($results as $result) {
     print "<div class='region' id='result-$result->rank'>";
-    print "<span class='title'><a href='$result->clickurl'>$result->title</a></span>";
+    print "<span class='title'><a href='$result->link'>$result->title</a></span>";
     print "<br/ >";
     if (trim($result->snippet)) {
       print "<span class='snippet'>$result->snippet</span>";

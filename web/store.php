@@ -16,11 +16,9 @@ if (empty($_COOKIE['sid'])) {
 }
 
 $actions = $_POST['actions'];
-file_put_contents("data/test.bak", "$actions\n", FILE_APPEND);
 $message = '';
 $path = "data/$sid.txt";
 foreach ($actions as $action) {
-  //file_put_contents("$path.bak", json_encode($action)."\n", FILE_APPEND);
   $message .= json_encode($action)."\n";
 }
 sync_write($path, $message);
