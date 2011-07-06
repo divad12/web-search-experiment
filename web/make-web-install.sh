@@ -36,9 +36,7 @@ rm -f $path/.gitignore
 rm -f $path/make-web-install.sh
 
 mkdir $path/data
-chmod 777 $path/data
-chmod 777 $path/lib
-chmod 750 $path/private
+chmod 777 `find $path -type d`
 
 printf "Finished copying to $path\n"
 printf "Please read lib/yahoo-boss-keys-template.json to set up Yahoo Boss credentials\n"
