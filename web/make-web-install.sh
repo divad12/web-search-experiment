@@ -30,7 +30,6 @@ fi
 cp -r . $path
 
 rm -rf $path/data
-rm -rf $path/old
 rm -rf $path/orm
 rm -rf `find $path -type d -name .svn`
 rm -f $path/.gitignore
@@ -38,7 +37,8 @@ rm -f $path/make-web-install.sh
 
 mkdir $path/data
 chmod 777 $path/data
-chmod 750 $path/lib
+chmod 777 $path/lib
+chmod 750 $path/private
 
 printf "Finished copying to $path\n"
 printf "Please read lib/yahoo-boss-keys-template.json to set up Yahoo Boss credentials\n"

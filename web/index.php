@@ -82,7 +82,7 @@ if ($query) {
   if ($src === 'yahoo') {
     require_once("lib/OAuth.php");
 
-    $json = json_decode(file_get_contents('lib/yahoo-boss-keys.json'));
+    $json = json_decode(file_get_contents('private/yahoo-boss-keys.json'));
     $cc_key = $json->key;
     $cc_secret = $json->secret;
 
