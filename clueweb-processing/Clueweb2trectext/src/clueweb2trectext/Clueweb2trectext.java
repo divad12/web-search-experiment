@@ -320,9 +320,13 @@ public class Clueweb2trectext
         while (input.hasNext()) 
         {
             String line = input.nextLine();
-            String docno = line.substring(0, line.indexOf("\t"));
-            String text = line.substring(line.indexOf("\t") + 1);
-            docnoTextMap.put(docno.trim(), text.trim());
+            int tabIdx = line.indexOf("\t") ;
+            if ( tabIdx != -1 )
+            {
+                String docno = line.substring(0, tabIdx );
+                String text = line.substring(tabIdx + 1);
+                docnoTextMap.put(docno, text);
+            }
         }
         return docnoTextMap;
     }
