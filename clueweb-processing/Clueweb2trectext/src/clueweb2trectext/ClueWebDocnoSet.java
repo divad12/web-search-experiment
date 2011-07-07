@@ -19,10 +19,8 @@ import java.util.zip.GZIPInputStream;
 public class ClueWebDocnoSet
 {   
     private ClueWebDocnoMapping mapper ;
-    // apologies for the cheat, and
-    //private ArrayList<Integer> hamIds = new ArrayList<Integer>( 150955774 ) ; // cat clueweb09spam.Fusion.ge70.gz | gunzip -c | wc -l
-    private int [] hamIds = new int[150955774] ; // cat clueweb09spam.Fusion.ge70.gz | gunzip -c | wc -l
-    private int count = 0 ;
+    private ArrayList<Integer> hamIds = new ArrayList<Integer>( 50000 ) ; 
+    //private int [] hamIds = new int[150955774] ; // cat clueweb09spam.Fusion.ge70.gz | gunzip -c | wc -l
     private Boolean sorted = false ;
        
     public ClueWebDocnoSet(String gzipFileWithDocnos, ClueWebDocnoMapping mapper) 
@@ -30,18 +28,12 @@ public class ClueWebDocnoSet
     {
         this.mapper = mapper ;
         LoadDocnos( gzipFileWithDocnos ) ;
-        if ( count != hamIds.length )
-        {
-            throw new Exception("wrong count in ClueWebDocnoSet") ;
-        }
     }
     
     public void AddDocno( String docno ) throws Exception
     {
         int id = mapper.ConvertToInt( docno );
-        hamIds[count] = id ;
-        ++count ;
-        //hamIds.add( id );         
+        hamIds.add(id) ;
         sorted = false ;
     }
     
@@ -49,13 +41,12 @@ public class ClueWebDocnoSet
     {
         if ( ! sorted ) 
         {
-             //Collections.sort( hamIds );
-             Arrays.sort( hamIds ) ;
+             Collections.sort( hamIds );
              sorted = true ;
         }
         int id = mapper.ConvertToInt( docno ) ;
-        //int index = Collections.binarySearch( hamIds, id ) ;
-        int index = Arrays.binarySearch( hamIds, id ) ;
+        int index = Collections.binarySearch( hamIds, id ) ;
+        //int index = Arrays.binarySearch( hamIds, id ) ;
         return index >= 0 ;       
     }
 
@@ -64,11 +55,13 @@ public class ClueWebDocnoSet
     {
         GZIPInputStream gzInputStream = new GZIPInputStream(
                     new FileInputStream( gzipFileWithDocnos ) );
-        
-        Scanner input = new Scanner( gzInputStream ) ;
-        while ( input.hasNext() )
+        BufferedReader inReader = new BufferedReader(
+                        new InputStreamReader(gzInputStream));
+
+        String line = null ;
+        while ((line = inReader.readLine()) != null) 
         {
-            String docno = input.next() ;
+            String docno = line ;
             AddDocno( docno );
             //if ( count % 1000000 == 0 )
             //{

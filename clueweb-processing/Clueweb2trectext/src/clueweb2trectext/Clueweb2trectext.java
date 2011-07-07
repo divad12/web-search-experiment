@@ -47,15 +47,15 @@ public class Clueweb2trectext
         // Okay, the easiest way to do this is to pass in an input directory and output dir
         if (args.length != 5) 
          {
-             System.err.println("usage: java Clueweb2trectext inputDir outputDir fusionSpam.ge70.gz docno.mapping.simple AnchorTextFileDir");
+             System.err.println("usage: java Clueweb2trectext inputDir outputDir fusionSpam.ge70Dir docno.mapping.simple AnchorTextFileDir");
              return;
          }
         
         String inputDirName = args[0];
         String outputDirName = args[1];
-        String hamDocnosFileName = args[2];
+        String hamDocnosDirName = args[2];
         String mappingFileName = args[3];
-        String anchorTextDir = args[4];
+        String anchorTextDirName = args[4];
         
         File inputDir = new File(inputDirName);
         if (!inputDir.exists()) 
@@ -70,15 +70,23 @@ public class Clueweb2trectext
             return;
         }
 
-        File anchorTextDirectory = new File(anchorTextDir);
-        if (!anchorTextDirectory.exists()) 
+        File hamDocnosDir = new File(hamDocnosDirName);
+        if (!hamDocnosDir.exists()) 
         {
-            System.err.println("Anchor textFile directory  does not exist: "
-                    + anchorTextDirectory);
+            System.err.println("hamDocnosDir does not exist: " + hamDocnosDirName);
             return;
         }
+
+        File anchorTextDir = new File(anchorTextDirName);
+        if (!anchorTextDir.exists()) 
+        {
+            System.err.println("Anchor text directory  does not exist: "
+                    + anchorTextDirName );
+            return;
+        }
+        //System.err.println( "Creating docnoMapper.");
         ClueWebDocnoMapping docnoMapper = new ClueWebDocnoMapping(mappingFileName);
-        ClueWebDocnoSet hamDocnos = new ClueWebDocnoSet(hamDocnosFileName, docnoMapper);
+        //System.err.println( "docnoMapper created.");
 
         // for each warc.gz file in inputDir, convert it and output new file to outputDir
 
@@ -89,16 +97,18 @@ public class Clueweb2trectext
 
             if (currFileName.endsWith("warc.gz")) 
             {
-                ConvertWarcToTrec(inputDir, currFileName, outputDir, hamDocnos,
-                        anchorTextDirectory);
+                ConvertWarcToTrec(inputDir, currFileName, outputDir, hamDocnosDir,
+                        anchorTextDir, docnoMapper);
             }
         }
     }
 
     public static void ConvertWarcToTrec(File inputDir,
-            String gzipWarcFileName, File outputDir, ClueWebDocnoSet hamDocnos,
-            File anchorTextDir) throws IOException, Exception 
+            String gzipWarcFileName, File outputDir, File hamDocnosDir,
+            File anchorTextDir, ClueWebDocnoMapping docnoMapper) throws IOException, Exception 
     {
+        //System.err.println( "processing " + inputDir.getAbsolutePath() + File.separator + gzipWarcFileName );
+        
         int extIdx = gzipWarcFileName.indexOf(".warc.gz");
         int dotIdx = gzipWarcFileName.indexOf(".");
         if (extIdx != dotIdx) 
@@ -108,6 +118,8 @@ public class Clueweb2trectext
 
         String baseName = gzipWarcFileName.substring(0, extIdx);
         String anchorTextFileName = baseName + ".gz";
+        //System.err.println( "read anchortext");
+
         Map<String, String> anchorMap = readAnchorTextFile(anchorTextDir.getAbsolutePath()
                 + File.separator + anchorTextFileName);
         String gzipTrectextFileName = baseName + ".trectext.gz";
@@ -115,9 +127,14 @@ public class Clueweb2trectext
                 new GZIPOutputStream(new FileOutputStream(outputDir.getAbsolutePath()
                         + File.separator + gzipTrectextFileName))));
 
+        String hamDocnosFileName = hamDocnosDir.getAbsolutePath() + File.separator + baseName + ".gz" ;
+        //System.err.println( "read hamdocnos");
+        ClueWebDocnoSet hamDocnos = new ClueWebDocnoSet(hamDocnosFileName, docnoMapper);        
+        
         String inputWarcFile = inputDir.getAbsolutePath() + File.separator
                 + gzipWarcFileName;
 
+        //System.err.println( "read warc");
         // open our gzip input stream
         GZIPInputStream gzInputStream = new GZIPInputStream(
                 new FileInputStream(inputWarcFile));
@@ -145,7 +162,7 @@ public class Clueweb2trectext
                 StringBuilder doc = new StringBuilder(contentBytes.length);
                 doc.append("<DOC>\n<DOCNO>");
                 doc.append(docno);
-                doc.append("</DOCNO>\n<TEXT>\n");
+                doc.append("</DOCNO>\n");
 
                 ByteArrayInputStream contentStream = new ByteArrayInputStream(
                         contentBytes);
@@ -153,6 +170,10 @@ public class Clueweb2trectext
                         new InputStreamReader(contentStream));
 
                 String url = htmlRecord.getTargetURI();
+                doc.append("<url>");
+                doc.append(url);
+                doc.append("</url>\n");
+                doc.append("<TEXT>\n");
 
                 // forward to the first /n/n
 
@@ -179,7 +200,7 @@ public class Clueweb2trectext
                 // now we have the rest of the lines
                 // read them all into a string buffer
                 // to remove all new lines
-                StringBuilder html = new StringBuilder(65536);
+                StringBuilder html = new StringBuilder(contentBytes.length);
                 while ((line = inReader.readLine()) != null) 
                 {
                     html.append(line);
@@ -264,16 +285,16 @@ public class Clueweb2trectext
                 }
                 doc.append("<title>");
                 doc.append(title);
-                doc.append("</title>\n<url>");
-                doc.append(url);
-                doc.append("</url>\n");
+                doc.append("</title>\n") ;
+                doc.append( "<tokenizedurl>");
                 doc.append(TokenizeUrl(url));
+                doc.append( "</tokenizedurl>\n");
                 doc.append("<body>\n");
                 doc.append(sentenceText);
                 doc.append("\n</body>\n");
                 doc.append("<anchortext>" + anchorText + "</anchortext>\n");
                 doc.append("</text>\n</DOC>\n");
-                System.out.println(docno);
+                //System.out.println(docno);
                 trecFile.print(doc.toString());
             }
         }
@@ -294,32 +315,40 @@ public class Clueweb2trectext
 
     private static String TokenizeUrl(String url) 
     {
-        String tokenUrl = "";
-        String protocol = url.substring(0, url.indexOf("//"));
-        String words = "";
-
-        if (url.indexOf("?") == -1)
-            words = url.substring(url.indexOf("/", url.indexOf("//") + 2));
-        else
-            words = url.substring(url.indexOf("/", url.indexOf("//") + 2), url.indexOf("?"));
-        tokenUrl = "<tokenizedurl>url broken into tokens with protocol ("
-                + protocol + "// stripped and then broken into words on . "
-                + words + ""
-                + " and truncated at the prescence of ? </tokenizedurl>\n";
-        return tokenUrl;
+        int slashslashIdx = url.indexOf("//") ;
+        int startIdx = slashslashIdx + 2 ;
+        if ( slashslashIdx == -1 || startIdx >= url.length() )
+            startIdx = 0 ;
+        int questionIdx = url.indexOf("?") ;
+        int endIdx = questionIdx ;
+        if ( questionIdx <= startIdx )
+            endIdx = url.length() ;
+        String hostAndPath = url.substring(startIdx, endIdx) ;
+        String [] tokens = hostAndPath.split("[^a-zA-Z0-9]");
+        StringBuilder sbResult = new StringBuilder() ;
+        for ( int i = 0 ; i < tokens.length ; ++i )
+        {
+            if ( i > 0 )
+                sbResult.append(" ");
+            sbResult.append(tokens[i]) ;
+        }
+        return sbResult.toString() ;
     }
 
     public static Map<String, String> readAnchorTextFile(String fileName)
             throws IOException 
     {
         Map<String, String> docnoTextMap = new HashMap<String, String>();
+        
         GZIPInputStream gzInputStream = new GZIPInputStream(
                 new FileInputStream(fileName));
-        Scanner input = new Scanner(gzInputStream);
+        
+        BufferedReader inReader = new BufferedReader(
+                        new InputStreamReader(gzInputStream));
 
-        while (input.hasNext()) 
+        String line = null ;
+        while ((line = inReader.readLine()) != null) 
         {
-            String line = input.nextLine();
             int tabIdx = line.indexOf("\t") ;
             if ( tabIdx != -1 )
             {
