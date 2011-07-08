@@ -403,8 +403,7 @@ private:
             // metadata
             std::string docno ;
             std::string title ;
-            std::string headline ;
-            std::string dateline ;
+            std::string url ;
             indri::utility::greedy_vector<indri::parse::MetadataPair>::iterator iter = 
                 documents[i]->metadata.begin() ;
             for ( ; iter != documents[i]->metadata.end() ; ++iter )
@@ -414,58 +413,27 @@ private:
                     docno = (char const *)iter->value ;
                 else if ( key == "title" )
                     title = (char const *)iter->value ; 
-                else if ( key == "headline" )
-                    headline = (char const *)iter->value ; 
-                else if ( key == "dateline" )
-                    dateline = (char const *)iter->value ; 
+                else if ( key == "url" )
+                    url = (char const *)iter->value ; 
             }
 
             if ( title.length() == 0 ) 
             {
-                if ( headline.length() > 0 )
-                    title = headline ;
-                else if ( snippetNoHtml.length() > 0 )
+                if ( snippetNoHtml.length() > 0 )
                     title = snippetNoHtml.substr(0,50) + "..." ;
                 else 
                     title = docno.substr(0,50) + "..." ;
             }
 
-	    std::string date ;
-	    if ( docno.length() > 0 )
-	    {
-	      // <DOCNO>LTW_ENG_20041001.0001</DOCNO> for AQUAINT2
-	      //                012345678
-	      int idxPeriod = -1 ;
-	      for ( int i = 0 ; i < docno.length() ; ++i )
-		{
-		  if ( docno[i] == '.' )
-		    {
-		      idxPeriod = i ;
-		    }
-		}
-	      if ( idxPeriod >= 8 )
-		{
-		  std::string packedDate = docno.substr( idxPeriod - 8, 8 ) ;
-		  std::string year = packedDate.substr(  0, 4 ) ;
-		  std::string month = packedDate.substr( 4, 2 ) ;
-		  std::string day = packedDate.substr( 6, 2 ) ;
-		  date = year + "-" + month + "-" + day ;
-		}
-	    }
-
+	    std::cout << "title = " << title << std::endl ;
 
             xmlNode * pResultNode = xmlNewChild( pResultsNode, NULL, BAD_CAST "result", NULL ) ;
             _appendElement( pResultNode, "rank", ToString(rank) ) ;
             _appendElement( pResultNode, "score", ToString(resultSubset[i].score) ) ;
-            _appendElement( pResultNode, "url", docno ) ;
+            _appendElement( pResultNode, "url", url ) ;
             _appendElement( pResultNode, "docno", docno ) ;
             _appendElement( pResultNode, "document-id", ToString(docID) ) ;
             _appendElement( pResultNode, "title", title ) ;
-            //if ( dateline.length() > 0 )
-            //    _appendElement( pResultNode, "dateline", dateline ) ;
-	    //if ( date.length() > 0 )
-            //    _appendElement( pResultNode, "date", date ) ;
-
             _appendElement( pResultNode, "snippet", snippet ) ;
 
             if( documents.size() )
