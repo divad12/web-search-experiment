@@ -80,11 +80,13 @@ if ($query) {
 
   $results = array();
   if ($src === 'yahoo') {
-    require_once("lib/OAuth.php");
+    require_once('lib/OAuth.php');
+    require_once('private/yahoo-boss-keys.php');
 
-    $json = json_decode(file_get_contents('private/yahoo-boss-keys.json'));
-    $cc_key = $json->key;
-    $cc_secret = $json->secret;
+    // old method of storing and retrieving credentials
+    //$json = json_decode(file_get_contents('private/yahoo-boss-keys.json'));
+    //$yahoo_key = $json->key;
+    //$yahoo_secret = $json->secret;
 
     $url = 'http://yboss.yahooapis.com/ysearch/web';
     $args = array(
@@ -94,7 +96,7 @@ if ($query) {
         'q' => $query
     );
 
-    $consumer = new OAuthConsumer($cc_key, $cc_secret);
+    $consumer = new OAuthConsumer($yahoo_key, $yahoo_secret);
     $request = OAuthRequest::from_consumer_and_token($consumer, null, 'GET', $url, $args);
     $request->sign_request(new OAuthSignatureMethod_HMAC_SHA1(), $consumer, NULL);
     $url = sprintf('%s?%s', $url, OAuthUtil::build_http_query($args));
@@ -111,7 +113,6 @@ if ($query) {
     $attributes = $xml->web->attributes();
     $offset = $attributes['start'];
     $count = $attributes['count'];
-    $total_result = $attributes['totalresults'];
     $last = $offset + $count - 1;
 
     $search_results = $xml->web->results->result;
@@ -154,10 +155,6 @@ if ($query) {
     print "Unexpected pathway\n";
     return;
   }
-
-  print "<div class='region' id='results-info'>";
-  print "<p>Results $offset to $last of about $total_result results</p>";
-  print "</div>";
 
   foreach ($results as $result) {
     print "<div class='region' id='result-$result->rank'>";
