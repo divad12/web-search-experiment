@@ -10,7 +10,8 @@
   //        this index.
   //
 
-  $indri_param['index'] = "/work/data/indexes/indri-5.0/aquaint-krovetz";
+  //$indri_param['index'] = "/work/data/indexes/indri-5.0/aquaint-krovetz";
+  $indri_param['index'] = "/work/data/websearch-tmp/cw";
 
   //
   // document_format: Use 'text' if the document is a text file (or 
