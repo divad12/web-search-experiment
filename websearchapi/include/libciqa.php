@@ -2,6 +2,45 @@
 
 require_once('domxml-php4-to-php5.php');
 
+// From: http://www.phpedit.net/snippet/Remove-Invalid-XML-Characters
+/**
+* Removes invalid XML
+*
+* @access public
+* @param string $value
+* @return string
+*/
+function stripInvalidXml($value)
+{
+    $ret = "";
+    $current;
+    if (empty($value)) 
+    {
+        return $ret;
+    }
+ 
+    $length = strlen($value);
+    for ($i=0; $i < $length; $i++)
+    {
+        $current = ord($value{$i});
+        if (($current == 0x9) ||
+            ($current == 0xA) ||
+            ($current == 0xD) ||
+            (($current >= 0x20) && ($current <= 0xD7FF)) ||
+            (($current >= 0xE000) && ($current <= 0xFFFD)) ||
+            (($current >= 0x10000) && ($current <= 0x10FFFF)))
+        {
+            $ret .= chr($current);
+        }
+        else
+        {
+            $ret .= " ";
+        }
+    }
+    return $ret;
+ }
+
+
 function GetFromRequest( $name, $default = "" ) 
 {
   $value = $default ;
@@ -67,7 +106,7 @@ function ImportSubtree( $sourceDomNode, & $destDomNode )
 function ErrorQuit( $message )
 {
   // setup the results xml
-  $pxmlDoc = new_xmldoc('1.0') ; // results xml
+  $pxmlDoc = domxml_new_doc('1.0') ; // results xml
   $pRoot = $pxmlDoc->append_child( $pxmlDoc->create_element('search-response') );  
 
   CreateAndAppendNode( "error", $message, $pRoot ) ;

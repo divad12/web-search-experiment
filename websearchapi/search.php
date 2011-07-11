@@ -5,6 +5,8 @@ include("include/libciqa.php" ) ;
 
 function main()
 {
+  setlocale(LC_ALL,'en_US.utf8') ; // US English UTF-8 locale
+
   global $indri_param ;
 
   if ( isset( $_REQUEST['query'] ) )
@@ -25,7 +27,9 @@ function main()
     $orig_query = stripslashes($orig_query) ;
   }
 
-
+  // make sure this is clean utf-8 and also proper xml
+  $orig_query = stripInvalidXml( iconv("UTF-8","UTF-8//IGNORE",$orig_query) ) ;
+  
   // setup the results xml
   //  $pxmlDoc = new_xmldoc('1.0') ; // results xml
   $pxmlDoc = domxml_new_doc('1.0') ; // results xml
@@ -74,6 +78,12 @@ function main()
   $numSentences = 2 ;
   $shellCmd = "./webrunquery -numSentences=$numSentences servers.xml -count=$count -start=$start -query='$query' -sentenceQuery='$sentenceQuery'" ;
   $modrunqueryXML = shell_exec( $shellCmd ) ;
+  // clean the output to make sure it is utf-8
+  // http://www.zeitoun.net/articles/clear-invalid-utf8/start
+  $modrunqueryXML = iconv("UTF-8","UTF-8//IGNORE",$modrunqueryXML);
+  // not all utf-8 is valid xml
+  $modrunqueryXML = stripInvalidXml( $modrunqueryXML ) ;  
+
   $end_time = indri_timer() ;
   $total_time = $end_time - $start_time ;
 
