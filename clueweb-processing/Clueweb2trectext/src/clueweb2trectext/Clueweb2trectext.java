@@ -11,6 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +19,8 @@ import java.util.Scanner;
 import java.util.Vector;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
+import java.nio.charset.CharsetDecoder ;
+import java.nio.charset.Charset ;
 
 import net.htmlparser.jericho.Element;
 import net.htmlparser.jericho.HTMLElementName;
@@ -28,6 +31,7 @@ import org.wikipedia.miner.util.SentenceSplitter;
 
 import edu.cmu.lemurproject.WarcHTMLResponseRecord;
 import edu.cmu.lemurproject.WarcRecord;
+import java.nio.charset.CodingErrorAction;
 
 /**
  *
@@ -36,10 +40,6 @@ import edu.cmu.lemurproject.WarcRecord;
 public class Clueweb2trectext 
 {
     static final org.wikipedia.miner.util.SentenceSplitter sentenceSpliter = new SentenceSplitter();
-    //static final TokenizerFactory TOKENIZER_FACTORY = IndoEuropeanTokenizerFactory.INSTANCE;
-    //static final SentenceModel SENTENCE_MODEL  = new IndoEuropeanSentenceModel( false, false ) ;
-    //static final SentenceChunker SENTENCE_CHUNKER 
-    //    = new SentenceChunker(TOKENIZER_FACTORY,SENTENCE_MODEL);
 
     public static void main(String[] args) throws IOException,
             FileNotFoundException, Exception 
@@ -84,12 +84,9 @@ public class Clueweb2trectext
                     + anchorTextDirName );
             return;
         }
-        //System.err.println( "Creating docnoMapper.");
         ClueWebDocnoMapping docnoMapper = new ClueWebDocnoMapping(mappingFileName);
-        //System.err.println( "docnoMapper created.");
 
         // for each warc.gz file in inputDir, convert it and output new file to outputDir
-
         String[] fileNames = inputDir.list();
         for (int fileNameIdx = 0; fileNameIdx < fileNames.length; ++fileNameIdx) 
         {
@@ -106,9 +103,7 @@ public class Clueweb2trectext
     public static void ConvertWarcToTrec(File inputDir,
             String gzipWarcFileName, File outputDir, File hamDocnosDir,
             File anchorTextDir, ClueWebDocnoMapping docnoMapper) throws IOException, Exception 
-    {
-        //System.err.println( "processing " + inputDir.getAbsolutePath() + File.separator + gzipWarcFileName );
-        
+    {       
         int extIdx = gzipWarcFileName.indexOf(".warc.gz");
         int dotIdx = gzipWarcFileName.indexOf(".");
         if (extIdx != dotIdx) 
@@ -118,23 +113,23 @@ public class Clueweb2trectext
 
         String baseName = gzipWarcFileName.substring(0, extIdx);
         String anchorTextFileName = baseName + ".gz";
-        //System.err.println( "read anchortext");
 
         Map<String, String> anchorMap = readAnchorTextFile(anchorTextDir.getAbsolutePath()
                 + File.separator + anchorTextFileName);
         String gzipTrectextFileName = baseName + ".trectext.gz";
-        PrintWriter trecFile = new PrintWriter(new BufferedOutputStream(
+        PrintWriter trecFile = new PrintWriter(                              
+                new OutputStreamWriter(
+                new BufferedOutputStream(
                 new GZIPOutputStream(new FileOutputStream(outputDir.getAbsolutePath()
-                        + File.separator + gzipTrectextFileName))));
+                        + File.separator + gzipTrectextFileName))),
+                "UTF-8" ) ) ;
 
         String hamDocnosFileName = hamDocnosDir.getAbsolutePath() + File.separator + baseName + ".gz" ;
-        //System.err.println( "read hamdocnos");
         ClueWebDocnoSet hamDocnos = new ClueWebDocnoSet(hamDocnosFileName, docnoMapper);        
         
         String inputWarcFile = inputDir.getAbsolutePath() + File.separator
                 + gzipWarcFileName;
 
-        //System.err.println( "read warc");
         // open our gzip input stream
         GZIPInputStream gzInputStream = new GZIPInputStream(
                 new FileInputStream(inputWarcFile));
@@ -144,6 +139,7 @@ public class Clueweb2trectext
 
         // iterate through our stream
         WarcRecord thisWarcRecord;
+        char [] buf = new char[1024*1024] ; // buffer for reading html
         while ((thisWarcRecord = WarcRecord.readNextWarcRecord(inStream)) != null) 
         {
             // see if it's a response record
@@ -166,17 +162,26 @@ public class Clueweb2trectext
 
                 ByteArrayInputStream contentStream = new ByteArrayInputStream(
                         contentBytes);
+                // the english portion of clueweb is suppose to be in utf-8
+                // now, what are we supposed to do with the header though?
+                // maybe the header gets all sort of non-UTF8 junk in it?
+                //
+                // only, let's be in control of this decoding business
+                Charset utf8Charset = Charset.forName("UTF-8");
+                CharsetDecoder decoder = utf8Charset.newDecoder() ;
+                // I want to clean up bad junk in the input.  No bad stuff!
+                decoder.onMalformedInput(CodingErrorAction.REPLACE) ;
+                decoder.replaceWith(" ") ; // replace with blanks
                 BufferedReader inReader = new BufferedReader(
-                        new InputStreamReader(contentStream));
+                        new InputStreamReader(contentStream, decoder));
 
                 String url = htmlRecord.getTargetURI();
                 doc.append("<url>");
-                doc.append(url);
+                doc.append(stripNonValidXMLCharacters(url));
                 doc.append("</url>\n");
-                doc.append("<TEXT>\n");
 
-                // forward to the first /n/n
-
+                // forward to the first /n/n , i.e. a blank line separates the
+                // html header from the html doc
                 boolean firstLine = true;
                 boolean inHeader = true;
                 String line = null;
@@ -198,25 +203,28 @@ public class Clueweb2trectext
                 }
 
                 // now we have the rest of the lines
-                // read them all into a string buffer
-                // to remove all new lines
+                // read them all into a string buffer to get a string.
                 StringBuilder html = new StringBuilder(contentBytes.length);
-                while ((line = inReader.readLine()) != null) 
+                int numRead = 0 ;
+                while ( ( numRead = inReader.read(buf) ) != -1 )
                 {
-                    html.append(line);
+                    html.append(buf, 0, numRead ) ;
                 }
-                Source source = new Source(html);
+                inReader.close();
+                
+                Source source = new Source(html); // works because html implements CharSequence
                 source.setLogger(null); // turn off logging
                 source.fullSequentialParse(); // error message recommends calling this after creation
-                String title = getTitle(source);
+                String title = getTitle(source) ;
                 Renderer renderer = source.getRenderer();
                 renderer.setIncludeHyperlinkURLs(false);
-                String renderedText = renderer.toString();
-                //TextExtractor textExtractor = source.getTextExtractor() ;
-                //String renderedText = textExtractor.toString() ;
-
-                // identify and mark up sentences
-                String sentenceText = renderedText;
+                String renderedText = stripNonValidXMLCharacters(renderer.toString()) ;
+                doc.append("<cached>\n") ; // include a copy of the rendered text as a "cached" version
+                doc.append(renderedText) ; // but do not index this text.  we can later
+                doc.append("</cached>\n") ; // extract it easily though from the doc
+                doc.append("<TEXT>\n"); // we'll index everything in text
+                
+                // identify and mark up sentences                
                 Vector<String> sentences = sentenceSpliter.getSentences( renderedText,
                     org.wikipedia.miner.util.SentenceSplitter.MULTIPLE_NEWLINES);
                 StringBuilder sbSentenceText = new StringBuilder(
@@ -235,69 +243,28 @@ public class Clueweb2trectext
                     sbSentenceText.append(sentToAppend);
                     sbSentenceText.append("</sentence>");
                 }
-                sentenceText = sbSentenceText.toString();
-                //                Chunking chunking 
-                //                    = SENTENCE_CHUNKER.chunk(renderedText.toCharArray(),0,renderedText.length());
-                //                Set<Chunk> sentences = chunking.chunkSet();
-                //                int minSentenceLength = 80 ; // a line of google snippet is around 90 chars
-                //                if (sentences.size() >= 1) 
-                //                {
-                //                    StringBuilder sbSentenceText = new StringBuilder( (int)(renderedText.length()*1.20) ) ;
-                //                    String slice = chunking.charSequence().toString();
-                //                    int lengthAdded = 0 ;
-                //                    for (Iterator<Chunk> it = sentences.iterator(); it.hasNext(); ) 
-                //                    {
-                //                        Chunk sentence = it.next();
-                //                        int start = sentence.start();
-                //                        int end = sentence.end();
-                //                        String sentToAppend = slice.substring(start,end);
-                //                        if ( lengthAdded == 0 )
-                //                        {
-                //                            sbSentenceText.append( "<sentence>") ;                            
-                //                        }
-                //                        else
-                //                        {
-                //                            // make sure there is a space between appended
-                //                            // sentences.
-                //                            sbSentenceText.append( " ") ; 
-                //                        }
-                //                        sbSentenceText.append( sentToAppend ) ;
-                //                        lengthAdded += sentToAppend.length() ;
-                //                        if ( lengthAdded >= minSentenceLength )
-                //                        {
-                //                            sbSentenceText.append( "</sentence>" ) ;
-                //                            lengthAdded = 0 ;
-                //                        }
-                //                    }
-                //                    if ( lengthAdded > 0)
-                //                    {
-                //                            sbSentenceText.append( "</sentence>" ) ;
-                //                            lengthAdded = 0 ;                        
-                //                    }                
-                //                    sentenceText = sbSentenceText.toString() ;
-                //                }    
-
-                //String tokenizedurl = TokenizeUrl( url ) ;
+                String sentenceText = sbSentenceText.toString();
+                String tokenizedurl = TokenizeUrl( url ) ;
                 String anchorText = anchorMap.get(docno) ; 
                 if ( anchorText == null ) 
                 {
                     anchorText = "" ;
                 }
                 doc.append("<title>");
-                doc.append(title);
+                doc.append( stripNonValidXMLCharacters(title) );
                 doc.append("</title>\n") ;
                 doc.append( "<tokenizedurl>");
-                doc.append(TokenizeUrl(url));
+                doc.append( stripNonValidXMLCharacters(tokenizedurl) );
                 doc.append( "</tokenizedurl>\n");
                 doc.append("<body>\n");
-                doc.append(sentenceText);
+                doc.append(sentenceText); // already clean xml 
                 doc.append("\n</body>\n");
-                doc.append("<anchortext>" + anchorText + "</anchortext>\n");
+                doc.append("<anchortext>" + stripNonValidXMLCharacters( anchorText ) + "</anchortext>\n");
                 doc.append("</text>\n</DOC>\n");
-                //System.out.println(docno);
                 trecFile.print(doc.toString());
             }
         }
+        inStream.close();
         trecFile.flush();
         trecFile.close();
     }
@@ -357,6 +324,45 @@ public class Clueweb2trectext
                 docnoTextMap.put(docno, text);
             }
         }
+        inReader.close();
         return docnoTextMap;
     }
+    
+ /** From: http://blog.mark-mclaren.info/2007/02/invalid-xml-characters-when-valid-utf8_5873.html
+     *  and modified by Mark Smucker to use codepoint and insert blanks rather than delete
+     * 
+     * This method ensures that the output String has only
+     * valid XML unicode characters as specified by the
+     * XML 1.0 standard. For reference, please see
+     * <a href="http://www.w3.org/TR/2000/REC-xml-20001006#NT-Char">the
+     * standard</a>. This method will return an empty
+     * String if the input is null or empty.
+     *
+     * @param in The String whose non-valid characters we want to remove.
+     * @return The in String, stripped of non-valid characters.
+     */
+    public static String stripNonValidXMLCharacters(String in) 
+    {
+        StringBuilder out = new StringBuilder(); // Used to hold the output.
+        int current; // Used to reference the current character.
+
+        if (in == null || ("".equals(in))) return ""; // vacancy test.
+        for (int i = 0; i < in.length(); i++) 
+        {
+            // actually check the unicode value
+            current = in.codePointAt(i); // NOTE: No IndexOutOfBoundsException caught here; it should not happen.
+            if ((current == 0x9) ||
+                (current == 0xA) ||
+                (current == 0xD) ||
+                ((current >= 0x20) && (current <= 0xD7FF)) ||
+                ((current >= 0xE000) && (current <= 0xFFFD)) ||
+                ((current >= 0x10000) && (current <= 0x10FFFF)))
+                out.append(in.charAt(i)); // append the surragote or actual char
+            else
+                out.append(' ');
+        }
+        return out.toString();
+    }        
+    
+    
 }

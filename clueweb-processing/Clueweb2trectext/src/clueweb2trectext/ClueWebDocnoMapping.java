@@ -33,6 +33,7 @@ public class ClueWebDocnoMapping
 
             dirFile2offset.put( dir, offset ) ;
         }
+        input.close();
     }
  
     public int ConvertToInt( String docno ) throws Exception

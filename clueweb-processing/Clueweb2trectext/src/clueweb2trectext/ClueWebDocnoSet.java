@@ -72,7 +72,8 @@ public class ClueWebDocnoSet
 //            {
 //                System.err.println( hamIds.size() );
 //            }
-        }            
+        }
+        inReader.close();
     }
     
     
