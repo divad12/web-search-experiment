@@ -3,7 +3,7 @@
   font-style: normal;
 }
 
-.doc-body {
+.doc_body {
   width: 600;
   margin-left: 25;
 }
@@ -26,7 +26,7 @@
   text-align: right;
 }
 
-#results-info p {
+#results_info p {
   font-size: 11px;
 }
 
@@ -43,17 +43,17 @@
   font-size: small;
 }
 
-#prev-next {
+#prev_next {
   width: 100%;
   text-align: center;
 }
 
-#prev-next-gap {
+#prev_next_gap {
   margin-left: 10px; 
   margin-right: 10px; 
 }
 
-#prev-next a {
+#prev_next a {
   color: #2200C1;
   cursor: pointer;
   font-size: small;

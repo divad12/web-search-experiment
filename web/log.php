@@ -1,27 +1,29 @@
 <?php
 
-function sync_write($path, $message) {
-  $file = fopen($path, 'a');
-  flock($file, LOCK_EX);
-  fwrite($file, $message);
-  flock($file, LOCK_UN);
-  fclose($file);
+if (empty($_COOKIE['user_id'])) {
+  error_log("'user_id' could not be found in cookie");
+} else {
+  $user_id = $_COOKIE['user_id'];
 }
 
-if (empty($_COOKIE['sid'])) {
-  $sid = mt_rand();
-  setcookie('sid', $sid);
+if (empty($_COOKIE['topic_id'])) {
+  error_log("'topic_id' could not be found in cookie");
 } else {
-  $sid = $_COOKIE['sid'];
+  $topic_id = $_COOKIE['topic_id'];
 }
 
 $actions = $_POST['actions'];
 $message = '';
-$path = "data/$sid.txt";
+$path = "data/$user_id-$topic_id.txt";
 foreach ($actions as $action) {
   $message .= json_encode($action)."\n";
 }
+
+require_once('lib/sync_write.php');
 sync_write($path, $message);
+
+// TODO: remove in production
+print $message;
 
 // TODO: get php doctrine orm working
 //require_once('orm/bootstrap.php');

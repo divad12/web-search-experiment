@@ -1,0 +1,73 @@
+1. Overview 
+
+Logging data will be stored in <web_directory>/data/. File names for storing logging information will be of format <user_id>_<topic_id>.txt. Files will be stored in JSON format, however it can be switched to XML if need be. 
+
+2. File format
+
+The logging files will start with a single header entry presenting information about the session the file represents (user_id/topic_id combo). Following this will be entries for each event that occurs.
+
+A description of the logging file format is provided below:
+
+# Header entry
+{
+  # user_id and topic_id are sort of redundant with file name format; however file name should not be assumed to be accurate
+  user_id: id of user
+  topic_id: id of topic
+  source: 'indri' or 'yahoo'
+  start_time: time when topic started; using server clock
+  # topic_num: how many topics have already been searched
+}
+
+# Event entry
+{
+  event_name: name of event
+  elapsed_time: time since topic started; relative to client clock
+  event_num: how many events have already occurred
+  current_url: current url when event occurred; encodes query and page number information if required
+  
+  # below are the events that will be logged
+  # any event specific parameters are listed
+  # the event names provided in the comments will be for the event_name parameter
+  
+  # 1) 'search' - enter new search query into search box and click submit
+  query: new query
+  
+  # 2) 'load' - any result page load
+  results: list of results on current page
+    rank: rank of result for this query
+    title: title of result
+    snippet: snippet of result
+    url: url of result
+  
+  # 3) 'unload' - any page unload
+  
+  # 4) 'click_result' - click a search result 
+  # note: this information could be retrieved from prior 'load' event using just unique rank parameter; however just to be on the safe side, this information will be logged again when user clicks on a result
+  rank: rank of result for this query
+  title: title of result
+  snippet: snippet of result
+  url: url of result
+  
+  # 5) 'click_prev' - click previous link
+  page: new page index
+  
+  # 6) 'click_next' - click next link
+  page: new page index
+  
+  # 7) 'click_completed' - click completed link to finish current topic
+  
+  # 8) 'mouse_region' - change in region; regions are: completed_region, search_region, result_<rank> region, page_change_region; to prevent logging excessive data, maybe only log as event if mouse remains in region for some set amount of time
+  region_name: for search results, name format will be 'result_<rank>'; information about result can be found in previous 'load' event which stores all results for current page
+}
+
+3. What will not be logged
+
+The following items considered good to log or nice to log will not be logged:
+
+a) Keystrokes
+  -> Maybe can be used to how users formulate their queries but probably too hard to analyze anyways
+  ->Would be nice to see if users are using CTRL-f to search for text, however it is not possible to intercept text typed into search box.
+  -> Can be used to see if users use arrow key to move and down in page. However, this is mostly dependent on client's screen size.
+  
+b) Scrolling
+  -> Dependent on client's screen size. Doesn't seem much use for this information.
