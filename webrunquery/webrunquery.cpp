@@ -448,7 +448,7 @@ private:
 
         xmlChar * xmlbuff; 
         int buffersize;
-        xmlDocDumpFormatMemory(pDoc, & xmlbuff, & buffersize, 1 );
+        xmlDocDumpFormatMemoryEnc(pDoc, & xmlbuff, & buffersize, "UTF-8", 1 );
 
         output << xmlbuff ; 
         xmlFree( xmlbuff );
