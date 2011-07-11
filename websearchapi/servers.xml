@@ -1,0 +1,8 @@
+<parameters>
+<server>mansci-mark-1.uwaterloo.ca:6001</server>
+<server>mansci-mark-1.uwaterloo.ca:6002</server>
+<server>mansci-mark-1.uwaterloo.ca:6003</server>
+<server>mansci-mark-2.uwaterloo.ca:6001</server>
+<server>mansci-mark-2.uwaterloo.ca:6002</server>
+<server>mansci-mark-2.uwaterloo.ca:6003</server>
+</parameters>

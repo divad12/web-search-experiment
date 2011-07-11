@@ -72,7 +72,7 @@ function main()
   $count = $start + $numdisplay ;
   //  $path = "/usr/fit/tmp5/nanoadm/installs/apache/htdocs.8024/v1.5" ;
   $numSentences = 2 ;
-  $shellCmd = "./webrunquery -numSentences=$numSentences -index=$index -count=$count -start=$start -query='$query' -sentenceQuery='$sentenceQuery'" ;
+  $shellCmd = "./webrunquery -numSentences=$numSentences servers.xml -count=$count -start=$start -query='$query' -sentenceQuery='$sentenceQuery'" ;
   $modrunqueryXML = shell_exec( $shellCmd ) ;
   $end_time = indri_timer() ;
   $total_time = $end_time - $start_time ;
