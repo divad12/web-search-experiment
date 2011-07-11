@@ -221,7 +221,7 @@ public class Clueweb2trectext
                 String renderedText = stripNonValidXMLCharacters(renderer.toString()) ;
                 doc.append("<cached>\n") ; // include a copy of the rendered text as a "cached" version
                 doc.append(renderedText) ; // but do not index this text.  we can later
-                doc.append("</cached>\n") ; // extract it easily though from the doc
+                doc.append("\n</cached>\n") ; // extract it easily though from the doc
                 doc.append("<TEXT>\n"); // we'll index everything in text
                 
                 // identify and mark up sentences                
