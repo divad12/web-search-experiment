@@ -111,7 +111,7 @@ class php4DOMDocument extends php4DOMNode
 {
 	function php4DOMDocument($mode=DOMXML_LOAD_PARSING)
 	{
-		$this->myDOMNode=new DOMDocument();
+		$this->myDOMNode=new DOMDocument('1.0','UTF-8'); // smucker, changed to add version and UTF-8 as encoding
 		$this->myOwnerDocument=$this;
 		if ($mode & DOMXML_LOAD_VALIDATING) $this->myDOMNode->validateOnParse=true;
 		if ($mode & DOMXML_LOAD_RECOVERING) $this->myDOMNode->recover=true;
