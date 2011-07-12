@@ -2,9 +2,9 @@
 
 print "<html>";
 print "<head>";
-print "<script type='text/javascript' src='include/js/jquery-1.6.js'></script>";
+//print "<script type='text/javascript' src='include/js/jquery-1.6.js'></script>";
 //print "<script type='text/javascript' src='include/js/jquery.cookies.2.2.0.js'></script>";
-print "<script type='text/javascript'>$('#start_start_time').value = (new Date()).getTime();</script>";
+print "<script type='text/javascript'>document.getElementById('client_start_time').value = (new Date()).getTime();</script>";
 print "<title>Web Search</title>";
 print "</head>";
 print "<body>";
@@ -45,7 +45,8 @@ foreach ($keys as $key) {
   $params[$key] = $_POST[$key];
   setcookie($key, $_POST[$key]);
 }
-$params['start_time'] = time();
+$params['client_start_time'] = $_POST['client_start_time'];
+$params['server_start_time'] = time();
 
 $path = 'data/'.$params['user_id'].'-'.$params['topic_id'].'.txt';
 // indicative of new session
@@ -58,7 +59,7 @@ if (!file_exists($path)) {
   foreach ( $_COOKIE as $key => $value ) {
     setcookie($key, $value, $past, '/');
   }
-  setcookie('start_time', $_POST['client_start_time']);
+  setcookie('client_start_time', $_POST['client_start_time']);
   setcookie('event_num', 0);
 }
 

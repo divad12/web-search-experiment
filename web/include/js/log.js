@@ -12,31 +12,16 @@ $(function() {
 
 	// add page loaded action
 	$(window).bind('load', function(e) {
-    // to handle user clicking on link and then clicking back button;
-    // prevent triggering load event in this case
-		if ($.cookies.get('last_url') === window.location.href) {
-			return;
-		}
-
-    result_prefix = 'result_';
-		addAction({
-			event_name: 'load',
-			results: $.makeArray($('div[id^="result_prefix"]').map(function(value) {
-        result = $(this).attr('id');
-        rank = parseInt(result.substring(result_prefix.length, result.length));
-				return {
-          rank: rank,
-					title: $(this).find('.title a').text(),
-					snippet: $(this).find('.snippet').text(),
-					link: $(this).find('.link').text()
-				};
-			}))
-		});
+    addAction({
+      event_name: 'load',
+      results: $.makeArray($('[id^="result"]').map(function(value) {
+        return getResult(this);
+      }))
+    });
 	});
 
 	// when leaving the current page, send actions in buffer
 	$(window).bind('unload', function(e) {
-		$.cookies.set('last_url', window.location.href);
 		addAction({
 			event_name: 'unload',
 		},
@@ -47,17 +32,10 @@ $(function() {
 	});
 
 	// track clicking result links
-  $('[id^="link_result_"]').bind('click', function(e) {
-    result_prefix = 'link_result_';
-    result = $(e.target).attr('id');
-    rank = parseInt(result.substring(result_prefix.length, result.length - 1));
-		addAction({
-			event_name: 'click_result',
-      rank: rank,
-      title: $(this).find('.title a').text(),
-      snippet: $(this).find('.snippet').text(),
-      link: $(this).find('.link').text()
-		});
+  $('[id^="result_"]').bind('click', function(e) {
+    var result = getResult(this);
+    result['event_name'] = 'click_result';
+		addAction(result);
 	});
 
   // track clicking previous page links
@@ -83,13 +61,31 @@ $(function() {
     });
   });
 
-  // track region change
-  //$('.region').bind('mouseenter', function(e) {
-  //  addAction({
-  //    event_name: 'mouse_region',
-  //    region_name: $(this).attr('id')
-  //  });
-  //});
+  (function() {
+    var timer;
+    // track region change
+    $('.region').bind('mouseenter', function(e) {
+      if (timer) {
+        clearTimeout(timer);
+      }
+
+      var that = this;
+      timer = setTimeout(function() {
+        var event;
+        region_name = $(that).attr('id')
+        if (region_name.indexOf('result_') === 0) {
+          event = getResult(that);
+          event['event_name'] = 'region_result';
+        } else {
+          event = {
+            event_name: 'region_non_result'
+          };
+        }
+        event['region_name'] = region_name;
+        addAction(event);
+      }, 1000);
+    });
+  })();
 
   //// track key press
   //$(document.documentElement).bind('keydown', function(e) {
@@ -111,8 +107,12 @@ $(function() {
 		return function(action, options) {
 			action.event_num = $.cookies.get('event_num');
 			$.cookies.set('event_num', action.event_num + 1);
-      action.elapsed_time = (new Date()).getTime() - $.cookies.get('start_time');
-      action.current_url = window.location.href;
+      var current_time = (new Date()).getTime();
+      action.elapsed_time = current_time - $.cookies.get('client_start_time');
+      action.current_time = current_time;
+      var current_url = window.location.href;
+      action.current_query = getParameterByKey('query');
+      action.current_page = parseInt(getParameterByKey('page'));
 			actions.push(action);
 
 			var force = options && options.force;
@@ -150,6 +150,18 @@ $(function() {
     } else {
       return decodeURIComponent(results[1].replace(/\+/g, " "));
     }
+  };
+
+  var getResult = function(that) {
+    result_prefix = 'result_';
+    result = $(that).attr('id');
+    rank = parseInt(result.substring(result_prefix.length, result.length));
+    return {
+      rank: rank,
+      title: $(that).find('.title a').text(),
+      snippet: $(that).find('.snippet').text(),
+      link: $(that).find('.link').text()
+    };
   };
 
 	// logging via firebug/chrome dev; handle case not found
