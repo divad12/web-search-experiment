@@ -177,7 +177,7 @@ public class Clueweb2trectext
 
                 String url = htmlRecord.getTargetURI();
                 doc.append("<url>");
-                doc.append(stripNonValidXMLCharacters(url));
+                doc.append(stripNonValidXMLCharactersAndReplaceEntities(url));
                 doc.append("</url>\n");
 
                 // forward to the first /n/n , i.e. a blank line separates the
@@ -218,7 +218,7 @@ public class Clueweb2trectext
                 String title = getTitle(source) ;
                 Renderer renderer = source.getRenderer();
                 renderer.setIncludeHyperlinkURLs(false);
-                String renderedText = stripNonValidXMLCharacters(renderer.toString()) ;
+                String renderedText = stripNonValidXMLCharactersAndReplaceEntities(renderer.toString()) ;
                 doc.append("<cached>\n") ; // include a copy of the rendered text as a "cached" version
                 doc.append(renderedText) ; // but do not index this text.  we can later
                 doc.append("\n</cached>\n") ; // extract it easily though from the doc
@@ -251,15 +251,17 @@ public class Clueweb2trectext
                     anchorText = "" ;
                 }
                 doc.append("<title>");
-                doc.append( stripNonValidXMLCharacters(title) );
+                doc.append( stripNonValidXMLCharactersAndReplaceEntities(title) );
                 doc.append("</title>\n") ;
                 doc.append( "<tokenizedurl>");
-                doc.append( stripNonValidXMLCharacters(tokenizedurl) );
+                doc.append( stripNonValidXMLCharactersAndReplaceEntities(tokenizedurl) );
                 doc.append( "</tokenizedurl>\n");
                 doc.append("<body>\n");
                 doc.append(sentenceText); // already clean xml 
                 doc.append("\n</body>\n");
-                doc.append("<anchortext>" + stripNonValidXMLCharacters( anchorText ) + "</anchortext>\n");
+                doc.append("<anchortext>" + 
+                        stripNonValidXMLCharactersAndReplaceEntities( anchorText ) + 
+                        "</anchortext>\n");
                 doc.append("</text>\n</DOC>\n");
                 trecFile.print(doc.toString());
             }
@@ -341,7 +343,7 @@ public class Clueweb2trectext
      * @param in The String whose non-valid characters we want to remove.
      * @return The in String, stripped of non-valid characters.
      */
-    public static String stripNonValidXMLCharacters(String in) 
+    public static String stripNonValidXMLCharactersAndReplaceEntities(String in) 
     {
         StringBuilder out = new StringBuilder(); // Used to hold the output.
         int current; // Used to reference the current character.
@@ -357,7 +359,21 @@ public class Clueweb2trectext
                 ((current >= 0x20) && (current <= 0xD7FF)) ||
                 ((current >= 0xE000) && (current <= 0xFFFD)) ||
                 ((current >= 0x10000) && (current <= 0x10FFFF)))
-                out.append(in.charAt(i)); // append the surragote or actual char
+            {
+                //'<' (less than) becomes '&lt;'
+                if ( current == '<' )
+                {
+                    out.append("&lt;") ;
+                }
+                else if ( current == '>' ) // '>' (greater than) becomes '&gt;'
+                {
+                    out.append("&gt;") ;
+                }
+                else
+                {
+                   out.append(in.charAt(i)); // append the surragote or actual char
+                }
+            }
             else
                 out.append(' ');
         }
