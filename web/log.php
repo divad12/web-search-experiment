@@ -29,8 +29,9 @@ $message = '';
 $path = "data/$user_id-$topic_id.txt";
 foreach ($actions as $action) {
   $action['server_time'] = time();
-  $action['elapsed_client_time'] = $_SESSION['client_start_time'] - $action['client_time'];
-  $action['elapsed_server_time'] = $_SESSION['server_start_time'] - time();
+  $action['elapsed_client_time'] = $action['client_time'] - $_SESSION['client_start_time'];
+  $milliseconds = (int) (microtime(true) * 1000);
+  $action['elapsed_server_time'] = $milliseconds - $_SESSION['server_start_time'];
   $line = json_encode($action);
   $message .= $line."\n";
 }

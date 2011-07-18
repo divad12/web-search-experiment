@@ -56,10 +56,11 @@ if ($is_setup) {
     $params[$key] = $_POST[$key];
     $_SESSION[$key] = $_POST[$key];
   }
+  $milliseconds = (int) (microtime(true) * 1000);
   $_SESSION['client_start_time'] = $_POST['client_start_time'];
-  $_SESSION['server_start_time'] = time();
+  $_SESSION['server_start_time'] = $milliseconds;
   $params['client_start_time'] = $_POST['client_start_time'];
-  $params['server_start_time'] = time();
+  $params['server_start_time'] = $milliseconds;
 
   $path = 'data/'.$params['user_id'].'-'.$params['topic_id'].'.txt';
   // indicative of new session

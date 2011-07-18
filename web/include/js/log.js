@@ -14,7 +14,7 @@ $(function() {
 	$(window).bind('load', function(e) {
     addAction({
       event_name: 'load',
-      results: $.makeArray($('[id^="result"]').map(function(value) {
+      results: $.makeArray($('[id^="result_"]').map(function(value) {
         return getResult(this);
       }))
     });
@@ -110,10 +110,10 @@ $(function() {
       var client_time = (new Date()).getTime();
       //action.elapsed_client_time = client_time - $.cookies.get('client_start_time');
       action.client_time = client_time;
-      var current_url = window.location.href;
-      actions.current_url = current_url;
+      action.current_url = window.location.href;
       action.current_query = getParameterByKey('query');
-      action.current_page = parseInt(getParameterByKey('page'));
+      current_page = parseInt(getParameterByKey('page'));
+      action.current_page = isNaN(current_page) ? -1 : current_page;
 			actions.push(action);
 
 			var force = options && options.force;

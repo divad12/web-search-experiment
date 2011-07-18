@@ -24,6 +24,7 @@ A description of the logging file format is provided below:
   client_time: client time
   server_time: server time
   elapsed_client_time: time since topic started; relative to client clock
+  elapsed_server_time: time since topic started; relative to server clock
   current_url: current url when event occurred;
   current_query: current query being search for
   current_page: current page of query results
@@ -40,16 +41,15 @@ A description of the logging file format is provided below:
     rank: rank of result for this query
     title: title of result
     snippet: snippet of result
-    url: url of result
+    link: url of result
   
   # 3) 'unload' - any page unload
   
   # 4) 'click_result' - click a search result 
-  # note: this information could be retrieved from prior 'load' event using just unique rank parameter; however just to be on the safe side, this information will be logged again when user clicks on a result
   rank: rank of result for this query
   title: title of result
   snippet: snippet of result
-  url: url of result
+  link: url of result
   
   # 5) 'click_prev' - click previous link
   page: new page index
@@ -59,13 +59,15 @@ A description of the logging file format is provided below:
   
   # 7) 'click_completed' - click completed link to finish current topic
 
-  # 8) 'region_non_result' - change to non-result region; regions are: completed_region, search_region, page_change_region; must be in region > 1 second to be logged
+  # 8) 'region_non_result' - change to non-result region
+  region_name: one of {completed_region, search_region, page_change_region}; must be in region > 1 second to be logged
   
   # 9) 'region_result' - change to result region; must be in region for > 1 second to be logged
+  region_name: result; must be in region > 1 second to be logged
   rank: rank of result for this query
   title: title of result
   snippet: snippet of result
-  url: url of result
+  link: url of result
 }
 
 3. What will not be logged
