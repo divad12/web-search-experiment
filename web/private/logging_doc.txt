@@ -14,16 +14,19 @@ A description of the logging file format is provided below:
   user_id: id of user
   topic_id: id of topic
   source: 'indri' or 'yahoo'
-  start_time: time when topic started; using server clock
-  # topic_num: how many topics have already been searched
+  client_start_time: time when topic started on client
+  server_start_time: time when topic started on server
 }
 
 # Event entry
 {
   event_name: name of event
-  elapsed_time: time since topic started; relative to client clock
-  event_num: how many events have already occurred
-  current_url: current url when event occurred; encodes query and page number information if required
+  client_time: client time
+  server_time: server time
+  elapsed_client_time: time since topic started; relative to client clock
+  current_url: current url when event occurred;
+  current_query: current query being search for
+  current_page: current page of query results
   
   # below are the events that will be logged
   # any event specific parameters are listed
@@ -55,9 +58,14 @@ A description of the logging file format is provided below:
   page: new page index
   
   # 7) 'click_completed' - click completed link to finish current topic
+
+  # 8) 'region_non_result' - change to non-result region; regions are: completed_region, search_region, page_change_region; must be in region > 1 second to be logged
   
-  # 8) 'mouse_region' - change in region; regions are: completed_region, search_region, result_<rank> region, page_change_region; to prevent logging excessive data, maybe only log as event if mouse remains in region for some set amount of time
-  region_name: for search results, name format will be 'result_<rank>'; information about result can be found in previous 'load' event which stores all results for current page
+  # 9) 'region_result' - change to result region; must be in region for > 1 second to be logged
+  rank: rank of result for this query
+  title: title of result
+  snippet: snippet of result
+  url: url of result
 }
 
 3. What will not be logged

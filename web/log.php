@@ -1,5 +1,13 @@
 <?php
 
+function stringToAscii($str) {
+  $ascii = ''; 
+  for ($i = 0; $i < strlen($str); $i++) {
+    $ascii .= ord($str[$i]).', ';
+  }
+  return $ascii;
+}
+
 if (empty($_COOKIE['user_id'])) {
   error_log("'user_id' could not be found in cookie");
 } else {
@@ -16,14 +24,16 @@ $actions = $_POST['actions'];
 $message = '';
 $path = "data/$user_id-$topic_id.txt";
 foreach ($actions as $action) {
-  $message .= json_encode($action)."\n";
+  $actions['server_time'] = time();
+  $line = json_encode($action);
+  $message .= $line."\n";
 }
 
 require_once('lib/sync_write.php');
 sync_write($path, $message);
 
-// TODO: remove in production
-print $message;
+// XXX remove in production
+print $line;
 
 // TODO: get php doctrine orm working
 //require_once('orm/bootstrap.php');

@@ -52,7 +52,7 @@ $path = 'data/'.$params['user_id'].'-'.$params['topic_id'].'.txt';
 // indicative of new session
 if (!file_exists($path)) {
   require_once('lib/sync_write.php');
-  $message = json_encode($params);
+  $message = json_encode($params)."\n";
   sync_write($path, $message);
   // remove cookies to start new search session
   $past = time() - 3600;

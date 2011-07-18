@@ -164,7 +164,7 @@ if ($query) {
 
   foreach ($results as $result) {
     print "<div class='region' id='result_$result->rank'>";
-    print "<span class='title'><a id='link_result_$result->rank' href='$result->link'>$result->title</a></span>";
+    print "<span class='title'><a href='$result->link'>$result->title</a></span>";
     print "<br/ >";
     if (trim($result->snippet)) {
       print "<span class='snippet'>$result->snippet</span>";
