@@ -108,7 +108,7 @@ $(function() {
 			//action.event_num = $.cookies.get('event_num');
 			//$.cookies.set('event_num', action.event_num + 1);
       var client_time = (new Date()).getTime();
-      action.elapsed_client_time = client_time - $.cookies.get('client_start_time');
+      //action.elapsed_client_time = client_time - $.cookies.get('client_start_time');
       action.client_time = client_time;
       var current_url = window.location.href;
       actions.current_url = current_url;

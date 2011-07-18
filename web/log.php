@@ -8,23 +8,29 @@ function stringToAscii($str) {
   return $ascii;
 }
 
-if (empty($_COOKIE['user_id'])) {
-  error_log("'user_id' could not be found in cookie");
+session_start();
+
+if (empty($_SESSION['user_id'])) {
+  error_log("'user_id' could not be found in session");
+  return;
 } else {
-  $user_id = $_COOKIE['user_id'];
+  $user_id = $_SESSION['user_id'];
 }
 
-if (empty($_COOKIE['topic_id'])) {
-  error_log("'topic_id' could not be found in cookie");
+if (empty($_SESSION['topic_id'])) {
+  error_log("'topic_id' could not be found in session");
+  return;
 } else {
-  $topic_id = $_COOKIE['topic_id'];
+  $topic_id = $_SESSION['topic_id'];
 }
 
 $actions = $_POST['actions'];
 $message = '';
 $path = "data/$user_id-$topic_id.txt";
 foreach ($actions as $action) {
-  $actions['server_time'] = time();
+  $action['server_time'] = time();
+  $action['elapsed_client_time'] = $_SESSION['client_start_time'] - $action['client_time'];
+  $action['elapsed_server_time'] = $_SESSION['server_start_time'] - time();
   $line = json_encode($action);
   $message .= $line."\n";
 }
@@ -35,7 +41,7 @@ sync_write($path, $message);
 // XXX remove in production
 print $line;
 
-// TODO: get php doctrine orm working
+// TODO get php doctrine orm working
 //require_once('orm/bootstrap.php');
 //
 //$conn = Doctrine_Manager::connection(DSN);
