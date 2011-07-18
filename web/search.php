@@ -64,7 +64,9 @@ if ($is_setup) {
   print "</head>";
   print "<body>";
 
-  $query = validParam('query', '');
+  $query = trim(validParam('query', ''));
+  $query_encoded = urlencode($query);
+  $query_html = htmlentities($query, ENT_QUOTES);
 
   print "<div class='doc-body'>";
 
@@ -77,7 +79,7 @@ if ($is_setup) {
   print "<div class='region' id='search'>";
   print "<form action='' method='get'>";
   print "<input type='hidden' name='page' value='0' />";
-  print "<input id='search_box' type='text' name='query' value='$query' />";
+  print "<input id='search_box' type='text' name='query' value='$query_html' />";
   print "<input id='search_button' type='submit' value='Search' />";
   print "</form>";
   print "</div>";
@@ -103,7 +105,7 @@ if ($is_setup) {
           'format' => 'xml',
           'count' => $count,
           'start' => $offset,
-          'q' => $query
+          'q' => $query_encoded
       );
 
       $consumer = new OAuthConsumer($yahoo_key, $yahoo_secret);
@@ -138,7 +140,7 @@ if ($is_setup) {
     } else if ($source === 'indri') {
       $url = 'http://mansci-mark-2.uwaterloo.ca/smucker/websearchapi/search.php';
       // TODO: use query parameter function
-      $url = sprintf('%s?query=%s&startdoc=%d&numdisplay=%d', $url, urlencode($query), $offset, $count);
+      $url = sprintf('%s?query=%s&startdoc=%d&numdisplay=%d', $url, $query_encoded, $offset, $count);
 
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_URL, $url);
@@ -187,10 +189,10 @@ if ($is_setup) {
 
     print "<div class='region' id='prev_next'>";
     if ($page > 0) {
-      print "<a id='previous' href='?page=".($page - 1)."&query=$query'>Previous</a>";
+      print "<a id='previous' href='?page=".($page - 1)."&query=$query_html'>Previous</a>";
       print "<span id='prev_next_gap'></span>";
     }
-    print "<a id='next' href='?page=".($page + 1)."&query=$query'>Next</a>";
+    print "<a id='next' href='?page=".($page + 1)."&query=$query_html'>Next</a>";
     print "</div>";
   }
 
