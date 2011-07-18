@@ -1,119 +1,119 @@
 <DOC>
 <DOCNO>1</DOCNO>
-<TEXT>
+<body>
 Experience has shown that as software is fixed, emergence of new and/or reemergence of old faults is quite common.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>2</DOCNO>
-<TEXT>
+<body>
  Sometimes reemergence occurs because a fix gets lost through poor revision control practices (or simple human error in revision control).
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>3</DOCNO>
-<TEXT>
+<body>
  Often, a fix for a problem will be "fragile" in that it fixes the problem in the narrow case where it was first observed but not in more general cases which may arise over the lifetime of the software.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>4</DOCNO>
-<TEXT>
+<body>
  Frequently, a fix for a problem in one area inadvertently causes a software bug in another area.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>5</DOCNO>
-<TEXT>
+<body>
  Finally, it is often the case that when some feature is redesigned, some of the same mistakes that were made in the original implementation of the feature were made in the redesign.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>6</DOCNO>
-<TEXT>
+<body>
 Therefore, in most software development situations it is considered good coding practice that when a bug is located and fixed, a test that exposes the bug is recorded and regularly retested after subsequent changes to the program.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>7</DOCNO>
-<TEXT>
+<body>
 [3] Although this may be done through manual testing procedures using programming techniques, it is often done using automated testing tools.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>8</DOCNO>
-<TEXT>
+<body>
 [4] Such a test suite contains software tools that allow the testing environment to execute all the regression test cases automatically; some projects even set up automated systems to automatically re-run all regression tests at specified intervals and report any failures (which could imply a regression or an out-of-date test).
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>9</DOCNO>
-<TEXT>
+<body>
 [5] Common strategies are to run such a system after every successful compile (for small projects), every night, or once a week.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>10</DOCNO>
-<TEXT>
+<body>
  Those strategies can be automated by an external tool, such as BuildBot, Tinderbox, Hudson or Jenkins.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>11</DOCNO>
-<TEXT>
+<body>
 Regression testing is an integral part of the extreme programming software development method.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>12</DOCNO>
-<TEXT>
+<body>
  In this method, design documents are replaced by extensive, repeatable, and automated testing of the entire software package throughout each stage of the software development cycle.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>13</DOCNO>
-<TEXT>
+<body>
 In the corporate world, regression testing has traditionally been performed by a software quality assurance team after the development team has completed work.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>14</DOCNO>
-<TEXT>
+<body>
  However, defects found at this stage are the most costly to fix.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>15</DOCNO>
-<TEXT>
+<body>
  This problem is being addressed by the rise of unit testing.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>16</DOCNO>
-<TEXT>
+<body>
  Although developers have always written test cases as part of the development cycle, these test cases have generally been either functional tests or unit tests that verify only intended outcomes.
-</TEXT>
+</body>
 </DOC>
 
 <DOC>
 <DOCNO>17</DOCNO>
-<TEXT>
+<body>
  Developer testing compels a developer to focus on unit testing and to include both positive and negative test cases.
-</TEXT>
+</body>
 </DOC>
 

@@ -6,7 +6,7 @@
 A5633 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-NY-WOODSTOCK-HOTEL-NY     10-02 0898
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-WOODSTOCK-HOTEL-NYT </SLUG>
 <HEADLINE>
 TIMES SQ. HOTEL WELCOMES ACK RESIDENTS 
@@ -149,7 +149,7 @@ scaffolding, Johnson said he could not care less. ``It's another
 New York experience. You roll with it and keep surviving.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0001EDT &QL; 
 </TRAILER>
@@ -162,7 +162,7 @@ NYT-10-02-98 0001EDT &QL;
 A5636 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-WHITMAN-NYT &LR;      10-02 0815
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WHITMAN-NYT </SLUG>
 <HEADLINE>
 WHITMAN SAYS THAT GOP IS READY FOR WOMAN TO RUN FOR PRESIDENT 
@@ -296,7 +296,7 @@ will yield a candidate who is in a better position to win a
 national election.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0011EDT &QL; 
 </TRAILER>
@@ -309,7 +309,7 @@ NYT-10-02-98 0011EDT &QL;
 A5640 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-CAR-MOTORS-LADN     10-02 0863
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAR-MOTORS-LADN </SLUG>
 <HEADLINE>
 THERE'S A LINE FOR THIS DRIVER'S SEAT
@@ -462,7 +462,7 @@ relation to Tom, got his first win on the ARCA Bondo/Mar-Hyde
 Circuit in his very first start last week. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0013EDT &QL; 
 </TRAILER>
@@ -475,7 +475,7 @@ NYT-10-02-98 0013EDT &QL;
 A5641 &Cx1f; taf-z
 u p &Cx13;  &Cx11;  BC-NY-SENATE-ADS-NYT &LR;      10-02 0885
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-SENATE-ADS-NYT </SLUG>
 <HEADLINE>
 NEW D'AMATO AD ATTACKS SCHUMER'S MISSED VOTES 
@@ -604,7 +604,7 @@ he said. ``The people of New York know that Al D'Amato has always
 been there for them.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0015EDT &QL; 
 </TRAILER>
@@ -617,7 +617,7 @@ NYT-10-02-98 0015EDT &QL;
 A5644 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-NY-GRANDCENTRAL-ASSES     10-02 1211
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-GRANDCENTRAL-ASSESS-NYT </SLUG>
 <HEADLINE>
 APPRAISAL: RESTORATION LIBERATES GRAND VISTAS, AND IDEAS 
@@ -775,7 +775,7 @@ the building's underlying message to be as clear as its beautifully
 restored architecture.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0019EDT &QL; 
 </TRAILER>
@@ -788,7 +788,7 @@ NYT-10-02-98 0019EDT &QL;
 A5646 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-OBIT-BARGER-NYT &LR;      10-02 0714
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-BARGER-NYT </SLUG>
 <HEADLINE>
 TOOTS BARGER, 85, QUEEN OF DUCKPINS' WOBBLY WORLD 
@@ -908,7 +908,7 @@ grandchildren and six great-grandchildren. &QL;
  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0020EDT &QL; 
 </TRAILER>
@@ -921,7 +921,7 @@ NYT-10-02-98 0020EDT &QL;
 A5648 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-USC-NOTES-LADN     10-02 0547
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-USC-NOTES-LADN </SLUG>
 <HEADLINE>
 SOWARD SKIPS CLASSES, PAYS PRICE
@@ -1030,7 +1030,7 @@ scar tissue.''
 returned and will be available to play.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0021EDT &QL; 
 </TRAILER>
@@ -1043,7 +1043,7 @@ NYT-10-02-98 0021EDT &QL;
 A5649 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-BBN-LEYLAND-LADN     10-02 0575
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-LEYLAND-LADN </SLUG>
 <HEADLINE>
 ROCKIES HOT AFTER LEYLAND
@@ -1145,7 +1145,7 @@ indicated he will pursue ``impact'' free agents Kevin Brown of San
 Diego and Mike Piazza of the New York Mets.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0023EDT &QL; 
 </TRAILER>
@@ -1158,7 +1158,7 @@ NYT-10-02-98 0023EDT &QL;
 A5651 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-UCLA-NOTES-LADN     10-02 0673
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-UCLA-NOTES-LADN </SLUG>
 <HEADLINE>
 FOR LEWIS, FAILED RUN THING OF PAST
@@ -1285,7 +1285,7 @@ Service begins four hours before kickoff; return service begins at
 the start of the third quarter.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0026EDT &QL; 
 </TRAILER>
@@ -1298,7 +1298,7 @@ NYT-10-02-98 0026EDT &QL;
 A5652 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-FBN-JETS-NYT &LR;      10-02 0815
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBN-JETS-NYT </SLUG>
 <HEADLINE>
 PARCELLS PICKS TESTAVERDE OVER FOLEY AS STARTER 
@@ -1441,7 +1441,7 @@ total defense. Right now, they are second in the league at 241.3
 yards a game. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0028EDT &QL; 
 </TRAILER>
@@ -1454,7 +1454,7 @@ NYT-10-02-98 0028EDT &QL;
 A5654 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-CROUSE-COLUMN-LAD     10-02 0916
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-CROUSE-COLUMN-LADN </SLUG>
 <HEADLINE>
 TRAGEDY GAVE TOLEDO PERSPECTIVE
@@ -1594,7 +1594,7 @@ said. ``I intended to be the next Bear Bryant and Vince Lombardi.''
 taught him true happiness lies not in power but in perspective. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0029EDT &QL; 
 </TRAILER>
@@ -1607,7 +1607,7 @@ NYT-10-02-98 0029EDT &QL;
 A5656 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-NY-CULINARY-DISPUTE-N     10-02 0704
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-CULINARY-DISPUTE-NYT </SLUG>
 <HEADLINE>
 GUEST OF HONOR FOR SCHOOL DINNER STIRS DISPUTE
@@ -1715,7 +1715,7 @@ pursued through appropriate channels other than the Culinary
 Institute of America.'' &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0031EDT &QL; 
 </TRAILER>
@@ -1728,7 +1728,7 @@ NYT-10-02-98 0031EDT &QL;
 A5662 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BBN-CUBS-BRAVES-BOS &LR;      10-02 0743
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-CUBS-BRAVES-BOS </SLUG>
 <HEADLINE>
 BRAVES' LATE RUSH STUNS CUBS 
@@ -1856,7 +1856,7 @@ and the other guy leaves with one run. You can't pitch any better
 than that.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0035EDT &QL; 
 </TRAILER>
@@ -1869,7 +1869,7 @@ NYT-10-02-98 0035EDT &QL;
 A5668 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-USCQBS-LADN     10-02 0764
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-USCQBS-LADN </SLUG>
 <HEADLINE>
 WHICH USC QB WILL STEP UP?
@@ -2014,7 +2014,7 @@ not prepared to (decide) right now. It's exciting. The competitive
 part brings the best out of both of them.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0043EDT &QL; 
 </TRAILER>
@@ -2027,7 +2027,7 @@ NYT-10-02-98 0043EDT &QL;
 A5671 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-RAC-MODESTI-COLUMN-LA     10-02 0942
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RAC-MODESTI-COLUMN-LADN </SLUG>
 <HEADLINE>
 WORLDLY MANNER'S FATE A MYSTERY
@@ -2207,7 +2207,7 @@ which they can't do if they already know that nobody had a perfect
 ticket. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0046EDT &QL; 
 </TRAILER>
@@ -2220,7 +2220,7 @@ NYT-10-02-98 0046EDT &QL;
 A5673 &Cx1f; tth-z
 u s &Cx13;  &Cx11;  BC-FBC-HUSKIES-SPI &LR;      10-02 0862
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-HUSKIES-SPI </SLUG>
 <HEADLINE>
 FRESHMAN HURST MAKES FIRST START AGAINST ARIZONA 
@@ -2385,7 +2385,7 @@ freshman of the year and someday help the Huskies win a national
 championship.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0052EDT &QL; 
 </TRAILER>
@@ -2398,7 +2398,7 @@ NYT-10-02-98 0052EDT &QL;
 A5675 &Cx1f; tth-z
 u s &Cx13;  &Cx11;  BC-BKN-VECSEY-COLUMN-SPI     10-02 0901
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BKN-VECSEY-COLUMN-SPI </SLUG>
 <HEADLINE>
 BASKETBALL PAYS ULTIMATE TRIBUTE TO A RARE BIRD 
@@ -2555,7 +2555,7 @@ played 75 percent of the 1992-93 schedule. But he walked away.
    Laura Vecsey is a P-I columnist.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0059EDT &QL; 
 </TRAILER>
@@ -2568,7 +2568,7 @@ NYT-10-02-98 0059EDT &QL;
 A5681 &Cx1f; tth-z
 u s &Cx13;  &Cx11;  BC-FBC-COUGERS-SPI &LR;      10-02 1074
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-COUGERS-SPI </SLUG>
 <HEADLINE>
 COUGARS TO FACE HOT BRUINS QB MCNOWN 
@@ -2745,7 +2745,7 @@ footsteps by leaving early for the NFL.
 ``It's not too late, Cade.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0109EDT &QL; 
 </TRAILER>
@@ -2758,7 +2758,7 @@ NYT-10-02-98 0109EDT &QL;
 A5684 &Cx1f; tic-z
 r a &Cx13;  &Cx11;  BC-BOYSRANCH-INDICT-AZR &LR;      10-02 1039
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BOYSRANCH-INDICT-AZR </SLUG>
 <HEADLINE>
 5 INDICTED IN DEATH AT ARIZONA BOYS RANCH 
@@ -2936,7 +2936,7 @@ by the state, Meissner said. &QL;
 via e-mail. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0121EDT &QL; 
 </TRAILER>
@@ -2949,7 +2949,7 @@ NYT-10-02-98 0121EDT &QL;
 A5685 &Cx1f; tic-z
 r a &Cx13;  &Cx11;  BC-BOYSRANCH-NURSE-AZR &LR;      10-02 0432
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BOYSRANCH-NURSE-AZR </SLUG>
 <HEADLINE>
 INDICTED NURSE REMAINS FREE TO WORK IN FIELD, BOARD SAYS 
@@ -3030,7 +3030,7 @@ patient care.
 gets pneumonia,'' she said. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0123EDT &QL; 
 </TRAILER>
@@ -3043,7 +3043,7 @@ NYT-10-02-98 0123EDT &QL;
 A5686 &Cx1f; ttc-z
 r n &Cx13;  &Cx11;  BC-BANK-ROBBER-KILLED-LA     10-02 0986
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BANK-ROBBER-KILLED-LADN </SLUG>
 <HEADLINE>
 BANK GUARD KILLS WOULD-BE ROBBER
@@ -3232,7 +3232,7 @@ progress, and we'll withhold judgment.''
    XXX
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0125EDT &QL; 
 </TRAILER>
@@ -3245,7 +3245,7 @@ NYT-10-02-98 0125EDT &QL;
 A5693 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBN-ASTROS-HNS &LR;      10-02 1041
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-ASTROS-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -3410,7 +3410,7 @@ character we have on this club. We never feel like it's over.''
 say.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0137EDT &QL; 
 </TRAILER>
@@ -3423,7 +3423,7 @@ NYT-10-02-98 0137EDT &QL;
 A5694 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-CAR-HERSKOWITZCOL-HNS     10-02 0824
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAR-HERSKOWITZCOL-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -3546,7 +3546,7 @@ famous.''
    Gentlemen, don't forget to fasten your seat belts.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0137EDT &QL; 
 </TRAILER>
@@ -3559,7 +3559,7 @@ NYT-10-02-98 0137EDT &QL;
 A5695 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-CAR-HOUSTONGRANDPRIX-     10-02 0753
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAR-HOUSTONGRANDPRIX-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -3677,7 +3677,7 @@ surfaces? Those are questions that can't be answered until you see
 it and drive it.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0138EDT &QL; 
 </TRAILER>
@@ -3690,7 +3690,7 @@ NYT-10-02-98 0138EDT &QL;
 A5696 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBN-ROBERTSON-COLUMN-     10-02 0957
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-ROBERTSON-COLUMN-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -3853,7 +3853,7 @@ never be. But today, Billy deserves to be, yes, a William.
 Absolutely.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0139EDT &QL; 
 </TRAILER>
@@ -3866,7 +3866,7 @@ NYT-10-02-98 0139EDT &QL;
 A5697 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBN-BLINEBURYCOLUMN-H     10-02 0850
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-BLINEBURYCOLUMN-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -4029,7 +4029,7 @@ attention to me, I knew that was my chance.''
 (950 AM) from 5-7 p.m. weekdays. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0139EDT &QL; 
 </TRAILER>
@@ -4042,7 +4042,7 @@ NYT-10-02-98 0139EDT &QL;
 A5698 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBN-BRAVES-CUBS-1STLD     10-02 0853
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-BRAVES-CUBS-1STLD-WRITETHRU-NYT </SLUG>
 <HEADLINE>
 BRAVES COME FROM BEHIND TO TAKE 2-GAME LEAD IN DIVISIONAL PLAYOFFS
@@ -4178,7 +4178,7 @@ to get 27 outs to win. We didn't finish the job. Now we have to
 bounce back.''  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0139EDT &QL; 
 </TRAILER>
@@ -4191,7 +4191,7 @@ NYT-10-02-98 0139EDT &QL;
 A5700 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBA-STRAWBERRY-HNS &LR;      10-02 1155
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-STRAWBERRY-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -4380,7 +4380,7 @@ hours.
 on the back of my hat.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0140EDT &QL; 
 </TRAILER>
@@ -4393,7 +4393,7 @@ NYT-10-02-98 0140EDT &QL;
 A5702 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBN-CUBS-BRAVES-HNS &LR;      10-02 1138
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-CUBS-BRAVES-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -4595,7 +4595,7 @@ wasn't a bad pitch. I tip my cap to him rather than kick myself.''
 loss.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0141EDT &QL; 
 </TRAILER>
@@ -4608,7 +4608,7 @@ NYT-10-02-98 0141EDT &QL;
 A5704 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBA-YANKEES-RANGERS-H     10-02 0547
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-YANKEES-RANGERS-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -4703,7 +4703,7 @@ has pitched well here this year, can pitch well so we can maybe
 actually use (closer) John Wetteland in the ninth inning.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0143EDT &QL; 
 </TRAILER>
@@ -4716,7 +4716,7 @@ NYT-10-02-98 0143EDT &QL;
 A5706 &Cx1f; ttj-z
 u s &Cx13;  &Cx11;  BC-BBA-LOPEZCOL-HNS &LR;      10-02 0829
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-LOPEZCOL-HNS </SLUG>
   
  (For use by New York Times News Service clients)  
@@ -4852,7 +4852,7 @@ We've got to do something pretty soon.''
    Somebody get some Benadryl.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0144EDT &QL; 
 </TRAILER>
@@ -4865,7 +4865,7 @@ NYT-10-02-98 0144EDT &QL;
 A5709 &Cx1f; taf-z
 r a &Cx13;  &Cx11;  BC-NATIONAL-SLUGLIST-CLO     10-02 1889
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NATIONAL-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -5540,7 +5540,7 @@ Non-subscribers can make indi
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0155EDT &QL; 
 </TRAILER>
@@ -5553,7 +5553,7 @@ NYT-10-02-98 0155EDT &QL;
 A5711 &Cx1f; taf-z
 r p &Cx13;  &Cx11;  BC-CAMPAIGN-SLUGLIST-CLO     10-02 0072
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAMPAIGN-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -5578,7 +5578,7 @@ code and category code.
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0155EDT &QL; 
 </TRAILER>
@@ -5591,7 +5591,7 @@ NYT-10-02-98 0155EDT &QL;
 A5712 &Cx1f; taf-z
 r w &Cx13;  &Cx11;  BC-WASHINGTON-SLUGLIST-C     10-02 0497
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WASHINGTON-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -5755,7 +5755,7 @@ Inserts new graf, begi
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0156EDT &QL; 
 </TRAILER>
@@ -5768,7 +5768,7 @@ NYT-10-02-98 0156EDT &QL;
 A5715 &Cx1f; taf-z
 r i &Cx13;  &Cx11;  BC-INTERNATIONAL-SLUGLIS     10-02 0927
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INTERNATIONAL-SLUGLIST-CLOSER </SLUG>
 <HEADLINE>
 &HT;   
@@ -5983,7 +5983,7 @@ UNIDOS
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0157EDT &QL; 
 </TRAILER>
@@ -5996,7 +5996,7 @@ NYT-10-02-98 0157EDT &QL;
 A5718 &Cx1f; taf-z
 r f &Cx13;  &Cx11;  BC-FINANCIAL-SLUGLIST-CL     10-02 3847
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FINANCIAL-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -7191,7 +7191,7 @@ CLOSE BUSINESS
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0200EDT &QL; 
 </TRAILER>
@@ -7204,7 +7204,7 @@ NYT-10-02-98 0200EDT &QL;
 A5719 &Cx1f; taf-z
 r k &Cx13;  &Cx11;  BC-COMMENTARY-SLUGLIST-C     10-02 0297
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COMMENTARY-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -7312,7 +7312,7 @@ PLEASE STEP FORWARD
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0201EDT &QL; 
 </TRAILER>
@@ -7325,7 +7325,7 @@ NYT-10-02-98 0201EDT &QL;
 A5722 &Cx1f; taf-z
 r s &Cx13;  &Cx11;  BC-SPORTS-SLUGLIST-CLOSE     10-02 1754
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPORTS-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -7933,7 +7933,7 @@ stories for us
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0202EDT &QL; 
 </TRAILER>
@@ -7946,7 +7946,7 @@ NYT-10-02-98 0202EDT &QL;
 A5724 &Cx1f; taf-z
 r e &Cx13;  &Cx11;  BC-ENTERTAINMENT-SLUGLIS     10-02 1435
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ENTERTAINMENT-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -8470,7 +8470,7 @@ DISAPPOINTS
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0203EDT &QL; 
 </TRAILER>
@@ -8483,7 +8483,7 @@ NYT-10-02-98 0203EDT &QL;
 A5730 &Cx1f; tib-z
 u k &Cx13;  &Cx11;  BC-NYT-COLUMNIST-SLUGLIS     10-02 0092
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NYT-COLUMNIST-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -8512,7 +8512,7 @@ code and category code.
    COMMENTARY: THEY WILL FIND OUT
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0203EDT &QL; 
 </TRAILER>
@@ -8525,7 +8525,7 @@ NYT-10-02-98 0203EDT &QL;
 A5726 &Cx1f; taf-z
 r l &Cx13;  &Cx11;  BC-LIFESTYLE-SLUGLIST-CL     10-02 0497
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LIFESTYLE-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -8692,7 +8692,7 @@ Non-subscribers can make indi
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0203EDT &QL; 
 </TRAILER>
@@ -8705,7 +8705,7 @@ NYT-10-02-98 0203EDT &QL;
 A5727 &Cx1f; taf-z
 r d &Cx13;  &Cx11;  BC-FOOD-DINING-SLUGLIST-     10-02 0064
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FOOD-DINING-SLUGLIST-CLOSER </SLUG>
   
 <TEXT>
@@ -8728,7 +8728,7 @@ code and category code.
    nytr
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0203EDT &QL; 
 </TRAILER>
@@ -8741,7 +8741,7 @@ NYT-10-02-98 0203EDT &QL;
 A5733 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-SOC-GALAXY-LADN     10-02 0488
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SOC-GALAXY-LADN </SLUG>
 <HEADLINE>
 GALAXY TORCHES THE BURN
@@ -8818,7 +8818,7 @@ the Galaxy was off and running, usually against minimal opposition,
 throughout the first 45 minutes.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0211EDT &QL; 
 </TRAILER>
@@ -8831,7 +8831,7 @@ NYT-10-02-98 0211EDT &QL;
 A5736 &Cx1f; tth-z
 v a &Cx13;  &Cx11;  BC-MAKAH-WHALE-SPI &LR;      10-02 1217
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MAKAH-WHALE-SPI </SLUG>
 <HEADLINE>
 PROTESTERS PREPARE TO DISRUPT GRAY WHALE HUNT 
@@ -9014,7 +9014,7 @@ whale to suffer.
    ``They would need to stop the first harpoon,'' he said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0222EDT &QL; 
 </TRAILER>
@@ -9027,7 +9027,7 @@ NYT-10-02-98 0222EDT &QL;
 A5776 &Cx1f; ttd-z
 r a &Cx13;  &Cx11;  BC-ELECTRO-MAGNETICFIELD     10-02 0510
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ELECTRO-MAGNETICFIELDS-SFCHRON </SLUG>
 <HEADLINE>
 NEW REPORT ON ELECTRIC FIELDS DRAWS CRITICISM, SOME SUPPORT 
@@ -9120,7 +9120,7 @@ agree.
    ``She just thinks she's working too hard,'' Carey said.  &LR;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0344EDT &QL; 
 </TRAILER>
@@ -9133,7 +9133,7 @@ NYT-10-02-98 0344EDT &QL;
 A5779 &Cx1f; ttd-z
 r a &Cx13;  &Cx11;  BC-SMOKING-SPERM-SFCHRON     10-02 0628
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SMOKING-SPERM-SFCHRON </SLUG>
 <HEADLINE>
 TEEN MALES WHO SMOKE RISK SPERM DAMAGE 
@@ -9240,7 +9240,7 @@ other lifestyle choices.
 whereas the nonsmokers tend to stay away.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0349EDT &QL; 
 </TRAILER>
@@ -9253,7 +9253,7 @@ NYT-10-02-98 0349EDT &QL;
 A5919 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-GREETINGS-NYT &LR;      10-02 0168
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GREETINGS-NYT </SLUG>
 <HEADLINE>
 EDITORS:
@@ -9317,7 +9317,7 @@ Seattle Post-Intelligencer, States News Service and the New York
 Times Regional Newspapers.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0847EDT &QL; 
 </TRAILER>
@@ -9330,7 +9330,7 @@ NYT-10-02-98 0847EDT &QL;
 A5927 &Cx1f; tad-z
 r w &Cx13;  &Cx11;  BC-EMBASSIES-DATA-$ADV04     10-02 0316
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EMBASSIES-DATA-$ADV04-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -9430,7 +9430,7 @@ Interior, Treasury and Justice departments: $244 million.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0908EDT &QL; 
 </TRAILER>
@@ -9443,7 +9443,7 @@ NYT-10-02-98 0908EDT &QL;
 A5928 &Cx1f; tad-z
 r w &Cx13;  &Cx11;  BC-EMBASSIES-FUTURE-$ADV     10-02 1610
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EMBASSIES-FUTURE-$ADV04-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -9691,7 +9691,7 @@ into the 21st century, and it's still in the 19th.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0908EDT &QL; 
 </TRAILER>
@@ -9704,7 +9704,7 @@ NYT-10-02-98 0908EDT &QL;
 A5929 &Cx1f; tad-z
 r w &Cx13;  &Cx11;  BC-EMBASSIES-RUSSIA-$ADV     10-02 0586
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EMBASSIES-RUSSIA-$ADV04-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -9815,7 +9815,7 @@ day-care center, school and swimming pool.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 0908EDT &QL; 
 </TRAILER>
@@ -9828,7 +9828,7 @@ NYT-10-02-98 0908EDT &QL;
 A6032 &Cx1f; tab-z
 u v &Cx13;  &Cx11;  BC-JUST-IN-TIME-(BREAST-     10-02 0210
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-JUST-IN-TIME-(BREAST-CANCER-AWARENESS-MONTH)-ADVISORY-NYTSF </SLUG>
  
 <TEXT>
@@ -9869,7 +9869,7 @@ York Times Syndicate sales representatives:
 Angeles at (310) 996-0075; fax: 310-996-0089.) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1052EDT &QL; 
 </TRAILER>
@@ -9882,7 +9882,7 @@ NYT-10-02-98 1052EDT &QL;
 A6033 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-FIRST-MAMMOGRAM-(BREA     10-02 0820
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FIRST-MAMMOGRAM-(BREAST-CANCER-AWARENESS-MONTH)-NYTSF </SLUG>
 <HEADLINE>
 MY FIRST MAMMOGRAM: THE BONDING OF STRANGERS 
@@ -9981,7 +9981,7 @@ Syndicate sales representatives:
 Angeles at (310) 996-0075; fax: 310-996-0089.) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1052EDT &QL; 
 </TRAILER>
@@ -9994,7 +9994,7 @@ NYT-10-02-98 1052EDT &QL;
 A6046 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-BILINGUAL-TV-(HISPANI     10-02 1597
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BILINGUAL-TV-(HISPANIC-MONTH)-NYTSF </SLUG>
 <HEADLINE>
 SPANISH TV AND ADVERTISING GO BILINGUAL 
@@ -10178,7 +10178,7 @@ Syndicate sales representatives:
 Angeles at (310) 996-0075; fax: 310-996-0089.) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1105EDT &QL; 
 </TRAILER>
@@ -10191,7 +10191,7 @@ NYT-10-02-98 1105EDT &QL;
 A6049 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-GOP-COURTS-HISPANICS-     10-02 1728
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GOP-COURTS-HISPANICS-(HISPANIC-MONTH)-NYTSF </SLUG>
 <HEADLINE>
 GOP COURTS HISPANIC VOTE 
@@ -10457,7 +10457,7 @@ Syndicate sales representatives:
 Angeles at (310) 996-0075; fax: 310-996-0089.) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1106EDT &QL; 
 </TRAILER>
@@ -10470,7 +10470,7 @@ NYT-10-02-98 1106EDT &QL;
 A6051 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-CRISTINA-SARALEGUI-PA     10-02 1439
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CRISTINA-SARALEGUI-PART-3-(HISPANIC-MONTH)-NYTSF </SLUG>
 <HEADLINE>
 MY LIFE AS A BLONDE: PART 3 
@@ -10637,7 +10637,7 @@ Syndicate sales representatives:
 Angeles at (310) 996-0075; fax: 310-996-0089.) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1107EDT &QL; 
 </TRAILER>
@@ -10650,7 +10650,7 @@ NYT-10-02-98 1107EDT &QL;
 A6055 &Cx1f; tad-z
 r e &Cx13;  &Cx11;  BC-ANTZ-DDN03-COX     10-02 0626
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ANTZ-DDN03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -10755,7 +10755,7 @@ belittling comments and snicker behind Death's back.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1109EDT &QL; 
 </TRAILER>
@@ -10768,7 +10768,7 @@ NYT-10-02-98 1109EDT &QL;
 A6060 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-POKER-RICHARDS03-COX     10-02 1024
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-POKER-RICHARDS03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -10913,7 +10913,7 @@ business.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1111EDT &QL; 
 </TRAILER>
@@ -10926,7 +10926,7 @@ NYT-10-02-98 1111EDT &QL;
 A6064 &Cx1f; tad-z
 r s &Cx13;  &Cx11;  BC-BBN-MARLINS-LEYLAND03     10-02 0600
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-MARLINS-LEYLAND03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11052,7 +11052,7 @@ Marlins will be about for quite a while.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1112EDT &QL; 
 </TRAILER>
@@ -11065,7 +11065,7 @@ NYT-10-02-98 1112EDT &QL;
 A6065 &Cx1f; tad-z
 r s &Cx13;  &Cx11;  BC-BBN-MARLINS-GONE03-CO     10-02 0963
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-MARLINS-GONE03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11229,7 +11229,7 @@ continue for a few years.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1112EDT &QL; 
 </TRAILER>
@@ -11242,7 +11242,7 @@ NYT-10-02-98 1112EDT &QL;
 A6066 &Cx1f; tad-z
 r k &Cx13;  &Cx11;  BC-BORDERS-COLUMN03-COX     10-02 0880
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BORDERS-COLUMN03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11383,7 +11383,7 @@ Sentinel. His e-mail address is gborders(at)coxnews.com.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1112EDT &QL; 
 </TRAILER>
@@ -11396,7 +11396,7 @@ NYT-10-02-98 1112EDT &QL;
 A6067 &Cx1f; tad-z
 r k &Cx13;  &Cx11;  BC-MCCARTY-COLUMN03-COX     10-02 0546
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MCCARTY-COLUMN03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11505,7 +11505,7 @@ transplants, or combovers, either. Picky, picky man.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1112EDT &QL; 
 </TRAILER>
@@ -11518,7 +11518,7 @@ NYT-10-02-98 1112EDT &QL;
 A6068 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-NOUVEAU-PLANE03-COX     10-02 0364
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NOUVEAU-PLANE03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11582,7 +11582,7 @@ orders for 23 C-130Js under contracts valued at $1.3 billion.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1112EDT &QL; 
 </TRAILER>
@@ -11595,7 +11595,7 @@ NYT-10-02-98 1112EDT &QL;
 A6069 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-POKER-FACE03-COX     10-02 0646
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-POKER-FACE03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11719,7 +11719,7 @@ biochemistry or something.'''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1112EDT &QL; 
 </TRAILER>
@@ -11732,7 +11732,7 @@ NYT-10-02-98 1112EDT &QL;
 A6070 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-POKER-TIPS03-COX     10-02 0743
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-POKER-TIPS03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -11885,7 +11885,7 @@ for Dummies' by Barry Rigal.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1113EDT &QL; 
 </TRAILER>
@@ -11898,7 +11898,7 @@ NYT-10-02-98 1113EDT &QL;
 A6072 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-DOVE-HUNTING03-COX     10-02 0845
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DOVE-HUNTING03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12049,7 +12049,7 @@ anti-hunting or anything. It has been a songbird for a long time.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1113EDT &QL; 
 </TRAILER>
@@ -12062,7 +12062,7 @@ NYT-10-02-98 1113EDT &QL;
 A6073 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-GRANDMA-JAILED03-COX     10-02 0436
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRANDMA-JAILED03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12146,7 +12146,7 @@ insisted she loved Blair like ``my own flesh-and-blood grandson.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1113EDT &QL; 
 </TRAILER>
@@ -12159,7 +12159,7 @@ NYT-10-02-98 1113EDT &QL;
 A6074 &Cx1f; tad-z
 r a &Cx13;  &Cx11;  BC-GRANDMA-JAILED03-COX     10-02 0436
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRANDMA-JAILED03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12243,7 +12243,7 @@ insisted she loved Blair like ``my own flesh-and-blood grandson.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1113EDT &QL; 
 </TRAILER>
@@ -12256,7 +12256,7 @@ NYT-10-02-98 1113EDT &QL;
 A6075 &Cx1f; tad-z
 r k &Cx13;  &Cx11;  BC-KABAT-COLUMN03-COX     10-02 0635
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KABAT-COLUMN03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12392,7 +12392,7 @@ She can be reached online at VMKabat(at)aol.com
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1113EDT &QL; 
 </TRAILER>
@@ -12405,7 +12405,7 @@ NYT-10-02-98 1113EDT &QL;
 A6076 &Cx1f; tad-z
 r k &Cx13;  &Cx11;  BC-KELSO-COLUMN03-COX     10-02 0573
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KELSO-COLUMN03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12540,7 +12540,7 @@ Fridays. He can be reached at 445-3606 or at jkelsostatesman.com.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1113EDT &QL; 
 </TRAILER>
@@ -12553,7 +12553,7 @@ NYT-10-02-98 1113EDT &QL;
 A6077 &Cx1f; tad-z
 r a &Cx13;  &Cx11;  BC-TEACHER-ABUSES03-COX     10-02 0906
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TEACHER-ABUSES03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12726,7 +12726,7 @@ really nothing else we can do,'' he said.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1114EDT &QL; 
 </TRAILER>
@@ -12739,7 +12739,7 @@ NYT-10-02-98 1114EDT &QL;
 A6079 &Cx1f; tad-z
 r e &Cx13;  &Cx11;  BC-BLOOD-2THOUSAND03-COX     10-02 1562
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BLOOD-2THOUSAND03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -12992,7 +12992,7 @@ American-Statesman
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1115EDT &QL; 
 </TRAILER>
@@ -13005,7 +13005,7 @@ NYT-10-02-98 1115EDT &QL;
 A6080 &Cx1f; tad-z
 r e &Cx13;  &Cx11;  BC-DREAMS-DDN03-COX     10-02 0525
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DREAMS-DDN03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -13092,7 +13092,7 @@ the first third of the movie as a blurry special effect.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1115EDT &QL; 
 </TRAILER>
@@ -13105,7 +13105,7 @@ NYT-10-02-98 1115EDT &QL;
 A6081 &Cx1f; tad-z
 r s &Cx13;  &Cx11;  BC-FBC-LONGHORNS-WALTON0     10-02 0624
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-LONGHORNS-WALTON03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -13215,7 +13215,7 @@ column on Fridays.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1115EDT &QL; 
 </TRAILER>
@@ -13228,7 +13228,7 @@ NYT-10-02-98 1115EDT &QL;
 A6082 &Cx1f; tad-z
 r e &Cx13;  &Cx11;  BC-ROXBURY-DDN03-COX     10-02 0410
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ROXBURY-DDN03-COX </SLUG>
 <HEADLINE>
 &HT;    
@@ -13304,7 +13304,7 @@ You should have no trouble getting in.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1116EDT &QL; 
 </TRAILER>
@@ -13317,7 +13317,7 @@ NYT-10-02-98 1116EDT &QL;
 A6086 &Cx1f; tad-z
 r k &Cx13;  &Cx11;  BC-COMMENTARY-BJT03-COX     10-02 0508
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COMMENTARY-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -13401,7 +13401,7 @@ MOVED.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1118EDT &QL; 
 </TRAILER>
@@ -13414,7 +13414,7 @@ NYT-10-02-98 1118EDT &QL;
 A6087 &Cx1f; tad-z
 r v &Cx13;  &Cx11;  BC-COMMENTARY-BJT03-COX     10-02 0508
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COMMENTARY-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -13498,7 +13498,7 @@ MOVED.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1118EDT &QL; 
 </TRAILER>
@@ -13511,7 +13511,7 @@ NYT-10-02-98 1118EDT &QL;
 A6089 &Cx1f; tad-z
 r l &Cx13;  &Cx11;  BC-FEATURES-BJT03-COX     10-02 0868
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FEATURES-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -13670,7 +13670,7 @@ now.'' (Garcia, Austin American-Statesman) MOVED.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1118EDT &QL; 
 </TRAILER>
@@ -13683,7 +13683,7 @@ NYT-10-02-98 1118EDT &QL;
 A6090 &Cx1f; tad-z
 r v &Cx13;  &Cx11;  BC-FEATURES-BJT03-COX     10-02 0868
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FEATURES-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -13842,7 +13842,7 @@ now.'' (Garcia, Austin American-Statesman) MOVED.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1118EDT &QL; 
 </TRAILER>
@@ -13855,7 +13855,7 @@ NYT-10-02-98 1118EDT &QL;
 A6151 &Cx1f; tab-z
 r e &Cx13;  &Cx11;  BC-IVOR-HOLYWOOD-HEREAFT     10-02 0973
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IVOR-HOLYWOOD-HEREAFTER-ART-NYTSF </SLUG>
 <HEADLINE>
 HOLLYWOOD REDISCOVERS THE HEREAFTER 
@@ -13965,7 +13965,7 @@ their money to go again and again.''
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1154EDT &QL; 
 </TRAILER>
@@ -13978,7 +13978,7 @@ NYT-10-02-98 1154EDT &QL;
 A6153 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-FLYTRAP-BEGONE-SLATE-     10-02 0691
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FLYTRAP-BEGONE-SLATE-NYTSF </SLUG>
 <HEADLINE>
 WHY WASHINGTON IS STUCK ON FLYTRAP 
@@ -14084,7 +14084,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1155EDT &QL; 
 </TRAILER>
@@ -14097,7 +14097,7 @@ NYT-10-02-98 1155EDT &QL;
 A6154 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-GREENSPAN-SLATE-NYTSF     10-02 0449
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GREENSPAN-SLATE-NYTSF </SLUG>
 <HEADLINE>
 GREENSPAN'S UNSURPRISING MOVE 
@@ -14171,7 +14171,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1155EDT &QL; 
 </TRAILER>
@@ -14184,7 +14184,7 @@ NYT-10-02-98 1155EDT &QL;
 A6155 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-HOWARD-STERN-SLATE-NY     10-02 1010
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HOWARD-STERN-SLATE-NYTSF </SLUG>
 <HEADLINE>
 HOWARD STERN IS OBSOLETE 
@@ -14378,7 +14378,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1155EDT &QL; 
 </TRAILER>
@@ -14391,7 +14391,7 @@ NYT-10-02-98 1155EDT &QL;
 A6156 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-HEDGE-SLATE-NYTSF     10-02 0637
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEDGE-SLATE-NYTSF </SLUG>
 <HEADLINE>
 HEDGE? THAT'S EASY TO EXPLAIN 
@@ -14488,7 +14488,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1155EDT &QL; 
 </TRAILER>
@@ -14501,7 +14501,7 @@ NYT-10-02-98 1155EDT &QL;
 A6167 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-COLLEGE-CYBERTIMES-ED     10-02 1048
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COLLEGE-CYBERTIMES-EDUCATION-NYTSF </SLUG>
 <HEADLINE>
 TEST PREPARATION COMPANY OFFERS VIRTUAL LAW DEGREE 
@@ -14672,7 +14672,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1159EDT &QL; 
 </TRAILER>
@@ -14685,7 +14685,7 @@ NYT-10-02-98 1159EDT &QL;
 A6168 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-VOYAGE-CYBERTIMES-ART     10-02 1114
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-VOYAGE-CYBERTIMES-ARTS-NYTSF </SLUG>
 <HEADLINE>
 ARTS(AT)LARGE 
@@ -14872,7 +14872,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1159EDT &QL; 
 </TRAILER>
@@ -14885,7 +14885,7 @@ NYT-10-02-98 1159EDT &QL;
 A6169 &Cx1f; tab-z
 r f &Cx13;  &Cx11;  BC-COPYRIGHT-CYBERTIMES-     10-02 1370
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COPYRIGHT-CYBERTIMES-LAW-NYTSF </SLUG>
 <HEADLINE>
 CAN A WEB LINK BREAK COPYRIGHT LAWS? 
@@ -15096,7 +15096,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1159EDT &QL; 
 </TRAILER>
@@ -15109,7 +15109,7 @@ NYT-10-02-98 1159EDT &QL;
 A6170 &Cx1f; tab-z
 r f &Cx13;  &Cx11;  BC-GATEWAY-CYBERTIMES-TR     10-02 0718
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GATEWAY-CYBERTIMES-TRAVEL-NYTSF </SLUG>
 <HEADLINE>
 GATEWAY'S SOLO 2500LS PACKS IT ALL 
@@ -15227,7 +15227,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1159EDT &QL; 
 </TRAILER>
@@ -15240,7 +15240,7 @@ NYT-10-02-98 1159EDT &QL;
 A6171 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-GATEWAY-CYBERTIMES-TR     10-02 0718
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GATEWAY-CYBERTIMES-TRAVEL-NYTSF </SLUG>
 <HEADLINE>
 GATEWAY'S SOLO 2500LS PACKS IT ALL 
@@ -15358,7 +15358,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1159EDT &QL; 
 </TRAILER>
@@ -15371,7 +15371,7 @@ NYT-10-02-98 1159EDT &QL;
 A6189 &Cx1f; ttj-z
 r a &Cx13;  &Cx11;  BC-HUGE-MALL-$ADV04-HNS &LR;      10-02 1080
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HUGE-MALL-$ADV04-HNS </SLUG>
 <HEADLINE>
 TOWN FACING HUGE MALL SEES IRONY IN DEVELOPER'S PASTORAL SETTING 
@@ -15541,7 +15541,7 @@ country, north and back, west and back. I've seen a lot of pretty
 country but I like what we have here.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1212EDT &QL; 
 </TRAILER>
@@ -15554,7 +15554,7 @@ NYT-10-02-98 1212EDT &QL;
 A6191 &Cx1f; ttj-z
 r l &Cx13;  &Cx11;  BC-VERMONT-VILLAGE-$ADV0     10-02 0989
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-VERMONT-VILLAGE-$ADV04-HNS </SLUG>
 <HEADLINE>
 BUCOLIC VERMONT VILLAGE IS IN A TIME ZONE OF ITS OWN 
@@ -15702,7 +15702,7 @@ sing a lot of their songs in our church choir,'' Noll said. ``It's
 so peaceful up there. You don't hear any cars.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1214EDT &QL; 
 </TRAILER>
@@ -15715,7 +15715,7 @@ NYT-10-02-98 1214EDT &QL;
 A6193 &Cx1f; ttj-z
 r l &Cx13;  &Cx11;  BC-HUDSON-RAILS-$ADV04-H     10-02 1056
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HUDSON-RAILS-$ADV04-HNS </SLUG>
 <HEADLINE>
 ROLLING DOWN THE HUDSON WITH HISTORY IN TOW 
@@ -15888,7 +15888,7 @@ still churning slowly upriver, bucking the tide, reminding one of
 the advantages of rail travel.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1215EDT &QL; 
 </TRAILER>
@@ -15901,7 +15901,7 @@ NYT-10-02-98 1215EDT &QL;
 A6196 &Cx1f; ttj-z
 r k &Cx13;  &Cx11;  BC-POLITICAL-WEAKNESS-HN     10-02 0595
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-POLITICAL-WEAKNESS-HNS </SLUG>
 <HEADLINE>
 POWER OF OFFICE COMPENSATES FOR HUMAN WEAKNESS 
@@ -15995,7 +15995,7 @@ Department of Modern and Classical Languages at the University of
 San Francisco.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1216EDT &QL; 
 </TRAILER>
@@ -16008,7 +16008,7 @@ NYT-10-02-98 1216EDT &QL;
 A6198 &Cx1f; ttj-z
 r f &Cx13;  &Cx11;  BC-DILBERT-BOOK-HNS &LR;      10-02 0662
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DILBERT-BOOK-HNS </SLUG>
 <HEADLINE>
 DILBERT OFFERS NEW WORKPLACE ADVICE FOR THE CAREER-SAVVY 
@@ -16143,7 +16143,7 @@ intelligence and have inexplicable sex appeal. I say that so people
 won't admit they aren't readers.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1218EDT &QL; 
 </TRAILER>
@@ -16156,7 +16156,7 @@ NYT-10-02-98 1218EDT &QL;
 A6205 &Cx1f; tad-z
 u l &Cx13;  &Cx11;  BC-WARNER-ON-WOOD03-COX     10-02 0745
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WARNER-ON-WOOD03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -16274,7 +16274,7 @@ ready to work. n
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1221EDT &QL; 
 </TRAILER>
@@ -16287,7 +16287,7 @@ NYT-10-02-98 1221EDT &QL;
 A6223 &Cx1f; ttj-z
 r k &Cx13;  &Cx11;  BC-PRISON-GROWTH-HNS &LR;      10-02 0712
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PRISON-GROWTH-HNS </SLUG>
 <HEADLINE>
 LEFTISTS TAKE ON THE LOCK-'EM UP MENTALITY 
@@ -16393,7 +16393,7 @@ time has come.
 P.O. Box 7260, San Francisco, CA 94120.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1233EDT &QL; 
 </TRAILER>
@@ -16406,7 +16406,7 @@ NYT-10-02-98 1233EDT &QL;
 A6229 &Cx1f; tad-z
 r k &Cx13;  &Cx11;  BC-LOTT-COMMENTARY03-COX     10-02 0766
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LOTT-COMMENTARY03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -16525,7 +16525,7 @@ Constitution. His e-mail address is jbookman(at)ajc.com.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1238EDT &QL; 
 </TRAILER>
@@ -16538,7 +16538,7 @@ NYT-10-02-98 1238EDT &QL;
 A6268 &Cx1f; ttj-z
 r l &Cx13;  &Cx11;  BC-BEESWAX-$ADV04-HNS &LR;      10-02 0454
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BEESWAX-$ADV04-HNS </SLUG>
 <HEADLINE>
 `VIRGIN CANDLES' HAVE MANY ADVANTAGES OVER PARAFFIN 
@@ -16610,7 +16610,7 @@ reloading guns and as a concealing aid for magic tricks, Borghi
 said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1305EDT &QL; 
 </TRAILER>
@@ -16623,7 +16623,7 @@ NYT-10-02-98 1305EDT &QL;
 A6269 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-NIXON-SLATE-NYTSF     10-02 0781
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NIXON-SLATE-NYTSF </SLUG>
 <HEADLINE>
 NIX ON THE NIXON ANALOGY 
@@ -16733,7 +16733,7 @@ representative, Bob Farnell, Olivia Vasquez or Connie White, at
 (888) 2-NYTSYN (888-269-8796).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1305EDT &QL; 
 </TRAILER>
@@ -16746,7 +16746,7 @@ NYT-10-02-98 1305EDT &QL;
 A6270 &Cx1f; ttj-z
 u v &Cx13;  &Cx11;  BC-HEARST-FEATURE-BUDGET     10-02 1053
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEARST-FEATURE-BUDGET-HNS </SLUG>
 <HEADLINE>
 EDITORS: 
@@ -16921,7 +16921,7 @@ America's growing reliance on the prison system as a solution for
 society's ills. By WILLIAM WONG. (Already filed)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1306EDT &QL; 
 </TRAILER>
@@ -16934,7 +16934,7 @@ NYT-10-02-98 1306EDT &QL;
 A6288 &Cx1f; ttj-z
 r e &Cx13;  &Cx11;  BC-FILM-REVIEW-SOLDIER-H     10-02 0965
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FILM-REVIEW-SOLDIER-HNS </SLUG>
 <HEADLINE>
 FINALLY, A FUNCTIONAL FAMILY MAKES THE BIG SCREEN 
@@ -17070,7 +17070,7 @@ P.O. Box 15000, Albany, NY 12212. E-mail:
 abiancolli(at)timesunion.com.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1317EDT &QL; 
 </TRAILER>
@@ -17083,7 +17083,7 @@ NYT-10-02-98 1317EDT &QL;
 A6311 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  AM-NYT-BUDGET &LR;      10-02 1006
 </HEADER>
-<BODY>
+<body>
  AM-NYT-BUDGET  
 (gm) 
 <TEXT>
@@ -17306,7 +17306,7 @@ The Seattle Post-Intelligencer, States News Service and the New
 York Times Regional Newspapers.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1329EDT &QL; 
 </TRAILER>
@@ -17319,7 +17319,7 @@ NYT-10-02-98 1329EDT &QL;
 A6314 &Cx1f; ttc-z
 r e &Cx13;  &Cx11;  BC-ENTERTAINMENT-BUDGET-     10-02 0225
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ENTERTAINMENT-BUDGET-LADN </SLUG>
 <HEADLINE>
 .
@@ -17355,7 +17355,7 @@ to eat less and lower their blood pressure. By Barbara De Witt.
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1331EDT &QL; 
 </TRAILER>
@@ -17368,7 +17368,7 @@ NYT-10-02-98 1331EDT &QL;
 A6315 &Cx1f; ttc-z
 r l &Cx13;  &Cx11;  BC-PURPLE-HOME-LADN     10-02 0618
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PURPLE-HOME-LADN </SLUG>
 <HEADLINE>
 THE RICHNESS OF PURPLE
@@ -17479,7 +17479,7 @@ fashion,'' says Irene Hidvegi, an interior designer at Glabman's
 Furniture in Woodland Hills.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1332EDT &QL; 
 </TRAILER>
@@ -17492,7 +17492,7 @@ NYT-10-02-98 1332EDT &QL;
 A6319 &Cx1f; tic-z
 r s &Cx13;  &Cx11;  BC-FANTASY-FOOTBALL-AZR &LR;      10-02 0571
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FANTASY-FOOTBALL-AZR </SLUG>
 <HEADLINE>
 DON'T GIVE UP ON SLOW STARTERS 
@@ -17605,7 +17605,7 @@ name Don Beebe ring a bell? &QL;
 Bill Muller can be reached at bill.muller(at)pni.com via e-mail. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1334EDT &QL; 
 </TRAILER>
@@ -17618,7 +17618,7 @@ NYT-10-02-98 1334EDT &QL;
 A6327 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-ORE-ADOPTION-BOS &LR;      10-02 1607
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ORE-ADOPTION-BOS </SLUG>
 <HEADLINE>
 OREGON VOTERS COULD OPEN DOOR TO ADOPTEES' PAST 
@@ -17836,7 +17836,7 @@ another,'' said Hill. ``And you can't talk about compromise and
 civil rights in the same sentence and be honest at all.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1342EDT &QL; 
 </TRAILER>
@@ -17849,7 +17849,7 @@ NYT-10-02-98 1342EDT &QL;
 A6329 &Cx1f; ttj-z
 r d &Cx13;  &Cx11;  BC-GRAPE-HARVEST-HNS &LR;      10-02 0920
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPE-HARVEST-HNS </SLUG>
 <HEADLINE>
 CALIFORNIA WINE GROWERS WANT RAIN, RAIN TO GO AWAY 
@@ -18008,7 +18008,7 @@ flavors and a chance to make some superb Pinot Noirs,'' he said.
 ``there's no reason it won't be a good year.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1342EDT &QL; 
 </TRAILER>
@@ -18021,7 +18021,7 @@ NYT-10-02-98 1342EDT &QL;
 A6331 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-ART-VANGOGH-BOS &LR;      10-02 1149
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ART-VANGOGH-BOS </SLUG>
 <HEADLINE>
 VAN GOGH TAKES WASHINGTON BY STORM 
@@ -18190,7 +18190,7 @@ Washington and refuses to pay a scalper.
 once-in-a-lifetime event.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1343EDT &QL; 
 </TRAILER>
@@ -18203,7 +18203,7 @@ NYT-10-02-98 1343EDT &QL;
 A6333 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-ANTZ-BOS &LR;      10-02 0758
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-ANTZ-BOS </SLUG>
 <HEADLINE>
 `ANTZ' ANIMATORS MAKE A MOUNTAIN OUT OF AN ANTHILL 
@@ -18300,7 +18300,7 @@ make the ants seem made of wood. But there's always something to
 grab the eye and charm it here. ``Antz'' is king of the hill.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1344EDT &QL; 
 </TRAILER>
@@ -18313,7 +18313,7 @@ NYT-10-02-98 1344EDT &QL;
 A6334 &Cx1f; ttj-z
 r f &Cx13;  &Cx11;  BC-GRAPE-HARVEST-HNS &LR;      10-02 0920
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPE-HARVEST-HNS </SLUG>
 <HEADLINE>
 CALIFORNIA WINE GROWERS WANT RAIN, RAIN TO GO AWAY 
@@ -18472,7 +18472,7 @@ flavors and a chance to make some superb Pinot Noirs,'' he said.
 ``there's no reason it won't be a good year.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1344EDT &QL; 
 </TRAILER>
@@ -18485,7 +18485,7 @@ NYT-10-02-98 1344EDT &QL;
 A6340 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MUSIC-ROCK-BOS &LR;      10-02 0970
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MUSIC-ROCK-BOS </SLUG>
 <HEADLINE>
 BARENAKED LADIES LEARNS TO LOVE SHOWBIZ 
@@ -18632,7 +18632,7 @@ subject is contemporary issues in the music industry ... White
 Zombie has officially broken up.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1346EDT &QL; 
 </TRAILER>
@@ -18645,7 +18645,7 @@ NYT-10-02-98 1346EDT &QL;
 A6343 &Cx1f; tdt-z
 u l &Cx13;  &Cx11;  BC-AUTO-REVIEW-$ADV04-BO     10-02 1075
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-AUTO-REVIEW-$ADV04-BOS </SLUG>
 <HEADLINE>
 A BMW TO QUICKEN THE PULSE 
@@ -18797,7 +18797,7 @@ _ 900 miles of spirited driving.
 one's a keeper.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1347EDT &QL; 
 </TRAILER>
@@ -18810,7 +18810,7 @@ NYT-10-02-98 1347EDT &QL;
 A6345 &Cx1f; tdt-z
 u l &Cx13;  &Cx11;  BC-HANDYMAN-HOTTON-$ADV0     10-02 0889
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HANDYMAN-HOTTON-$ADV04-BOS </SLUG>
 <HEADLINE>
 QUESTIONS FROM A NEW HOMEOWNER 
@@ -18946,7 +18946,7 @@ Handyman chats on line Thursdays, 1-2 p.m, at
 http://www.boston.com, keyword: Chat.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1348EDT &QL; 
 </TRAILER>
@@ -18959,7 +18959,7 @@ NYT-10-02-98 1348EDT &QL;
 A6350 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-FBC-NOTEBOOK-BOS &LR;      10-02 1172
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-NOTEBOOK-BOS </SLUG>
 <HEADLINE>
 BUCKEYES SHOULD PASS TEST EASILY 
@@ -19142,7 +19142,7 @@ college football history.
 personal interviews, was used to prepare this report.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1350EDT &QL; 
 </TRAILER>
@@ -19155,7 +19155,7 @@ NYT-10-02-98 1350EDT &QL;
 A6354 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-FBN-PATRIOTS-BOS &LR;      10-02 1139
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBN-PATRIOTS-BOS </SLUG>
 <HEADLINE>
 GLOVER FINALLY FINDS HIS NICHE WITH THE SAINTS 
@@ -19326,7 +19326,7 @@ time.''
 that's exactly what it will come down to this Sunday.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1351EDT &QL; 
 </TRAILER>
@@ -19339,7 +19339,7 @@ NYT-10-02-98 1351EDT &QL;
 A6358 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-ONBUSINESS-COLUMN-BOS     10-02 1330
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ONBUSINESS-COLUMN-BOS </SLUG>
 <HEADLINE>
 TRADER EXPECTED TOO MUCH FROM LADY LUCK 
@@ -19549,7 +19549,7 @@ AT&AMP;T.''
 boscap(at)globe.com.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1352EDT &QL; 
 </TRAILER>
@@ -19562,7 +19562,7 @@ NYT-10-02-98 1352EDT &QL;
 A6364 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-DREAMS-BOS &LR;      10-02 0713
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-DREAMS-BOS </SLUG>
 <HEADLINE>
 `DREAMS' RAVISHES WITHOUT MOVING US 
@@ -19652,7 +19652,7 @@ Meanwhile, ``What Dreams May Come'' is more memorable as a rich
 canvas than as an experience.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1354EDT &QL; 
 </TRAILER>
@@ -19665,7 +19665,7 @@ NYT-10-02-98 1354EDT &QL;
 A6368 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-CHURCH-BOS &LR;      10-02 0814
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-CHURCH-BOS </SLUG>
 <HEADLINE>
 AFTER EIGHT YEARS, THE CHURCH IS BACK 
@@ -19788,7 +19788,7 @@ than it ever was, and (that feeling) is getting more and more
 common now.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1355EDT &QL; 
 </TRAILER>
@@ -19801,7 +19801,7 @@ NYT-10-02-98 1355EDT &QL;
 A6371 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-SMILE-BOS &LR;      10-02 0812
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-SMILE-BOS </SLUG>
 <HEADLINE>
 WALKER'S `SMILE' SPEAKS OF REDEMPTION 
@@ -19912,7 +19912,7 @@ stone in a dry riverbed, she gets right to it: ``Crossing is life.
 Being on one side or the other of the river is beside the point.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1356EDT &QL; 
 </TRAILER>
@@ -19925,7 +19925,7 @@ NYT-10-02-98 1356EDT &QL;
 A6376 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-FINANCE-HOOKER-$ADV04     10-02 1519
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FINANCE-HOOKER-$ADV04-BOS </SLUG>
 <HEADLINE>
 TAXMAN WILL CUT INTO INVESTMENT PLAN 
@@ -20144,7 +20144,7 @@ publications at Vanguard and Fidelity.
 number, to: Kenneth Hooker, The Boston Globe, Boston, Mass. 02107.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1358EDT &QL; 
 </TRAILER>
@@ -20157,7 +20157,7 @@ NYT-10-02-98 1358EDT &QL;
 A6378 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-ART-MONET-BOS &LR;      10-02 1035
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ART-MONET-BOS </SLUG>
 <HEADLINE>
 `REFLECTIONS' SHEDS LITTLE LIGHT 
@@ -20295,7 +20295,7 @@ engage in a dialogue with Monet rather than a duel _ a wise
 strategy.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1359EDT &QL; 
 </TRAILER>
@@ -20308,7 +20308,7 @@ NYT-10-02-98 1359EDT &QL;
 A6382 &Cx1f; ttj-z
 u v &Cx13;  &Cx11;  BC-HEARST-NEWS-BUDGET-HN     10-02 0353
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEARST-NEWS-BUDGET-HNS </SLUG>
   
  Friday, Oct. 2, 1998     
@@ -20373,7 +20373,7 @@ as yet no credible heroes or heroines. But there are villains and
 victims. By ROBERT E. THOMPSON. (Filed Wednesday.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1400EDT &QL; 
 </TRAILER>
@@ -20386,7 +20386,7 @@ NYT-10-02-98 1400EDT &QL;
 A6384 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-LOLITA-BOS &LR;      10-02 0618
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-LOLITA-BOS </SLUG>
 <HEADLINE>
 IRONS' HUMBERT HUMANIZES `LOLITA' 
@@ -20470,7 +20470,7 @@ spoil the chemistry between Irons and Swain, a chemistry that is
 fascinating, frightening, and, sadly, believable.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1400EDT &QL; 
 </TRAILER>
@@ -20483,7 +20483,7 @@ NYT-10-02-98 1400EDT &QL;
 A6386 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-IMPOSTERS-BOS &LR;      10-02 0471
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-IMPOSTERS-BOS </SLUG>
 <HEADLINE>
 `IMPOSTERS' ONLY A PALE IMITATION OF A FRENETIC FARCE 
@@ -20549,7 +20549,7 @@ snowballing complication. Farce hinges on going too far. ``The
 Impostors'' doesn't go far enough.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1402EDT &QL; 
 </TRAILER>
@@ -20562,7 +20562,7 @@ NYT-10-02-98 1402EDT &QL;
 A6388 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-TV-SQUAWK-BOS &LR;      10-02 0799
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-SQUAWK-BOS </SLUG>
 <HEADLINE>
 `SQUAWK' TRADES STOCK QUOTES, QUIPS 
@@ -20698,7 +20698,7 @@ Jones, airs business news during the day and such talk shows as
 ``Rivera Live'' and ``Hardball With Chris Matthews'' at night.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1403EDT &QL; 
 </TRAILER>
@@ -20711,7 +20711,7 @@ NYT-10-02-98 1403EDT &QL;
 A6391 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-TV-HEART-BOS &LR;      10-02 0718
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-HEART-BOS </SLUG>
 <HEADLINE>
 A FRIENDSHIP PIERCES THE HEART OF WAR 
@@ -20818,7 +20818,7 @@ admirably.
 are increasingly hard to find on the big screen.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1404EDT &QL; 
 </TRAILER>
@@ -20831,7 +20831,7 @@ NYT-10-02-98 1404EDT &QL;
 A6394 &Cx1f; tdt-z
 u k &Cx13;  &Cx11;  BC-JACKSON-COLUMN-BOS &LR;      10-02 0860
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-JACKSON-COLUMN-BOS </SLUG>
 <HEADLINE>
 SAVING A MYSTERY BENEATH THE SEA 
@@ -20959,7 +20959,7 @@ reminder that we really need to protect the seas.''
    (Derrick Z. Jackson is a Globe columnist.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1406EDT &QL; 
 </TRAILER>
@@ -20972,7 +20972,7 @@ NYT-10-02-98 1406EDT &QL;
 A6398 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-NORTHEASTERN-100TH-AR     10-02 1593
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NORTHEASTERN-100TH-ART-BOS </SLUG>
 <HEADLINE>
 AT 100, NORTHEASTERN HAS A NEW VIEW 
@@ -21218,7 +21218,7 @@ called blue-collar kids,'' he said. ``I know that. I was one of
 those kids.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1407EDT &QL; 
 </TRAILER>
@@ -21231,7 +21231,7 @@ NYT-10-02-98 1407EDT &QL;
 A6400 &Cx1f; tdt-z
 u v &Cx13;  &Cx11;  BC-FEATURE-BUDGET-ART-BO     10-02 0648
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FEATURE-BUDGET-ART-BOS </SLUG>
   
  ART ADV.: A photo with NORTHEASTERN-100TH is being transmitted to
@@ -21369,7 +21369,7 @@ Blaudschun.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1408EDT &QL; 
 </TRAILER>
@@ -21382,7 +21382,7 @@ NYT-10-02-98 1408EDT &QL;
 A6402 &Cx1f; ttj-z
 u l &Cx13;  &Cx11;  BC-WORKING-COLUMN-HNS &LR;      10-02 0828
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WORKING-COLUMN-HNS </SLUG>
 <HEADLINE>
 STEPPING FORWARD TAKES AN EASIER PATH 
@@ -21536,7 +21536,7 @@ areas that need improvement.
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1409EDT &QL; 
 </TRAILER>
@@ -21549,7 +21549,7 @@ NYT-10-02-98 1409EDT &QL;
 A6403 &Cx1f; ttj-z
 u e &Cx13;  &Cx11;  BC-PROFILE-THIRDEYE-HNS &LR;      10-02 0768
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PROFILE-THIRDEYE-HNS </SLUG>
 <HEADLINE>
 THIRD EYE BLIND LIVES SEMI-CHARMED LIFE 
@@ -21688,7 +21688,7 @@ that kind of connection with people, it's very gratifying.'' &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1409EDT &QL; 
 </TRAILER>
@@ -21701,7 +21701,7 @@ NYT-10-02-98 1409EDT &QL;
 A6404 &Cx1f; ttj-z
 u f &Cx13;  &Cx11;  BC-WORKING-COLUMN-HNS &LR;      10-02 0828
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WORKING-COLUMN-HNS </SLUG>
 <HEADLINE>
 STEPPING FORWARD TAKES AN EASIER PATH 
@@ -21855,7 +21855,7 @@ areas that need improvement.
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1410EDT &QL; 
 </TRAILER>
@@ -21868,7 +21868,7 @@ NYT-10-02-98 1410EDT &QL;
 A6407 &Cx1f; ttj-z
 u f &Cx13;  &Cx11;  BC-COMPUTING-COLUMN-HNS &LR;      10-02 0951
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COMPUTING-COLUMN-HNS </SLUG>
 <HEADLINE>
 PORTABLE PERFECTION COMES A LITTLE CLOSER 
@@ -22030,7 +22030,7 @@ dwight.silverman at chron.com, or call Houston InfoSource at
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1411EDT &QL; 
 </TRAILER>
@@ -22043,7 +22043,7 @@ NYT-10-02-98 1411EDT &QL;
 A6408 &Cx1f; ttj-z
 u f &Cx13;  &Cx11;  BC-COMPUTER-HELPLINE-HNS     10-02 0669
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COMPUTER-HELPLINE-HNS </SLUG>
 <HEADLINE>
 TEST MODEM CONNECTION'S QUALITY BY CALLING THIS HOUSTON NUMBER 
@@ -22159,7 +22159,7 @@ chron.com, or call 713-220-2000 and enter access code 1001. &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1412EDT &QL; 
 </TRAILER>
@@ -22172,7 +22172,7 @@ NYT-10-02-98 1412EDT &QL;
 A6409 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-TV-SQUAWK-BOS &LR;      10-02 0799
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-SQUAWK-BOS </SLUG>
 <HEADLINE>
 `SQUAWK' TRADES STOCK QUOTES, QUIPS 
@@ -22308,7 +22308,7 @@ Jones, airs business news during the day and such talk shows as
 ``Rivera Live'' and ``Hardball With Chris Matthews'' at night.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1412EDT &QL; 
 </TRAILER>
@@ -22321,7 +22321,7 @@ NYT-10-02-98 1412EDT &QL;
 A6412 &Cx1f; ttj-z
 r k &Cx13;  &Cx11;  BC-LYNCH-COLUMN-HNS &LR;      10-02 0695
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LYNCH-COLUMN-HNS </SLUG>
 <HEADLINE>
 STUDENTS AT PARTY U NEED A DOSE OF REALITY 
@@ -22436,7 +22436,7 @@ buckle down because of anything that inconsequential.
 15000, Albany, NY 12212.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1413EDT &QL; 
 </TRAILER>
@@ -22449,7 +22449,7 @@ NYT-10-02-98 1413EDT &QL;
 A6413 &Cx1f; ttj-z
 u e &Cx13;  &Cx11;  BC-FILM-IMPOSTORS-REVIEW     10-02 0548
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FILM-IMPOSTORS-REVIEW-HNS </SLUG>
 <HEADLINE>
 MOVIE GAGS DRAW LAUGHS IN `IMPOSTORS' 
@@ -22546,7 +22546,7 @@ Rating: R (for some language) &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1413EDT &QL; 
 </TRAILER>
@@ -22559,7 +22559,7 @@ NYT-10-02-98 1413EDT &QL;
 A6414 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-AUTO-REVIEW-$ADV04-BO     10-02 1075
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-AUTO-REVIEW-$ADV04-BOS </SLUG>
 <HEADLINE>
 A BMW TO QUICKEN THE PULSE 
@@ -22711,7 +22711,7 @@ _ 900 miles of spirited driving.
 one's a keeper.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1413EDT &QL; 
 </TRAILER>
@@ -22724,7 +22724,7 @@ NYT-10-02-98 1413EDT &QL;
 A6417 &Cx1f; ttj-z
 u e &Cx13;  &Cx11;  BC-FILM-ANTZ-REVIEW-HNS &LR;      10-02 0616
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FILM-ANTZ-REVIEW-HNS </SLUG>
 <HEADLINE>
 ANIMATION, HIP DIALOGUE PUT `ANTZ' ABOVE FILM COLONY 
@@ -22827,7 +22827,7 @@ Rating: PG (for mild language and menacing action) &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1415EDT &QL; 
 </TRAILER>
@@ -22840,7 +22840,7 @@ NYT-10-02-98 1415EDT &QL;
 A6422 &Cx1f; ttj-z
 u e &Cx13;  &Cx11;  BC-FILM-FIRSTLOVE-REVIEW     10-02 0347
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FILM-FIRSTLOVE-REVIEW-HNS </SLUG>
 <HEADLINE>
 `FIRST LOVE' GETS BOGGED DOWN IN FILM SYMBOLISM 
@@ -22916,7 +22916,7 @@ Not rated &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1418EDT &QL; 
 </TRAILER>
@@ -22929,7 +22929,7 @@ NYT-10-02-98 1418EDT &QL;
 A6431 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-SCOTT-RITTER-INTERVIE     10-02 2685
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SCOTT-RITTER-INTERVIEW-EXCLUSIVE-NYTSF </SLUG>
 <HEADLINE>
 HOW IRAQ IS HIDING ITS WEAPONS 
@@ -23332,7 +23332,7 @@ were working really hard. They are good people.
    ------------------ &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1423EDT &QL; 
 </TRAILER>
@@ -23345,7 +23345,7 @@ NYT-10-02-98 1423EDT &QL;
 A6432 &Cx1f; tab-z
 r a &Cx13;  &Cx11;  BC-SCOTT-RITTER-INTERVIE     10-02 2685
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SCOTT-RITTER-INTERVIEW-EXCLUSIVE-NYTSF </SLUG>
 <HEADLINE>
 HOW IRAQ IS HIDING ITS WEAPONS 
@@ -23748,7 +23748,7 @@ were working really hard. They are good people.
    ------------------ &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1423EDT &QL; 
 </TRAILER>
@@ -23761,7 +23761,7 @@ NYT-10-02-98 1423EDT &QL;
 A6462 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-SPORTS-NYT-BUDGET &LR;      10-02 0222
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPORTS-NYT-BUDGET </SLUG>
   
  Attn Sports Editors:  
@@ -23806,7 +23806,7 @@ Angeles Daily News, San Francisco Chronicle and Seattle
 Post-Intelligencer.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1441EDT &QL; 
 </TRAILER>
@@ -23819,7 +23819,7 @@ NYT-10-02-98 1441EDT &QL;
 A6475 &Cx1f; ttj-z
 r f &Cx13;  &Cx11;  BC-SAFEWAY-EXPANDS-HNS &LR;      10-02 0547
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SAFEWAY-EXPANDS-HNS </SLUG>
 <HEADLINE>
 SAFEWAY PLANS BIG INVESTMENT IN NEW, EXISTING STORES 
@@ -23914,7 +23914,7 @@ they're better off opening on those sites rather than their
 competitors.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1449EDT &QL; 
 </TRAILER>
@@ -23927,7 +23927,7 @@ NYT-10-02-98 1449EDT &QL;
 A6483 &Cx1f; ttx-z
 r l &Cx13;  &Cx11;  BC-TRIVIA-Q&AMP;A-TEX     10-02 0449
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TRIVIA-Q&AMP;A-TEX </SLUG>
 <HEADLINE>
 SCOOBY-DOO TALE A BIT STRANGE
@@ -24022,7 +24022,7 @@ Visit the Star-Telegram's online services on the World Wide Web:
 www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1453EDT &QL; 
 </TRAILER>
@@ -24035,7 +24035,7 @@ NYT-10-02-98 1453EDT &QL;
 A6486 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-ART-VANGOGH-BOS &LR;      10-02 1149
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ART-VANGOGH-BOS </SLUG>
 <HEADLINE>
 VAN GOGH TAKES WASHINGTON BY STORM 
@@ -24204,7 +24204,7 @@ Washington and refuses to pay a scalper.
 once-in-a-lifetime event.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1456EDT &QL; 
 </TRAILER>
@@ -24217,7 +24217,7 @@ NYT-10-02-98 1456EDT &QL;
 A6491 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-FEATURE-BUDGET-ART-BO     10-02 0648
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FEATURE-BUDGET-ART-BOS </SLUG>
   
  ART ADV.: A photo with NORTHEASTERN-100TH is being transmitted to
@@ -24355,7 +24355,7 @@ Blaudschun.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1459EDT &QL; 
 </TRAILER>
@@ -24368,13 +24368,13 @@ NYT-10-02-98 1459EDT &QL;
 A6500 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  lRp7M(gBao`"     10-02 0004
 </HEADER>
-<BODY>
+<body>
 lRp7M(g B ao` ``
 <TEXT>
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1502EDT &QL; 
 </TRAILER>
@@ -24387,7 +24387,7 @@ NYT-10-02-98 1502EDT &QL;
 A6504 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-GRAPHICS-BUDGET-NYT &LR;      10-02 0085
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -24404,7 +24404,7 @@ the AP, call the AP Service Desk at 212-621-7983.
 additional t9999 ttf-z u vbx nt05 uvbx
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1503EDT &QL; 
 </TRAILER>
@@ -24417,7 +24417,7 @@ NYT-10-02-98 1503EDT &QL;
 A6505 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-GRAPHICS-EARLY-BUDGET     10-02 0482
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-EARLY-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -24571,7 +24571,7 @@ color
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1503EDT &QL; 
 </TRAILER>
@@ -24584,7 +24584,7 @@ NYT-10-02-98 1503EDT &QL;
 A6506 &Cx1f; ttf-z
 u f &Cx13;  &Cx11;  BC-GRAPHICS-EARLY-BUDGET     10-02 0482
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-EARLY-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -24738,7 +24738,7 @@ color
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1504EDT &QL; 
 </TRAILER>
@@ -24751,7 +24751,7 @@ NYT-10-02-98 1504EDT &QL;
 A6508 &Cx1f; ttf-z
 u a &Cx13;  &Cx11;  BC-GRAPHICS-EARLY-BUDGET     10-02 0482
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-EARLY-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -24905,7 +24905,7 @@ color
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1504EDT &QL; 
 </TRAILER>
@@ -24918,7 +24918,7 @@ NYT-10-02-98 1504EDT &QL;
 A6521 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-ENTERTAINMENT-NYT-BUD     10-02 0396
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ENTERTAINMENT-NYT-BUDGET </SLUG>
   
 <TEXT>
@@ -24986,7 +24986,7 @@ Los Angeles Daily News, San Francisco Chronicle and Seattle
 Post-Intelligencer.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1512EDT &QL; 
 </TRAILER>
@@ -24999,7 +24999,7 @@ NYT-10-02-98 1512EDT &QL;
 A6529 &Cx1f; ttj-z
 r f &Cx13;  &Cx11;  BC-BORDER-COMMUNICATIONS     10-02 0597
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BORDER-COMMUNICATIONS-HNS </SLUG>
 <HEADLINE>
 BORDER CITY SEEKS BINATIONAL TELECOM AUTHORITY 
@@ -25099,7 +25099,7 @@ Commission, which regulates water use on both sides of the Rio
 Grande.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1520EDT &QL; 
 </TRAILER>
@@ -25112,7 +25112,7 @@ NYT-10-02-98 1520EDT &QL;
 A6539 &Cx1f; tdt-z
 u k &Cx13;  &Cx11;  BC-NOLAN-COLUMN-BOS &LR;      10-02 0690
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NOLAN-COLUMN-BOS </SLUG>
 <HEADLINE>
 BILL WELD IS NO DASHIELL HAMMETT 
@@ -25218,7 +25218,7 @@ quit his day job.
    (Martin F. Nolan is a Globe columnist.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1527EDT &QL; 
 </TRAILER>
@@ -25231,7 +25231,7 @@ NYT-10-02-98 1527EDT &QL;
 A6544 &Cx1f; tdt-z
 u l &Cx13;  &Cx11;  BC-AUTOS-COLUMN-BOS &LR;      10-02 0984
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-AUTOS-COLUMN-BOS </SLUG>
 <HEADLINE>
 TEN MORE `SLEEPERS' FROM AN OLD-CAR GURU 
@@ -25373,7 +25373,7 @@ although the skin won't dent or ding, it will rip and tear.
    Oh well, at least there's no harm in that one.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1529EDT &QL; 
 </TRAILER>
@@ -25386,7 +25386,7 @@ NYT-10-02-98 1529EDT &QL;
 A6547 &Cx1f; ttc-z
 r e &Cx13;  &Cx11;  BC-RADIO-INTERNET-LADN     10-02 0985
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RADIO-INTERNET-LADN </SLUG>
 <HEADLINE>
 REDEFINING RADIO
@@ -25550,7 +25550,7 @@ legally, in ways never before possible.
 appealing about broadcasting when you're not supposed to.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1530EDT &QL; 
 </TRAILER>
@@ -25563,7 +25563,7 @@ NYT-10-02-98 1530EDT &QL;
 A6549 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  AM-ADD-NYT-BUDGET &LR;      10-02 0525
 </HEADER>
-<BODY>
+<body>
  AM-ADD-NYT-BUDGET  
 <TEXT>
 <P>
@@ -25664,7 +25664,7 @@ Daily News, San Francisco Chronicle and Seattle Post-Intelligencer.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1532EDT &QL; 
 </TRAILER>
@@ -25677,7 +25677,7 @@ NYT-10-02-98 1532EDT &QL;
 A6558 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-IMPEACHABLE-OFFENSES-     10-02 1193
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACHABLE-OFFENSES-$ADV04-HNS </SLUG>
 <HEADLINE>
 LAWMAKERS LOOK TO WATERGATE CASE FOR IMPEACHMENT GUIDANCE 
@@ -25868,7 +25868,7 @@ the House of Representatives considers it to be at a given moment
 in history.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1537EDT &QL; 
 </TRAILER>
@@ -25881,7 +25881,7 @@ NYT-10-02-98 1537EDT &QL;
 A6566 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-HATCH-IMPEACHMENT-HNS     10-02 0705
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HATCH-IMPEACHMENT-HNS </SLUG>
 <HEADLINE>
 HATCH PREDICTS HOUSE WILL IMPEACH BUT SENATE WON'T CONVICT 
@@ -26002,7 +26002,7 @@ can'' to keep the impeachment process going as long as two years,
 or until Clinton finishes his term.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1549EDT &QL; 
 </TRAILER>
@@ -26015,7 +26015,7 @@ NYT-10-02-98 1549EDT &QL;
 A6602 &Cx1f; ttj-z
 u v &Cx13;  &Cx11;  BC-HEARST-NEWS-BUDGET-1S     10-02 0960
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEARST-NEWS-BUDGET-1STLD-WRITETHRU-HNS </SLUG>
   
  Friday, Oct. 2, 1998     
@@ -26186,7 +26186,7 @@ as yet no credible heroes or heroines. But there are villains and
 victims. By ROBERT E. THOMPSON. (Filed Wednesday.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1616EDT &QL; 
 </TRAILER>
@@ -26199,7 +26199,7 @@ NYT-10-02-98 1616EDT &QL;
 A6603 &Cx1f; tab-z
 r l &Cx13;  &Cx11;  BC-DR-RUTH-ON-GRANDPAREN     10-02 1353
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DR-RUTH-ON-GRANDPARENTING-CORRECTION-LIFEBEAT-ART-NYTSF </SLUG>
 <HEADLINE>
 WHAT KIND OF A GRANDPARENT ARE YOU?
@@ -26416,7 +26416,7 @@ Reprinted by arrangement with Routledge Inc. Distributed by New
 York Times Special Features
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1616EDT &QL; 
 </TRAILER>
@@ -26429,7 +26429,7 @@ NYT-10-02-98 1616EDT &QL;
 A6605 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-FEATURE-BUDGET-ART-BO     10-02 0648
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FEATURE-BUDGET-ART-BOS </SLUG>
   
  ART ADV.: A photo with NORTHEASTERN-100TH is being transmitted to
@@ -26567,7 +26567,7 @@ Blaudschun.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1617EDT &QL; 
 </TRAILER>
@@ -26580,7 +26580,7 @@ NYT-10-02-98 1617EDT &QL;
 A6608 &Cx1f; ttx-z
 r l &Cx13;  &Cx11;  BC-STAPLES-COLUMN-TEX     10-02 0635
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STAPLES-COLUMN-TEX </SLUG>
 <HEADLINE>
 TWO DAUGHTERS: AN ADVENTURE NEVERENDING
@@ -26694,7 +26694,7 @@ Star-Telegram. Visit the Star-Telegram's online services on the
 World Wide Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1617EDT &QL; 
 </TRAILER>
@@ -26707,7 +26707,7 @@ NYT-10-02-98 1617EDT &QL;
 A6621 &Cx1f; tdt-z
 u l &Cx13;  &Cx11;  BC-ANIMALS-COLUMN-BOS &LR;      10-02 0956
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ANIMALS-COLUMN-BOS </SLUG>
 <HEADLINE>
 LITTLE UNDERSTOOD, CROWS AMONG NATURE'S MOST INTELLIGENT ANIMALS 
@@ -26860,7 +26860,7 @@ depositing the coins in the drainpipe of the building next door.
 Which just happened to be a bank. Coincidence?
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1621EDT &QL; 
 </TRAILER>
@@ -26873,7 +26873,7 @@ NYT-10-02-98 1621EDT &QL;
 A6623 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-AUTOS-COLUMN-BOS &LR;      10-02 0984
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-AUTOS-COLUMN-BOS </SLUG>
 <HEADLINE>
 TEN MORE `SLEEPERS' FROM AN OLD-CAR GURU 
@@ -27015,7 +27015,7 @@ although the skin won't dent or ding, it will rip and tear.
    Oh well, at least there's no harm in that one.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1622EDT &QL; 
 </TRAILER>
@@ -27028,7 +27028,7 @@ NYT-10-02-98 1622EDT &QL;
 A6635 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  AM-PAGE1-CONSIDER-NYT     10-02 0697
 </HEADER>
-<BODY>
+<body>
  AM-PAGE1-CONSIDER-NYT 
  (HLW)
 <TEXT>
@@ -27140,7 +27140,7 @@ least half the 118 ``democratizing'' countries in the world fit
 this model. By Eric Alterman.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1626EDT &QL; 
 </TRAILER>
@@ -27153,7 +27153,7 @@ NYT-10-02-98 1626EDT &QL;
 A6638 &Cx1f; tdt-z
 s v &Cx13;  &Cx11;  BC-SUNDAY-$ADV04-BUDGET-     10-02 0225
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SUNDAY-$ADV04-BUDGET-BOS </SLUG>
 <HEADLINE>
  
@@ -27211,7 +27211,7 @@ investments are so attractive. By Kenneth Hooker.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1627EDT &QL; 
 </TRAILER>
@@ -27224,7 +27224,7 @@ NYT-10-02-98 1627EDT &QL;
 A6640 &Cx1f; gen-z
 u v &Cx13;  &Cx11;  BC-STATES-BUDGETTHISISTH     10-02 0461
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STATES-BUDGET </SLUG>
   THIS IS THE STATES NEWS SERVICE BUDGET FOR OCT.
 2, 1998. IF YOU HAVE ANY QUESTIONS, PLEASE CALL US AT 202-628-3100.
@@ -27301,7 +27301,7 @@ at border crossings. Marlin
    -30-
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1627EDT &QL; 
 </TRAILER>
@@ -27314,7 +27314,7 @@ NYT-10-02-98 1627EDT &QL;
 A6650 &Cx1f; ttx-z
 r l &Cx13;  &Cx11;  BC-TELENOVELAS-TEX     10-02 0713
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TELENOVELAS-TEX </SLUG>
 <HEADLINE>
 SPANISH-LANGUAGE SOAP OPERAS BUBBLE TO THE TOP
@@ -27445,7 +27445,7 @@ they identified with,'' said Barrera, referring to her research.
 Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1630EDT &QL; 
 </TRAILER>
@@ -27458,7 +27458,7 @@ NYT-10-02-98 1630EDT &QL;
 A6656 &Cx1f; ttj-z
 u a &Cx13;  &Cx11;  BC-UFO-STUDY-$ADV3-HNS &LR;      10-02 1346
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-UFO-STUDY-$ADV3-HNS </SLUG>
 <HEADLINE>
 UFO INVESTIGATOR FINDS LITTLE HELP FROM SCIENTISTS 
@@ -27666,7 +27666,7 @@ them. &UR; '' &LR;  &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1633EDT &QL; 
 </TRAILER>
@@ -27679,7 +27679,7 @@ NYT-10-02-98 1633EDT &QL;
 A6658 &Cx1f; taf-z
 u l &Cx13;  &Cx11;  BC-STYLE-BUDGET-NYT &LR;      10-02 0473
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STYLE-BUDGET-NYT </SLUG>
   
  Attn: Style and Leisure Editors:  
@@ -27779,7 +27779,7 @@ is usually when I notice them. By Cass Peterson. &QL;
    E-mail: triggp(at)nytimes.com.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1634EDT &QL; 
 </TRAILER>
@@ -27792,7 +27792,7 @@ NYT-10-02-98 1634EDT &QL;
 A6661 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-SUPREME-COURT-$ADV3-H     10-02 1319
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SUPREME-COURT-$ADV3-HNS </SLUG>
 <HEADLINE>
 SUPREME COURT TO ADDRESS RIGHT TO PRIVACY, PEACEFUL ASSEMBLY 
@@ -27994,7 +27994,7 @@ XXXEND OF STORY &QL;
  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1635EDT &QL; 
 </TRAILER>
@@ -28007,7 +28007,7 @@ NYT-10-02-98 1635EDT &QL;
 A6668 &Cx1f; ttx-z
 r k &Cx13;  &Cx11;  BC-THOMPSON-COLUMN-TEX     10-02 0734
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-THOMPSON-COLUMN-TEX </SLUG>
 <HEADLINE>
 STAMP OF (DIS)APPROVAL: MAIL ON MEDIA COLUMN RANGES FROM APPLAUSE
@@ -28130,7 +28130,7 @@ You can contact him at (817) 390-7787. Visit the Star-Telegram's
 online services on the World Wide Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1638EDT &QL; 
 </TRAILER>
@@ -28143,7 +28143,7 @@ NYT-10-02-98 1638EDT &QL;
 A6687 &Cx1f; taf-z
 s l &Cx13;  &Cx11;  BC-GARDEN-COLUMN-$ADV04-     10-02 0899
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GARDEN-COLUMN-$ADV04-NYT </SLUG>
 <HEADLINE>
 HUMMINGBIRDS AND OTHER WINGED MESSENGERS 
@@ -28279,7 +28279,7 @@ experience that is not likely to be repeated. That one, I hope,
 will return when the lilacs are next in bloom.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1647EDT &QL; 
 </TRAILER>
@@ -28292,7 +28292,7 @@ NYT-10-02-98 1647EDT &QL;
 A6691 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-FBC-COLLEGE-FOOTBALL-     10-02 1383
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-COLLEGE-FOOTBALL-REPORT-TEX </SLUG>
 <HEADLINE>
 BOWL GAMES NO LONGER CALL THE SHOTS
@@ -28514,7 +28514,7 @@ Texas/L, 13-9 1989/Andre Ware, Houston/W, 45-39 1996/Danny
 Wuerffel, Florida/L, 42-7
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1648EDT &QL; 
 </TRAILER>
@@ -28527,7 +28527,7 @@ NYT-10-02-98 1648EDT &QL;
 A6696 &Cx1f; tta-z
 u a &Cx13;  &Cx11;  BC-OBIT-AUTRY-ART-2TAKES     10-02 0871
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-AUTRY-ART-2TAKES-NYT </SLUG>
 <HEADLINE>
 GENE AUTRY: SINGING COWBOY, ACTOR, BASEBALL OWNER, DEAD AT 91 
@@ -28768,7 +28768,7 @@ remaining share of the team at his death.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1650EDT &QL; 
 </TRAILER>
@@ -28781,7 +28781,7 @@ NYT-10-02-98 1650EDT &QL;
 A6702 &Cx1f; ttj-z
 u f &Cx13;  &Cx11;  BC-SABRINA-TV-REVIEW-HNS     10-02 0737
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SABRINA-TV-REVIEW-HNS </SLUG>
 <HEADLINE>
 MELISSA JOAN HART HAS MAGICAL FUN WITH `SABRINA' &HT;    
@@ -28923,7 +28923,7 @@ this _ the crew, the cast, everything. So I'm really lucky.'' &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1651EDT &QL; 
 </TRAILER>
@@ -28936,7 +28936,7 @@ NYT-10-02-98 1651EDT &QL;
 A6728 &Cx1f; tta-z
 u a &Cx13;  &Cx11;  BC-OBIT-AUTRY-SHORT-VERS     10-02 0766
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-AUTRY-SHORT-VERSION-ART-NYT </SLUG>
 <HEADLINE>
 GENE AUTRY: SINGING COWBOY, ACTOR, BASEBALL OWNER, DEAD AT 91 
@@ -29054,7 +29054,7 @@ circles, Autry was one of the most popular owners among players on
 his own and other teams.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1702EDT &QL; 
 </TRAILER>
@@ -29067,7 +29067,7 @@ NYT-10-02-98 1702EDT &QL;
 A6742 &Cx1f; ttx-z
 r a &Cx13;  &Cx11;  BC-MONARCHMIGRATION-TEX     10-02 0683
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MONARCHMIGRATION-TEX </SLUG>
 <HEADLINE>
 MYSTERIOUS ANNUAL MIGRATION OF MONARCH BUTTERFLIES UNDER WAY
@@ -29206,7 +29206,7 @@ shorter wings and have a black band across the hind wings.
 Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1705EDT &QL; 
 </TRAILER>
@@ -29219,7 +29219,7 @@ NYT-10-02-98 1705EDT &QL;
 A6743 &Cx1f; tad-z
 r s &Cx13;  &Cx11;  BC-SPORTS-BJT03-COX     10-02 1028
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPORTS-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -29437,7 +29437,7 @@ Atlanta Athletic Club. (Holcomb, Atlanta Journal-Constitution) ETA
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1706EDT &QL; 
 </TRAILER>
@@ -29450,7 +29450,7 @@ NYT-10-02-98 1706EDT &QL;
 A6745 &Cx1f; tad-z
 r v &Cx13;  &Cx11;  BC-SPORTS-BJT03-COX     10-02 1028
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPORTS-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -29668,7 +29668,7 @@ Atlanta Athletic Club. (Holcomb, Atlanta Journal-Constitution) ETA
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1707EDT &QL; 
 </TRAILER>
@@ -29681,7 +29681,7 @@ NYT-10-02-98 1707EDT &QL;
 A6748 &Cx1f; ttj-z
 u e &Cx13;  &Cx11;  BC-SPIELBERG-AWARD-HNS &LR;      10-02 0556
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPIELBERG-AWARD-HNS </SLUG>
 <HEADLINE>
 HOLOCAUST MUSEUM OF HOUSTON HONORS FILM DIRECTOR/PRODUCER STEVEN
@@ -29773,7 +29773,7 @@ XXXEND OF STORY &QL;
  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1707EDT &QL; 
 </TRAILER>
@@ -29786,7 +29786,7 @@ NYT-10-02-98 1707EDT &QL;
 A6755 &Cx1f; ttx-z
 r e &Cx13;  &Cx11;  BC-TV-PERKINS-COLUMN-TEX     10-02 1070
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-PERKINS-COLUMN-TEX </SLUG>
 <HEADLINE>
 JAMES GARNER DOES JUSTICE TO SCUMBAG ROLE IN `LEGALESE'
@@ -29958,7 +29958,7 @@ kpp(at)star-telegram.com. Visit the Star-Telegram's online services
 on the World Wide Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1709EDT &QL; 
 </TRAILER>
@@ -29971,7 +29971,7 @@ NYT-10-02-98 1709EDT &QL;
 A6763 &Cx1f; ttj-z
 u e &Cx13;  &Cx11;  BC-SPIELBERG-AWARD-1STWR     10-02 0571
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPIELBERG-AWARD-1STWRITETHRU-HNS </SLUG>
 <HEADLINE>
 HOLOCAUST MUSEUM OF HOUSTON HONORS FILM DIRECTOR/PRODUCER STEVEN
@@ -30065,7 +30065,7 @@ XXXEND OF STORY &QL;
  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1711EDT &QL; 
 </TRAILER>
@@ -30078,7 +30078,7 @@ NYT-10-02-98 1711EDT &QL;
 A6770 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-BOFA-SFCHRON &LR;      10-02 0456
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BOFA-SFCHRON </SLUG>
 <HEADLINE>
 NEW BOFA STARTS FIRST DAY --ALREADY INITIATES CHANGES  
@@ -30153,7 +30153,7 @@ one of the biggest grassroots volunteer campaigns ever.''  &LR;   &LR;  &QL;
  &LR; Chronicle staff writer Sam Zuckerman contributed to this report. &QL;  &LR;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1712EDT &QL; 
 </TRAILER>
@@ -30166,7 +30166,7 @@ NYT-10-02-98 1712EDT &QL;
 A6776 &Cx1f; ttd-z
 r v &Cx13;  &Cx11;  BC-MUTUALFUNDS-SFCHRON &LR;      10-02 0970
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MUTUALFUNDS-SFCHRON </SLUG>
 <HEADLINE>
 GRIZZLY QUARTER FOR MUTUAL FUNDS  
@@ -30336,7 +30336,7 @@ caps is supposed to lower risk, but that has not been the case
 recently. But I think it still makes sense to be diversified.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1714EDT &QL; 
 </TRAILER>
@@ -30349,7 +30349,7 @@ NYT-10-02-98 1714EDT &QL;
 A6779 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-BAYSTOCKS-SFCHRON &LR;      10-02 0526
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BAYSTOCKS-SFCHRON </SLUG>
 <HEADLINE>
 BAY AREA STOCKS SLASHED BY 21%  
@@ -30443,7 +30443,7 @@ the wireless communications market, was hurt by weaker
 international sales, particularly in Asia and Latin America.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1714EDT &QL; 
 </TRAILER>
@@ -30456,7 +30456,7 @@ NYT-10-02-98 1714EDT &QL;
 A6782 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-STREETSMARTS-SFCHRON &LR;      10-02 0951
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STREETSMARTS-SF </SLUG>
 <HEADLINE>
 HEDGIES ARE EDGY _ SELLING SHORT IS TOUGHER THAN IT LOOKS  
@@ -30619,7 +30619,7 @@ mveverka(ATSYMBOL)sfgate.com. &LR;
    &LR;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1715EDT &QL; 
 </TRAILER>
@@ -30632,7 +30632,7 @@ NYT-10-02-98 1715EDT &QL;
 A6785 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-TEMPLETON- &LR;      10-02 0490
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TEMPLETON- </SLUG>
 <HEADLINE>
 TEMPLETON SEES OPPORTUNITIES IN GLOBAL CHAOS  
@@ -30720,7 +30720,7 @@ Buy things that have the lowest market price relative to value,''
 he counseled.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1716EDT &QL; 
 </TRAILER>
@@ -30733,7 +30733,7 @@ NYT-10-02-98 1716EDT &QL;
 A6792 &Cx1f; ttx-z
 r e &Cx13;  &Cx11;  BC-VANGOGH-EXHIBIT-TEX     10-02 0871
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-VANGOGH-EXHIBIT-TEX </SLUG>
 <HEADLINE>
 VAN GOGH'S WORKS SPEAK FOR THEMSELVES AT DAZZLING WASHINGTON
@@ -30875,7 +30875,7 @@ can call her at (817) 390-7679. Visit the Star-Telegram's online
 services on the World Wide Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1718EDT &QL; 
 </TRAILER>
@@ -30888,7 +30888,7 @@ NYT-10-02-98 1718EDT &QL;
 A6797 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-TEMPLETON-SFCHRON &LR;      10-02 0491
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TEMPLETON-SFCHRON </SLUG>
 <HEADLINE>
 TEMPLETON SEES OPPORTUNITIES IN GLOBAL CHAOS  
@@ -30976,7 +30976,7 @@ Buy things that have the lowest market price relative to value,''
 he counseled.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1719EDT &QL; 
 </TRAILER>
@@ -30989,7 +30989,7 @@ NYT-10-02-98 1719EDT &QL;
 A6806 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-MUTUALFUNDS-SFCHRON &LR;      10-02 0970
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MUTUALFUNDS-SFCHRON </SLUG>
 <HEADLINE>
 GRIZZLY QUARTER FOR MUTUAL FUNDS  
@@ -31159,7 +31159,7 @@ caps is supposed to lower risk, but that has not been the case
 recently. But I think it still makes sense to be diversified.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1722EDT &QL; 
 </TRAILER>
@@ -31172,7 +31172,7 @@ NYT-10-02-98 1722EDT &QL;
 A6815 &Cx1f; ttj-z
 u a &Cx13;  &Cx11;  BC-INTERNET-SEX-HNS &LR;      10-02 0332
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INTERNET-SEX-HNS </SLUG>
 <HEADLINE>
 &HT;    COUPLE PLEAD GUILTY TO LURING MICHIGAN TEEN TO HOUSTON TO HAVE
@@ -31237,7 +31237,7 @@ movies and music.'' &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1727EDT &QL; 
 </TRAILER>
@@ -31250,7 +31250,7 @@ NYT-10-02-98 1727EDT &QL;
 A6816 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  BC-SUNDAY-FINAL-BUDGET-N     10-02 1916
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SUNDAY-FINAL-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -31532,7 +31532,7 @@ Picasso collection. (Moved).
    Eds: There will be no TRAVEL-Q&AMP;A this week.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1727EDT &QL; 
 </TRAILER>
@@ -31545,7 +31545,7 @@ NYT-10-02-98 1727EDT &QL;
 A6822 &Cx1f; ttx-z
 r e &Cx13;  &Cx11;  BC-TV-PERKINS-COLUMN-TEX     10-02 0793
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-PERKINS-COLUMN-TEX </SLUG>
 <HEADLINE>
 TV PROGRAMMING A MALE GAME, DESPITE ADDING WOMEN TO LINEUP
@@ -31664,7 +31664,7 @@ kpp(at)star-telegram.com. Visit the Star-Telegram's online services
 on the World Wide Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1732EDT &QL; 
 </TRAILER>
@@ -31677,7 +31677,7 @@ NYT-10-02-98 1732EDT &QL;
 A6849 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-WEATHER-MAP-NYT &LR;      10-02 0407
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WEATHER-MAP-NYT </SLUG>
 <HEADLINE>
 WEATHER 
@@ -31739,7 +31739,7 @@ rises to replace it, thus slowing the inexorable slide into winter
 chill. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1747EDT &QL; 
 </TRAILER>
@@ -31752,7 +31752,7 @@ NYT-10-02-98 1747EDT &QL;
 A6852 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-ILLIBERAL-DEMOCRACY-2     10-02 1119
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ILLIBERAL-DEMOCRACY-2TAKES-NYT </SLUG>
 <HEADLINE>
 GLOBAL TREND TOWARD DEMOCRACY HITS SNAGS IN SOME COUNTRIES 
@@ -31989,7 +31989,7 @@ like French fashion. They are launched with lots of fireworks, but
 we move on so quickly, nothing can be resolved.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1750EDT &QL; 
 </TRAILER>
@@ -32002,7 +32002,7 @@ NYT-10-02-98 1750EDT &QL;
 A6862 &Cx1f; taf-z
 s l &Cx13;  &Cx11;  BC-MEN-BRIEFCASES-ART-$A     10-02 0550
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MEN-BRIEFCASES-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 ATTACHED TO AN ATTACHE 
@@ -32089,7 +32089,7 @@ loves matched luggage, there are larger models, for big tools and
 weekends.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1753EDT &QL; 
 </TRAILER>
@@ -32102,7 +32102,7 @@ NYT-10-02-98 1753EDT &QL;
 A6866 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-STRANGE-FILM-REVIEW-N     10-02 0439
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STRANGE-FILM-REVIEW-NYT </SLUG>
 <HEADLINE>
 `STRANGELAND': GRUESOME AND BORING 
@@ -32178,7 +32178,7 @@ Englund (Jackson Roth), Linda Cardellini (Genevieve Gage) and Amy
 Smart (Angela).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1753EDT &QL; 
 </TRAILER>
@@ -32191,7 +32191,7 @@ NYT-10-02-98 1753EDT &QL;
 A6867 &Cx1f; gen-z
 u w &Cx13;  &Cx11;  BC-STATES-ARLEN-NAT     10-02 0752
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STATES-ARLEN-NAT </SLUG>
 
 <TEXT>
@@ -32328,7 +32328,7 @@ Specter.
    -30-
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1753EDT &QL; 
 </TRAILER>
@@ -32341,7 +32341,7 @@ NYT-10-02-98 1753EDT &QL;
 A6872 &Cx1f; taf-z
 s e &Cx13;  &Cx11;  BC-PIAZZOLLA-MUSIC-2TAKE     10-02 0976
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PIAZZOLLA-MUSIC-2TAKES-$ADV04-NYT </SLUG>
 <HEADLINE>
 A COMPOSER DEFYING CATEGORIES  
@@ -32588,7 +32588,7 @@ mysteries? Will stage productions follow? From heaven or hell, the
 maestro is watching.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1755EDT &QL; 
 </TRAILER>
@@ -32601,7 +32601,7 @@ NYT-10-02-98 1755EDT &QL;
 A6877 &Cx1f; taf-z
 u l &Cx13;  &Cx11;  BC-NIGHTOUT-THICKE-ART-N     10-02 0527
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NIGHTOUT-THICKE-ART-NYT </SLUG>
 <HEADLINE>
 NEVER TOO LATE TO BE A NEW FACE 
@@ -32704,7 +32704,7 @@ with her husband at a quiet table.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1756EDT &QL; 
 </TRAILER>
@@ -32717,7 +32717,7 @@ NYT-10-02-98 1756EDT &QL;
 A6886 &Cx1f; tad-z
 u v &Cx13;  &Cx11;  BC-SPOT-BJT03-COXUPDATE     10-02 1175
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPOT-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -32917,7 +32917,7 @@ the middle of hot afternoons. (Emling, Cox News Service).
 News Servic
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1800EDT &QL; 
 </TRAILER>
@@ -32930,7 +32930,7 @@ NYT-10-02-98 1800EDT &QL;
 A6889 &Cx1f; tad-z
 u w &Cx13;  &Cx11;  BC-MILITARY-PORK03-COX     10-02 0768
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MILITARY-PORK03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -33058,7 +33058,7 @@ excess spending this year, McCain offered a firm, ``No.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1801EDT &QL; 
 </TRAILER>
@@ -33071,7 +33071,7 @@ NYT-10-02-98 1801EDT &QL;
 A6891 &Cx1f; taf-z
 s l &Cx13;  &Cx11;  BC-NY-NEO-BURLESQUE-ART-     10-02 1298
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-NEO-BURLESQUE-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 BURLESQUE IS BACK, A STEP AHEAD OF THE LAW 
@@ -33253,7 +33253,7 @@ admonishes prospective patrons to ``Rush in before Rudy discovers
 us!''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1802EDT &QL; 
 </TRAILER>
@@ -33266,7 +33266,7 @@ NYT-10-02-98 1802EDT &QL;
 A6892 &Cx1f; tad-z
 u w &Cx13;  &Cx11;  BC-LOCKHART03-COX     10-02 1121
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LOCKHART03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -33460,7 +33460,7 @@ truth and to helping the American people.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1802EDT &QL; 
 </TRAILER>
@@ -33473,7 +33473,7 @@ NYT-10-02-98 1802EDT &QL;
 A6894 &Cx1f; tad-z
 r a &Cx13;  &Cx11;  BC-SPOT-BJT03-COXUPDATE     10-02 1431
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPOT-BJT03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -33718,7 +33718,7 @@ students over a 16-month period. (Crecente, Palm Beach Post) MOVED.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1802EDT &QL; 
 </TRAILER>
@@ -33731,7 +33731,7 @@ NYT-10-02-98 1802EDT &QL;
 A6903 &Cx1f; ttx-z
 r l &Cx13;  &Cx11;  BC-CARS-WILLIAMS-COLUMN-     10-02 1145
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CARS-WILLIAMS-COLUMN-TEX </SLUG>
 <HEADLINE>
 GRAND VITARA MAKES MUCH BETTER SENSE THAN ITS NAME
@@ -33909,7 +33909,7 @@ Star-Telegram's online services on the World Wide Web:
 www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1807EDT &QL; 
 </TRAILER>
@@ -33922,7 +33922,7 @@ NYT-10-02-98 1807EDT &QL;
 A6908 &Cx1f; tab-z
 r k &Cx13;  &Cx11;  BC-LINDA-TRIPP-TAPES-NYT     10-02 0882
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LINDA-TRIPP-TAPES-NYTSF </SLUG>
 <HEADLINE>
 AGAIN, A KEN STARR TACTIC IS GOING TO BACKFIRE 
@@ -34092,7 +34092,7 @@ publications, and has appeared as a guest on ``Nightline'' and
    ---------------- &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1809EDT &QL; 
 </TRAILER>
@@ -34105,7 +34105,7 @@ NYT-10-02-98 1809EDT &QL;
 A6909 &Cx1f; tab-z
 r a &Cx13;  &Cx11;  BC-LINDA-TRIPP-TAPES-NYT     10-02 0882
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LINDA-TRIPP-TAPES-NYTSF </SLUG>
 <HEADLINE>
 AGAIN, A KEN STARR TACTIC IS GOING TO BACKFIRE 
@@ -34275,7 +34275,7 @@ publications, and has appeared as a guest on ``Nightline'' and
    ---------------- &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1809EDT &QL; 
 </TRAILER>
@@ -34288,7 +34288,7 @@ NYT-10-02-98 1809EDT &QL;
 A6914 &Cx1f; ttx-z
 u v &Cx13;  &Cx11;  BC-TEXBUDGET-TEX     10-02 0621
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TEXBUDGET-TEX </SLUG>
  
  
@@ -34434,7 +34434,7 @@ THOMPSON. Story has moved in ``k'' commentary category. &QL;
  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1810EDT &QL; 
 </TRAILER>
@@ -34447,7 +34447,7 @@ NYT-10-02-98 1810EDT &QL;
 A6917 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-BERGMAN-FILM-REVIEW-N     10-02 0877
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BERGMAN-FILM-REVIEW-NYT </SLUG>
 <HEADLINE>
 `IN THE PRESENCE OF A CLOWN': BERGMAN'S MOVIE WITHIN A MOVIE MADE
@@ -34579,7 +34579,7 @@ Bergman), Peter Stormare (Petrus Landahl) and Anita Bjork (Anna
 Akerblom).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1812EDT &QL; 
 </TRAILER>
@@ -34592,7 +34592,7 @@ NYT-10-02-98 1812EDT &QL;
 A6920 &Cx1f; taf-z
 s l &Cx13;  &Cx11;  BC-DRESS-DIVORCE-$ADV04-     10-02 1047
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DRESS-DIVORCE-$ADV04-2TAKES-NYT </SLUG>
 <HEADLINE>
 HOW TO DRESS FOR A DIVORCE 
@@ -34803,7 +34803,7 @@ your jewelry. It's your last goodbye to your husband, and you want
 him to think, `What did I let go?'''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1813EDT &QL; 
 </TRAILER>
@@ -34816,7 +34816,7 @@ NYT-10-02-98 1813EDT &QL;
 A6926 &Cx1f; tad-z
 u s &Cx13;  &Cx11;  BC-SPORTSNETBRITE-BJT02-     10-02 0676
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPORTSNETBRITE-BJT02-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -35083,7 +35083,7 @@ St.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1814EDT &QL; 
 </TRAILER>
@@ -35096,7 +35096,7 @@ NYT-10-02-98 1814EDT &QL;
 A6927 &Cx1f; tad-z
 u v &Cx13;  &Cx11;  BC-SPORTSNETBRITE-BJT02-     10-02 0676
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPORTSNETBRITE-BJT02-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -35363,7 +35363,7 @@ St.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1815EDT &QL; 
 </TRAILER>
@@ -35376,7 +35376,7 @@ NYT-10-02-98 1815EDT &QL;
 A6945 &Cx1f; ttx-z
 r l &Cx13;  &Cx11;  BC-CARS-GLANCE-TEX     10-02 0227
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CARS-GLANCE-TEX </SLUG>
 <HEADLINE>
 1999 SUZUKI GRAND VITARA SPORT-UTILITY VEHICLE
@@ -35428,7 +35428,7 @@ Outback, Subaru Forester, Jeep Cherokee, Kia Sportage.
 Web: www.star-telegram.com) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1822EDT &QL; 
 </TRAILER>
@@ -35441,7 +35441,7 @@ NYT-10-02-98 1822EDT &QL;
 A6946 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-GRAPHICS-BUDGET-NYT &LR;      10-02 0095
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -35459,7 +35459,7 @@ additional information by calling the NYT Photo/Graphics desk at
 (888) 603-1036 between noon and 10 p.m. EST.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1822EDT &QL; 
 </TRAILER>
@@ -35472,7 +35472,7 @@ NYT-10-02-98 1822EDT &QL;
 A6953 &Cx1f; ttj-z
 u i &Cx13;  &Cx11;  BC-INDIA-POLLUTION-$ADV3     10-02 1309
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INDIA-POLLUTION-$ADV3-HNS </SLUG>
 <HEADLINE>
 INDIA-POLLUTION-$ADV3 
@@ -35701,7 +35701,7 @@ India. &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1824EDT &QL; 
 </TRAILER>
@@ -35714,13 +35714,13 @@ NYT-10-02-98 1824EDT &QL;
 A6960 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  3C/Qh     10-02 0005
 </HEADER>
-<BODY>
+<body>
 3C/Qh L{bQY3v K ``
 <TEXT>
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1826EDT &QL; 
 </TRAILER>
@@ -35733,7 +35733,7 @@ NYT-10-02-98 1826EDT &QL;
 A6962 &Cx1f; tdt-z
 u v &Cx13;  &Cx11;  BC-SPOT/FEATURE-BUDGET-B     10-02 0568
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPOT/FEATURE-BUDGET-BOS </SLUG>
   
  For Release SATURDAY AMs, October 3, 1998  
@@ -35876,7 +35876,7 @@ the locker room ready to go. By Will McDonough.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1827EDT &QL; 
 </TRAILER>
@@ -35889,7 +35889,7 @@ NYT-10-02-98 1827EDT &QL;
 A6963 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-GRAPHICS-BUDGET-NYT &LR;      10-02 0570
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -36075,7 +36075,7 @@ NYSE.
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1827EDT &QL; 
 </TRAILER>
@@ -36088,7 +36088,7 @@ NYT-10-02-98 1827EDT &QL;
 A6964 &Cx1f; ttf-z
 u f &Cx13;  &Cx11;  BC-GRAPHICS-BUDGET-NYT &LR;      10-02 0570
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -36274,7 +36274,7 @@ NYSE.
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1827EDT &QL; 
 </TRAILER>
@@ -36287,7 +36287,7 @@ NYT-10-02-98 1827EDT &QL;
 A6967 &Cx1f; ttf-z
 u a &Cx13;  &Cx11;  BC-GRAPHICS-BUDGET-NYT &LR;      10-02 0570
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -36473,7 +36473,7 @@ NYSE.
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1828EDT &QL; 
 </TRAILER>
@@ -36486,7 +36486,7 @@ NYT-10-02-98 1828EDT &QL;
 A6970 &Cx1f; ttx-z
 r k &Cx13;  &Cx11;  BC-EDIT-AUTRY-TEX     10-02 0334
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EDIT-AUTRY-TEX </SLUG>
 <HEADLINE>
 WHO WAS THE TRUE KING OF THE COWBOYS?
@@ -36549,7 +36549,7 @@ humanitarian and an outstanding American.''
 Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1830EDT &QL; 
 </TRAILER>
@@ -36562,7 +36562,7 @@ NYT-10-02-98 1830EDT &QL;
 A6978 &Cx1f; ttx-z
 r k &Cx13;  &Cx11;  BC-EDIT-AUTRY-TEX     10-02 0334
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EDIT-AUTRY-TEX </SLUG>
 <HEADLINE>
 WHO WAS THE TRUE KING OF THE COWBOYS?
@@ -36625,7 +36625,7 @@ humanitarian and an outstanding American.''
 Web: www.star-telegram.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1832EDT &QL; 
 </TRAILER>
@@ -36638,7 +36638,7 @@ NYT-10-02-98 1832EDT &QL;
 A6985 &Cx1f; tad-z
 u l &Cx13;  &Cx11;  BC-GARDEN-LMAY03-COX     10-02 0596
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GARDEN-LMAY03-COX </SLUG>
 <HEADLINE>
 &HT;    
@@ -36746,7 +36746,7 @@ sweet relief from an endless summer.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1835EDT &QL; 
 </TRAILER>
@@ -36759,7 +36759,7 @@ NYT-10-02-98 1835EDT &QL;
 A6986 &Cx1f; tad-z
 u l &Cx13;  &Cx11;  BC-GARDENFEST03-COX     10-02 0500
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GARDENFEST03-COX </SLUG>
 <HEADLINE>
 &HT;    
@@ -36858,7 +36858,7 @@ marketplace. Information: 843-722-0661.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1835EDT &QL; 
 </TRAILER>
@@ -36871,7 +36871,7 @@ NYT-10-02-98 1835EDT &QL;
 A6989 &Cx1f; tad-z
 u l &Cx13;  &Cx11;  BC-RELIGION-BRAVES-COX     10-02 0815
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RELIGION-BRAVES-COX </SLUG>
 <HEADLINE>
 &HT;    
@@ -37028,7 +37028,7 @@ think I would ever speak about (my faith) the way I do now.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1836EDT &QL; 
 </TRAILER>
@@ -37041,7 +37041,7 @@ NYT-10-02-98 1836EDT &QL;
 A6990 &Cx1f; tad-z
 u l &Cx13;  &Cx11;  BC-RELIGION-RENEWAL-COX     10-02 0364
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RELIGION-RENEWAL-COX </SLUG>
 <HEADLINE>
 &HT;    
@@ -37111,7 +37111,7 @@ familiar to the black community,'' he said.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1836EDT &QL; 
 </TRAILER>
@@ -37124,7 +37124,7 @@ NYT-10-02-98 1836EDT &QL;
 A6993 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-KEYRATES-NYT &LR;      10-02 0166
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KEYRATES-NYT </SLUG>
 <HEADLINE>
 KEY RATES 
@@ -37183,7 +37183,7 @@ KEY RATES
 Bond Buyer l
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1838EDT &QL; 
 </TRAILER>
@@ -37196,7 +37196,7 @@ NYT-10-02-98 1838EDT &QL;
 A7006 &Cx1f; var-z
 u v &Cx13;  &Cx11;  BC-REVIEW-BUDGET-NYT &LR;      10-02 0807
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-REVIEW-BUDGET-NYT </SLUG>
   
  
@@ -37333,7 +37333,7 @@ intelligent? By William J. Broad.
    THE NEW YORK TIMES NEWS SERVICE  &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1846EDT &QL; 
 </TRAILER>
@@ -37346,7 +37346,7 @@ NYT-10-02-98 1846EDT &QL;
 A7009 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-WORKING-COLUMN-$ADV04     10-02 0561
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WORKING-COLUMN-$ADV04-NYT </SLUG>
 <HEADLINE>
 BEYOND THE POND  
@@ -37435,7 +37435,7 @@ Working, Money &AMP; Business, The New York Times, 229 West 43rd
 Street, New York, N.Y. 10036. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1846EDT &QL; 
 </TRAILER>
@@ -37448,7 +37448,7 @@ NYT-10-02-98 1846EDT &QL;
 A7016 &Cx1f; tta-z
 u i &Cx13;  &Cx11;  BC-AFGHAN-IRAN-ART-660&AMP;A     10-02 1082
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-AFGHAN-IRAN-ART-660&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 TALIBAN LEADER CONFIDENT DESPITE THREAT FROM IRAN 
@@ -37614,7 +37614,7 @@ to provide much in the way of support, the Taliban will find
 themselves in a drawn-out guerrilla war.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1851EDT &QL; 
 </TRAILER>
@@ -37627,7 +37627,7 @@ NYT-10-02-98 1851EDT &QL;
 A7023 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-EARLY-FRONTPAGE-NYT &LR;      10-02 0609
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EARLY-FRONTPAGE-NYT </SLUG>
 <HEADLINE>
 (HLW)
@@ -37715,7 +37715,7 @@ into the current school term, bilingual education is clearly still
 breathing. The reasons are a subject of hot debate. By Don Terry.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1853EDT &QL; 
 </TRAILER>
@@ -37728,7 +37728,7 @@ NYT-10-02-98 1853EDT &QL;
 A7030 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-TRIPP-TAPES-HNS &LR;      10-02 1506
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TRIPP-TAPES-HNS </SLUG>
 <HEADLINE>
 TRIPP TAPES SHOW LEWINSKY ATTEMPTING TO PROTECT THE PRESIDENT 
@@ -37995,7 +37995,7 @@ people.'' The Republicans want an open-ended inquiry with rules
 based on the Watergate proceedings in 1974.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1859EDT &QL; 
 </TRAILER>
@@ -38008,7 +38008,7 @@ NYT-10-02-98 1859EDT &QL;
 A7031 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-CULTURE-COLUMN-$A     10-02 0749
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-CULTURE-COLUMN-$ADV04-NYT </SLUG>
 <HEADLINE>
 WHEN BUSINESS GETS RELIGION  
@@ -38117,7 +38117,7 @@ founder of the Salvation Army, who asked, ``Why should the devil
 have all the good tunes?''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1859EDT &QL; 
 </TRAILER>
@@ -38130,7 +38130,7 @@ NYT-10-02-98 1859EDT &QL;
 A7036 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-SPOT/FEATURE-BUDGET-B     10-02 0592
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SPOT/FEATURE-BUDGET-BOS </SLUG>
   
  For Release SATURDAY AMs, October 3, 1998  
@@ -38275,7 +38275,7 @@ the locker room ready to go. By Will McDonough.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1901EDT &QL; 
 </TRAILER>
@@ -38288,7 +38288,7 @@ NYT-10-02-98 1901EDT &QL;
 A7037 &Cx1f; tib-z
 u k &Cx13;  &Cx11;  BC-RICH-COLUMN-NYT &LR;      10-02 0767
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RICH-COLUMN-NYT </SLUG>
 <HEADLINE>
 COMMENTARY: PORGY AND BILL 
@@ -38394,7 +38394,7 @@ administration's record on race: high ideals, beautiful show,
 one-night stand.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1901EDT &QL; 
 </TRAILER>
@@ -38407,7 +38407,7 @@ NYT-10-02-98 1901EDT &QL;
 A7041 &Cx1f; tad-z
 u w &Cx13;  &Cx11;  BC-IMPEACH-CLINTON03-COX     10-02 0460
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH-CLINTON03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -38490,7 +38490,7 @@ stability of the world.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1905EDT &QL; 
 </TRAILER>
@@ -38503,7 +38503,7 @@ NYT-10-02-98 1905EDT &QL;
 A7043 &Cx1f; kan-z
 b x &Cx13;  &Cx11;  BC-HEASTER-COLUMN-KAN &LR;      10-02 0599
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEASTER-COLUMN-KAN </SLUG>
 <HEADLINE>
 ALL THE FED RISKED WAS ITS REPUTATION 
@@ -38600,7 +38600,7 @@ leveraged bets was a relatively small component of overall world
 financial activity.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1906EDT &QL; 
 </TRAILER>
@@ -38613,7 +38613,7 @@ NYT-10-02-98 1906EDT &QL;
 A7047 &Cx1f; ttc-z
 u s &Cx13;  &Cx11;  BC-LADN-SPORTS-BUDGET &LR;      10-02 0158
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LADN-SPORTS-BUDGET </SLUG>
   
 <TEXT>
@@ -38656,7 +38656,7 @@ Mayweather fight.
    By Michael Rosenthal. (Will move on the ``s'' sports file.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1907EDT &QL; 
 </TRAILER>
@@ -38669,7 +38669,7 @@ NYT-10-02-98 1907EDT &QL;
 A7046 &Cx1f; kan-z
 r a &Cx13;  &Cx11;  BC-LIBRARY-HACKER-KAN &LR;      10-02 0742
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LIBRARY-HACKER-KAN </SLUG>
 <HEADLINE>
 TEEN HACKER PROMPTS LIBRARY TO RESTRICT COMPUTER USES 
@@ -38802,7 +38802,7 @@ charges.
 action.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1907EDT &QL; 
 </TRAILER>
@@ -38815,7 +38815,7 @@ NYT-10-02-98 1907EDT &QL;
 A7048 &Cx1f; kan-z
 r a &Cx13;  &Cx11;  BC-SENIORS-SPACE-KAN &LR;      10-02 0894
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SENIORS-SPACE-KAN </SLUG>
 <HEADLINE>
 SENIOR ASTRONAUTS SET SIGHTS ON SKY AT KANSAS SPACE CENTER 
@@ -38984,7 +38984,7 @@ Kansas State University.
 said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1908EDT &QL; 
 </TRAILER>
@@ -38997,7 +38997,7 @@ NYT-10-02-98 1908EDT &QL;
 A7051 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-CLINTON-SCANDAL-$ADV4     10-02 1025
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-SCANDAL-$ADV4-HNS </SLUG>
 <HEADLINE>
 SENIOR POLITICAL FIGURES ALREADY DEBATING PUNISHMENT FOR CLINTON 
@@ -39180,7 +39180,7 @@ everything,'' Jackson Lee said &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1909EDT &QL; 
 </TRAILER>
@@ -39193,7 +39193,7 @@ NYT-10-02-98 1909EDT &QL;
 A7053 &Cx1f; kan-z
 r v &Cx13;  &Cx11;  BC-BC-KAN-BUDGET-KAN &LR;      10-02 0149
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BC-KAN-BUDGET-KAN </SLUG>
 <HEADLINE>
  
@@ -39224,7 +39224,7 @@ reputation. Economics column by JERRY HEASTER. Story will move in
 the ``f'' category.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1909EDT &QL; 
 </TRAILER>
@@ -39237,7 +39237,7 @@ NYT-10-02-98 1909EDT &QL;
 A7054 &Cx1f; tta-z
 u i &Cx13;  &Cx11;  BC-RUSSIA-POSTOFFICE-555     10-02 1015
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RUSSIA-POSTOFFICE-555&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 RUSSIAN MAIL DELIVERY DISRUPTED BY LACK OF MONEY 
@@ -39396,7 +39396,7 @@ deputy in the Communications Department's mail shipping center.
 weeks ago.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1910EDT &QL; 
 </TRAILER>
@@ -39409,7 +39409,7 @@ NYT-10-02-98 1910EDT &QL;
 A7056 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-JOBS-UNEMPLOY-BOS &LR;      10-02 0624
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-JOBS-UNEMPLOY-BOS </SLUG>
 <HEADLINE>
 US JOB GROWTH SLOWS ,  JOBLESS RATE EDGES UP 
@@ -39525,7 +39525,7 @@ West Chester, Penn. ``It's just that activity is slowing, and the
 outlook at the moment is much darker.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1910EDT &QL; 
 </TRAILER>
@@ -39538,7 +39538,7 @@ NYT-10-02-98 1910EDT &QL;
 A7058 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-ECON-COLUMN-$ADV04-NY     10-02 0817
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ECON-COLUMN-$ADV04-NYT </SLUG>
 <HEADLINE>
 DEFLATION HAS TWO FACES, AND ONE OF THEM ISN'T PRETTY  
@@ -39669,7 +39669,7 @@ will be increasing conflict between labor and management over who
 gets what share of the smaller pie.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1911EDT &QL; 
 </TRAILER>
@@ -39682,7 +39682,7 @@ NYT-10-02-98 1911EDT &QL;
 A7063 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-INVEST-COLUMN-ART-$AD     10-02 0805
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INVEST-COLUMN-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 IS THE TIME RIGHT FOR MARKET TIMING? 
@@ -39802,7 +39802,7 @@ overall return through Aug. 31 _ Systems and Forecasts, published
 by Gerald Appel in Great Neck, N.Y.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1914EDT &QL; 
 </TRAILER>
@@ -39815,7 +39815,7 @@ NYT-10-02-98 1914EDT &QL;
 A7065 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-MARKET-REBOUND-BOS &LR;      10-02 0682
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MARKET-REBOUND-BOS </SLUG>
 <HEADLINE>
 STOCKS BOUNCE BACK, BUT RALLY IS UNEVEN 
@@ -39916,7 +39916,7 @@ mean a lot of stock dumped on a shell-shocked market in the next
 four weeks.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1915EDT &QL; 
 </TRAILER>
@@ -39929,7 +39929,7 @@ NYT-10-02-98 1915EDT &QL;
 A7071 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  BC-CLINTON-ADVISORY-NYT &LR;      10-02 0380
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -40015,7 +40015,7 @@ between Tripp and Lewinsky which led to Lewinsky's first
 interrogation by the independent counsel's office.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1919EDT &QL; 
 </TRAILER>
@@ -40028,7 +40028,7 @@ NYT-10-02-98 1919EDT &QL;
 A7073 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-MCDONOUGH-COLUMN-BOS &LR;      10-02 1141
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MCDONOUGH-COLUMN-BOS </SLUG>
 <HEADLINE>
 FOR CELTICS, BUSINESS AS USUAL 
@@ -40193,7 +40193,7 @@ on everyone.''
  &UR;  &LR; (Will McDonough is a Globe columnist.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1920EDT &QL; 
 </TRAILER>
@@ -40206,7 +40206,7 @@ NYT-10-02-98 1920EDT &QL;
 A7074 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-ECON-COLUMN-$ADV04-NY     10-02 0817
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ECON-COLUMN-$ADV04-NYT </SLUG>
 <HEADLINE>
 ECONOMIC VIEW: DEFLATION HAS TWO FACES, AND ONE OF THEM ISN'T
@@ -40329,7 +40329,7 @@ conflict between labor and management over who gets what share of
 the smaller pie.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1921EDT &QL; 
 </TRAILER>
@@ -40342,7 +40342,7 @@ NYT-10-02-98 1921EDT &QL;
 A7075 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-FINFRONTS-NYT &LR;      10-02 0261
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FINFRONTS-NYT </SLUG>
   
 (lb) 
@@ -40411,7 +40411,7 @@ rebound after a long fall. By Jonathan Fuerbringer.
    (Scheduled to move by 9:30 p.m. ET.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1921EDT &QL; 
 </TRAILER>
@@ -40424,7 +40424,7 @@ NYT-10-02-98 1921EDT &QL;
 A7079 &Cx1f; ttj-z
 u a &Cx13;  &Cx11;  BC-NASA-STATION-HNS &LR;      10-02 0880
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NASA-STATION-HNS </SLUG>
 <HEADLINE>
 NASA TO START ASSEMBLY OF SPACE STATION 
@@ -40570,7 +40570,7 @@ bailouts, and raise concerns over quality control procedures.'' &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1924EDT &QL; 
 </TRAILER>
@@ -40583,7 +40583,7 @@ NYT-10-02-98 1924EDT &QL;
 A7084 &Cx1f; ttc-z
 r l &Cx13;  &Cx11;  BC-HUNDRED-OLD-LADN     10-02 1698
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HUNDRED-OLD-LADN </SLUG>
 <HEADLINE>
 THE 100-YEAR CONUNDRUM
@@ -40848,7 +40848,7 @@ and broken down? It's an issue we're having to decide as more of us
 get older.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1927EDT &QL; 
 </TRAILER>
@@ -40861,7 +40861,7 @@ NYT-10-02-98 1927EDT &QL;
 A7086 &Cx1f; tta-z
 u f &Cx13;  &Cx11;  BC-ECON-REPORT-ART-385&AMP;A     10-02 0998
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ECON-REPORT-ART-385&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 JOB CREATION LAGGED IN SEPTEMBER, U.S. REPORTS 
@@ -41009,7 +41009,7 @@ parks, bowling alleys, movie theaters and video parlors, all places
 where Americans can leave their worries at the door.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1928EDT &QL; 
 </TRAILER>
@@ -41022,7 +41022,7 @@ NYT-10-02-98 1928EDT &QL;
 A7089 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-NY-PENSION-POLITICS-2     10-02 1013
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-PENSION-POLITICS-2TAKES-NYT </SLUG>
 <HEADLINE>
 FIRMS HANDLING N.Y. PENSION FUND ARE DONORS TO COMPTROLLER 
@@ -41299,7 +41299,7 @@ firm donated another $21,000. Then, in March 1998, pension fund
 decided to invest another $100 million in a Colony investment fund.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1930EDT &QL; 
 </TRAILER>
@@ -41312,7 +41312,7 @@ NYT-10-02-98 1930EDT &QL;
 A7092 &Cx1f; tdt-z
 u i &Cx13;  &Cx11;  BC-GERMANY-UNITY-BOS &LR;      10-02 1262
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GERMANY-UNITY-BOS </SLUG>
 <HEADLINE>
 EFFECTS OF REUNIFICATION BESET GERMANY 
@@ -41498,7 +41498,7 @@ brought down, the walls in people's hearts and minds are often
 stronger than sledgehammers.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1931EDT &QL; 
 </TRAILER>
@@ -41511,7 +41511,7 @@ NYT-10-02-98 1931EDT &QL;
 A7096 &Cx1f; tic-z
 r e &Cx13;  &Cx11;  BC-TRUCKART-ART-AZR &LR;      10-02 0892
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TRUCKART-ART-AZR </SLUG>
 <HEADLINE>
 TRUCK ART BLAZES DOWN THE HIGHWAY 
@@ -41679,7 +41679,7 @@ to another. When the truck jackknifes on the interstate, the call
 goes out, `There's art all over the highway!'' &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1933EDT &QL; 
 </TRAILER>
@@ -41692,7 +41692,7 @@ NYT-10-02-98 1933EDT &QL;
 A7098 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-TV-UPN-PFEIFFER-NYT &LR;      10-02 0463
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-UPN-PFEIFFER-NYT </SLUG>
 <HEADLINE>
 BLACK PROTEST DELAYS PREMIERE OF NEW SITCOM 
@@ -41767,7 +41767,7 @@ to their concerns.'' Also, he said, he thought the second episode
 was funnier and would give the show a more successful debut.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1934EDT &QL; 
 </TRAILER>
@@ -41780,7 +41780,7 @@ NYT-10-02-98 1934EDT &QL;
 A7101 &Cx1f; tdt-z
 u i &Cx13;  &Cx11;  BC-KOSOVO-CRISIS-BOS &LR;      10-02 0642
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KOSOVO-CRISIS-BOS </SLUG>
 <HEADLINE>
 PRESSURE MOUNTS FOR ACTION AGAINST SERBIA 
@@ -41882,7 +41882,7 @@ with Serbia makes up Yugoslavia, Friday distanced themselves from
 Milosevic, all but giving their blessing to air strikes.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1936EDT &QL; 
 </TRAILER>
@@ -41895,7 +41895,7 @@ NYT-10-02-98 1936EDT &QL;
 A7102 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-EXCLUSIVE-U.S.-INDIA-     10-02 0524
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EXCLUSIVE-U.S.-INDIA-PAKISTAN-NYT </SLUG>
 <HEADLINE>
 U.S. MOVES TOWARD NEW CURBS ON INDIA AND PAKISTAN 
@@ -41973,7 +41973,7 @@ made that Washington also wanted to see progress in other
 disarmament areas.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1937EDT &QL; 
 </TRAILER>
@@ -41986,7 +41986,7 @@ NYT-10-02-98 1937EDT &QL;
 A7105 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-GERMANY-POLITICS-NYT &LR;      10-02 0568
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GERMANY-POLITICS-NYT </SLUG>
 <HEADLINE>
 SCHROEDER OPENS TALKS WITH GREENS ON FORMING COALITION GOVERNMENT  
@@ -42077,7 +42077,7 @@ according to plan, the two sides said they would sign a formal
 agreement on Oct. 22. Schroeder hopes to take office by Oct. 27.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1939EDT &QL; 
 </TRAILER>
@@ -42090,7 +42090,7 @@ NYT-10-02-98 1939EDT &QL;
 A7108 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-JORDAN-TRANSCRIPTS-HN     10-02 0802
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-JORDAN-TRANSCRIPTS-HNS </SLUG>
 <HEADLINE>
 JORDAN COMES ACROSS AS SMART LAWYER INTENT ON SELF-PRESERVATION 
@@ -42221,7 +42221,7 @@ anyone?'' he was asked by a prosecutor.
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1941EDT &QL; 
 </TRAILER>
@@ -42234,7 +42234,7 @@ NYT-10-02-98 1941EDT &QL;
 A7114 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-CLINTON-SEX-BOS &LR;      10-02 1361
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-SEX-BOS </SLUG>
 <HEADLINE>
 SCANDAL REFLECTS CONTRADICTORY OPINIONS ABOUT SEX 
@@ -42425,7 +42425,7 @@ imperfect man in the job,'' Jong said. ``The president's no hero,
 but be realistic. We all lead complicated lives.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1942EDT &QL; 
 </TRAILER>
@@ -42438,7 +42438,7 @@ NYT-10-02-98 1942EDT &QL;
 A7116 &Cx1f; ttc-z
 u f &Cx13;  &Cx11;  BC-LADN-BUSINESS &LR;      10-02 0097
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LADN-BUSINESS </SLUG>
   
 <TEXT>
@@ -42459,7 +42459,7 @@ what the local players are doing. By Ben Sullivan.
    XXX &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1943EDT &QL; 
 </TRAILER>
@@ -42472,7 +42472,7 @@ NYT-10-02-98 1943EDT &QL;
 A7122 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-VALUE-ARBITRATE-A     10-02 0689
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-VALUE-ARBITRATE-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 AID FOR THE LITTLE GUY IN SECURITIES ARBITRATION 
@@ -42578,7 +42578,7 @@ securities arbitration clinic), and the University at Buffalo,
 (716) 645-2167.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1946EDT &QL; 
 </TRAILER>
@@ -42591,7 +42591,7 @@ NYT-10-02-98 1946EDT &QL;
 A7125 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-CONFLICT-DEBTORS-     10-02 0986
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-CONFLICT-DEBTORS-$ADV04-NYT </SLUG>
 <HEADLINE>
 NARROWING THE BANKRUPTCY ESCAPE HATCH 
@@ -42733,7 +42733,7 @@ probability of collecting will go up.''
 customers,'' he said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1947EDT &QL; 
 </TRAILER>
@@ -42746,7 +42746,7 @@ NYT-10-02-98 1947EDT &QL;
 A7128 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-HATE-EMAIL-BOS &LR;      10-02 1167
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HATE-EMAIL-BOS </SLUG>
 <HEADLINE>
 BOSTON COLLEGE IN UPROAR OVER RACIST E-MAIL 
@@ -42934,7 +42934,7 @@ really feel,'' said Tufts senior Sheila Bhandari, 20, who attended
 the recent student forum on race and culture.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1948EDT &QL; 
 </TRAILER>
@@ -42947,7 +42947,7 @@ NYT-10-02-98 1948EDT &QL;
 A7130 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-JAPAN-ECON-NYT &LR;      10-02 0785
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-JAPAN-ECON-NYT </SLUG>
 <HEADLINE>
 JAPANESE PARLIAMENT MOVES TO ENACT BANKING REFORM LAW 
@@ -43073,7 +43073,7 @@ the savings and loan crisis in the United States, to expedite the
 disposal of more than $600 billion in bad bank debts.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1949EDT &QL; 
 </TRAILER>
@@ -43086,7 +43086,7 @@ NYT-10-02-98 1949EDT &QL;
 A7133 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-CONFLICT-DEBTORS-     10-02 1032
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-CONFLICT-DEBTORS-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 NARROWING THE BANKRUPTCY ESCAPE HATCH 
@@ -43238,7 +43238,7 @@ probability of collecting will go up.''
 customers,'' he said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1949EDT &QL; 
 </TRAILER>
@@ -43251,7 +43251,7 @@ NYT-10-02-98 1949EDT &QL;
 A7135 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-TV-EXECUTIVE-SMITH-AR     10-02 1027
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-EXECUTIVE-SMITH-ART-3TAKES-$ADV04-NYT </SLUG>
 <HEADLINE>
 346-9867.) 
@@ -43401,7 +43401,7 @@ of CBS's stations, dismisses the threat.
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1951EDT &QL; 
 </TRAILER>
@@ -43414,7 +43414,7 @@ NYT-10-02-98 1951EDT &QL;
 A7136 &Cx1f; ttj-z
 u a &Cx13;  &Cx11;  BC-CALIF-PRIMARY-HNS &LR;      10-02 1024
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALIF-PRIMARY-HNS </SLUG>
 <HEADLINE>
 CALIFORNIA SHIFT MOST SIGNIFICANT IN JOSTLING FOR EARLIER
@@ -43603,7 +43603,7 @@ month's election. &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1951EDT &QL; 
 </TRAILER>
@@ -43616,7 +43616,7 @@ NYT-10-02-98 1951EDT &QL;
 A7138 &Cx1f; ttc-z
 u v &Cx13;  &Cx11;  BC-LADN-BUDGET &LR;      10-02 0123
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LADN-BUDGET </SLUG>
   
 <TEXT>
@@ -43641,7 +43641,7 @@ national and ``n'' California news files.)
    XXX &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1951EDT &QL; 
 </TRAILER>
@@ -43654,7 +43654,7 @@ NYT-10-02-98 1951EDT &QL;
 A7140 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-TV-EXECUTIVE-SMITH-AR     10-02 1173
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-EXECUTIVE-SMITH-ART-2NDTAKE-$ADV04-NYT </SLUG>
   
  UNDATED: the threat.  
@@ -43823,7 +43823,7 @@ million a year.
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1952EDT &QL; 
 </TRAILER>
@@ -43836,7 +43836,7 @@ NYT-10-02-98 1952EDT &QL;
 A7141 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-TV-EXECUTIVE-SMITH-AR     10-02 0729
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-EXECUTIVE-SMITH-ART-3RDTAKE-$ADV04-NYT </SLUG>
   
  UNDATED: a year.  
@@ -43948,7 +43948,7 @@ better-looking single channel,'' he said, ``are just creating a
 better chance for me to go whack them.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1952EDT &QL; 
 </TRAILER>
@@ -43961,7 +43961,7 @@ NYT-10-02-98 1952EDT &QL;
 A7142 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-LEWINSKY-PLAYERS-HNS &LR;      10-02 0877
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LEWINSKY-PLAYERS-HNS </SLUG>
 <HEADLINE>
 DOCUMENTS ILLUMINATE CAST OF CHARACTERS IN LEWINSKY SAGA 
@@ -44112,7 +44112,7 @@ happened.''
 Don't want to hear anymore.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1953EDT &QL; 
 </TRAILER>
@@ -44125,7 +44125,7 @@ NYT-10-02-98 1953EDT &QL;
 A7146 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-ELIMINATE-CREDIT-NYT &LR;      10-02 0031
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ELIMINATE-CREDIT-NYT </SLUG>
   
 <TEXT>
@@ -44140,7 +44140,7 @@ Service file.
    N.Y.Times News Service, Oct. 2. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1954EDT &QL; 
 </TRAILER>
@@ -44153,7 +44153,7 @@ NYT-10-02-98 1954EDT &QL;
 A7147 &Cx1f; tdt-z
 u f &Cx13;  &Cx11;  BC-WARSH-COLUMN-$ADV04-B     10-02 1229
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WARSH-COLUMN-$ADV04-BOS </SLUG>
 <HEADLINE>
 WHAT SANK   THE TITANIC? 
@@ -44344,7 +44344,7 @@ survivors of the Titanic.
 e-mail address is warsh(at)nws.globe.com)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1955EDT &QL; 
 </TRAILER>
@@ -44357,7 +44357,7 @@ NYT-10-02-98 1955EDT &QL;
 A7150 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-CAR-GORDON-TEX     10-02 0437
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAR-GORDON-TEX </SLUG>
 <HEADLINE>
 GORDON TO RUN FIVE BGN RACES IN '99
@@ -44429,7 +44429,7 @@ orders from my wife as a car owner and from my crew chief as a car
 owner, but I think we're going to have a lot of fun.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1957EDT &QL; 
 </TRAILER>
@@ -44442,7 +44442,7 @@ NYT-10-02-98 1957EDT &QL;
 A7151 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-IRAQ-U.N.-500&AMP;ADD-NYT     10-02 0712
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IRAQ-U.N.-500&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 SEEING NO CHANGE IN U.N. POLICY, IRAQ WILL DENY ACCESS TO
@@ -44554,7 +44554,7 @@ that Ritter's remarks prove that its charges of Israeli and
 American espionage were true.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1957EDT &QL; 
 </TRAILER>
@@ -44567,7 +44567,7 @@ NYT-10-02-98 1957EDT &QL;
 A7153 &Cx1f; ttj-z
 u a &Cx13;  &Cx11;  BC-CALIF-PRIMARY-$ADV4-H     10-02 1034
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALIF-PRIMARY-$ADV4-HNS </SLUG>
 <HEADLINE>
 CALIF-PRIMARY-$ADV4 
@@ -44760,7 +44760,7 @@ month's election. &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 1959EDT &QL; 
 </TRAILER>
@@ -44773,7 +44773,7 @@ NYT-10-02-98 1959EDT &QL;
 A7155 &Cx1f; ttj-z
 u a &Cx13;  &Cx11;  BC-ORGAN-TRANSPLANTS-$AD     10-02 0837
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ORGAN-TRANSPLANTS-$ADV04-HNS </SLUG>
 <HEADLINE>
 SCIENTIST SAYS DEVICE WILL HELP PRESERVE TRANSPLANT ORGANS 
@@ -44912,7 +44912,7 @@ able send cultures of cells around the world without damage from
 freezing using traditional methods.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2000EDT &QL; 
 </TRAILER>
@@ -44925,7 +44925,7 @@ NYT-10-02-98 2000EDT &QL;
 A7157 &Cx1f; tad-z
 u w &Cx13;  &Cx11;  BC-IMPEACH-GLANCE     10-02 1015
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH-GLANCE </SLUG>
 <HEADLINE>
 &HT;   
@@ -45076,7 +45076,7 @@ correct sir? To be best of my knowledge, he does not.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2001EDT &QL; 
 </TRAILER>
@@ -45089,7 +45089,7 @@ NYT-10-02-98 2001EDT &QL;
 A7160 &Cx1f; tta-z
 u a &Cx13;  &Cx11;  BC-CALIF-BILINGUAL-2TAKE     10-02 0942
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALIF-BILINGUAL-2TAKES-NYT </SLUG>
 <HEADLINE>
 CALIFORNIA STILL DEBATES BILINGUAL EDUCATION 
@@ -45250,7 +45250,7 @@ law has passed and we have to deal with it.''
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2003EDT &QL; 
 </TRAILER>
@@ -45263,7 +45263,7 @@ NYT-10-02-98 2003EDT &QL;
 A7161 &Cx1f; tad-z
 u w &Cx13;  &Cx11;  BC-IMPEACH03-COX     10-02 1339
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -45477,7 +45477,7 @@ to this article.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2003EDT &QL; 
 </TRAILER>
@@ -45490,7 +45490,7 @@ NYT-10-02-98 2003EDT &QL;
 A7163 &Cx1f; tta-z
 u a &Cx13;  &Cx11;  BC-CALIF-BILINGUAL-2NDTA     10-02 0808
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALIF-BILINGUAL-2NDTAKE-NYT </SLUG>
   
  LOS ANGELES: with it.''  
@@ -45626,7 +45626,7 @@ be four languages she will know how to speak and write. Employers
 will love her.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2003EDT &QL; 
 </TRAILER>
@@ -45639,7 +45639,7 @@ NYT-10-02-98 2003EDT &QL;
 A7165 &Cx1f; ttj-z
 u v &Cx13;  &Cx11;  BC-HEARST-NEWS-BUDGET-2N     10-02 1129
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEARST-NEWS-BUDGET-2NDLD-WRITETHRU-HNS </SLUG>
   
  Friday, Oct. 2, 1998     
@@ -45832,7 +45832,7 @@ as yet no credible heroes or heroines. But there are villains and
 victims. By ROBERT E. THOMPSON. (Filed Wednesday.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2005EDT &QL; 
 </TRAILER>
@@ -45845,7 +45845,7 @@ NYT-10-02-98 2005EDT &QL;
 A7166 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-MARKET-WATCH-ART-$ADV     10-02 0732
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MARKET-WATCH-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 NO ROOM TO BREATHE FOR BANKS 
@@ -45959,7 +45959,7 @@ trading range of 950 to 1,050 on the S&AMP;P 500. For how long? ``Until
 we get some confidence about earnings,'' he said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2005EDT &QL; 
 </TRAILER>
@@ -45972,7 +45972,7 @@ NYT-10-02-98 2005EDT &QL;
 A7169 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-BETTY-NYT &LR;      10-02 0732
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-BETTY-NYT </SLUG>
 <HEADLINE>
 BETTY CURRIE SEEMED A FORGETFUL, RELUCTANT WITNESS 
@@ -46090,7 +46090,7 @@ Lewinsky.''
 Ms. Lewinsky as ``a pain in the neck'' and ``a little pushy.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2006EDT &QL; 
 </TRAILER>
@@ -46103,7 +46103,7 @@ NYT-10-02-98 2006EDT &QL;
 A7171 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-MARKET-NYT &LR;      10-02 0991
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MARKET-NYT </SLUG>
 <HEADLINE>
 MARKET RALLIES, BUT IT MAY SIGNIFY NOTHING  
@@ -46260,7 +46260,7 @@ bond prices higher and yields lower.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2007EDT &QL; 
 </TRAILER>
@@ -46273,7 +46273,7 @@ NYT-10-02-98 2007EDT &QL;
 A7173 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-KOSOVO-ART-550&AMP;ADD-NY     10-02 0895
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KOSOVO-ART-550&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 KOSOVO QUIET AS SERBS HALT OPERATIONS AGAINST SEPARATISTS 
@@ -46427,7 +46427,7 @@ said. ``If the war was over,'' he said, ``all the villagers would
 be back and normal life would return.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2008EDT &QL; 
 </TRAILER>
@@ -46440,7 +46440,7 @@ NYT-10-02-98 2008EDT &QL;
 A7175 &Cx1f; paxxx
 u w &Cx13;  &Cx11;  BC-STATES-watch-PA     10-02 0975
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STATES-watch-PA </SLUG>
 
 <TEXT>
@@ -46737,7 +46737,7 @@ votes.
    keyword(s) state(s)pa
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2008EDT &QL; 
 </TRAILER>
@@ -46750,7 +46750,7 @@ NYT-10-02-98 2008EDT &QL;
 A7177 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-RUSSIA-U.S.-NYT &LR;      10-02 0496
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RUSSIA-U.S.-NYT </SLUG>
 <HEADLINE>
 U.S. CONCERNED BY RUSSIA'S ECONOMIC PROBLEMS, ALBRIGHT SAYS 
@@ -46830,7 +46830,7 @@ against Serbian forces in the southern province of Kosovo, Albright
 said, NATO must be prepared to act regardless.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2009EDT &QL; 
 </TRAILER>
@@ -46843,7 +46843,7 @@ NYT-10-02-98 2009EDT &QL;
 A7178 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-UCLA-LADN     10-02 0603
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-UCLA-LADN </SLUG>
 <HEADLINE>
 UCLA STILL SEARCHING FOR ANSWERS
@@ -46946,7 +46946,7 @@ card for injured receiver Freddie Mitchell available for public
 signatures in the food zone (area H) before kickoff.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2009EDT &QL; 
 </TRAILER>
@@ -46959,7 +46959,7 @@ NYT-10-02-98 2009EDT &QL;
 A7179 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-CLINTON-LEWINSKY-BOS &LR;      10-02 0495
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-LEWINSKY-BOS </SLUG>
   
  EX-INTERN DESCRIBED AS PERSISTENT `CLUTCH'
@@ -47046,7 +47046,7 @@ Pentagon, had a less than flattering recollection.
 her,'' he testified, ``specifically because she ... was a pain.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2009EDT &QL; 
 </TRAILER>
@@ -47059,7 +47059,7 @@ NYT-10-02-98 2009EDT &QL;
 A7181 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-INVEST-INSIGHT-Q&AMP;A-$A     10-02 0861
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INVEST-INSIGHT-Q&AMP;A-$ADV04-NYT </SLUG>
 <HEADLINE>
 THE WEIGHT OF THE WORLD ON THE U.S. AND EUROPE  
@@ -47181,7 +47181,7 @@ States will slump into recession, that will add to the problems in
 the emerging markets.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2010EDT &QL; 
 </TRAILER>
@@ -47194,7 +47194,7 @@ NYT-10-02-98 2010EDT &QL;
 A7183 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-MEDICARE-HMO-ART-$ADV     10-02 1082
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MEDICARE-HMO-ART-$ADV04-1000(2TAKES)-NYT </SLUG>
 <HEADLINE>
 SO FAR, `MEDICARE PLUS CHOICE' IS MINUS MOST OF THE OPTIONS 
@@ -47593,7 +47593,7 @@ their interest by just responding to the marketing.''
    (BOX) &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2014EDT &QL; 
 </TRAILER>
@@ -47606,7 +47606,7 @@ NYT-10-02-98 2014EDT &QL;
 A7186 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-MEXICO-SALINAS-NYT &LR;      10-02 0631
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MEXICO-SALINAS-NYT </SLUG>
 <HEADLINE>
 SALINAS' BANKROLL MUCH GREATER, MEXICO SAYS 
@@ -47705,7 +47705,7 @@ Ramos declined to identify, to conceal millions of dollars in
 transactions.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2014EDT &QL; 
 </TRAILER>
@@ -47718,7 +47718,7 @@ NYT-10-02-98 2014EDT &QL;
 A7196 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-WRIGHTFILM-COX     10-02 0548
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-WRIGHTFILM-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -47820,7 +47820,7 @@ at the Smithsonian Institution.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2022EDT &QL; 
 </TRAILER>
@@ -47833,7 +47833,7 @@ NYT-10-02-98 2022EDT &QL;
 A7198 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-IMPEACH-BILLSTAR-COX     10-02 0719
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH-BILLSTAR-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -47952,7 +47952,7 @@ for what he had done.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2023EDT &QL; 
 </TRAILER>
@@ -47965,7 +47965,7 @@ NYT-10-02-98 2023EDT &QL;
 A7205 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-DAY-525&AMP;ADD-N     10-02 0917
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-DAY-525&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 CLINTON NOTES MISTAKES BUT BRANDISHES ACHIEVEMENTS 
@@ -48104,7 +48104,7 @@ campaign finance reform. They killed the tobacco reform
 legislation.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2027EDT &QL; 
 </TRAILER>
@@ -48117,7 +48117,7 @@ NYT-10-02-98 2027EDT &QL;
 A7208 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-CLINTON-FUND-RAISERS-     10-02 0632
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-FUND-RAISERS-HNS </SLUG>
 <HEADLINE>
 CLINTON SAYS REPUBLICAN ADVERSITY MAY HELP DEMOCRATS, ATTENDS OHIO,
@@ -48228,7 +48228,7 @@ weeks. &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2029EDT &QL; 
 </TRAILER>
@@ -48241,7 +48241,7 @@ NYT-10-02-98 2029EDT &QL;
 A7209 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-FBC-PENN-OHIOST-BOS &LR;      10-02 0578
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-PENN-OHIOST-BOS </SLUG>
 <HEADLINE>
 PENN STATE IS BIG TEST FOR OHIO STATE 
@@ -48341,7 +48341,7 @@ said Penn State linebacker Brandon Short. ``You can't have a bigger
 test than that.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2030EDT &QL; 
 </TRAILER>
@@ -48354,7 +48354,7 @@ NYT-10-02-98 2030EDT &QL;
 A7211 &Cx1f; tad-z
 u w &Cx13;  &Cx11;  BC-IMPEACH-TRIPP03-COX     10-02 1180
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH-TRIPP03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -48611,7 +48611,7 @@ affair with the you-know-what of the you-know-what.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2032EDT &QL; 
 </TRAILER>
@@ -48624,7 +48624,7 @@ NYT-10-02-98 2032EDT &QL;
 A7212 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-FRONTPAGE-NYT &LR;      10-02 1217
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FRONTPAGE-NYT </SLUG>
 <HEADLINE>
 (HLW)
@@ -48859,7 +48859,7 @@ processes.'' By Alan Cowell.
    (We plan to move this story by 9 p.m. ET in `f' news file.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2032EDT &QL; 
 </TRAILER>
@@ -48872,7 +48872,7 @@ NYT-10-02-98 2032EDT &QL;
 A7214 &Cx1f; gen-z
 u w &Cx13;  &Cx11;  BC-STATES-watch-NAT     10-02 0772
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STATES-watch-NAT </SLUG>
 
 <TEXT>
@@ -49031,7 +49031,7 @@ votes.
    keyword(s) state(s)ny
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2033EDT &QL; 
 </TRAILER>
@@ -49044,7 +49044,7 @@ NYT-10-02-98 2033EDT &QL;
 A7218 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-ASSESS-725&AMP;AD     10-02 1121
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-ASSESS-725&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 ANALYSIS: NEW DOCUMENTS LEAVE QUESTIONS STILL UNANSWERED 
@@ -49211,7 +49211,7 @@ animosities, partialities, influence and interest'' _ even if many
 of them insist that they are already sick of the subject.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2036EDT &QL; 
 </TRAILER>
@@ -49224,7 +49224,7 @@ NYT-10-02-98 2036EDT &QL;
 A7219 &Cx1f; tdt-z
 u v &Cx13;  &Cx11;  BC-ELIMINATE-SCI-DEPRESS     10-02 0031
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ELIMINATE-SCI-DEPRESSION-BOS </SLUG>
 <HEADLINE>
 ATTN EDITORS:  
@@ -49239,7 +49239,7 @@ tonight's Boston Globe file.
    &UR; The Boston Globe &LR;  &QC;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2036EDT &QL; 
 </TRAILER>
@@ -49252,7 +49252,7 @@ NYT-10-02-98 2036EDT &QL;
 A7223 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-PROUST-COMICBOOK-NYT &LR;      10-02 1135
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PROUST-COMICBOOK-NYT </SLUG>
 <HEADLINE>
 PROUST DEBUTS IN COMIC BOOKS 
@@ -49403,7 +49403,7 @@ Proust. I hope people go on to read Proust thanks to the comic
 strip. In fact, it's more than a hope. It's an order!''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2037EDT &QL; 
 </TRAILER>
@@ -49416,7 +49416,7 @@ NYT-10-02-98 2037EDT &QL;
 A7225 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-IMPEACH-CONGRESS-COX     10-02 0924
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH-CONGRESS-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -49567,7 +49567,7 @@ facts from their perspective.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2039EDT &QL; 
 </TRAILER>
@@ -49580,7 +49580,7 @@ NYT-10-02-98 2039EDT &QL;
 A7228 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-IMPEACH04-COX     10-02 1319
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-IMPEACH04-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -49781,7 +49781,7 @@ to this article.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2040EDT &QL; 
 </TRAILER>
@@ -49794,7 +49794,7 @@ NYT-10-02-98 2040EDT &QL;
 A7237 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-HEDGEFUND-UBS-310&AMP;ADD     10-02 0977
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEDGEFUND-UBS-310&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 BIG SWISS BANK IS SHAKEN UP BY HEDGE FUND 
@@ -49945,7 +49945,7 @@ likely to generate sustainable earnings with a justifiable level of
 risk,'' the company said.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2043EDT &QL; 
 </TRAILER>
@@ -49958,7 +49958,7 @@ NYT-10-02-98 2043EDT &QL;
 A7245 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-OBIT-JULIEN-NYT &LR;      10-02 0584
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-JULIEN-NYT </SLUG>
 <HEADLINE>
 PAULINE JULIEN, 70, CHANTEUSE WHO INSPIRED QUEBECOIS 
@@ -50054,7 +50054,7 @@ Montreal, from her first marriage to Jacques Galipeau, which ended
 in divorce.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2044EDT &QL; 
 </TRAILER>
@@ -50067,7 +50067,7 @@ NYT-10-02-98 2044EDT &QL;
 A7250 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-OBITUARY-AUTRY-BOS &LR;      10-02 0911
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBITUARY-AUTRY-BOS </SLUG>
 <HEADLINE>
 GENE AUTRY, 91; ORIGINAL SINGING COWBOY 
@@ -50203,7 +50203,7 @@ patriot.''
    (Wire service material was used to prepare this report.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2045EDT &QL; 
 </TRAILER>
@@ -50216,7 +50216,7 @@ NYT-10-02-98 2045EDT &QL;
 A7252 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-CLINTON-GRAPHICS-ELIM     10-02 0120
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-GRAPHICS-ELIMINATE-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -50263,7 +50263,7 @@ for any
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2046EDT &QL; 
 </TRAILER>
@@ -50276,7 +50276,7 @@ NYT-10-02-98 2046EDT &QL;
 A7254 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-RUSSIA-OIL-ART-$A     10-02 0969
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-RUSSIA-OIL-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 TIPTOEING BACK TO THE OIL FIELDS 
@@ -50442,7 +50442,7 @@ September report, Jeffries &AMP; Co., set 12-month target prices for
 Noble at $23, Santa Fe at $26 and Transocean at $47 a share.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2046EDT &QL; 
 </TRAILER>
@@ -50455,7 +50455,7 @@ NYT-10-02-98 2046EDT &QL;
 A7255 &Cx1f; ttf-z
 u f &Cx13;  &Cx11;  BC-GRAPHICS-BUDGET-NYT &LR;      10-02 0655
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -50673,7 +50673,7 @@ NYSE.
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2046EDT &QL; 
 </TRAILER>
@@ -50686,7 +50686,7 @@ NYT-10-02-98 2046EDT &QL;
 A7257 &Cx1f; ttf-z
 u a &Cx13;  &Cx11;  BC-CLINTON-GRAPHICS-ELIM     10-02 0120
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-GRAPHICS-ELIMINATE-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -50733,7 +50733,7 @@ for any
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2046EDT &QL; 
 </TRAILER>
@@ -50746,7 +50746,7 @@ NYT-10-02-98 2046EDT &QL;
 A7258 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-CLINTON-GRAPHICS-ELIM     10-02 0120
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-GRAPHICS-ELIMINATE-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -50793,7 +50793,7 @@ for any
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2047EDT &QL; 
 </TRAILER>
@@ -50806,7 +50806,7 @@ NYT-10-02-98 2047EDT &QL;
 A7259 &Cx1f; ttf-z
 u a &Cx13;  &Cx11;  BC-CLINTON-GRAPHICS-ELIM     10-02 0120
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-GRAPHICS-ELIMINATE-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -50853,7 +50853,7 @@ for any
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2047EDT &QL; 
 </TRAILER>
@@ -50866,7 +50866,7 @@ NYT-10-02-98 2047EDT &QL;
 A7261 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-PHILIPPINE-AIRLINES-3     10-02 0825
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PHILIPPINE-AIRLINES-360&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 PHILIPPINE AIRLINES' UNIONS APPROVE RECOVERY PLAN 
@@ -50997,7 +50997,7 @@ best step,'' Eckes said. ``They're probably worth more alive than
 dead.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2047EDT &QL; 
 </TRAILER>
@@ -51010,7 +51010,7 @@ NYT-10-02-98 2047EDT &QL;
 A7263 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-SAFRICA-LESOTHO-ART-N     10-02 0912
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SAFRICA-LESOTHO-ART-NYT </SLUG>
 <HEADLINE>
 AFTER MUTINY AND INVASION, LESOTHO DECIDES ON NEW VOTE 
@@ -51148,7 +51148,7 @@ cashier stations Abdulla had once been so proud of were melted.
 about us. They must think about how to develop our country again.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2048EDT &QL; 
 </TRAILER>
@@ -51161,7 +51161,7 @@ NYT-10-02-98 2048EDT &QL;
 A7266 &Cx1f; taf-z
 u l &Cx13;  &Cx11;  BC-LABORATORY-CHIC-ART-N     10-02 1236
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LABORATORY-CHIC-ART-NYT </SLUG>
 <HEADLINE>
 NO GERMS ON THE RUNWAY: LAB CHIC 
@@ -51336,7 +51336,7 @@ replace wardrobes anyway.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2049EDT &QL; 
 </TRAILER>
@@ -51349,7 +51349,7 @@ NYT-10-02-98 2049EDT &QL;
 A7275 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-CLINTON-DOCUMENTS-BOS     10-02 1214
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-DOCUMENTS-BOS </SLUG>
 <HEADLINE>
 DOCUMENTS PORTRAY A WORRIED PRESIDENT, LOVESICK LEWINSKY 
@@ -51529,7 +51529,7 @@ camera in Clinton's private study that recorded the pair involved
 in oral sex.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2053EDT &QL; 
 </TRAILER>
@@ -51542,7 +51542,7 @@ NYT-10-02-98 2053EDT &QL;
 A7278 &Cx1f; paxxx
 r f &Cx13;  &Cx11;  BC-STATES-AWARDS-PA     10-02 0465
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-STATES-AWARDS-PA </SLUG>
 
 <TEXT>
@@ -51641,7 +51641,7 @@ Navy in Dahlgren for amplifiers.
    -30-
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2054EDT &QL; 
 </TRAILER>
@@ -51654,7 +51654,7 @@ NYT-10-02-98 2054EDT &QL;
 A7279 &Cx1f; tad-z
 u v &Cx13;  &Cx11;  BC-COX-BJT-ADVISORY-IMPE     10-02 0055
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COX-BJT-ADVISORY-IMPEACH-CLINP </SLUG>
 
 <TEXT>
@@ -51673,7 +51673,7 @@ editor, 404-582-7882.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2054EDT &QL; 
 </TRAILER>
@@ -51686,7 +51686,7 @@ NYT-10-02-98 2054EDT &QL;
 A7281 &Cx1f; tad-z
 u v &Cx13;  &Cx11;  BC-COX-BJT-ADVISORY-IMPE     10-02 0053
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COX-BJT-ADVISORY-IMPEACH-CURRI </SLUG>
 
 <TEXT>
@@ -51705,7 +51705,7 @@ editor, 404-582-7882.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2055EDT &QL; 
 </TRAILER>
@@ -51718,7 +51718,7 @@ NYT-10-02-98 2055EDT &QL;
 A7283 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-CAR-MOTOR-NOTES-TEX     10-02 0448
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAR-MOTOR-NOTES-TEX </SLUG>
 <HEADLINE>
 NIGHT RACES BOOKEND '99 INDIANAPOLIS 500
@@ -51793,7 +51793,7 @@ Jones is scheduled to move up to the Cup series full time next
 year.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2056EDT &QL; 
 </TRAILER>
@@ -51806,7 +51806,7 @@ NYT-10-02-98 2056EDT &QL;
 A7285 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-CLINTON-TRIPP-BOS &LR;      10-02 0912
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-TRIPP-BOS </SLUG>
 <HEADLINE>
 TO LEWINSKY, TRIPP PLAYED THE VICTIM 
@@ -51955,7 +51955,7 @@ think I'm under someone's wing?'' she asked. ``I'm under God's
 wing, and that's it.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2057EDT &QL; 
 </TRAILER>
@@ -51968,7 +51968,7 @@ NYT-10-02-98 2057EDT &QL;
 A7286 &Cx1f; tad-z
 u v &Cx13;  &Cx11;  BC-COX-BJT-ADVISORY-IMPE     10-02 0053
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COX-BJT-ADVISORY-IMPEACH-CLINT </SLUG>
 
 <TEXT>
@@ -51987,7 +51987,7 @@ editor, 404-582-7882.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2057EDT &QL; 
 </TRAILER>
@@ -52000,7 +52000,7 @@ NYT-10-02-98 2057EDT &QL;
 A7288 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-FBC-TCU-VANDY-TEX     10-02 0770
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-TCU-VANDY-TEX </SLUG>
 <HEADLINE>
 TCU CORNERS SET FOR VANDY BARRAGE
@@ -52127,7 +52127,7 @@ Frogs' rushing attack. ... The Commodores, who have lost 21
 consecutive SEC games, have not had a winning season since 1982.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2059EDT &QL; 
 </TRAILER>
@@ -52140,7 +52140,7 @@ NYT-10-02-98 2059EDT &QL;
 A7293 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-ELIMINATE-BIZ-PROFILE     10-02 0036
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ELIMINATE-BIZ-PROFILE-HASSAN-NYT </SLUG>
   
 <TEXT>
@@ -52155,7 +52155,7 @@ tonight's New York Times News Service file.
    N.Y.Times News Service, Oct. 2. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2102EDT &QL; 
 </TRAILER>
@@ -52168,7 +52168,7 @@ NYT-10-02-98 2102EDT &QL;
 A7294 &Cx1f; tdt-z
 u a &Cx13;  &Cx11;  BC-MCNAMARA-COLUMN-BOS &LR;      10-02 0733
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MCNAMARA-COLUMN-BOS </SLUG>
 <HEADLINE>
 ENTERING THE FLUORIDE FRAY 
@@ -52271,7 +52271,7 @@ ignorance is a greater public menace than any imagined Communist
 conspiracy?
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2102EDT &QL; 
 </TRAILER>
@@ -52284,7 +52284,7 @@ NYT-10-02-98 2102EDT &QL;
 A7299 &Cx1f; tta-z
 u i &Cx13;  &Cx11;  BC-CLINTON-ECON-425&AMP;ADD-     10-02 1213
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-ECON-425&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 CLINTON PROPOSES TO LET IMF ACT SOONER TO AID COUNTRIES 
@@ -52452,7 +52452,7 @@ called the ``herd mentality'' that has led investors to pull their
 money out.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2107EDT &QL; 
 </TRAILER>
@@ -52465,7 +52465,7 @@ NYT-10-02-98 2107EDT &QL;
 A7300 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-CLINTON-CURRIE-BOS &LR;      10-02 0650
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-CURRIE-BOS </SLUG>
 <HEADLINE>
 PRECARIOUS ROLE OF CLINTON'S PERSONAL SECRETARY SURFACES 
@@ -52574,7 +52574,7 @@ to know the nature of the relationship?''
    &UR;  &LR; Currie: ``Ultimately, that was true.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2108EDT &QL; 
 </TRAILER>
@@ -52587,7 +52587,7 @@ NYT-10-02-98 2108EDT &QL;
 A7301 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-BBA-YANKEES-NOTES-TEX     10-02 0697
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-YANKEES-NOTES-TEX </SLUG>
 <HEADLINE>
 STRAWBERRY ON YANKEES' MINDS
@@ -52725,7 +52725,7 @@ started his wind-up.
    ``I took a huge step out of there,'' he said with a laugh.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2108EDT &QL; 
 </TRAILER>
@@ -52738,7 +52738,7 @@ NYT-10-02-98 2108EDT &QL;
 A7303 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-PHONE-TEXT-3T     10-02 0729
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-PHONE-TEXT-3TAKES-NYT </SLUG>
 <HEADLINE>
 CONVERSATIONS BETWEEN MONICA LEWINSKY AND LINDA TRIPP 
@@ -53384,7 +53384,7 @@ have to say it, say it. Look, all you have to say is, ``You have
 nothing to worry about from me.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2110EDT &QL; 
 </TRAILER>
@@ -53397,7 +53397,7 @@ NYT-10-02-98 2110EDT &QL;
 A7307 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-CONGRESS-570(     10-02 0612
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-CONGRESS-570(2TAKES)-NYT </SLUG>
 <HEADLINE>
 CLINTON LEGAL TEAM CHASTISES COMMITTEE ON IMPEACHMENT INQUIRY
@@ -53599,7 +53599,7 @@ predicted the Senate would ultimately lack the votes to convict
 Clinton. Conviction requires a two-thirds majority.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2111EDT &QL; 
 </TRAILER>
@@ -53612,7 +53612,7 @@ NYT-10-02-98 2111EDT &QL;
 A7309 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-GENTI-COX     10-02 0536
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GENTI-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -53711,7 +53711,7 @@ it's a different world.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2111EDT &QL; 
 </TRAILER>
@@ -53724,7 +53724,7 @@ NYT-10-02-98 2111EDT &QL;
 A7312 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBA-STRAWBERRY-SURGER     10-02 0540
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-STRAWBERRY-SURGERY-NYT </SLUG>
 <HEADLINE>
 COLON CANCER RARE FOR SOMEONE OF STRAWBERRY'S AGE, 36 
@@ -53813,7 +53813,7 @@ cancer society statistics show.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2112EDT &QL; 
 </TRAILER>
@@ -53826,7 +53826,7 @@ NYT-10-02-98 2112EDT &QL;
 A7315 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-SHAUGHNESSY-COLUMN-BO     10-02 0964
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SHAUGHNESSY-COLUMN-BOS </SLUG>
 <HEADLINE>
 NOW IT'S UP TO SCHOUREK 
@@ -54007,7 +54007,7 @@ with Pete Schourek.
    (Dan Shaughnessy is a Globe columnist.)
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2113EDT &QL; 
 </TRAILER>
@@ -54020,7 +54020,7 @@ NYT-10-02-98 2113EDT &QL;
 A7316 &Cx1f; ttc-z
 r f &Cx13;  &Cx11;  BC-HMO-MEDICARE-DEADLINE     10-02 0418
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HMO-MEDICARE-DEADLINE-LADN </SLUG>
 <HEADLINE>
 MEDICARE DEADLINE NEARING FOR HMO INDUSTRY
@@ -54087,7 +54087,7 @@ some HMOs pull out of markets, others are moving in.
    XXX
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2114EDT &QL; 
 </TRAILER>
@@ -54100,7 +54100,7 @@ NYT-10-02-98 2114EDT &QL;
 A7317 &Cx1f; tdt-z
 u w &Cx13;  &Cx11;  BC-CLINTON-AGENTS-BOS &LR;      10-02 0829
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-AGENTS-BOS </SLUG>
 <HEADLINE>
 LEWINSKY WAS KNOWN AMONG SECRET SERVICE 
@@ -54223,7 +54223,7 @@ before the grand jury. Finerman testified that it was she who first
 told Marcia Lewis about her daughter's affair with the president.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2115EDT &QL; 
 </TRAILER>
@@ -54236,7 +54236,7 @@ NYT-10-02-98 2115EDT &QL;
 A7327 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-HILLARY-NYT &LR;      10-02 0345
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-HILLARY-NYT </SLUG>
 <HEADLINE>
 CLINTONS SAID BILL `MINISTERED' TO INTERN, AIDE TESTIFIES 
@@ -54298,7 +54298,7 @@ president to cut himself off from people like Ms. Lewinsky.
 that, given how I am. I want to help people.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2124EDT &QL; 
 </TRAILER>
@@ -54311,7 +54311,7 @@ NYT-10-02-98 2124EDT &QL;
 A7329 &Cx1f; tdt-z
 u e &Cx13;  &Cx11;  BC-MOVIE-STRANGELAND-BOS     10-02 0353
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MOVIE-STRANGELAND-BOS </SLUG>
 <HEADLINE>
 TRULY TWISTED `STRANGELAND' 
@@ -54368,7 +54368,7 @@ Internet, scarification) to keep you amused for 90 minutes, and it
 doesn't resort to ``Scream''-like in-jokiness.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2124EDT &QL; 
 </TRAILER>
@@ -54381,7 +54381,7 @@ NYT-10-02-98 2124EDT &QL;
 A7330 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-RELIGION-COLUMN-NYT &LR;      10-02 0994
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RELIGION-COLUMN-NYT </SLUG>
 <HEADLINE>
 RELIGION COLUMN: DAVID AND BATHSHEBA, AND THEIR RELEVANCE TO
@@ -54537,7 +54537,7 @@ about David and more than we can bear to understand about
 ourselves.'' Suggestive, indeed.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2125EDT &QL; 
 </TRAILER>
@@ -54550,7 +54550,7 @@ NYT-10-02-98 2125EDT &QL;
 A7331 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-TRIPP-TRANSCRIPTS-HNS     10-02 0911
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TRIPP-TRANSCRIPTS-HNS </SLUG>
 <HEADLINE>
 TRIPP COACHED, ENCOURAGED LEWINSKY WHILE TAPING CONVERSATIONS 
@@ -54741,7 +54741,7 @@ how many _ it was my choice,'' she said. &QL;
 XXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2125EDT &QL; 
 </TRAILER>
@@ -54754,7 +54754,7 @@ NYT-10-02-98 2125EDT &QL;
 A7334 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BBA-SABERHAGEN-BOS &LR;      10-02 0681
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-SABERHAGEN-BOS </SLUG>
 <HEADLINE>
 PITCHING DID RED SOX IN 
@@ -54869,7 +54869,7 @@ it. Out.''
 ask Manny Ramirez, Kenny Lofton, and Jim Thome.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2126EDT &QL; 
 </TRAILER>
@@ -54882,7 +54882,7 @@ NYT-10-02-98 2126EDT &QL;
 A7337 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-MANAGEMENT-THORP-     10-02 0697
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-MANAGEMENT-THORP-ART-2TAKES-$ADV04-NYT </SLUG>
 <HEADLINE>
 WHEN ECONOMIC BOMBS DROP, RISK MODELS FAIL 
@@ -55091,7 +55091,7 @@ Capital. Then the models can settle down again, ripe for a
 blindsiding by the next bolt from the blue.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2129EDT &QL; 
 </TRAILER>
@@ -55104,7 +55104,7 @@ NYT-10-02-98 2129EDT &QL;
 A7340 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-BRIEFS-$ADV04-NYT     10-02 0740
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-BRIEFS-$ADV04-NYT </SLUG>
 <HEADLINE>
 SHORT ITEMS ON PEOPLE AND PERSONALITIES  
@@ -55238,7 +55238,7 @@ tribe.
    Keith Bradsher
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2129EDT &QL; 
 </TRAILER>
@@ -55251,7 +55251,7 @@ NYT-10-02-98 2129EDT &QL;
 A7341 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-KING-SUIT-COX     10-02 0578
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KING-SUIT-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -55361,7 +55361,7 @@ officer who died several years ago.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2130EDT &QL; 
 </TRAILER>
@@ -55374,7 +55374,7 @@ NYT-10-02-98 2130EDT &QL;
 A7342 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BBA-NAGY-BOS &LR;      10-02 0741
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-NAGY-BOS </SLUG>
 <HEADLINE>
 NAGY DOES IT TO RED SOX _ AGAIN 
@@ -55517,7 +55517,7 @@ see a repeat of that.''
    He didn't.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2130EDT &QL; 
 </TRAILER>
@@ -55530,7 +55530,7 @@ NYT-10-02-98 2130EDT &QL;
 A7343 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-POLITICS-PEROTCLINTON     10-02 0757
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-POLITICS-PEROTCLINTON-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -55671,7 +55671,7 @@ friend of Clinton.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2131EDT &QL; 
 </TRAILER>
@@ -55684,7 +55684,7 @@ NYT-10-02-98 2131EDT &QL;
 A7345 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-CLINTON-CAMPAIGN-ART-     10-02 1381
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-CAMPAIGN-ART-800&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 STUMPING IN THE SHADOW OF THE SEX SCANDALS 
@@ -55885,7 +55885,7 @@ assembled asked him about the scandal; they were more concerned
 about the state's plans to build a highway near their neighborhood.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2131EDT &QL; 
 </TRAILER>
@@ -55898,7 +55898,7 @@ NYT-10-02-98 2131EDT &QL;
 A7347 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BBA-REDSOX-HITS-BOS &LR;      10-02 0576
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-REDSOX-HITS-BOS </SLUG>
 <HEADLINE>
 RED SOX BATS ALMOST SILENT 
@@ -55985,7 +55985,7 @@ grounder ended the inning. ``He's a ground-ball pitcher and he got
 some ground balls. He did the job.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2132EDT &QL; 
 </TRAILER>
@@ -55998,7 +55998,7 @@ NYT-10-02-98 2132EDT &QL;
 A7349 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BBA-LOFTON-BOS &LR;      10-02 0586
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-LOFTON-BOS </SLUG>
 <HEADLINE>
 SURPRISE HOMER BY LOFTON HELPED DEFEAT RED SOX 
@@ -56096,7 +56096,7 @@ not unusual.''
 Sox in 1998 playoffs.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2133EDT &QL; 
 </TRAILER>
@@ -56109,7 +56109,7 @@ NYT-10-02-98 2133EDT &QL;
 A7350 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-BBA-MODESTI-COLUMN-LA     10-02 0913
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-MODESTI-COLUMN-LADN </SLUG>
 <HEADLINE>
 AUTRY WAS AN OWNER WORTH CHEERING
@@ -56281,7 +56281,7 @@ Series.''
    Ever shed a tear for a corporation? &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2134EDT &QL; 
 </TRAILER>
@@ -56294,7 +56294,7 @@ NYT-10-02-98 2134EDT &QL;
 A7351 &Cx1f; tta-z
 u w &Cx13;  &Cx11;  BC-CLINTON-STARR-ART-110     10-02 1235
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-STARR-ART-1100(2TAKES)-NYT </SLUG>
 <HEADLINE>
 FINAL STORE OF EVIDENCE IS DISCLOSED 
@@ -56464,7 +56464,7 @@ charge by unnamed Clinton defenders.
 <P>
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2134EDT &QL; 
 </TRAILER>
@@ -56477,7 +56477,7 @@ NYT-10-02-98 2134EDT &QL;
 A7355 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-ELIMINATE-BIZ-RUSSIA-     10-02 0033
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-ELIMINATE-BIZ-RUSSIA-OIL-NYT </SLUG>
   
 <TEXT>
@@ -56492,7 +56492,7 @@ Times News Service file.
    N.Y.Times News Service, Oct. 2. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2136EDT &QL; 
 </TRAILER>
@@ -56505,7 +56505,7 @@ NYT-10-02-98 2136EDT &QL;
 A7357 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBA-VECSEY-COLUMN-NYT     10-02 0768
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-VECSEY-COLUMN-NYT </SLUG>
 <HEADLINE>
 SPORTS COLUMN: CONE TAKES HIS FRIENDS WITH HIM 
@@ -56633,7 +56633,7 @@ caps, too. Then David Cone, his eyes still red, did what he knows
 best. He went out to pitch.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2138EDT &QL; 
 </TRAILER>
@@ -56646,7 +56646,7 @@ NYT-10-02-98 2138EDT &QL;
 A7362 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-INVEST-OIL-STOCKS-ART     10-02 0985
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INVEST-OIL-STOCKS-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 (REPEATING, FIXING SLUG LINE) 
@@ -56814,7 +56814,7 @@ September report, Jeffries &AMP; Co., set 12-month target prices for
 Noble at $23, Santa Fe at $26 and Transocean at $47 a share.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2142EDT &QL; 
 </TRAILER>
@@ -56827,7 +56827,7 @@ NYT-10-02-98 2142EDT &QL;
 A7365 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-TV-SPORTS-COLUMN-BOS &LR;      10-02 0816
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-SPORTS-COLUMN-BOS </SLUG>
 <HEADLINE>
 BERMAN, KNIGHT HAVE RIGHT PITCH ON RED SOX LOSS 
@@ -56971,7 +56971,7 @@ survive.''
 and being the key to the Red Sox making the playoffs.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2143EDT &QL; 
 </TRAILER>
@@ -56984,7 +56984,7 @@ NYT-10-02-98 2143EDT &QL;
 A7367 &Cx1f; tad-z
 u v &Cx13;  &Cx11;  BC-COX-BJT-ADVISORY-IMPE     10-02 0053
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-COX-BJT-ADVISORY-IMPEACH-LEWIS </SLUG>
 
 <TEXT>
@@ -57003,7 +57003,7 @@ editor, 404-582-7882.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2144EDT &QL; 
 </TRAILER>
@@ -57016,7 +57016,7 @@ NYT-10-02-98 2144EDT &QL;
 A7368 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BBA-INDIANS-REDSOX-BO     10-02 0871
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-INDIANS-REDSOX-BOS </SLUG>
 <HEADLINE>
 NAGY OUTDUELS SABERHAGEN IN 4-3 CLEVELAND WIN 
@@ -57159,7 +57159,7 @@ asked but I can't argue with him. He's the boss. I'm only an
 employee.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2145EDT &QL; 
 </TRAILER>
@@ -57172,7 +57172,7 @@ NYT-10-02-98 2145EDT &QL;
 A7372 &Cx1f; tdt-z
 u s &Cx13;  &Cx11;  BC-BKN-HALL-HAYNES-BOS &LR;      10-02 0785
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BKN-HALL-HAYNES-BOS </SLUG>
 <HEADLINE>
 A GOOD DAY FOR MARQUES HAYNES FANS 
@@ -57281,7 +57281,7 @@ basketball founder Dr. James Naismith. And now Haynes will be a
 permanent member in Naismith's home _ and basketball's sacred Hall.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2146EDT &QL; 
 </TRAILER>
@@ -57294,7 +57294,7 @@ NYT-10-02-98 2146EDT &QL;
 A7373 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-BBA-INDIANS-RED-SOX-T     10-02 0628
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-INDIANS-RED-SOX-TEX </SLUG>
  NAGY MASTERFUL AS INDIANS DEFEAT RED SOX
 IN GAME 3 (For use by NYTimes News Service clients) By DAVID A.
@@ -57369,7 +57369,7 @@ we have to
 come out tomorrow and play the same way.S
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2148EDT &QL; 
 </TRAILER>
@@ -57382,7 +57382,7 @@ NYT-10-02-98 2148EDT &QL;
 A7376 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-METHADONE-HEROIN-ART-     10-02 1049
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-METHADONE-HEROIN-ART-2TAKES-NYT </SLUG>
 <HEADLINE>
 METHADONE USE EMERGED IN CITY WHERE IT IS NOW CHALLENGED 
@@ -57628,7 +57628,7 @@ said. ``And they'll be mugging and stealing to support their
 habit.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2149EDT &QL; 
 </TRAILER>
@@ -57641,7 +57641,7 @@ NYT-10-02-98 2149EDT &QL;
 A7381 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-BBA-INDIANS-RED-SOX-T     10-02 0650
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-INDIANS-RED-SOX-TEX </SLUG>
 <HEADLINE>
 NAGY MASTERFUL AS INDIANS DEFEAT RED SOX IN GAME 3
@@ -57758,7 +57758,7 @@ tomorrow.
 \Ntagbottom:dmark\Nstar-telegram.com
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2150EDT &QL; 
 </TRAILER>
@@ -57771,7 +57771,7 @@ NYT-10-02-98 2150EDT &QL;
 A7382 &Cx1f; tta-z
 u w &Cx13;  &Cx11;  BC-CLINTON-MONICA-LINDA-     10-02 1007
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-MONICA-LINDA-ART-950(2TAKES)-NYT </SLUG>
 <HEADLINE>
 LEWINSKY-TRIPP FRIENDSHIP IS STILL UNFATHOMABLE 
@@ -58013,7 +58013,7 @@ the tapes.''
 you know, in my heart of hearts.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2151EDT &QL; 
 </TRAILER>
@@ -58026,7 +58026,7 @@ NYT-10-02-98 2151EDT &QL;
 A7386 &Cx1f; tta-z
 u a &Cx13;  &Cx11;  BC-CALIF-BILINGUAL-1STLD     10-02 0981
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALIF-BILINGUAL-1STLD-WRITETHRU-ART-2TAKES-NYT </SLUG>
 <HEADLINE>
 CALIFORNIA STILL DEBATES BILINGUAL EDUCATION 
@@ -58191,7 +58191,7 @@ law has passed and we have to deal with it.''
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2154EDT &QL; 
 </TRAILER>
@@ -58204,7 +58204,7 @@ NYT-10-02-98 2154EDT &QL;
 A7387 &Cx1f; ttj-z
 u w &Cx13;  &Cx11;  BC-CLINTON-SCANDAL-HNS &LR;      10-02 1107
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-SCANDAL-HNS </SLUG>
 <HEADLINE>
 DOCUMENTS CAST HARD LIGHT ON LEWINSKY, TRIPP 
@@ -58378,7 +58378,7 @@ sees.'' &QL;
 XXXXEND OF STORY &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2155EDT &QL; 
 </TRAILER>
@@ -58391,7 +58391,7 @@ NYT-10-02-98 2155EDT &QL;
 A7388 &Cx1f; tta-z
 u a &Cx13;  &Cx11;  BC-CALIF-BILINGUAL-1STLD     10-02 0810
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALIF-BILINGUAL-1STLD-WRITETHRU-ART-2NDTAKE-NYT </SLUG>
   
  LOS ANGELES: with it.''  
@@ -58527,7 +58527,7 @@ be four languages she will know how to speak and write. Employers
 will love her.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2155EDT &QL; 
 </TRAILER>
@@ -58540,7 +58540,7 @@ NYT-10-02-98 2155EDT &QL;
 A7390 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-OBIT-TAYLOR-NYT &LR;      10-02 0698
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-TAYLOR-NYT </SLUG>
 <HEADLINE>
 ROBERT LEWIS TAYLOR, 88, NOVELIST AND BIOGRAPHER 
@@ -58656,7 +58656,7 @@ his daughter, he is survived by a son, Martin, of Camden, Me., and
 five grandchildren.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2156EDT &QL; 
 </TRAILER>
@@ -58669,7 +58669,7 @@ NYT-10-02-98 2156EDT &QL;
 A7394 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-USC-LADN     10-02 0606
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-USC-LADN </SLUG>
 <HEADLINE>
 NOW, USC HAS SERIOUS PRESSURE
@@ -58780,7 +58780,7 @@ someone is painting the field, and we can't get on when they've
 told us we could.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2158EDT &QL; 
 </TRAILER>
@@ -58793,7 +58793,7 @@ NYT-10-02-98 2158EDT &QL;
 A7395 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-BIZGLANCE-NYT     10-02 0600
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZGLANCE-NYT </SLUG>
 <HEADLINE>
 BUSINESS AT A GLANCE
@@ -58906,7 +58906,7 @@ with the AIDS virus use a supervised play area in a store. Kroger
 denied wrongdoing.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2159EDT &QL; 
 </TRAILER>
@@ -58919,7 +58919,7 @@ NYT-10-02-98 2159EDT &QL;
 A7397 &Cx1f; tta-z
 u w &Cx13;  &Cx11;  BC-CLINTON-STARR-ART-2ND     10-02 0793
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-STARR-ART-2NDTAKE-NYT </SLUG>
   
  WASHINGTON: Clinton defenders.  
@@ -59031,7 +59031,7 @@ opponents in her conversations and tapings of Ms. Lewinsky.
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2200EDT &QL; 
 </TRAILER>
@@ -59044,7 +59044,7 @@ NYT-10-02-98 2200EDT &QL;
 A7398 &Cx1f; tta-z
 u w &Cx13;  &Cx11;  BC-CLINTON-STARR-ART-3RD     10-02 0518
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-STARR-ART-3RDTAKE-NYT </SLUG>
   
  WASHINGTON: Ms. Lewinsky.  
@@ -59119,7 +59119,7 @@ hate that,'' she said, as Ms. Tripp quietly taped the tale of the
 president and the intern.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2200EDT &QL; 
 </TRAILER>
@@ -59132,7 +59132,7 @@ NYT-10-02-98 2200EDT &QL;
 A7401 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-LAWYER-460&AMP;AD     10-02 0657
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-LAWYER-460&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 WHITE HOUSE LAWYER REFUSED TO ANSWER SOME QUESTIONS 
@@ -59246,7 +59246,7 @@ Blumenthal said that Clinton told him that Ms. Lewinsky had made
 sexual advances to him and that he had rebuffed them.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2203EDT &QL; 
 </TRAILER>
@@ -59259,7 +59259,7 @@ NYT-10-02-98 2203EDT &QL;
 A7403 &Cx1f; ttx-z
 r s &Cx13;  &Cx11;  BC-BBA-RANGERS-SCENE-REP     10-02 0748
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-RANGERS-SCENE-REPORT-TEX </SLUG>
  
 McLEMORE MAKES SURE DEDICATED FAN SEES GAME 
@@ -59395,7 +59395,7 @@ The Yankees aren't infallible.''
    She said that before last night's game.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2209EDT &QL; 
 </TRAILER>
@@ -59408,7 +59408,7 @@ NYT-10-02-98 2209EDT &QL;
 A7405 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-EGYPT-ANNIVERSARY-NYT     10-02 0954
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EGYPT-ANNIVERSARY-NYT </SLUG>
 <HEADLINE>
 OF LOVE AND WAR, UNDER THE PYRAMIDS 
@@ -59559,7 +59559,7 @@ before the ceremony. ``But if it happens, I would be the first to
 fight.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2212EDT &QL; 
 </TRAILER>
@@ -59572,7 +59572,7 @@ NYT-10-02-98 2212EDT &QL;
 A7407 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  BC-SUNBIZ-FINAL-BUDGET-N     10-02 1216
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-SUNBIZ-FINAL-BUDGET-NYT </SLUG>
   
 <TEXT>
@@ -59821,7 +59821,7 @@ graphics.
    E-mail: triggp(at)nytimes.com.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2219EDT &QL; 
 </TRAILER>
@@ -59834,7 +59834,7 @@ NYT-10-02-98 2219EDT &QL;
 A7408 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-STING-TEXT-NY     10-02 0596
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-STING-TEXT-NYT </SLUG>
 <HEADLINE>
 EXCERPTS OF A TRIPP-LEWINSKY CONVERSATION MONITORED BY FEDERAL
@@ -60000,7 +60000,7 @@ supposed to sign something, and I'm not not signing it until I have
 a job.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2220EDT &QL; 
 </TRAILER>
@@ -60013,7 +60013,7 @@ NYT-10-02-98 2220EDT &QL;
 A7409 &Cx1f; taf-z
 u e &Cx13;  &Cx11;  BC-TV-SARAH-REVIEW-NYT &LR;      10-02 0515
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-SARAH-REVIEW-NYT </SLUG>
 <HEADLINE>
 `ABOUT SARAH': REACHING FOR TISSUES, BUT SMILING 
@@ -60101,7 +60101,7 @@ Baker (Lila), Nick Searcy (Johnny), Chad Christ (Mike), Steven
 Gilborn (Lew Roth) and Marion Ross (Rose).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2220EDT &QL; 
 </TRAILER>
@@ -60114,7 +60114,7 @@ NYT-10-02-98 2220EDT &QL;
 A7410 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBN-PADRES-ASTROS-NYT     10-02 0409
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-PADRES-ASTROS-NYT </SLUG>
 <HEADLINE>
 PADRES TO START BROWN WHILE ASTROS REST JOHNSON 
@@ -60182,7 +60182,7 @@ Saturday night's lineup. Instead, Jim Leyritz will start at first
 for the Padres against the Houston left-hander Mike Hampton.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2220EDT &QL; 
 </TRAILER>
@@ -60195,7 +60195,7 @@ NYT-10-02-98 2220EDT &QL;
 A7423 &Cx1f; taf-z
 u v &Cx13;  &Cx11;  BC-CLINTON-GRAPHICS-ADVI     10-02 0037
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-GRAPHICS-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -60213,7 +60213,7 @@ evening.
    N.Y.Times News Service, Oct. 2. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2238EDT &QL; 
 </TRAILER>
@@ -60226,7 +60226,7 @@ NYT-10-02-98 2238EDT &QL;
 A7424 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-GRAPHICS-ADVI     10-02 0037
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-GRAPHICS-ADVISORY-NYT </SLUG>
   
 <TEXT>
@@ -60244,7 +60244,7 @@ evening.
    N.Y.Times News Service, Oct. 2. &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2238EDT &QL; 
 </TRAILER>
@@ -60257,7 +60257,7 @@ NYT-10-02-98 2238EDT &QL;
 A7425 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBA-STRAWBERRY-CANCER     10-02 0611
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-STRAWBERRY-CANCER-NYT </SLUG>
 <HEADLINE>
 STRAWBERRYS DISPLAY RAW EMOTIONS 
@@ -60356,7 +60356,7 @@ and return to play next season, he said he would be content with
 his career if he never swung a bat again.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2238EDT &QL; 
 </TRAILER>
@@ -60369,7 +60369,7 @@ NYT-10-02-98 2238EDT &QL;
 A7427 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBC-REDMOND-LADN     10-02 0797
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-REDMOND-LADN </SLUG>
 <HEADLINE>
 REDMOND RUNS FOR THE FUN OF IT
@@ -60503,7 +60503,7 @@ Raiders in the Coliseum,'' said Redmond, who regularly has about 15
 family members travel to Tempe for Sun Devils home games.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2239EDT &QL; 
 </TRAILER>
@@ -60516,7 +60516,7 @@ NYT-10-02-98 2239EDT &QL;
 A7429 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-CLINTON-DOCUMENTS-NYT     10-02 0384
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-DOCUMENTS-NYT </SLUG>
 <HEADLINE>
 WEIGHING IN WITH 16 BOXES OF EVIDENCE 
@@ -60575,7 +60575,7 @@ transcript would fit on one page of the book made available to the
 public.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2241EDT &QL; 
 </TRAILER>
@@ -60588,7 +60588,7 @@ NYT-10-02-98 2241EDT &QL;
 A7430 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-FBC-REPORT-NYT &LR;      10-02 0562
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBC-REPORT-NYT </SLUG>
 <HEADLINE>
 SATURDAY'S GAMES  
@@ -60774,7 +60774,7 @@ completions.
    &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2241EDT &QL; 
 </TRAILER>
@@ -60787,7 +60787,7 @@ NYT-10-02-98 2241EDT &QL;
 A7431 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-OBIT-BENSON-NYT &LR;      10-02 0486
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-BENSON-NYT </SLUG>
 <HEADLINE>
 ELAINE BENSON, 74, WRITER AND GALLERY OWNER 
@@ -60869,7 +60869,7 @@ Goff of Bridgehampton; a brother, Steven Klebanoff of Rye, and
 three grandchildren.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2242EDT &QL; 
 </TRAILER>
@@ -60882,7 +60882,7 @@ NYT-10-02-98 2242EDT &QL;
 A7432 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-HEGDEFUND-NYT &LR;      10-02 0959
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HEGDEFUND-NYT </SLUG>
 <HEADLINE>
 DOWN AND OUT AT THE HEDGE FUND? DON'T BET ON IT 
@@ -61024,7 +61024,7 @@ circumstances may help others who now face bankruptcy as a way of
 maintaining the Long-Term Capital team.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2243EDT &QL; 
 </TRAILER>
@@ -61037,7 +61037,7 @@ NYT-10-02-98 2243EDT &QL;
 A7433 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-BIZ-DIARY-PERSONAL-AR     10-02 0500
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BIZ-DIARY-PERSONAL-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 SHORT PERSONAL BUSINESS ITEMS  
@@ -61133,7 +61133,7 @@ not?''
    Mickey Meece
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2243EDT &QL; 
 </TRAILER>
@@ -61146,7 +61146,7 @@ NYT-10-02-98 2243EDT &QL;
 A7434 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-CT-GOV-KENNELLY-700&AMP;A     10-02 0726
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CT-GOV-KENNELLY-700&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 KENNELLY'S STAR-CROSSED CAMPAIGN SPURS SEARCH FOR REASONS 
@@ -61254,7 +61254,7 @@ of stealing her issues.
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2245EDT &QL; 
 </TRAILER>
@@ -61267,7 +61267,7 @@ NYT-10-02-98 2245EDT &QL;
 A7435 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-CT-GOV-KENNELLY-2NDTA     10-02 0633
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CT-GOV-KENNELLY-2NDTAKE-NYT </SLUG>
   
  HARTFORD, Conn.: her issues.  
@@ -61355,7 +61355,7 @@ roof collapse, Mrs. Kennelly triumphantly turned to an aide and
 said, ``THAT was when I was a good speaker.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2245EDT &QL; 
 </TRAILER>
@@ -61368,7 +61368,7 @@ NYT-10-02-98 2245EDT &QL;
 A7439 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-INTERACTIVE-TOWNHALL-     10-02 1013
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INTERACTIVE-TOWNHALL-ART-535&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 GOT A CAUSE AND A COMPUTER? YOU CAN FIGHT CITY HALL 
@@ -61527,7 +61527,7 @@ more sophisticated.
 address and tell them who their elected officials are.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2246EDT &QL; 
 </TRAILER>
@@ -61540,7 +61540,7 @@ NYT-10-02-98 2246EDT &QL;
 A7440 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBA-BOSOX-INDIANS-NYT     10-02 0684
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-BOSOX-INDIANS-NYT </SLUG>
 <HEADLINE>
 RAMIREZ POWERS INDIANS INTO LEAD 
@@ -61652,7 +61652,7 @@ with the scheduled starter Pete Schourek (1-3, 4.30 earned run
 average).
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2248EDT &QL; 
 </TRAILER>
@@ -61665,7 +61665,7 @@ NYT-10-02-98 2248EDT &QL;
 A7441 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-LASVEGAS-LAND-DEAL-AR     10-02 1139
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-LASVEGAS-LAND-DEAL-ART-2TAKES-NYT </SLUG>
 <HEADLINE>
 LAND TRUSTS MULTIPLYING, STUDY SHOWS COLORADO IS A LEADER IN
@@ -61961,7 +61961,7 @@ businesses,'' Lyons said. ``We need to closely watch the bottom
 line so the taxpayers and the public truly benefit.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2250EDT &QL; 
 </TRAILER>
@@ -61974,7 +61974,7 @@ NYT-10-02-98 2250EDT &QL;
 A7444 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-GLOBAL-WARMING-AD-NYT     10-02 0522
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GLOBAL-WARMING-AD-NYT </SLUG>
 <HEADLINE>
 GLOBAL WARMING, OR HOT AIR? 
@@ -62051,7 +62051,7 @@ administration has recently been lobbying for urgent action to
 control emissions in the face of rising global temperatures.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2250EDT &QL; 
 </TRAILER>
@@ -62064,7 +62064,7 @@ NYT-10-02-98 2250EDT &QL;
 A7445 &Cx1f; taf-z
 u i &Cx13;  &Cx11;  BC-KOSOVO-GOP-NYT &LR;      10-02 0682
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KOSOVO-GOP-NYT </SLUG>
 <HEADLINE>
 REPUBLICANS CRITICIZE CLINTON ON KOSOVO 
@@ -62179,7 +62179,7 @@ same open-ended commitment in Kosovo.
 not require it.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2251EDT &QL; 
 </TRAILER>
@@ -62192,7 +62192,7 @@ NYT-10-02-98 2251EDT &QL;
 A7446 &Cx1f; taf-z
 u p &Cx13;  &Cx11;  BC-FLA-GIULIANI-NYT &LR;      10-02 1027
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FLA-GIULIANI-NYT </SLUG>
 <HEADLINE>
 GIULIANI IS BY THE SEA; COULD IT BE A VACATION? 
@@ -62348,7 +62348,7 @@ he said. ``It means people who are more supportive of them are
 going to pay more attention to the Dominican Republic.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2252EDT &QL; 
 </TRAILER>
@@ -62361,7 +62361,7 @@ NYT-10-02-98 2252EDT &QL;
 A7447 &Cx1f; taf-z
 u w &Cx13;  &Cx11;  BC-TV-CLINTON-STARR-NYT &LR;      10-02 0275
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TV-CLINTON-STARR-NYT </SLUG>
 <HEADLINE>
 THIS TIME, LITTLE MEDIA FANFARE 
@@ -62406,7 +62406,7 @@ intensity is way down. People have mostly made up their minds on
 this story.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2254EDT &QL; 
 </TRAILER>
@@ -62419,7 +62419,7 @@ NYT-10-02-98 2254EDT &QL;
 A7448 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-BBA-AUTRY-LADN     10-02 0619
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-AUTRY-LADN </SLUG>
 <HEADLINE>
 ANGELS PAY TRIBUTE TO AUTRY
@@ -62515,7 +62515,7 @@ our families were doing. He was never aloof and he was the best
 owner a ballplayer could work for.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2255EDT &QL; 
 </TRAILER>
@@ -62528,7 +62528,7 @@ NYT-10-02-98 2255EDT &QL;
 A7450 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-INVEST-DIARY-$ADV04-N     10-02 0693
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INVEST-DIARY-$ADV04-NYT </SLUG>
 <HEADLINE>
 SHORT ITEMS ON INVESTING  
@@ -62655,7 +62655,7 @@ have scooped them up, and more are being printed.
    Sharon R. King &QL;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2258EDT &QL; 
 </TRAILER>
@@ -62668,7 +62668,7 @@ NYT-10-02-98 2258EDT &QL;
 A7451 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-OBIT-GILL-NYT &LR;      10-02 0387
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-GILL-NYT </SLUG>
 <HEADLINE>
 ROBERT GILL, 87, COLLECTOR OF ANTIQUES 
@@ -62731,7 +62731,7 @@ a son from his first marriage, Peter Gill of Bronxville, and a
 stepson, Jack Chapman of Fort Pierce, Fla.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2259EDT &QL; 
 </TRAILER>
@@ -62744,7 +62744,7 @@ NYT-10-02-98 2259EDT &QL;
 A7500 &Cx1f; ttf-z
 u f &Cx13;  &Cx11;  BC-PHOTO-FULL-UPDATE-NYT     10-02 2201
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PHOTO-FULL-UPDATE-NYT </SLUG>
  
 <TEXT>
@@ -63026,7 +63026,7 @@ Motors. (Peter Yates/New York Times Photo)
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2306EDT &QL; 
 </TRAILER>
@@ -63039,7 +63039,7 @@ NYT-10-02-98 2306EDT &QL;
 A7519 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-PHOTO-FULL-UPDATE-NYT     10-02 2201
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PHOTO-FULL-UPDATE-NYT </SLUG>
  
 <TEXT>
@@ -63321,7 +63321,7 @@ Motors. (Peter Yates/New York Times Photo)
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2308EDT &QL; 
 </TRAILER>
@@ -63334,7 +63334,7 @@ NYT-10-02-98 2308EDT &QL;
 A7546 &Cx1f; ttf-z
 u l &Cx13;  &Cx11;  BC-PHOTO-FULL-UPDATE-NYT     10-02 2201
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PHOTO-FULL-UPDATE-NYT </SLUG>
  
 <TEXT>
@@ -63616,7 +63616,7 @@ Motors. (Peter Yates/New York Times Photo)
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2310EDT &QL; 
 </TRAILER>
@@ -63629,7 +63629,7 @@ NYT-10-02-98 2310EDT &QL;
 A7547 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-OBIT-LASELL-NYT &LR;      10-02 0241
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-OBIT-LASELL-NYT </SLUG>
 <HEADLINE>
 CHESTER LASELL, 90, EX-BROKERAGE FIRM HEAD 
@@ -63668,7 +63668,7 @@ Beach, Fla.; a stepdaughter, Elizabeth Cousineau of Seattle; six
 grandchildren and two great-grandchildren.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2310EDT &QL; 
 </TRAILER>
@@ -63681,7 +63681,7 @@ NYT-10-02-98 2310EDT &QL;
 A7548 &Cx1f; ttf-z
 u a &Cx13;  &Cx11;  BC-PHOTO-FULL-UPDATE-NYT     10-02 2201
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PHOTO-FULL-UPDATE-NYT </SLUG>
  
 <TEXT>
@@ -63963,7 +63963,7 @@ Motors. (Peter Yates/New York Times Photo)
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2310EDT &QL; 
 </TRAILER>
@@ -63976,7 +63976,7 @@ NYT-10-02-98 2310EDT &QL;
 A7550 &Cx1f; ttf-z
 u s &Cx13;  &Cx11;  BC-PHOTO-FULL-UPDATE-NYT     10-02 2201
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-PHOTO-FULL-UPDATE-NYT </SLUG>
  
 <TEXT>
@@ -64258,7 +64258,7 @@ Motors. (Peter Yates/New York Times Photo)
    The New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -64271,7 +64271,7 @@ NYT-10-02-98 2311EDT &QL;
 A7551 &Cx1f; ttf-z
 u f &Cx13;  &Cx11;  BC-GRAPHICS-FILES-NYT &LR;      10-02 0068
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-FILES-NYT </SLUG>
   
 <TEXT>
@@ -64288,7 +64288,7 @@ posted on PressLink, NewsCom and the Wieck Photo Database.
    KOSOVO/Gornji Obrinje Locator -- 1X2 1/2 -- KOSOVO-MASSACRE
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -64301,7 +64301,7 @@ NYT-10-02-98 2311EDT &QL;
 A7543 &Cx1f; taf-z
 s l &Cx13;  &Cx11;  BC-NY-ENGLISHWOMEN-ART-2     10-02 1073
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-ENGLISHWOMEN-ART-2TAKES-$ADV04-NYT </SLUG>
 <HEADLINE>
 ATTRACTIVE YOUNG ENGLISHWOMEN FIND SUCCESS IN N.Y. FASHION PRESS 
@@ -64466,7 +64466,7 @@ her that it was a ``very hot'' show on Comedy Central.
    nn
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -64479,7 +64479,7 @@ NYT-10-02-98 2311EDT &QL;
 A7552 &Cx1f; ttf-z
 u f &Cx13;  &Cx11;  BC-GRAPHICS-FILES-NYT &LR;      10-02 0392
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-FILES-NYT </SLUG>
   
 <TEXT>
@@ -64601,7 +64601,7 @@ Time line:
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -64614,7 +64614,7 @@ NYT-10-02-98 2311EDT &QL;
 A7544 &Cx1f; taf-z
 s l &Cx13;  &Cx11;  BC-NY-ENGLISHWOMEN-ART-$     10-02 1055
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-ENGLISHWOMEN-ART-$ADV04-2NDTAKE-NYT </SLUG>
 <HEADLINE>
  
@@ -64791,7 +64791,7 @@ what lay ahead _ another Saturday night for a couple of
 hard-working Holly-Go-Lightlys in a city full of heavy hitters.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -64804,7 +64804,7 @@ NYT-10-02-98 2311EDT &QL;
 A7545 &Cx1f; taf-z
 s f &Cx13;  &Cx11;  BC-INVEST-WITH-MCCAIN&AMP;O'     10-02 0798
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-INVEST-WITH-MCCAIN&AMP;O'CONNOR-ART-$ADV04-NYT </SLUG>
 <HEADLINE>
 INVESTING WITH: WESLEY MCCAIN AND KATHY O'CONNORY OF THE ECLIPSE
@@ -64923,7 +64923,7 @@ bought earlier, sells for 0.9 times revenue. Eclipse started buying
 Food Lion at $10 to $11 a share. It closed at $10 on Friday.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -64936,7 +64936,7 @@ NYT-10-02-98 2311EDT &QL;
 A7553 &Cx1f; ttf-z
 u v &Cx13;  &Cx11;  BC-GRAPHICS-FILES-NYT &LR;      10-02 0392
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-FILES-NYT </SLUG>
   
 <TEXT>
@@ -65058,7 +65058,7 @@ Time line:
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2311EDT &QL; 
 </TRAILER>
@@ -65071,7 +65071,7 @@ NYT-10-02-98 2311EDT &QL;
 A7554 &Cx1f; ttf-z
 u a &Cx13;  &Cx11;  BC-GRAPHICS-FILES-NYT &LR;      10-02 0392
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GRAPHICS-FILES-NYT </SLUG>
   
 <TEXT>
@@ -65193,7 +65193,7 @@ Time line:
    N.Y. Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2312EDT &QL; 
 </TRAILER>
@@ -65206,7 +65206,7 @@ NYT-10-02-98 2312EDT &QL;
 A7555 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-NY-POLICE-BRUTALITY-4     10-02 0642
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-POLICE-BRUTALITY-470&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 DESPITE DEAL, FAMILY OF MAN WHO DIED IN ARREST ASSAILS MAYOR 
@@ -65307,7 +65307,7 @@ charges of violating Baez's civil rights, he will be sentenced next
 week.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2314EDT &QL; 
 </TRAILER>
@@ -65320,7 +65320,7 @@ NYT-10-02-98 2314EDT &QL;
 A7557 &Cx1f; taf-z
 u k &Cx13;  &Cx11;  BC-EDIT-NY-GOVERNOR-NYT &LR;      10-02 0549
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EDIT-NY-GOVERNOR-NYT </SLUG>
 <HEADLINE>
 EDITORIAL: PATAKI'S FISCAL RECORD 
@@ -65403,7 +65403,7 @@ taxes. He has succeeded more than his opponents concede, but not as
 much as he maintains.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2314EDT &QL; 
 </TRAILER>
@@ -65416,7 +65416,7 @@ NYT-10-02-98 2314EDT &QL;
 A7559 &Cx1f; taf-z
 u f &Cx13;  &Cx11;  BC-GE-FINANCE-NYT &LR;      10-02 0419
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GE-FINANCE-NYT </SLUG>
 <HEADLINE>
 GE DENIES ANY PLANS TO SHAKE UP FINANCE UNIT 
@@ -65485,7 +65485,7 @@ In Friday's statement, GE reiterated that it had a ``longstanding
 practice of not commenting on speculation about its executives.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2314EDT &QL; 
 </TRAILER>
@@ -65498,7 +65498,7 @@ NYT-10-02-98 2314EDT &QL;
 A7561 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-NY-MEXICAN-IMMIGRANT-     10-02 0772
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-NY-MEXICAN-IMMIGRANT-NYT </SLUG>
 <HEADLINE>
 COMMENTARY: `INVISIBLE' LIFE TAKES SHAPE AS A CITY CARES 
@@ -65614,7 +65614,7 @@ an abrazo that revives hope and gives life even to the cold ground
 where Jose drew his last breath.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2316EDT &QL; 
 </TRAILER>
@@ -65627,7 +65627,7 @@ NYT-10-02-98 2316EDT &QL;
 A7564 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBO-PITCHING-NYT &LR;      10-02 0855
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBO-PITCHING-NYT </SLUG>
 <HEADLINE>
 A WIDER STRIKE ZONE HELPS GOOD PITCHING 
@@ -65767,7 +65767,7 @@ John Hirschbeck behind the plate.
 reputedly large strike zone.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2317EDT &QL; 
 </TRAILER>
@@ -65780,7 +65780,7 @@ NYT-10-02-98 2317EDT &QL;
 A7566 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-DIGITAL3-SFCHRON &LR;      10-02 1079
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DIGITAL3-SFCHRON </SLUG>
 <HEADLINE>
 ENCRYPTION SOFTWARE DEBATE KEEPS INTERNET IN POLITICAL ARENA  
@@ -65960,7 +65960,7 @@ phone (650-961-2689), fax (650-961-5023) or e-mail
 (abateATSYMBOLsfgate.com).  &LR;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2320EDT &QL; 
 </TRAILER>
@@ -65973,7 +65973,7 @@ NYT-10-02-98 2320EDT &QL;
 A7567 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-HP-SFCHRON &LR;      10-02 0540
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-HP-SFCHRON </SLUG>
 <HEADLINE>
 BUYOUTS PLANNED AT HP  
@@ -66065,7 +66065,7 @@ million charge against fourth-quarter earnings will be for the job
 reductions.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2321EDT &QL; 
 </TRAILER>
@@ -66078,7 +66078,7 @@ NYT-10-02-98 2321EDT &QL;
 A7568 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-DIGITAL-SFCHRON &LR;      10-02 1079
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-DIGITAL-SFCHRON </SLUG>
 <HEADLINE>
 ENCRYPTION SOFTWARE DEBATE KEEPS INTERNET IN POLITICAL ARENA  
@@ -66258,7 +66258,7 @@ phone (650-961-2689), fax (650-961-5023) or e-mail
 (abateATSYMBOLsfgate.com).  &LR;
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2322EDT &QL; 
 </TRAILER>
@@ -66271,7 +66271,7 @@ NYT-10-02-98 2322EDT &QL;
 A7569 &Cx1f; ttd-z
 r f &Cx13;  &Cx11;  BC-CALWEST-SFCHRON &LR;      10-02 0815
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CALWEST-SFCHRON </SLUG>
 <HEADLINE>
 BAY AREA RACKS RUN SHORT ON MAGAZINES 
@@ -66405,7 +66405,7 @@ Northern California until they get this straightened out,''
 Carvalho said. ``It's going to be a mess.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2322EDT &QL; 
 </TRAILER>
@@ -66418,7 +66418,7 @@ NYT-10-02-98 2322EDT &QL;
 A7570 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBN-CUBS-BRAVES-NYT &LR;      10-02 0591
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBN-CUBS-BRAVES-NYT </SLUG>
 <HEADLINE>
 CUBS PIN THEIR HOPES ON WOOD'S SORE ARM 
@@ -66522,7 +66522,7 @@ confident,'' Grace said. ``We've bounced back before, so we have to
 do it again.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2325EDT &QL; 
 </TRAILER>
@@ -66535,7 +66535,7 @@ NYT-10-02-98 2325EDT &QL;
 A7572 &Cx1f; taf-z
 u k &Cx13;  &Cx11;  BC-EDIT-METHADONE-NYT &LR;      10-02 0372
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EDIT-METHADONE-NYT </SLUG>
 <HEADLINE>
 EDITORIAL: EXPANDING METHADONE TREATMENT 
@@ -66596,7 +66596,7 @@ thousands reclaim their lives. Under the new national policy, many
 more addicts might do the same.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2325EDT &QL; 
 </TRAILER>
@@ -66609,7 +66609,7 @@ NYT-10-02-98 2325EDT &QL;
 A7574 &Cx1f; taf-z
 u k &Cx13;  &Cx11;  BC-EDIT-HARVEST-NYT &LR;      10-02 0403
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EDIT-HARVEST-NYT </SLUG>
 <HEADLINE>
 EDITORIAL OBSERVER: HARVEST HOME 
@@ -66663,7 +66663,7 @@ harvest progress, their minds are also on Washington, where
 Democrats and Republicans debate the terms of relief.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2328EDT &QL; 
 </TRAILER>
@@ -66676,7 +66676,7 @@ NYT-10-02-98 2328EDT &QL;
 A7576 &Cx1f; tta-z
 u w &Cx13;  &Cx11;  BC-CLINTON-MONICA-LINDA-     10-02 1030
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CLINTON-MONICA-LINDA-1STLD-WRITETHRU-ART-950(2TAKES)-NYT </SLUG>
 <HEADLINE>
 LEWINSKY-TRIPP FRIENDSHIP IS STILL UNFATHOMABLE 
@@ -66920,7 +66920,7 @@ listening to the tapes.''
 you know, in my heart of hearts.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2330EDT &QL; 
 </TRAILER>
@@ -66933,7 +66933,7 @@ NYT-10-02-98 2330EDT &QL;
 A7580 &Cx1f; taf-z
 u k &Cx13;  &Cx11;  BC-EDIT-MALAYSIA-DEMOCRA     10-02 0360
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-EDIT-MALAYSIA-DEMOCRACY-NYT </SLUG>
 <HEADLINE>
 EDITORIAL: FREEDOM'S LOSS IN MALAYSIA 
@@ -66989,7 +66989,7 @@ regional economic meeting, he should ask publicly for the freedom
 of Anwar and other detainees.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2331EDT &QL; 
 </TRAILER>
@@ -67002,7 +67002,7 @@ NYT-10-02-98 2331EDT &QL;
 A7586 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-BBA-YANKS-SPENCER-750     10-02 1066
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BBA-YANKS-SPENCER-750&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 AN OVERNIGHT SUCCESS, AND IN JUST NINE SEASONS 
@@ -67154,7 +67154,7 @@ over the wall in left-center field at Yankee Stadium, his high
 school baseball coach began to cry.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2341EDT &QL; 
 </TRAILER>
@@ -67167,7 +67167,7 @@ NYT-10-02-98 2341EDT &QL;
 A7590 &Cx1f; taf-z
 u s &Cx13;  &Cx11;  BC-FBN-GIANTS-425&AMP;ADD-NY     10-02 0729
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBN-GIANTS-425&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 GIANTS KNOW JUST HOW BUCCANEERS FEEL 
@@ -67287,7 +67287,7 @@ Defensive tackle Robert Harris (chest muscle strain) and linebacker
 Scott Galyon (Achilles' heel soreness) are out for Sunday's game.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2349EDT &QL; 
 </TRAILER>
@@ -67300,7 +67300,7 @@ NYT-10-02-98 2349EDT &QL;
 A7592 &Cx1f; ttc-z
 r s &Cx13;  &Cx11;  BC-FBN-DOLPHINS-LADN     10-02 1138
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-FBN-DOLPHINS-LADN </SLUG>
 <HEADLINE>
 NOT A HAIR OUT OF PLACE IN MIAMI
@@ -67486,7 +67486,7 @@ than what I have had in the previous years.''
 have begun to mirror his exact image of what a team should be.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2350EDT &QL; 
 </TRAILER>
@@ -67499,7 +67499,7 @@ NYT-10-02-98 2350EDT &QL;
 A7593 &Cx1f; tad-z
 u a &Cx13;  &Cx11;  BC-KING-SUIT-1STLEDE-COX     10-02 0583
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-KING-SUIT-1ST </SLUG>
 <HEADLINE>
 &HT;   
@@ -67609,7 +67609,7 @@ officer who died several years ago.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2353EDT &QL; 
 </TRAILER>
@@ -67622,7 +67622,7 @@ NYT-10-02-98 2353EDT &QL;
 A7594 &Cx1f; tad-z
 u s &Cx13;  &Cx11;  BC-BKC-HALL-OF-FAME03-CO     10-02 1287
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-BKC-HALL-OF-FAME03-COX </SLUG>
 
 <TEXT>
@@ -67819,7 +67819,7 @@ did for the women's game.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2354EDT &QL; 
 </TRAILER>
@@ -67832,7 +67832,7 @@ NYT-10-02-98 2354EDT &QL;
 A7595 &Cx1f; tad-z
 u s &Cx13;  &Cx11;  BC-CAR-NASCAR-NOTEBOOK-C     10-02 0477
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-CAR-NASCAR-NOTEBOOK-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -67926,7 +67926,7 @@ and proved himself. This is awesome.''
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2354EDT &QL; 
 </TRAILER>
@@ -67939,7 +67939,7 @@ NYT-10-02-98 2354EDT &QL;
 A7596 &Cx1f; tad-z
 u s &Cx13;  &Cx11;  BC-GLF-BUICKNOTES-COX     10-02 0474
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-GLF-BUICKNOTES-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -68022,7 +68022,7 @@ in 1995. ... Paul Azinger withdrew Thursday because of tendinitis.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2354EDT &QL; 
 </TRAILER>
@@ -68035,7 +68035,7 @@ NYT-10-02-98 2354EDT &QL;
 A7598 &Cx1f; tad-z
 u s &Cx13;  &Cx11;  BC-MCCOY-COLUMN03-COX     10-02 0763
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MCCOY-COLUMN03-COX </SLUG>
 
 <TEXT>
@@ -68175,7 +68175,7 @@ championship.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2354EDT &QL; 
 </TRAILER>
@@ -68188,7 +68188,7 @@ NYT-10-02-98 2354EDT &QL;
 A7599 &Cx1f; tad-z
 u s &Cx13;  &Cx11;  BC-RAC-NASCAR03-COX     10-02 0421
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-RAC-NASCAR03-COX </SLUG>
 <HEADLINE>
 &HT;   
@@ -68267,7 +68267,7 @@ day, no matter where it's at in the top 10.
    For Use By Clients of the New York Times News Service
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2354EDT &QL; 
 </TRAILER>
@@ -68280,7 +68280,7 @@ NYT-10-02-98 2354EDT &QL;
 A7600 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-MEDICARE-HMO-490&AMP;ADD-     10-02 0660
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-MEDICARE-HMO-490&AMP;ADD-NYT </SLUG>
 <HEADLINE>
 OXFORD TO DROP COVERAGE FOR 26,000 IN MEDICARE HMOS 
@@ -68381,7 +68381,7 @@ merging with Aetna Inc. An official of Kaiser Permanente also said
 recently that his company would not drop any Medicare consumers.
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2355EDT &QL; 
 </TRAILER>
@@ -68394,7 +68394,7 @@ NYT-10-02-98 2355EDT &QL;
 A7602 &Cx1f; taf-z
 u a &Cx13;  &Cx11;  BC-TEST-CHEATING-SCHEME-     10-02 0556
 </HEADER>
-<BODY>
+<body>
 <SLUG> BC-TEST-CHEATING-SCHEME-NYT </SLUG>
 <HEADLINE>
 MASTERMIND OF SCHOOL CHEATING SCHEME IS SENTENCED 
@@ -68485,7 +68485,7 @@ circumvent the process, get in and be undeserving. There's a moral
 piece to this that is larger than the crime.''
 </P>
 </TEXT>
-</BODY>
+</body>
 <TRAILER>
 NYT-10-02-98 2357EDT &QL; 
 </TRAILER>

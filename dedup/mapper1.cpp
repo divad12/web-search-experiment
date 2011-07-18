@@ -1,10 +1,12 @@
 // Mapper for Amazon Elastic Map Reduce using Hadoop streaming
 
 #include <cassert>
+#include <cctype>
 #include <cstdio>
 #include <cstring>
 #include <iomanip>
 #include <iostream>
+#include <set>
 #include <sstream>
 #include <tr1/unordered_set>
 
@@ -18,11 +20,15 @@ const size_t DOCNO_START_LEN = strlen(DOCNO_START_TAG);
 const char* DOC_START_TAG = "<DOC>";
 const char* DOC_END_TAG = "</DOC>";
 
-const char* BODY_START_TAG = "<BODY>";
-const char* BODY_END_TAG = "</BODY>";
+// TODO: Annoyance: Aquaint uses <BODY>, clueweb uses <body>
+const char* BODY_START_TAG = "<body>";
+const char* BODY_END_TAG = "</body>";
 const size_t BODY_START_LEN = strlen(BODY_START_TAG);
 
-const char* WHITESPACE = " \t\n";
+const char* TITLE_START_TAG = "<title>";
+const char* TITLE_END_TAG = "</title>";
+const size_t TITLE_START_LEN = strlen(TITLE_START_TAG);
+
 const char* DOC_ID_SEP = "|";
 
 // TODO: Should not declare static variables of class type.
@@ -30,93 +36,167 @@ const char* DOC_ID_SEP = "|";
 //     hashes (just 32-bit).
 RabinHashFunction64 rabinHash(1);
 
-const size_t SHINGLE_SIZE = 64;
+const size_t WORDS_PER_SHINGLE = 10;
+// TODO: Make sketch_size a function of the size of the document?
+const size_t SKETCH_SIZE = 100;
 
 ////////////////////////////////////////////////////////////////////////////////
 void trim(std::string& str) {
-    str.erase(str.find_last_not_of(' ') + 1);
-    str.erase(0, str.find_first_not_of(' '));
+  str.erase(str.find_last_not_of(' ') + 1);
+  str.erase(0, str.find_first_not_of(' '));
 }
 
 std::string numToStr(long long num) {
-    char str[20];
-    sprintf(str, "%lld", num);
-    return std::string(str);
+  char str[20];
+  sprintf(str, "%lld", num);
+  return std::string(str);
 }
 
 std::string padStr(const std::string& str, size_t size, char paddingChar) {
-    std::stringstream ss;
-    ss << std::setfill(paddingChar) << std::setw(size) << str;
-    return ss.str();
+  std::stringstream ss;
+  ss << std::setfill(paddingChar) << std::setw(size) << str;
+  return ss.str();
 }
 
+// THis is a character from the input that we want to keep
+bool isGoodChar(char c) {
+  return isalnum(c) || isspace(c);
+}
+
+// Normalize the input string: lowercase all letters, only keep alphanumerics,
+// remove all html tags, collapse whitespace into ' '
+void processInput(std::string& str) {
+  std::string::iterator newEnd = str.begin();
+  bool inTag = false;
+  for (std::string::iterator it = str.begin(); it != str.end(); ++it) {
+    if (inTag) {
+      if (*it == '>') {
+        inTag = false;
+      }
+    } else if (isGoodChar(*it)) {
+      *(newEnd++) = tolower(*it);
+    } else if (*it == '<') {  // ASSUMPTION: '<' is not a good char
+      inTag = true;
+    }
+  }
+  str.erase(newEnd, str.end());
+
+  // Make a second pass to collapse all contiguous whitespace into ' '
+  // TODO: Optimization: Make this into a single pass, or split this out into a
+  //     different func
+  bool isPrevCharWhitespace = false;
+  newEnd = str.begin();
+  for (std::string::iterator it = str.begin(); it != str.end(); ++it) {
+    if (!(isPrevCharWhitespace && isspace(*it))) {
+      if (isspace(*it)) {
+        *it = ' ';
+        isPrevCharWhitespace = true;
+      } else {
+        isPrevCharWhitespace = false;
+      }
+      *(newEnd++) = *it;
+    }
+  }
+  str.erase(newEnd, str.end());
+}
+
+// From a document, get only the parts that we want to shingle
+std::string getDedupInput(const std::string& doc) {
+  // ASSUMPTION: Title and body nodes are not nested within each other
+  // ASSUMPTION: TItle node may or may not exist; body node MUST exist
+  std::string ret;
+
+  size_t titleStart = doc.find(TITLE_START_TAG);
+  if (titleStart != std::string::npos) {
+    titleStart += TITLE_START_LEN;
+    size_t titleEnd = doc.find(TITLE_END_TAG, titleStart);
+    ret = doc.substr(titleStart, titleEnd - titleStart);
+  }
+
+  size_t bodyStart = doc.find(BODY_START_TAG) + BODY_START_LEN;
+  size_t bodyEnd = doc.find(BODY_END_TAG, bodyStart);
+  return ret + "\n" + doc.substr(bodyStart, bodyEnd - bodyStart);
+}
+
+// Get the document id string from the doc contents
+std::string getDocId(const std::string& doc) {
+  size_t docnoStart = doc.find(DOCNO_START_TAG) + DOCNO_START_LEN;
+  size_t docnoEnd = doc.find(DOCNO_END_TAG, docnoStart);
+  std::string docId = doc.substr(docnoStart, docnoEnd - docnoStart);
+  trim(docId);
+  return docId;
+}
+
+// NOTE: This destroys the original value in string doc
 void emitKeyValuePairs(const std::string& doc) {
-    // TODO: need to worry about unicode?
+  // TODO: need to worry about unicode?
+  std::string toShingleStr = getDedupInput(doc);
+  processInput(toShingleStr);
 
-    std::tr1::unordered_set<long long> shingleSet;
-    size_t bodyStart = doc.find(BODY_START_TAG) + BODY_START_LEN;
-    size_t bodyEnd = doc.find(BODY_END_TAG, bodyStart);
+  typedef std::set<long long> ShingleSet;
+  ShingleSet shingleSet;
 
-    // TODO: could clean up xml if this is not done for actual input i.e.
-    //     remove tags, collapse whitespace
-
-    // Get the set of all shingles in this document
-    for (size_t i = bodyStart; i + SHINGLE_SIZE < bodyEnd; ) {
-        long long shingle = rabinHash.hash(doc.c_str() + i, SHINGLE_SIZE);
-        shingleSet.insert(shingle);
-
-        i = doc.find_first_of(WHITESPACE, i + 1);
-        if (i == std::string::npos) break;
-        i = doc.find_first_not_of(WHITESPACE, i + 1);
-        if (i == std::string::npos) break;
+  // Get the initial shingles
+  size_t toShingleStrLen = toShingleStr.length();
+  size_t begin = toShingleStr.find_first_not_of(' ', 0);
+  size_t end = begin;
+  for (size_t i = 0; i < WORDS_PER_SHINGLE; ++i) {
+    end = toShingleStr.find_first_of(' ', end + 1);
+    if (end == std::string::npos) {
+      end = toShingleStrLen;
+      break;
     }
+  }
 
-    if (bodyEnd - bodyStart < SHINGLE_SIZE) {
-        std::string padded = padStr(doc.substr(bodyStart, bodyEnd - bodyStart), SHINGLE_SIZE, 'x');
-        long long shingle = rabinHash.hash(padded.c_str(), SHINGLE_SIZE);
-        shingleSet.insert(shingle);
+  // Now shift that window of words and hash each window
+  while (true) {
+    long long shingle = rabinHash.hash(toShingleStr.c_str() + begin, end - begin);
+    shingleSet.insert(shingle);
+
+    if (end == toShingleStrLen) break;
+
+    begin = toShingleStr.find_first_of(' ', begin + 1) + 1;
+    end = toShingleStr.find_first_of(' ', end + 1);
+    if (end == std::string::npos) {
+      end = toShingleStrLen;
     }
+  }
 
-    // Get the document ID string concatenated with the # of unique shingles
-    size_t docnoStart = doc.find(DOCNO_START_TAG) + DOCNO_START_LEN;
-    size_t docnoEnd = doc.find(DOCNO_END_TAG, docnoStart);
-    std::string docId = doc.substr(docnoStart, docnoEnd - docnoStart);
-    trim(docId);
-    docId += DOC_ID_SEP;
-    docId += numToStr(shingleSet.size());
-    const char* docIdCstr = docId.c_str();
+  // Get the document ID string concatenated with the # of unique shingles
+  std::string docId = getDocId(doc);
+  docId += DOC_ID_SEP;
+  docId += numToStr(std::min(shingleSet.size(), SKETCH_SIZE));
+  const char* docIdCstr = docId.c_str();
 
-    // Now emit the <shingle, docId + size> pairs.
-    for (std::tr1::unordered_set<long long>::iterator it = shingleSet.begin();  // Wow what a mouthful... want C++0x auto
-            it != shingleSet.end(); ++it) {
-        printf("%lld\t%s\n", *it, docIdCstr);
-    }
+  // Now emit the <shingle, docId + size> pairs.
+  size_t emitted = 0;
+  for (ShingleSet::iterator it = shingleSet.begin();
+      it != shingleSet.end() && emitted < SKETCH_SIZE; ++it, ++emitted) {
+    printf("%lld\t%s\n", *it, docIdCstr);
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 int main() {
-    char line[10000];
+  static const int MAX_LINE_LEN = 100000;
+  char line[MAX_LINE_LEN];
 
-    std::string doc;
-    bool inDoc = false;
+  std::string doc;
+  bool inDoc = false;
 
-    // Using scanf instead of getline because it is much more efficient. This
-    // is important since we're streaming in large amount of data.
-    while (scanf("%9999[^\n]\n", line) != EOF) {
-        // Assumptions: no nested docs; doc tags are uppercase
-        if (inDoc) {
-            doc += line;
-            doc += '\n';
-            if (strstr(line, DOC_END_TAG)) {
-                inDoc = false;
-                emitKeyValuePairs(doc);
-            }
-        } else if (strstr(line, DOC_START_TAG)) {
-            inDoc = true;
-            doc = line;
-            doc += '\n';
-        }
+  while (fgets(line, MAX_LINE_LEN, stdin)) {
+    // Assumptions: no nested docs; doc tags are uppercase
+    if (inDoc) {
+      doc += line;
+      if (strstr(line, DOC_END_TAG)) {
+        inDoc = false;
+        emitKeyValuePairs(doc);
+      }
+    } else if (strstr(line, DOC_START_TAG)) {
+      inDoc = true;
+      doc = line;
     }
+  }
 
-    return 0;
+  return 0;
 }

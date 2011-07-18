@@ -18,6 +18,7 @@ int main() {
     std::string prevKey;
     int inCommon = 0;
 
+    // TODO: Optimizations: Don't use std::strings
     while (scanf("%s\t%d\n", key, &value) != EOF) {
         if (prevKey != key && !prevKey.empty()) {
             emitSumOfKeys(prevKey.c_str(), inCommon);

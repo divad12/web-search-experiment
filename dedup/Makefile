@@ -1,16 +1,22 @@
-# !!!
-# NOTE: You must run this on the same architecture as that of the amazon
-# machine instance that will be running these mapreduces. As of writing, small
-# instances are 32-bit Debian; medium and large instances are 64-bit Debian
-# !!!
+# This can be run on any *nix machine. Building binaries for Elastic MapReduce
+# will take place on the master node, so ensure the master node is the same
+# architecture as the slaves.
 
 # Configure the parameters below
-JOBFLOW_NAME := "4-large"
-NUM_INSTANCES := 4
+JOBFLOW_NAME := "3-cc1.4xlarge"
+NUM_INSTANCES := 3
 MASTER_TYPE := m1.large
-SLAVE_TYPE := m2.4xlarge
+# TODO: Test on High Performance Cluster Compute (cc1.4xlarge), high cpu xlarge
+# (c1.xlarge), high memory xlarge (m2.4xlarge), etc. Make some graphs.
+#SLAVE_TYPE := m2.4xlarge
+SLAVE_TYPE := cc1.4xlarge
 
-S3_INPUT := s3://smucker-mr/aquaint/all/nyt/1998  # 155 mb
+S3_INPUT := s3://clueweb/en0000  # 2 gb of the clueweb 09 collection
+#S3_INPUT := s3://smucker-mr/aquaint/all/**/*  # 1 G - all of aquaint
+#S3_INPUT := s3://smucker-mr/aquaint/all/xie/*  # 565 mb
+#S3_INPUT := s3://smucker-mr/aquaint/all/xie/*  # 565 mb
+#S3_INPUT := s3://smucker-mr/aquaint/all/apw/*  # 235 mb
+#S3_INPUT := s3://smucker-mr/aquaint/all/nyt/1998  # 155 mb
 #S3_INPUT := s3://smucker-mr/aquaint/all/xie/2000  # 41 mb
 #S3_INPUT := s3://smucker-mr/aquaint/10mb
 #S3_INPUT := s3://smucker-mr/aquaint/small
@@ -45,6 +51,7 @@ AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
 # TODO: Add more tests
 # TODO: better names for mapper/reducer binaries
 # TODO: Hadoop configuration options (See Hani's thesis)
+# TODO: figure out why sequencefileformat doesn't work (output not compressed. if compression type set to BLOCK, second reducer craps out)
 
 all: $(ALL_BINS)
 
@@ -81,13 +88,17 @@ stop:
 	$(EMR) -j $(JOB_ID) --terminate
 	rm job-id
 
+logs:
+	$(EMR) -j $(JOB_ID) --logs
+
 ssh:
-	$(EMR) -j $(JOB_ID) --ssh
+	yes | $(EMR) -j $(JOB_ID) --ssh
 
 # Parse and output runnning job data in a readable form
 report:
 	$(MAKE) -s describe > reports/$(JOB_ID).json
 	./parse-data.py < reports/$(JOB_ID).json > reports/$(JOB_ID)-report
+	$(EMR) -j $(JOB_ID) --ssh 'cat /mnt/var/log/hadoop/steps/**/syslog' > reports/$(JOB_ID).log
 
 # Describe the running jobs in detail. Returns JSON
 describe:
@@ -107,7 +118,8 @@ job3: job2
 		--mapper $(S3_BIN)/mapper-cluster \
 		--reducer $(S3_BIN)/reducer-cluster \
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
+		--jobconf mapred.output.compress=true
 
 # Second job: Just a reduce that sums all the docId pairs that share shingles,
 # so we get <docId pair, # of common shingles>
@@ -119,9 +131,12 @@ job2: job1
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
 		--reducer $(S3_BIN)/reducer2 \
+		--args "-jobconf,mapred.output.compress=true"
+
 
 # First job: a map-reduce that takes in documents and outputs <docId pair, 1>
 # for all pairs of documents that share a shingle, for each shingle they share
+# TODO: Figure out how to use the proper --jobconf with multiple args
 job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
@@ -129,7 +144,9 @@ job1: build-on-master
 		--mapper $(S3_BIN)/mapper1 \
 		--input $(S3_INPUT) \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
-		--reducer $(S3_BIN)/reducer1
+		--reducer $(S3_BIN)/reducer1 \
+		--args "-jobconf,mapred.output.compress=true" \
+		--args "-jobconf,mapred.compress.map.output=true"
 
 # Create a jobflow, configured with our supplied S3 keys.
 # We don't put configuration keys in core-site.xml file on S3, because hadoop
@@ -163,7 +180,7 @@ bin-up: $(ALL_BINS)
 build-on-master: $(ALL_BINS)
 	$(S3CMD) put Makefile *.cpp $(S3_SRC)/
 	$(S3CMD) -r put third_party/rabinhash-64/ $(S3_SRC)/third_party/rabinhash-64/
-	$(EMR) -j $(JOB_ID) --ssh '"rm -rf src; hadoop fs -get $(S3_SRC) src; cd src; make bin-up"'
+	yes | $(EMR) -j $(JOB_ID) --ssh '"rm -rf src; hadoop fs -get $(S3_SRC) src; cd src; make bin-up"'
 	touch $@
 
 mapper-reducer: mapper-reducer.cpp
