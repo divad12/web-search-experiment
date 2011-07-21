@@ -425,7 +425,7 @@ private:
                     title = docno.substr(0,50) + "..." ;
             }
 
-	    std::cout << "title = " << title << std::endl ;
+	    //std::cout << "title = " << title << std::endl ;
 
             xmlNode * pResultNode = xmlNewChild( pResultsNode, NULL, BAD_CAST "result", NULL ) ;
             _appendElement( pResultNode, "rank", ToString(rank) ) ;
