@@ -62,7 +62,7 @@ if ($is_setup) {
   $params['client_start_time'] = $_POST['client_start_time'];
   $params['server_start_time'] = $milliseconds;
 
-  $path = 'data/'.$params['user_id'].'-'.$params['topic_id'].'.txt';
+  $path = 'data/'.$params['user_id'].'_'.$params['topic_id'].'_'.$params['source'].'.txt';
   // indicative of new session
   if (!file_exists($path)) {
     require_once('lib/sync_write.php');

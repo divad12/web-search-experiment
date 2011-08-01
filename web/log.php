@@ -1,7 +1,7 @@
 <?php
 
 function stringToAscii($str) {
-  $ascii = ''; 
+  $ascii = '';
   for ($i = 0; $i < strlen($str); $i++) {
     $ascii .= ord($str[$i]).', ';
   }
@@ -25,8 +25,9 @@ if (empty($_SESSION['topic_id'])) {
 }
 
 $actions = $_POST['actions'];
+$source = $_SESSION['source'];
+$path = "data/$user_id"."_$topic_id"."_$source.txt";
 $message = '';
-$path = "data/$user_id-$topic_id.txt";
 foreach ($actions as $action) {
   $action['server_time'] = time();
   $action['elapsed_client_time'] = $action['client_time'] - $_SESSION['client_start_time'];

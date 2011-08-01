@@ -46,7 +46,10 @@ while line:
     if 'results' in event:
       print 'Details: Loading results:'
       for result in event['results']:
-        print '  %d: %s %d %s [%s]' % (int(result['rank']), result['docno'], int(result['document_id']), result['title'], result['link'])
+        if session['source'] == 'indri':
+          print '  %d: %s %d %s [%s]' % (int(result['rank']), result['docno'], int(result['document_id']), result['title'], result['link'])
+        else:
+          print '  %d: %s [%s]' % (int(result['rank']), result['title'], result['link'])
     else:
       print 'Details: Loading initial search page'
   # 3
