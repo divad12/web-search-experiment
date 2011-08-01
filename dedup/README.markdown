@@ -1,3 +1,8 @@
+TODO: Update everything!!
+- special delimiters used (cannot appear in DocIDs): '=', '|', '\t', '\n'
+- DocIDs don't exceed 1000 chars (also make this into a constant)
+- separate out rabin-hash-64.h
+
 A MapReduce for Amazon Web Services Elastic MapReduce to find near-duplicate files. Input files must be in a given format (to specify later, see tests/ for now). This is still a work-in-progress.
 
 # Dependencies

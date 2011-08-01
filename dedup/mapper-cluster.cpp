@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <string>
 
+// TODO: Separate out into common consts file
 const double NEAR_DUPLICATE_THRESHOLD = 0.5;
 
 // TODO: duplicate code with mapper3.cpp

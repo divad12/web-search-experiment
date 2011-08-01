@@ -35,6 +35,7 @@ for line in fileinput.input():
     outFile.write('<ol start="%d">\n' % clustersPrinted)
     part += 1
 
+  # refactor to use map and join
   outFile.write('<li>\n')
   lineSplit1 = line.split('\t')
   similarity = float(lineSplit1[0])

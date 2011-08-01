@@ -10,8 +10,14 @@
 #include <sstream>
 #include <tr1/unordered_set>
 
-// TODO: Test this rabin-hash implementation
 #include "rabin-hash-64.h"
+#include "constants.h"
+#include "utils.h"
+
+// TODO: encapsulate all dedup code in namespace
+using dedup::SKETCH_SIZE;
+using dedup::WORDS_PER_SHINGLE;
+using dedup::base64Encode;
 
 ////////////////////////////////////////////////////////////////////////////////
 const char* DOCNO_START_TAG = "<DOCNO>";
@@ -21,10 +27,10 @@ const size_t DOCNO_START_LEN = strlen(DOCNO_START_TAG);
 const char* DOC_START_TAG = "<DOC>";
 const char* DOC_END_TAG = "</DOC>";
 
-// TODO: Annoyance: Aquaint uses <BODY>, clueweb uses <body>
-const char* BODY_START_TAG = "<body>";
-const char* BODY_END_TAG = "</body>";
-const size_t BODY_START_LEN = strlen(BODY_START_TAG);
+// TODO: Annoyance: Aquaint uses <BODY>, clueweb uses <body>, clueweb3 uses cached.
+const char* CONTENT_START_TAG = "<cached>";
+const char* CONTENT_END_TAG = "</cached>";
+const size_t CONTENT_START_LEN = strlen(CONTENT_START_TAG);
 
 const char* TITLE_START_TAG = "<title>";
 const char* TITLE_END_TAG = "</title>";
@@ -32,12 +38,8 @@ const size_t TITLE_START_LEN = strlen(TITLE_START_TAG);
 
 const char* DOC_ID_SEP = "|";
 
-// TODO: Should not declare static variables of class type.
+// TODO: Should not declare static variables of class type. Encaspulate in fn.
 RabinHashFunction64 rabinHash;
-
-const size_t WORDS_PER_SHINGLE = 10;
-// TODO: Make sketch_size a function of the size of the document?
-const size_t SKETCH_SIZE = 100;
 
 ////////////////////////////////////////////////////////////////////////////////
 void trim(std::string& str) {
@@ -45,9 +47,9 @@ void trim(std::string& str) {
   str.erase(0, str.find_first_not_of(' '));
 }
 
-std::string numToStr(long long num) {
+std::string numToStr(int num) {
   char str[20];
-  sprintf(str, "%lld", num);
+  sprintf(str, "%d", num);
   return std::string(str);
 }
 
@@ -101,8 +103,8 @@ void processInput(std::string& str) {
 
 // From a document, get only the parts that we want to shingle
 std::string getDedupInput(const std::string& doc) {
-  // ASSUMPTION: Title and body nodes are not nested within each other
-  // ASSUMPTION: TItle node may or may not exist; body node MUST exist
+  // ASSUMPTION: Title and content nodes are not nested within each other
+  // ASSUMPTION: TItle node may or may not exist; content node MUST exist
   std::string ret;
 
   size_t titleStart = doc.find(TITLE_START_TAG);
@@ -112,9 +114,9 @@ std::string getDedupInput(const std::string& doc) {
     ret = doc.substr(titleStart, titleEnd - titleStart);
   }
 
-  size_t bodyStart = doc.find(BODY_START_TAG) + BODY_START_LEN;
-  size_t bodyEnd = doc.find(BODY_END_TAG, bodyStart);
-  return ret + "\n" + doc.substr(bodyStart, bodyEnd - bodyStart);
+  size_t contentStart = doc.find(CONTENT_START_TAG) + CONTENT_START_LEN;
+  size_t contentEnd = doc.find(CONTENT_END_TAG, contentStart);
+  return ret + "\n" + doc.substr(contentStart, contentEnd - contentStart);
 }
 
 // Get the document id string from the doc contents
@@ -126,13 +128,11 @@ std::string getDocId(const std::string& doc) {
   return docId;
 }
 
-// NOTE: This destroys the original value in string doc
 void emitKeyValuePairs(const std::string& doc) {
-  // TODO: need to worry about unicode?
   std::string toShingleStr = getDedupInput(doc);
   processInput(toShingleStr);
 
-  typedef std::set<long long> ShingleSet;
+  typedef std::set<unsigned long long> ShingleSet;
   ShingleSet shingleSet;
 
   // Get the initial shingles
@@ -149,7 +149,7 @@ void emitKeyValuePairs(const std::string& doc) {
 
   // Now shift that window of words and hash each window
   while (true) {
-    long long shingle = rabinHash.hash(toShingleStr.c_str() + begin, end - begin);
+    unsigned long long shingle = rabinHash.hash(toShingleStr.c_str() + begin, end - begin);
     shingleSet.insert(shingle);
 
     if (end == toShingleStrLen) break;
@@ -171,7 +171,8 @@ void emitKeyValuePairs(const std::string& doc) {
   size_t emitted = 0;
   for (ShingleSet::iterator it = shingleSet.begin();
       it != shingleSet.end() && emitted < SKETCH_SIZE; ++it, ++emitted) {
-    printf("%lld\t%s\n", *it, docIdCstr);
+    // Base64-encode the shingle hash value to save space.
+    printf("%s\t%s\n", base64Encode(*it).c_str(), docIdCstr);
   }
 }
 

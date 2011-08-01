@@ -3,17 +3,30 @@
 # architecture as the slaves.
 
 # Configure the parameters below
-JOBFLOW_NAME := "2-cc1.4xlarge-clueweb3"
-NUM_INSTANCES := 2
+JOBFLOW_NAME := "4-m2.4xlarge-CatB"
+NUM_INSTANCES := 5
 MASTER_TYPE := m1.large
-# TODO: Test on High Performance Cluster Compute (cc1.4xlarge), high cpu xlarge
-# (c1.xlarge), high memory xlarge (m2.4xlarge), etc. Make some graphs.
-#SLAVE_TYPE := m1.xlarge
-#SLAVE_TYPE := m2.4xlarge
-SLAVE_TYPE := cc1.4xlarge
+SLAVE_TYPE := m2.4xlarge
 
+S3_INPUT := \
+	s3://clueweb3/en0000 \
+	s3://clueweb3/en0001 \
+	s3://clueweb3/en0002 \
+	s3://clueweb3/en0003 \
+	s3://clueweb3/en0004 \
+	s3://clueweb3/en0005 \
+	s3://clueweb3/en0006 \
+	s3://clueweb3/en0007 \
+	s3://clueweb3/en0008 \
+	s3://clueweb3/en0009 \
+	s3://clueweb3/en0010 \
+	s3://clueweb3/en0011 \
+	s3://clueweb3/enwp00 \
+	s3://clueweb3/enwp01 \
+	s3://clueweb3/enwp02 \
+	s3://clueweb3/enwp03 # "CatB"
 #S3_INPUT := s3://clueweb/en0000  # 2 gb of the clueweb 09 collection
-S3_INPUT := s3://clueweb3/en0000  # 3 gb of the clueweb 09 collection, updated format (has <cached> tag)
+#S3_INPUT := s3://clueweb3/en0000  # 3 gb of the clueweb 09 collection, updated format (has <cached> tag)
 #S3_INPUT := s3://smucker-mr/clueweb/00.trectext.gz  # 23 mb of clueweb for testing purposes
 #S3_INPUT := s3://smucker-mr/aquaint/all/**/*  # 1 G - all of aquaint
 #S3_INPUT := s3://smucker-mr/aquaint/all/xie/*  # 565 mb
@@ -136,6 +149,7 @@ job2: job1
 		--reducer $(S3_BIN)/reducer2 \
 		--args "-D,mapred.output.compress=true" \
 		--args "-D,mapred.compress.map.output=true" \
+		--args "-D,mapred.task.timeout=3000000" \
 		#--args "-D,io.sort.mb=1500" \
 		#--args "-D,io.sort.factor=100" \
 		#--args "-D,mapred.reduce.parallel.copies=50"
@@ -150,7 +164,7 @@ job1: build-on-master
 		--stream \
 		--step-name "docs --> <docId pair, 1>" \
 		--mapper $(S3_BIN)/mapper1 \
-		--input $(S3_INPUT) \
+		$(foreach dir,$(S3_INPUT),--args "-input,$(dir)") \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--reducer "$(S3_BIN)/reducer1 | sort | $(S3_BIN)/reducer2" \
 		--args "-D,mapred.output.compress=true" \
@@ -158,7 +172,7 @@ job1: build-on-master
 		--args "-D,mapred.task.timeout=1800000" \
 		#--args "-D,io.sort.mb=1500" \
 		#--args "-D,io.sort.factor=100" \
-		#--args "-D,mapred.reduce.parallel.copies=50" \
+		#--args "-D,mapred.reduce.parallel.copies=50"
 
 # Create a jobflow, configured with our supplied S3 keys.
 # We don't put configuration keys in core-site.xml file on S3, because hadoop
@@ -210,7 +224,10 @@ reducer2: reducer2.cpp
 reducer1: reducer1.cpp
 	$(CC) $(CFLAGS) -o $@ $^
 
-mapper1: mapper1.cpp
+mapper1: mapper1.cpp rabin-hash-64.h constants.h utils.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+utils: utils.cpp utils.h
 	$(CC) $(CFLAGS) -o $@ $^
 
 #rabinhash64.o: third_party/rabinhash-64/rabinhash64.cpp

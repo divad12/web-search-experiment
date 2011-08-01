@@ -15,18 +15,15 @@
  */
 
 // Converted from original Java Source (http://sourceforge.net/projects/rabinhash/files/rabin-hash-function/rabin-hash-function-2.0/rabin-hash-function-2.0.zip/download) to C++
-//
-// FIXME TODO: Test this against the original java class. Are we supposed to get negative ints back?
 
 #ifndef RABIN_HASH_64
 #define RABIN_HASH_64
-
 
 /**
  * <p>This class provides an implementation of a hash function based on Rabin fingerprints, one
  * which can efficiently produce a 64-bit hash value for a sequence of bytes. Its services and characteristics
  * are entirely analogous to that of {@link RabinHashFunction32}, except that hash values are 64 bits and
- * the implementation works in terms of degree 64 polynomials represented as <code>long long</code>s.</p>
+ * the implementation works in terms of degree 64 polynomials represented as <code>unsigned long long</code>s.</p>
  *
  * <p>Please see the documentation and comments for {@link RabinHashFunction32} for more information.</p>
  *
@@ -51,23 +48,23 @@ class RabinHashFunction64 {
      * only be used with polynomials that are already known to be irreducible, or else the hash function
      * will not perform optimally.</p>
      *
-     * @param P a degree 64 polynomial over GF(2), represented as a <code>long long</code>
+     * @param P a degree 64 polynomial over GF(2), represented as a <code>unsigned long long</code>
      */
-    RabinHashFunction64(long long P) {
+    RabinHashFunction64(unsigned long long P) {
         P = P;
         initializeTables();
     }
 
     void initializeTables() {
 
-        long long mods[P_DEGREE];
+        unsigned long long mods[P_DEGREE];
 
         // We want to have mods[i] == x^(P_DEGREE+i)
         mods[0] = P;
         for (int i = 1; i < P_DEGREE; i++) {
-            const long long lastMod = mods[i - 1];
+            const unsigned long long lastMod = mods[i - 1];
             // x^i == x(x^(i-1)) (mod P)
-            long long thisMod = lastMod << 1;
+            unsigned long long thisMod = lastMod << 1;
             // if x^(i-1) had a x_(P_DEGREE-1) term then x^i has a
             // x^P_DEGREE term that 'fell off' the top end.
             // Since x^P_DEGREE == P (mod P), we should add P
@@ -105,14 +102,14 @@ class RabinHashFunction64 {
     }
 
     /**
-     * @return irreducible polynomial used in this hash function, represented as a <code>long long</code>
+     * @return irreducible polynomial used in this hash function, represented as a <code>unsigned long long</code>
      */
-    long long getP() {
+    unsigned long long getP() {
         return P;
     }
 
 
-    long long computeWShifted(unsigned long long w) {
+    unsigned long long computeWShifted(unsigned long long w) {
         return table32[(int) (w & 0xFF)] ^
                table40[(int) ((w >> 8) & 0xFF)] ^
                table48[(int) ((w >> 16) & 0xFF)] ^
@@ -123,7 +120,7 @@ class RabinHashFunction64 {
                table88[(int) ((w >> 56) & 0xFF)];
     }
 
-    long long hash(const char* A, const int offset, const int length, unsigned long long w) {
+    unsigned long long hash(const char* A, const int offset, const int length, unsigned long long w) {
 
         int s = offset;
 
@@ -141,13 +138,13 @@ class RabinHashFunction64 {
         const int max = offset + length;
         while (s < max) {
             w = computeWShifted(w) ^
-                ((long long)A[s] << 56) ^
-                (((long long)A[s + 1] & 0xFF) << 48) ^
-                (((long long)A[s + 2] & 0xFF) << 40) ^
-                (((long long)A[s + 3] & 0xFF) << 32) ^
-                (((long long)A[s + 4] & 0xFF) << 24) ^
-                (((long long)A[s + 5] & 0xFF) << 16) ^
-                (((long long)A[s + 6] & 0xFF) << 8) ^
+                ((unsigned long long)A[s] << 56) ^
+                (((unsigned long long)A[s + 1] & 0xFF) << 48) ^
+                (((unsigned long long)A[s + 2] & 0xFF) << 40) ^
+                (((unsigned long long)A[s + 3] & 0xFF) << 32) ^
+                (((unsigned long long)A[s + 4] & 0xFF) << 24) ^
+                (((unsigned long long)A[s + 5] & 0xFF) << 16) ^
+                (((unsigned long long)A[s + 6] & 0xFF) << 8) ^
                 (A[s + 7] & 0xFF);
             s += 8;
         }
@@ -162,10 +159,10 @@ class RabinHashFunction64 {
      * @return the hash value
      * @throws NullPointerException if A is null
      */
-    long long hash(const char* A, int len) {
+    unsigned long long hash(const char* A, int len) {
 
         int s = 0;
-        long long w = 0;
+        unsigned long long w = 0;
 
         // First, process a few chars so that the number of bytes remaining is a multiple of 4.
         // This makes the later loop easier.
@@ -177,9 +174,9 @@ class RabinHashFunction64 {
 
         while (s < len) {
             w = computeWShifted(w) ^
-                (((long long)A[s] & 0xFFFF) << 48) ^
-                (((long long)A[s + 1] & 0xFFFF) << 32) ^
-                (((long long)A[s + 2] & 0xFFFF) << 16) ^
+                ((unsigned long long)(A[s] & 0xFFFF) << 48) ^
+                ((unsigned long long)(A[s + 1] & 0xFFFF) << 32) ^
+                ((unsigned long long)(A[s + 2] & 0xFFFF) << 16) ^
                 (A[s + 3] & 0xFFFF);
             s += 4;
         }
@@ -190,13 +187,13 @@ class RabinHashFunction64 {
   private:
 
     /** Represents x<sup>64</sup> + x<sup>4</sup> + x<sup>3</sup> + x + 1. */
-    static const long long DEFAULT_IRREDUCIBLE_POLY = 0x000000000000001BL;
+    static const unsigned long long DEFAULT_IRREDUCIBLE_POLY = 0x000000000000001BL;
 
     static const int P_DEGREE = 64;
-    static const long long X_P_DEGREE = 1L << (P_DEGREE - 1);
+    static const unsigned long long X_P_DEGREE = 1L << (P_DEGREE - 1);
 
-    long long P;
-    long long table32[256], table40[256], table48[256], table56[256], table64[256], table72[256], table80[256], table88[256];
+    unsigned long long P;
+    unsigned long long table32[256], table40[256], table48[256], table56[256], table64[256], table72[256], table80[256], table88[256];
 };
 
 #endif

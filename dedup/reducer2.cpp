@@ -7,8 +7,9 @@
 #include <string>
 
 void emitSumOfKeys(const char* key, int value) {
-    // TODO: As an optimization, don't print doc pairs sharing less than two
-    //     shingles in common. However, this nixes all docs < SHINGLE_SIZE
+    // TODO: Optimization: Check jaccard similarity here and prevent output of
+    //     those under threshold. If this is done then this program cannot be
+    //     used as a local combiner.
     if (value > 0) {
         printf("%s\t%d\n", key, value);
     }
