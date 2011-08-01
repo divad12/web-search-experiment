@@ -19,6 +19,7 @@ def pageNavLinks(part):
 clustersPrinted = 0
 part = 0
 outFile = None
+similarities = []
 for line in fileinput.input():
   if clustersPrinted % linesPerFile == 0:
     if outFile:
@@ -29,6 +30,7 @@ for line in fileinput.input():
     outFile.write(pageNavLinks(part))
     outFile.write('<ol start="%d">\n' % clustersPrinted)
     part += 1
+    similarities.append(float(line.split('\t')[0]))
 
   # TODO: use map and join
   outFile.write('<li>\n')
@@ -45,3 +47,11 @@ for line in fileinput.input():
 if outFile:
   outFile.write('</ol>\n')
   outFile.close()
+
+indexFile = open("index.html", 'w')
+indexFile.write('<h1>Similarity-ranked clusters of near-duplicate documents</h1>\n')
+indexFile.write('<ol>\n')
+for filePart in range(0, part):
+  indexFile.write('<li><a href="%s">%.4f</a></li>\n' % (fileNameForPart(filePart), similarities[filePart]))
+indexFile.write('<ol>\n')
+indexFile.close()
