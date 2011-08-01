@@ -1,13 +1,14 @@
-// TODO: comment
+// Reducer1: For every shingle, emit all pairs of documents that share that
+// shingle.
 
 #include <cstdio>
 #include <iostream>
 #include <set>
 
+#include "constants.h"
+
 ////////////////////////////////////////////////////////////////////////////////
 typedef std::set<std::string> StringSet;
-
-const size_t COMMON_SHINGLE_THRESHOLD = 1000;
 
 ////////////////////////////////////////////////////////////////////////////////
 void emitAllPairs(const StringSet& docSet) {
@@ -15,14 +16,14 @@ void emitAllPairs(const StringSet& docSet) {
     // Shingle too common usually means mechanically generated and little
     // effect on RR. Since they'll explode quadratically, we can't afford to
     // emit them.
-    if (docSet.size() > COMMON_SHINGLE_THRESHOLD) return;
+    if (docSet.size() > dedup::COMMON_SHINGLE_THRESHOLD) return;
 
     for (StringSet::iterator it1 = docSet.begin();
             it1 != docSet.end(); ++it1) {
 
         StringSet::iterator it2 = it1;
         for (++it2; it2 != docSet.end(); ++it2) {
-            printf("%s=%s\t1\n", it1->c_str(), it2->c_str());
+            printf("%s%s%s\t1\n", it1->c_str(), dedup::DOC_ID_SEP, it2->c_str());
         }
     }
 }
@@ -45,7 +46,7 @@ int main() {
     emitAllPairs(docSet);
 
     // TODO: do a preliminary reduce2 (sum) on this machine before this data is
-    // uploaded to S3.
+    // uploaded to S3. This does not seem possible with Hadoop streaming.
 
     return 0;
 }

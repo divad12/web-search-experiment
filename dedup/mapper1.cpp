@@ -133,7 +133,7 @@ void emitKeyValuePairs(const std::string& doc) {
   // Get the document ID string concatenated with the # of shingles we are
   // outputting.
   std::string docId = getDocId(doc);
-  docId += DOC_ID_SEP;
+  docId += DOC_SIZE_SEP;
   docId += numToStr(std::min(shingleSet.size(), SKETCH_SIZE));
   const char* docIdCstr = docId.c_str();
 

@@ -26,7 +26,7 @@ int main() {
     std::string prevKey;
     double jaccard = 0.0, accumJaccard = 0.0;
 
-    while (scanf("%s\t%[^|]|%lf\n", doc1, doc2, &jaccard) != EOF) {
+    while (scanf("%s\t%s\t%lf\n", doc1, doc2, &jaccard) != EOF) {
         if (prevKey != doc1 && !prevKey.empty()) {
             emitCluster(prevKey, cluster, accumJaccard);
             cluster.clear();
