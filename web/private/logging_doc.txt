@@ -1,6 +1,6 @@
-1. Overview 
+1. Overview
 
-Logging data will be stored in <web_directory>/data/. File names for storing logging information will be of format <user_id>_<topic_id>.txt. Files will be stored in JSON format, however it can be switched to XML if need be. 
+Logging data will be stored in <web_directory>/data/. File names for storing logging information will be of format <user_id>_<topic_id>.txt. Files will be stored in JSON format, however it can be switched to XML if need be.
 
 2. File format
 
@@ -28,42 +28,48 @@ A description of the logging file format is provided below:
   current_url: current url when event occurred;
   current_query: current query being search for
   current_page: current page of query results
-  
+
   # below are the events that will be logged
   # any event specific parameters are listed
   # the event names provided in the comments will be for the event_name parameter
-  
+
   # 1) 'search' - enter new search query into search box and click submit
   query: new query
-  
+
   # 2) 'load' - any result page load
   results: list of results on current page
+		docno: docno (if source is indri)
+		document_id: document_id (if source is indri)
     rank: rank of result for this query
     title: title of result
     snippet: snippet of result
     link: url of result
-  
+
   # 3) 'unload' - any page unload
-  
-  # 4) 'click_result' - click a search result 
+
+  # 4) 'click_result' - click a search result
+	docno: docno (if source is indri)
+	document_id: document_id (if source is indri)
   rank: rank of result for this query
   title: title of result
   snippet: snippet of result
   link: url of result
-  
+
   # 5) 'click_prev' - click previous link
   page: new page index
-  
+
   # 6) 'click_next' - click next link
   page: new page index
-  
+
   # 7) 'click_completed' - click completed link to finish current topic
 
   # 8) 'region_non_result' - change to non-result region
   region_name: one of {completed_region, search_region, page_change_region}; must be in region > 1 second to be logged
-  
+
   # 9) 'region_result' - change to result region; must be in region for > 1 second to be logged
   region_name: result; must be in region > 1 second to be logged
+	docno: docno (if source is indri)
+	document_id: document_id (if source is indri)
   rank: rank of result for this query
   title: title of result
   snippet: snippet of result
@@ -78,6 +84,6 @@ a) Keystrokes
   -> Maybe can be used to how users formulate their queries but probably too hard to analyze anyways
   ->Would be nice to see if users are using CTRL-f to search for text, however it is not possible to intercept text typed into search box.
   -> Can be used to see if users use arrow key to move and down in page. However, this is mostly dependent on client's screen size.
-  
+
 b) Scrolling
   -> Dependent on client's screen size. Doesn't seem much use for this information.

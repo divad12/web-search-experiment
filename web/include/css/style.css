@@ -43,6 +43,12 @@
   font-size: small;
 }
 
+.cached {
+  color: #3366CC;
+  font-size: small;
+  text-decoration: none
+}
+
 #prev_next {
   width: 100%;
   text-align: center;

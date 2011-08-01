@@ -4,15 +4,16 @@ ini_set('auto_detect_line_endings', false);
 
 session_start();
 
-$keys = array('topic_id', 'user_id', 'source');
+$keys = array('topic_id', 'user_id', 'source', 'use_cached');
 $params = array();
 $is_setup = true;
 foreach ($keys as $key) {
-  if (empty($_SESSION[$key])) {
+  if (!isset($_SESSION[$key])) {
     error_log("'$key' could not be found in cookie (search.php)");
     $is_setup = false;
   }
 }
+$use_cached = $_SESSION['use_cached'];
 
 if ($is_setup) {
   $source = $_SESSION['source'];
@@ -22,10 +23,13 @@ if ($is_setup) {
   }
 }
 
+print_r("search.php: session is: ");
+print_r($_SESSION);
+
 if ($is_setup) {
 
   function validParam($key, $default) {
-    if (!empty($_GET[$key])) {
+    if (isset($_GET[$key])) {
       return $_GET[$key];
     } else {
       return $default;
@@ -33,7 +37,7 @@ if ($is_setup) {
   }
 
   function validIntParam($key, $default) {
-    if (!empty($_GET[$key]) && is_numeric($_GET[$key]) && $_GET[$key] >= 0) {
+    if (isset($_GET[$key]) && is_numeric($_GET[$key]) && $_GET[$key] >= 0) {
       return intval($_GET[$key]);
     } else {
       return $default;
@@ -44,15 +48,17 @@ if ($is_setup) {
     public $title;
     public $snippet;
     public $link;
+    public $disp_link;
     public $rank;
     public $docno;
     public $documentId;
 
-    public function __construct($title, $snippet, $link, $rank,
+    public function __construct($title, $snippet, $link, $disp_link, $rank,
                                 $docno=null, $document_id=null) {
       $this->title = $title;
       $this->snippet = $snippet;
       $this->link = $link;
+      $this->disp_link = $disp_link;
       $this->rank = $rank;
       $this->docno = $docno;
       $this->documentId = $document_id;
@@ -76,7 +82,7 @@ if ($is_setup) {
   print "<div class='doc-body'>";
 
   print "<div class='region' id='completed'>";
-  print "<a href='index.php'>Completed</a>";
+  print "<a href='completed.php'>Completed</a>";
   print "<br />";
   print "<br />";
   print "</div>";
@@ -136,8 +142,9 @@ if ($is_setup) {
       foreach ($search_results as $search_result) {
         $title = utf8_decode($search_result->title);
         $snippet = utf8_decode($search_result->abstract);
-        $link = $search_result->dispurl;
-        $result = new Result($title, $snippet, $link, $rank);
+        $link = $search_result->url;
+        $disp_link = $search_result->dispurl;
+        $result = new Result($title, $snippet, $link, $disp_link, $rank);
         $results[] = $result;
         $rank++;
       }
@@ -168,7 +175,7 @@ if ($is_setup) {
         $docno = $search_result->docno;
         $document_id = $search_result->{'document-id'};
         //error_log(print_r($document_id, true));
-        $result = new Result($title, $snippet, $link, $rank, $docno, $document_id);
+        $result = new Result($title, $snippet, $link, $link, $rank, $docno, $document_id);
         $results[] = $result;
       }
     } else {
@@ -182,8 +189,17 @@ if ($is_setup) {
     print "</div>";
 
     foreach ($results as $result) {
+      $cached_url = "cached.php?url=".urlencode($result->link)."&doco=";
+      if (!empty($result->docno)) {
+        $cached_url .= urlencode($result->docno);
+      }
+      if ($use_cached) {
+        $link = $cached_url;
+      } else {
+        $link = $result->link;
+      }
       print "<div class='region' id='result_$result->rank'>";
-      print "<span class='title'><a href='$result->link'>$result->title</a></span>";
+      print "<span class='title'><a href='$link'>$result->title</a></span>";
       print "<br/ >";
       if (trim($result->snippet)) {
         print "<span class='snippet'>$result->snippet</span>";
@@ -191,7 +207,10 @@ if ($is_setup) {
       } else {
         print "<span class='snippet'></span>";
       }
-      print "<span class='link'>$result->link</span>";
+      print "<span class='link'>$result->disp_link</span>";
+      if (!$use_cached) {
+        print " - <span><a class='cached' href='$cached_url'>Cached</a></span>";
+      }
       if ($result->docno) {
         print "<span class='docno' style='display:none'>$result->docno</span>";
       }

@@ -21,6 +21,7 @@ foreach ($sources as $key => $value) {
   print "$value <input type='radio' name='source' value='$key' />";
 }
 print "<br />";
+print "Use Cached: <input type='checkbox' name='use_cached' value='' /><br />";
 print "<input id='submit' type='submit' value='Submit' />";
 print "</form>";
 
@@ -31,9 +32,10 @@ error_log('$_POST contents: '.print_r($_POST, true));
 
 $is_setup = true;
 $keys = array('user_id', 'topic_id', 'source');
+error_log("post is ".print_r($_POST, true));
 foreach ($keys as $key) {
   if (empty($_POST[$key])) {
-    error_log("'$key' could not be found in post (register.php)");
+    error_log("'$key' could not be found in post (index.php)");
     $is_setup = false;
   }
 }
@@ -41,7 +43,7 @@ foreach ($keys as $key) {
 if ($is_setup) {
   $sources = array('indri' => 'Indri', 'yahoo' => 'Yahoo');
   if (!array_key_exists($source = $_POST['source'], $sources)) {
-    error_log("'source' set to invalid value $source (register.php)");
+    error_log("'source' set to invalid value $source (index.php)");
     $is_setup = false;
   }
 }
@@ -56,6 +58,7 @@ if ($is_setup) {
     $params[$key] = $_POST[$key];
     $_SESSION[$key] = $_POST[$key];
   }
+  $_SESSION['use_cached'] = isset($_POST['use_cached']);
   $milliseconds = (int) (microtime(true) * 1000);
   $_SESSION['client_start_time'] = $_POST['client_start_time'];
   $_SESSION['server_start_time'] = $milliseconds;
