@@ -13,7 +13,8 @@ const size_t COMMON_SHINGLE_THRESHOLD = 1000;
 void emitAllPairs(const StringSet& docSet) {
     if (docSet.size() < 2) return;  // No pairs to emit
     // Shingle too common usually means mechanically generated and little
-    // effect on RR. Since they'll explode quadratically, don't emit them.
+    // effect on RR. Since they'll explode quadratically, we can't afford to
+    // emit them.
     if (docSet.size() > COMMON_SHINGLE_THRESHOLD) return;
 
     for (StringSet::iterator it1 = docSet.begin();
@@ -21,7 +22,7 @@ void emitAllPairs(const StringSet& docSet) {
 
         StringSet::iterator it2 = it1;
         for (++it2; it2 != docSet.end(); ++it2) {
-            printf("%s-%s\t1\n", it1->c_str(), it2->c_str());
+            printf("%s=%s\t1\n", it1->c_str(), it2->c_str());
         }
     }
 }
@@ -43,8 +44,8 @@ int main() {
 
     emitAllPairs(docSet);
 
-    // TODO: do a preliminary reduce right here, before this data gets sent
-    // over the network
+    // TODO: do a preliminary reduce2 (sum) on this machine before this data is
+    // uploaded to S3.
 
     return 0;
 }

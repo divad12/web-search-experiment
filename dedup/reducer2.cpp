@@ -1,7 +1,9 @@
 // This essentially implements the LongValueSum reducer in Hadoop's aggregate
-// class, but with a few changes.
+// class, but with a few changes. This can also be used as a combiner after
+// reducer1
 
 #include <cstdio>
+#include <iostream>
 #include <string>
 
 void emitSumOfKeys(const char* key, int value) {

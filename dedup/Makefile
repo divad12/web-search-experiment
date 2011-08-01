@@ -3,15 +3,18 @@
 # architecture as the slaves.
 
 # Configure the parameters below
-JOBFLOW_NAME := "3-cc1.4xlarge"
-NUM_INSTANCES := 3
+JOBFLOW_NAME := "2-cc1.4xlarge-clueweb3"
+NUM_INSTANCES := 2
 MASTER_TYPE := m1.large
 # TODO: Test on High Performance Cluster Compute (cc1.4xlarge), high cpu xlarge
 # (c1.xlarge), high memory xlarge (m2.4xlarge), etc. Make some graphs.
+#SLAVE_TYPE := m1.xlarge
 #SLAVE_TYPE := m2.4xlarge
 SLAVE_TYPE := cc1.4xlarge
 
-S3_INPUT := s3://clueweb/en0000  # 2 gb of the clueweb 09 collection
+#S3_INPUT := s3://clueweb/en0000  # 2 gb of the clueweb 09 collection
+S3_INPUT := s3://clueweb3/en0000  # 3 gb of the clueweb 09 collection, updated format (has <cached> tag)
+#S3_INPUT := s3://smucker-mr/clueweb/00.trectext.gz  # 23 mb of clueweb for testing purposes
 #S3_INPUT := s3://smucker-mr/aquaint/all/**/*  # 1 G - all of aquaint
 #S3_INPUT := s3://smucker-mr/aquaint/all/xie/*  # 565 mb
 #S3_INPUT := s3://smucker-mr/aquaint/all/xie/*  # 565 mb
@@ -33,7 +36,7 @@ CFLAGS := -Wall -Wextra -O3
 ALL_BINS := mapper1 reducer1 reducer2 mapper3 mapper-cluster reducer-cluster
 
 S3CMD := third_party/s3cmd/s3cmd -c third_party/s3cmd/.s3cfg
-EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce
+EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce --credentials third_party/elastic-mapreduce-ruby/credentials.json
 
 # We need a unique output directory name, otherwise AWS complains about
 # existing output directory. Override this from the command line, as in
@@ -92,7 +95,7 @@ logs:
 	$(EMR) -j $(JOB_ID) --logs
 
 ssh:
-	yes | $(EMR) -j $(JOB_ID) --ssh
+	$(EMR) -j $(JOB_ID) --ssh
 
 # Parse and output runnning job data in a readable form
 report:
@@ -127,16 +130,21 @@ job2: job1
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "<docId pair, 1> --> <docId pair, # common shingles>" \
-		--mapper cat \
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
+		--mapper cat \
 		--reducer $(S3_BIN)/reducer2 \
-		--args "-jobconf,mapred.output.compress=true"
+		--args "-D,mapred.output.compress=true" \
+		--args "-D,mapred.compress.map.output=true" \
+		#--args "-D,io.sort.mb=1500" \
+		#--args "-D,io.sort.factor=100" \
+		#--args "-D,mapred.reduce.parallel.copies=50"
 
 
 # First job: a map-reduce that takes in documents and outputs <docId pair, 1>
 # for all pairs of documents that share a shingle, for each shingle they share
-# TODO: Figure out how to use the proper --jobconf with multiple args
+# We use a hack (pipe to sort then reducer2) as a local combiner, because
+# hadoop 0.2 still requires java class for combiner
 job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
@@ -144,9 +152,13 @@ job1: build-on-master
 		--mapper $(S3_BIN)/mapper1 \
 		--input $(S3_INPUT) \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
-		--reducer $(S3_BIN)/reducer1 \
-		--args "-jobconf,mapred.output.compress=true" \
-		--args "-jobconf,mapred.compress.map.output=true"
+		--reducer "$(S3_BIN)/reducer1 | sort | $(S3_BIN)/reducer2" \
+		--args "-D,mapred.output.compress=true" \
+		--args "-D,mapred.compress.map.output=true" \
+		--args "-D,mapred.task.timeout=1800000" \
+		#--args "-D,io.sort.mb=1500" \
+		#--args "-D,io.sort.factor=100" \
+		#--args "-D,mapred.reduce.parallel.copies=50" \
 
 # Create a jobflow, configured with our supplied S3 keys.
 # We don't put configuration keys in core-site.xml file on S3, because hadoop
@@ -178,9 +190,9 @@ bin-up: $(ALL_BINS)
 
 # Copy files (via s3) to the Hadoop master instance, build there, and then upload to s3
 build-on-master: $(ALL_BINS)
-	$(S3CMD) put Makefile *.cpp $(S3_SRC)/
+	$(S3CMD) put Makefile *.cpp *.h $(S3_SRC)/
 	$(S3CMD) -r put third_party/rabinhash-64/ $(S3_SRC)/third_party/rabinhash-64/
-	yes | $(EMR) -j $(JOB_ID) --ssh '"rm -rf src; hadoop fs -get $(S3_SRC) src; cd src; make bin-up"'
+	$(EMR) -j $(JOB_ID) --ssh '"rm -rf src; hadoop fs -get $(S3_SRC) src; cd src; make bin-up"'
 	touch $@
 
 mapper-reducer: mapper-reducer.cpp
@@ -198,11 +210,13 @@ reducer2: reducer2.cpp
 reducer1: reducer1.cpp
 	$(CC) $(CFLAGS) -o $@ $^
 
-mapper1: mapper1.cpp rabinhash64.o
+mapper1: mapper1.cpp
 	$(CC) $(CFLAGS) -o $@ $^
 
-rabinhash64.o: third_party/rabinhash-64/rabinhash64.cpp
-	$(CC) $(CFLAGS) -c $^
+#rabinhash64.o: third_party/rabinhash-64/rabinhash64.cpp
+	#$(CC) $(CFLAGS) -c $^
+
+# TODO: CLean up rabin-hash-64.h and put it in its own folder, etc. LICENSE.
 
 clean:
 	rm -rfv *.tmp *.o $(ALL_BINS)

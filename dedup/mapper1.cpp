@@ -10,7 +10,8 @@
 #include <sstream>
 #include <tr1/unordered_set>
 
-#include "third_party/rabinhash-64/rabinhash64.h"
+// TODO: Test this rabin-hash implementation
+#include "rabin-hash-64.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 const char* DOCNO_START_TAG = "<DOCNO>";
@@ -32,9 +33,7 @@ const size_t TITLE_START_LEN = strlen(TITLE_START_TAG);
 const char* DOC_ID_SEP = "|";
 
 // TODO: Should not declare static variables of class type.
-// FIXME: This 3rd-party rabin hash function does not actually generate 64-bit
-//     hashes (just 32-bit).
-RabinHashFunction64 rabinHash(1);
+RabinHashFunction64 rabinHash;
 
 const size_t WORDS_PER_SHINGLE = 10;
 // TODO: Make sketch_size a function of the size of the document?

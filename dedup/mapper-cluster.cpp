@@ -12,7 +12,7 @@ const double NEAR_DUPLICATE_THRESHOLD = 0.5;
 void emitEdge(const std::string& key, int intersection) {
     static char doc1[1000], doc2[1000];
     static int size1, size2;
-    sscanf(key.c_str(), "%[^|]|%d-%[^|]|%d", doc1, &size1, doc2, &size2);
+    sscanf(key.c_str(), "%[^|]|%d=%[^|]|%d", doc1, &size1, doc2, &size2);
     double jaccard = static_cast<double>(intersection) / (size1 + size2 - intersection);
 
     if (jaccard >= NEAR_DUPLICATE_THRESHOLD) {
