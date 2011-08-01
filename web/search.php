@@ -23,9 +23,6 @@ if ($is_setup) {
   }
 }
 
-print_r("search.php: session is: ");
-print_r($_SESSION);
-
 if ($is_setup) {
 
   function validParam($key, $default) {

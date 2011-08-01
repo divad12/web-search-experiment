@@ -39,7 +39,5 @@ rm -f $path/make_web_install.sh
 mkdir $path/data
 chmod 777 `find $path -type d`
 
-chmod a+x private/dist/Clueweb2trectext.jar
-
 printf "Finished copying to $path\n"
-printf "Please read lib/yahoo-boss-keys-template.json to set up Yahoo Boss credentials\n"
+printf "Please read lib/yahoo-boss-keys-template.php to set up Yahoo Boss credentials\n"
