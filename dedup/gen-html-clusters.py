@@ -1,10 +1,9 @@
 #!/usr/bin/python
 
-# Read from stdin clusters of similar clueweb documents, and output a static html page of clusters with links
+# Read from stdin clusters of similar clueweb documents, and output static html
+# pages in the current directory of clusters with links
 
-# TODO: Paginate so as not to load a huge static html page
-
-import re;
+import re
 import fileinput
 import urllib
 
@@ -16,10 +15,6 @@ def fileNameForPart(part):
 
 def pageNavLinks(part):
   return '<p><a href="%s">&lt; Prev</a> | Part %d | <a href="%s">Next &gt;</a></p>' % (fileNameForPart(part - 1), part, fileNameForPart(part + 1))
-
-# TODO: This is a bad hack to get the url name by fetching from Msci server.
-# should run this directly on msci server.
-urlRegex = re.compile('&lt;url&gt;([^<]+)&lt;/url&gt;')
 
 clustersPrinted = 0
 part = 0
@@ -35,7 +30,7 @@ for line in fileinput.input():
     outFile.write('<ol start="%d">\n' % clustersPrinted)
     part += 1
 
-  # refactor to use map and join
+  # TODO: use map and join
   outFile.write('<li>\n')
   lineSplit1 = line.split('\t')
   similarity = float(lineSplit1[0])
@@ -43,8 +38,6 @@ for line in fileinput.input():
   for doc in lineSplit1[1].split(','):
     doc = doc.strip()
     docUrl = mansciBasename + doc
-    #contents = urllib.urlopen(docUrl).read()
-    #url = urlRegex.search(contents).expand('\\1')
     outFile.write('<a href="%s">%s</a>, ' % (docUrl, doc))
   outFile.write('</li>\n')
   clustersPrinted += 1

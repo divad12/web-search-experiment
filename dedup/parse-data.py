@@ -2,6 +2,7 @@
 
 # Read from stdin JSON returned by elastic-mapreduce --describe, and output
 # elapsed times for each step
+# TODO: Output in CSV format so we can input into spreadsheet
 
 import sys
 import json
