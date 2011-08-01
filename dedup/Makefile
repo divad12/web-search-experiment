@@ -5,9 +5,10 @@
 # Configure the parameters below
 JOBFLOW_NAME := "4-m2.4xlarge-CatB"
 NUM_INSTANCES := 5
+# Binaries compiled on the master node must be able to be run on slave nodes
 MASTER_TYPE := m1.large
 SLAVE_TYPE := m2.4xlarge
-
+CONTENT_TAG_NAME := cached
 S3_INPUT := \
 	s3://clueweb3/en0000 \
 	s3://clueweb3/en0001 \
@@ -65,7 +66,6 @@ AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
 # TODO: Instead of identity mapper, can we just get Hadoop to omit a map or a reduce step?
 # TODO: Split out common code to utils file
 # TODO: Add more tests
-# TODO: better names for mapper/reducer binaries
 # TODO: Hadoop configuration options (See Hani's thesis)
 # TODO: figure out why sequencefileformat doesn't work (output not compressed. if compression type set to BLOCK, second reducer craps out)
 
@@ -76,7 +76,7 @@ test: $(ALL_BINS)
 	@for i in $(TESTS); do \
 		test=$${i%.*}; \
 		tmp="$$test".tmp; \
-		cat $$i | $(MAKE) -s local > $$tmp; \
+		cat $$i | $(MAKE) -s CONTENT_TAG_NAME=body local | cut -f2- > $$tmp; \
 		diff -u "$$test".out $$tmp \
 			&& echo PASSED: `basename $$test` \
 			&& rm "$$tmp" \
@@ -84,7 +84,7 @@ test: $(ALL_BINS)
 	done
 
 local: $(ALL_BINS)
-	./mapper1 \
+	./mapper1 $(CONTENT_TAG_NAME) \
 		| sort \
 		| ./reducer1 \
 		| sort \
@@ -94,7 +94,7 @@ local: $(ALL_BINS)
 		| ./reducer-cluster
 
 local-debug: $(ALL_BINS)
-	./mapper1 | sort > out/mapper1.out
+	./mapper1 $(CONTENT_TAG_NAME) | sort > out/mapper1.out
 	./reducer1 < out/mapper1.out | sort > out/reducer1.out
 	./reducer2 < out/reducer1.out > out/reducer2.out
 	./mapper-cluster < out/reducer2.out | sort > out/mapper-cluster.out
@@ -163,7 +163,7 @@ job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "docs --> <docId pair, 1>" \
-		--mapper $(S3_BIN)/mapper1 \
+		--mapper $(S3_BIN)/mapper1 $(CONTENT_TAG_NAME) \
 		$(foreach dir,$(S3_INPUT),--args "-input,$(dir)") \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--reducer "$(S3_BIN)/reducer1 | sort | $(S3_BIN)/reducer2" \

@@ -14,5 +14,15 @@ std::string base64Encode(unsigned long long num) {
   return encoded;
 }
 
+void trim(std::string& str) {
+  str.erase(str.find_last_not_of(' ') + 1);
+  str.erase(0, str.find_first_not_of(' '));
+}
+
+std::string numToStr(int num) {
+  char str[20];
+  sprintf(str, "%d", num);
+  return std::string(str);
+}
 
 }  // namespace dedup

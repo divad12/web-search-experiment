@@ -1,9 +1,10 @@
-// Mapper for Amazon Elastic Map Reduce using Hadoop streaming
+// The first mapper: transforms docs in clueweb trectext XML format to
+// <shingle_hash_value, docId> shingles. For use in Hadoop streaming.
+// The first argument must be the name of the tag of the content to shingle.
 
 #include <cassert>
 #include <cctype>
 #include <cstdio>
-#include <cstring>
 #include <iomanip>
 #include <iostream>
 #include <set>
@@ -15,51 +16,16 @@
 #include "utils.h"
 
 // TODO: encapsulate all dedup code in namespace
-using dedup::SKETCH_SIZE;
-using dedup::WORDS_PER_SHINGLE;
-using dedup::base64Encode;
+using namespace dedup;
 
 ////////////////////////////////////////////////////////////////////////////////
-const char* DOCNO_START_TAG = "<DOCNO>";
-const char* DOCNO_END_TAG = "</DOCNO>";
-const size_t DOCNO_START_LEN = strlen(DOCNO_START_TAG);
-
-const char* DOC_START_TAG = "<DOC>";
-const char* DOC_END_TAG = "</DOC>";
-
-// TODO: Annoyance: Aquaint uses <BODY>, clueweb uses <body>, clueweb3 uses cached.
-const char* CONTENT_START_TAG = "<cached>";
-const char* CONTENT_END_TAG = "</cached>";
-const size_t CONTENT_START_LEN = strlen(CONTENT_START_TAG);
-
-const char* TITLE_START_TAG = "<title>";
-const char* TITLE_END_TAG = "</title>";
-const size_t TITLE_START_LEN = strlen(TITLE_START_TAG);
-
-const char* DOC_ID_SEP = "|";
-
-// TODO: Should not declare static variables of class type. Encaspulate in fn.
-RabinHashFunction64 rabinHash;
+// The node containing the text to be shingled
+static std::string contentStartTag;
+static std::string contentEndTag;
+static int contentStartLen;
 
 ////////////////////////////////////////////////////////////////////////////////
-void trim(std::string& str) {
-  str.erase(str.find_last_not_of(' ') + 1);
-  str.erase(0, str.find_first_not_of(' '));
-}
-
-std::string numToStr(int num) {
-  char str[20];
-  sprintf(str, "%d", num);
-  return std::string(str);
-}
-
-std::string padStr(const std::string& str, size_t size, char paddingChar) {
-  std::stringstream ss;
-  ss << std::setfill(paddingChar) << std::setw(size) << str;
-  return ss.str();
-}
-
-// THis is a character from the input that we want to keep
+// This is a character from the input that we want to keep
 bool isGoodChar(char c) {
   return isalnum(c) || isspace(c);
 }
@@ -114,8 +80,8 @@ std::string getDedupInput(const std::string& doc) {
     ret = doc.substr(titleStart, titleEnd - titleStart);
   }
 
-  size_t contentStart = doc.find(CONTENT_START_TAG) + CONTENT_START_LEN;
-  size_t contentEnd = doc.find(CONTENT_END_TAG, contentStart);
+  size_t contentStart = doc.find(contentStartTag) + contentStartLen;
+  size_t contentEnd = doc.find(contentEndTag, contentStart);
   return ret + "\n" + doc.substr(contentStart, contentEnd - contentStart);
 }
 
@@ -128,12 +94,10 @@ std::string getDocId(const std::string& doc) {
   return docId;
 }
 
+// Emit the shingles for this doc
 void emitKeyValuePairs(const std::string& doc) {
   std::string toShingleStr = getDedupInput(doc);
   processInput(toShingleStr);
-
-  typedef std::set<unsigned long long> ShingleSet;
-  ShingleSet shingleSet;
 
   // Get the initial shingles
   size_t toShingleStrLen = toShingleStr.length();
@@ -148,8 +112,13 @@ void emitKeyValuePairs(const std::string& doc) {
   }
 
   // Now shift that window of words and hash each window
+  static RabinHashFunction64 rabinHash;
+  typedef unsigned long long ShingleHash;
+  typedef std::set<ShingleHash> ShingleSet;
+  ShingleSet shingleSet;
+
   while (true) {
-    unsigned long long shingle = rabinHash.hash(toShingleStr.c_str() + begin, end - begin);
+    ShingleHash shingle = rabinHash.hash(toShingleStr.c_str() + begin, end - begin);
     shingleSet.insert(shingle);
 
     if (end == toShingleStrLen) break;
@@ -161,13 +130,14 @@ void emitKeyValuePairs(const std::string& doc) {
     }
   }
 
-  // Get the document ID string concatenated with the # of unique shingles
+  // Get the document ID string concatenated with the # of shingles we are
+  // outputting.
   std::string docId = getDocId(doc);
   docId += DOC_ID_SEP;
   docId += numToStr(std::min(shingleSet.size(), SKETCH_SIZE));
   const char* docIdCstr = docId.c_str();
 
-  // Now emit the <shingle, docId + size> pairs.
+  // Now emit an unbiased deterministic sample of <shingle, docId + size> pairs.
   size_t emitted = 0;
   for (ShingleSet::iterator it = shingleSet.begin();
       it != shingleSet.end() && emitted < SKETCH_SIZE; ++it, ++emitted) {
@@ -177,10 +147,22 @@ void emitKeyValuePairs(const std::string& doc) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-int main() {
+int main(int argc, char** argv) {
+  // Check for the cmd line arg that specifies the name of the content node
+  if (argc != 2) {
+    std::cerr << "Usage: ./mapper1 contentTagName\n"
+              << "\ncontentTagName\tThe node containing the doc's text.\n"
+              << "\nExample:\n"
+              << "zcat 00.trectext.gz | ./mapper1 body | sort > mapper1.out\n";
+    exit(1);
+  } else {
+    contentStartTag = std::string("<") + argv[1] + ">";
+    contentEndTag = std::string("</") + argv[1] + ">";
+    contentStartLen = contentStartTag.length();
+  }
+
   static const int MAX_LINE_LEN = 100000;
   char line[MAX_LINE_LEN];
-
   std::string doc;
   bool inDoc = false;
 
