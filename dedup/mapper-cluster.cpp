@@ -16,8 +16,8 @@ void emitEdge(const std::string& key, int intersection) {
     double jaccard = static_cast<double>(intersection) / (size1 + size2 - intersection);
 
     if (jaccard >= NEAR_DUPLICATE_THRESHOLD) {
-        printf("%s\t%s\n", doc1, doc2);
-        printf("%s\t%s\n", doc2, doc1);
+        printf("%s\t%s|%.4f\n", doc1, doc2, jaccard);
+        printf("%s\t%s|%.4f\n", doc2, doc1, jaccard);
     }
 }
 

@@ -36,7 +36,10 @@ for line in fileinput.input():
     part += 1
 
   outFile.write('<li>\n')
-  for doc in line.split(','):
+  lineSplit1 = line.split('\t')
+  similarity = float(lineSplit1[0])
+  outFile.write("%.4f - " % similarity)
+  for doc in lineSplit1[1].split(','):
     doc = doc.strip()
     docUrl = mansciBasename + doc
     #contents = urllib.urlopen(docUrl).read()
