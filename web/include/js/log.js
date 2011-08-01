@@ -157,12 +157,22 @@ $(function() {
     result_prefix = 'result_';
     result = $(that).attr('id');
     rank = parseInt(result.substring(result_prefix.length, result.length));
-    return {
+    resultObj = {
       rank: rank,
       title: $(that).find('.title a').text(),
       snippet: $(that).find('.snippet').text(),
       link: $(that).find('.link').text()
     };
+    docno = $(that).find('.docno');
+    console.log('docno is', docno);
+    if (docno.length) {
+      resultObj['docno'] = docno.text()
+    }
+    document_id = $(that).find('.document_id');
+    if (document_id.length) {
+      resultObj['document_id'] = document_id.text()
+    }
+    return resultObj;
   };
 
 	// logging via firebug/chrome dev; handle case not found

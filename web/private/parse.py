@@ -1,9 +1,12 @@
 #!/usr/bin/python
 
 import json
+import argparse
 
-# TODO dynamic file path
-f = open('../data/user1-topic1.txt')
+parser = argparse.ArgumentParser('parse.py')
+parser.add_argument('file', metavar='file_path', type=file, help='file to parse')
+args = parser.parse_args()
+f = args.file
 
 # session information
 line = f.readline()
@@ -43,7 +46,7 @@ while line:
     if 'results' in event:
       print 'Details: Loading results:'
       for result in event['results']:
-        print '  %d: %s [%s]' % (int(result['rank']), result['title'], result['link'])
+        print '  %d: %s %d %s [%s]' % (int(result['rank']), result['docno'], int(result['document_id']), result['title'], result['link'])
     else:
       print 'Details: Loading initial search page'
   # 3
@@ -53,6 +56,9 @@ while line:
   elif event_name == 'click_result':
     print 'Details: Clicking result:'
     print ' Rank: %d' % (event['rank'])
+    if session['source'] == 'indri':
+      print ' Docno: %s' % (event['docno'])
+      print ' Document Id: %d' % (int(event['document_id']))
     print ' Title: %s' % event['title']
     print ' Snippet: %s' % event['snippet']
     print ' Link: %s' % event['link']
@@ -72,6 +78,9 @@ while line:
   elif event_name == 'region_result':
     print 'Details: In result region %s with result:' % event['region_name']
     print ' Rank: %d' % int(event['rank'])
+    if session['source'] == 'indri':
+      print ' Docno: %s' % (event['docno'])
+      print ' Document Id: %d' % (int(event['document_id']))
     print ' Title: %s' % event['title']
     print ' Snippet: %s' % event['snippet']
     print ' Link: %s' % event['link']
@@ -79,5 +88,3 @@ while line:
   print ''
 
   line = f.readline()
-
-

@@ -45,12 +45,17 @@ if ($is_setup) {
     public $snippet;
     public $link;
     public $rank;
+    public $docno;
+    public $documentId;
 
-    public function __construct($title, $snippet, $link, $rank) {
+    public function __construct($title, $snippet, $link, $rank,
+                                $docno=null, $document_id=null) {
       $this->title = $title;
       $this->snippet = $snippet;
       $this->link = $link;
       $this->rank = $rank;
+      $this->docno = $docno;
+      $this->documentId = $document_id;
     }
   }
 
@@ -151,6 +156,8 @@ if ($is_setup) {
 
       // TODO: proper detection of last page
 
+      //error_log(print_r($response, true));
+
       $xml = new SimpleXMLElement($response);
       $search_results = $xml->results->result;
       foreach ($search_results as $search_result) {
@@ -158,7 +165,10 @@ if ($is_setup) {
         $snippet = utf8_decode($search_result->snippet);
         $link = $search_result->url;
         $rank = $search_result->rank;
-        $result = new Result($title, $snippet, $link, $rank);
+        $docno = $search_result->docno;
+        $document_id = $search_result->{'document-id'};
+        //error_log(print_r($document_id, true));
+        $result = new Result($title, $snippet, $link, $rank, $docno, $document_id);
         $results[] = $result;
       }
     } else {
@@ -182,6 +192,12 @@ if ($is_setup) {
         print "<span class='snippet'></span>";
       }
       print "<span class='link'>$result->link</span>";
+      if ($result->docno) {
+        print "<span class='docno' style='display:none'>$result->docno</span>";
+      }
+      if ($result->documentId) {
+        print "<span class='document_id' style='display:none'>$result->documentId</span>";
+      }
       print "<br />";
       print "<br />";
       print "</div>";
