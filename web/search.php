@@ -1,5 +1,7 @@
 <?php
 
+require_once('private/config.php');
+
 ini_set('auto_detect_line_endings', false);
 
 session_start();
@@ -101,14 +103,7 @@ if ($is_setup) {
     $results = array();
     if ($source === 'yahoo') {
       require_once('lib/OAuth.php');
-      require_once('private/yahoo-boss-keys.php');
 
-      // old method of storing and retrieving credentials
-      //$json = json_decode(file_get_contents('private/yahoo-boss-keys.json'));
-      //$yahoo_key = $json->key;
-      //$yahoo_secret = $json->secret;
-
-      $url = 'http://yboss.yahooapis.com/ysearch/web';
       $args = array(
           'format' => 'xml',
           'count' => $count,
@@ -117,9 +112,9 @@ if ($is_setup) {
       );
 
       $consumer = new OAuthConsumer($yahoo_key, $yahoo_secret);
-      $request = OAuthRequest::from_consumer_and_token($consumer, null, 'GET', $url, $args);
+      $request = OAuthRequest::from_consumer_and_token($consumer, null, 'GET', $yahoo_search_endpoint, $args);
       $request->sign_request(new OAuthSignatureMethod_HMAC_SHA1(), $consumer, NULL);
-      $url = sprintf('%s?%s', $url, OAuthUtil::build_http_query($args));
+      $url = sprintf('%s?%s', $yahoo_search_endpoint, OAuthUtil::build_http_query($args));
       $ch = curl_init();
       $headers = array($request->to_header());
       curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
@@ -147,20 +142,16 @@ if ($is_setup) {
       }
 
     } else if ($source === 'indri') {
-      $url = 'http://mansci-mark-2.uwaterloo.ca/smucker/websearchapi/search.php';
       // TODO: use query parameter function
-      $url = sprintf('%s?query=%s&startdoc=%d&numdisplay=%d', $url, $query_encoded, $offset, $count);
-
+      $url = sprintf('%s?query=%s&startdoc=%d&numdisplay=%d', $indri_search_endpoint, $query_encoded, $offset, $count);
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_URL, $url);
       curl_setopt($ch, CURLOPT_HEADER, 0);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_PORT, 3624);
+      curl_setopt($ch, CURLOPT_PORT, $indri_endpoint_port);
       $response = curl_exec($ch);
 
       // TODO: proper detection of last page
-
-      //error_log(print_r($response, true));
 
       $xml = new SimpleXMLElement($response);
       $search_results = $xml->results->result;
@@ -186,7 +177,7 @@ if ($is_setup) {
     print "</div>";
 
     foreach ($results as $result) {
-      $cached_url = "cached.php?url=".urlencode($result->link)."&doco=";
+      $cached_url = "cached.php?url=".urlencode($result->link)."&docno=";
       if (!empty($result->docno)) {
         $cached_url .= urlencode($result->docno);
       }

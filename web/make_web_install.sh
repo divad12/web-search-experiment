@@ -40,4 +40,4 @@ mkdir $path/data
 chmod 777 `find $path -type d`
 
 printf "Finished copying to $path\n"
-printf "Please read lib/yahoo-boss-keys-template.php to set up Yahoo Boss credentials\n"
+printf "Please set up private/config-template.php and rename to private/config.php\n"
