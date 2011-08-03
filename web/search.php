@@ -2,8 +2,6 @@
 
 require_once('private/config.php');
 
-ini_set('auto_detect_line_endings', false);
-
 session_start();
 
 $keys = array('topic_id', 'user_id', 'source', 'use_cached');

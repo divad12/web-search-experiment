@@ -2,6 +2,12 @@
 
 require_once('private/config.php');
 
+// expire hourly
+$expires = 60 * 60;
+header("Pragma: public");
+header("Cache-Control: maxage=$expires");
+header("Expires: ".gmdate('D, d M Y H:i:s', time() + $expires)." GMT");
+
 $text = '';
 if (!empty($_GET['docno'])) {
   $docno = urldecode($_GET['docno']);

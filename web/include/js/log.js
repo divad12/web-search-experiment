@@ -101,7 +101,7 @@ $(function() {
 	// add action and send if buffer reaches certain size or if force is true
 	var addAction = (function() {
 		var actions = [];
-		var freq = 1;
+		var freq = 10; // queue size for sending logging data
 		var url = 'log.php';
 
 		return function(action, options) {
@@ -119,8 +119,7 @@ $(function() {
 			var force = options && options.force;
 			var sync = options && options.sync;
 
-      // TODO: remove true
-			if (true || actions.length % freq === 0 || force) {
+			if (actions.length % freq === 0 || force) {
         var postData = actions;
         actions = [];
 
@@ -177,7 +176,7 @@ $(function() {
 
 	// logging via firebug/chrome dev; handle case not found
 	(function() {
-		console.log = console.log || function() {};
+		console.log = /*console.log ||*/ function() {};
 		console.warn = console.log || function() {};
 		console.error = console.log || function() {};
 		console.info = console.log || function() {};

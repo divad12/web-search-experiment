@@ -41,7 +41,7 @@ require_once('lib/sync_write.php');
 sync_write($path, $message);
 
 // XXX remove in production
-print $line;
+// print $line;
 
 // TODO get php doctrine orm working
 //require_once('orm/bootstrap.php');
