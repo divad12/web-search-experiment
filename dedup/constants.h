@@ -6,10 +6,13 @@
 
 namespace dedup {
 
+// The minimum Jaccard similarity of two documents to be considered near duplicates.
 const double NEAR_DUPLICATE_THRESHOLD = 0.5;
 // 1 less than 100 to save space in output
 const size_t SKETCH_SIZE = 99;
 const size_t WORDS_PER_SHINGLE = 10;
+// If any shingle is shared by more documents than this, that shingle will
+// simply be dropped and no output produced for it.
 const size_t COMMON_SHINGLE_THRESHOLD = 1000;
 
 const char* DOC_SIZE_SEP = "|";
