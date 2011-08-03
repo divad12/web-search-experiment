@@ -27,6 +27,12 @@ See tests/\*.in for examples of valid input.
 1. Insert your AWS credentials in third\_party/elastic-mapreduce-ruby/credentials.json. See credentials.json.example for a sample.
 2. Insert AWS credentials in third\_party/s3cmd/.s3cfg. See s3cfg.example for a sample. Alternatively, run `s3cmd --configure`.
 3. Insert AWS credentials in file aws-keys (see aws-keys.example).
+4. [To prevent ssh from prompting for host key checking](http://stackoverflow.com/questions/1655815), add the following to your ~/.ssh/config:
+
+        Host *amazonaws.com
+                StrictHostKeyChecking no
+                UserKnownHostsFile /dev/null
+  This will allow the commands below to be automatic and require minimal human input.
 
 # Running
 1. Change variables at the top of the Makefile (see in-file comments for details) to customize each run.
