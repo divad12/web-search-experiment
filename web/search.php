@@ -76,7 +76,7 @@ if ($is_setup) {
   $query_encoded = urlencode($query);
   $query_html = htmlentities($query, ENT_QUOTES);
 
-  print "<div class='doc-body'>";
+  print "<div class='doc_body'>";
 
   print "<div class='region' id='completed'>";
   print "<a href='completed.php'>Completed</a>";
