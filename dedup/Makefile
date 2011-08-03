@@ -65,10 +65,15 @@ S3_INPUT := \
 # Other variables
 
 # Other S3 output directories that dedup will write to
-S3_OUTPUT := s3://smucker-mr/output  # For map-reduce intermediate files and final output
-S3_LOG := s3://smucker-mr/log  # For log files (output of stderr, Hadoop syslog, etc.)
-S3_BIN := s3://smucker-mr/bin  # For MapReduce program binaries
-S3_SRC := s3://smucker-mr/src  # For MapReduce program 
+
+# For map-reduce intermediate files and final output
+S3_OUTPUT := s3://smucker-mr/output
+# For log files (output of stderr, Hadoop syslog, etc.)
+S3_LOG := s3://smucker-mr/log
+# For MapReduce program binaries
+S3_BIN := s3://smucker-mr/bin
+# For MapReduce program
+S3_SRC := s3://smucker-mr/src
 # We need a unique output directory name, otherwise AWS complains about
 # existing output directory. Override this from the command line, as in
 # $ make S3_OUTDIR=out_dir_name <target>
@@ -163,16 +168,16 @@ run: job3
 
 # Third job: Output clusters (of size > 1) of docs that are near-duplicates.
 job3: job2
-	FINAL_OUTPUT := $(S3_OUTPUT)/$(S3_OUTDIR)-j3
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "<docId pair, # common shingles> --> clusters of similar docs" \
 		--mapper $(S3_BIN)/mapper-cluster \
 		--reducer $(S3_BIN)/reducer-cluster \
 		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
-		--output $(FINAL_OUTPUT) \
-		--jobconf mapred.output.compress=true
-	@echo "Final output will be in $(FINAL_OUTPUT)"
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
+		--args "-D,mapred.task.timeout=3000000" \
+		--args "-D,mapred.output.compress=true"
+	@echo -e "\nJob started! Final output will be in $(S3_OUTPUT)/$(S3_OUTDIR)-j3"
 
 # Second job: Just a reduce that sums all the docId pairs that share shingles,
 # so we get <docId pair, # of common shingles>
@@ -199,7 +204,7 @@ job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "docs --> <docId pair, 1>" \
-		--mapper $(S3_BIN)/mapper1 $(CONTENT_TAG_NAME) \
+		--mapper "$(S3_BIN)/mapper1 $(CONTENT_TAG_NAME)" \
 		$(foreach dir,$(S3_INPUT),--args "-input,$(dir)") \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
 		--reducer "$(S3_BIN)/reducer1 | sort | $(S3_BIN)/reducer2" \
