@@ -47,7 +47,7 @@ S3_SRC := s3://smucker-mr/src
 CC := g++
 CFLAGS := -Wall -Wextra -O3
 
-ALL_BINS := mapper1 reducer1 reducer2 mapper3 mapper-cluster reducer-cluster
+ALL_BINS := mapper1 reducer1 reducer2 mapper-cluster reducer-cluster
 
 S3CMD := third_party/s3cmd/s3cmd -c third_party/s3cmd/.s3cfg
 EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce --credentials third_party/elastic-mapreduce-ruby/credentials.json
@@ -213,9 +213,6 @@ mapper-reducer: mapper-reducer.cpp
 	$(CC) $(CFLAGS) -o $@ $^
 
 mapper-cluster: mapper-cluster.cpp
-	$(CC) $(CFLAGS) -o $@ $^
-
-mapper3: mapper3.cpp
 	$(CC) $(CFLAGS) -o $@ $^
 
 reducer2: reducer2.cpp
