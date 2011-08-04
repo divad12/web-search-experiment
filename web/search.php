@@ -4,6 +4,12 @@ require_once('private/config.php');
 
 session_start();
 
+// expire hourly
+$expires = 60 * 60;
+header("Pragma: public");
+header("Cache-Control: maxage=$expires");
+header("Expires: ".gmdate('D, d M Y H:i:s', time() + $expires)." GMT");
+
 $keys = array('topic_id', 'user_id', 'source', 'use_cached');
 $params = array();
 $is_setup = true;

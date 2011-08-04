@@ -28,11 +28,11 @@ print "</form>";
 print "</body>";
 print "</html>";
 
-error_log('$_POST contents: '.print_r($_POST, true));
+//error_log('$_POST contents: '.print_r($_POST, true));
 
 $is_setup = true;
 $keys = array('user_id', 'topic_id', 'source');
-error_log("post is ".print_r($_POST, true));
+//error_log("post is ".print_r($_POST, true));
 foreach ($keys as $key) {
   if (empty($_POST[$key])) {
     error_log("'$key' could not be found in post (index.php)");
