@@ -1,0 +1,16 @@
+Purpose: Web search interface for Yahoo and Indri for performing studies comparing search results.
+
+Setup:
+
+Starting in main repository directory
+
+[1] `svn update`
+[2] `chmod +x <repo>/web/make_web_install.sh`
+[3] Run script with: `web/make_web_install.sh [-f] <html_directory>`
+[4] Set up <html_directory>/private/config-template.php and rename to config.php. Sample config.php can be found in /home/mack on mansci-mark-2.
+
+Logging:
+
+Logs are stored in <html_directory>/data. See <repo>/private/logging_doc.txt for more information about logging.
+
+Run <repo>/private/parse.py <html_directory>/data/<log_file> to utilize simple parsing of logging data.

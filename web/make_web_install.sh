@@ -34,7 +34,9 @@ rm -rf $path/orm
 rm -rf `find $path -type d -name .svn`
 rm -f $path/.gitignore
 rm -f $path/private/logging_doc.txt
+rm -f $path/private/parse.py
 rm -f $path/make_web_install.sh
+rm -f $path/README
 
 mkdir $path/data
 chmod 777 `find $path -type d`
