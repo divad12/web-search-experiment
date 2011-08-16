@@ -1,6 +1,7 @@
 // This essentially implements the LongValueSum reducer in Hadoop's aggregate
-// class, but with a few changes. This can also be used as a combiner after
-// reducer1
+// class, but possibly with a few changes. This can also be used as a combiner
+// after reducer1
+// <docId-size-docId-size,#> --> <docId-size-docId-size,#>
 
 #include <cstdio>
 #include <iostream>

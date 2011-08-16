@@ -19,10 +19,16 @@
 using namespace dedup;
 
 ////////////////////////////////////////////////////////////////////////////////
+// TODO: Global variables used for efficiency (so we don't pass things into and
+// out of functions. Refactor to be a class and make things member functions.
+
 // The node containing the text to be shingled
 static std::string contentStartTag;
 static std::string contentEndTag;
 static int contentStartLen;
+
+static std::string commonDocIdPrefix = "";
+static size_t commonDocIdPrefixLen = 0;
 
 ////////////////////////////////////////////////////////////////////////////////
 // This is a character from the input that we want to keep
@@ -94,6 +100,13 @@ std::string getDocId(const std::string& doc) {
   return docId;
 }
 
+// Removes a common prefix from a docID, but first ensures that the given
+// string has that prefix.
+std::string removeCommonPrefix(const std::string& str) {
+  assert(str.compare(0, commonDocIdPrefixLen, commonDocIdPrefix) == 0);
+  return str.substr(commonDocIdPrefixLen);
+}
+
 // Emit the shingles for this doc
 void emitKeyValuePairs(const std::string& doc) {
   std::string toShingleStr = getDedupInput(doc);
@@ -131,7 +144,7 @@ void emitKeyValuePairs(const std::string& doc) {
   }
 
   // Now emit an unbiased deterministic sample of <shingle, docId> pairs.
-  std::string docId = getDocId(doc);
+  std::string docId = removeCommonPrefix(getDocId(doc));
   size_t emitted = 0;
   for (ShingleSet::iterator it = shingleSet.begin();
       it != shingleSet.end() && emitted < SKETCH_SIZE; ++it, ++emitted) {
@@ -142,17 +155,22 @@ void emitKeyValuePairs(const std::string& doc) {
 
 ////////////////////////////////////////////////////////////////////////////////
 int main(int argc, char** argv) {
-  // Check for the cmd line arg that specifies the name of the content node
-  if (argc != 2) {
-    std::cerr << "Usage: ./mapper1 contentTagName\n"
+  // Check for the cmd line args
+  if (argc < 2 || argc > 3) {
+    std::cerr << "Usage: ./mapper1 contentTagName [commonPrefix]\n"
               << "\ncontentTagName\tThe node containing the doc's text.\n"
+              << "\ncommonPrefix\tA common prefix of all docIDs (for optimization purposes."
               << "\nExample:\n"
-              << "zcat 00.trectext.gz | ./mapper1 body | sort > mapper1.out\n";
+              << "zcat 00.trectext.gz | ./mapper1 body clueweb09-en0000-00 | sort > mapper1.out\n";
     exit(1);
   } else {
     contentStartTag = std::string("<") + argv[1] + ">";
     contentEndTag = std::string("</") + argv[1] + ">";
     contentStartLen = contentStartTag.length();
+    if (argc >= 3) {
+      commonDocIdPrefix = argv[2];
+      commonDocIdPrefixLen = commonDocIdPrefix.length();
+    }
   }
 
   static const int MAX_LINE_LEN = 100000;

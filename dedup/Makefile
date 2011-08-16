@@ -29,6 +29,10 @@ SLAVE_TYPE := m2.4xlarge
 # For aquaint, use "BODY", and for clueweb use "cached" or "body"
 CONTENT_TAG_NAME := cached
 
+# If there's a common prefix of all DocIDs, specify it here to give a small
+# speed optimization. Otherwise leave blank.
+COMMON_DOCID_PREFIX := clueweb09-en
+
 # The s3 input directory(-ies) where the gzipped input documents to
 # de-duplicate are uploaded.
 S3_INPUT := s3://clueweb3/en0000
@@ -71,14 +75,13 @@ EMR := third_party/elastic-mapreduce-ruby/elastic-mapreduce --credentials third_
 LOCAL_INPUT := samples/*.gz
 TESTS := tests/*.in
 JOB_ID = $(shell cat job-id)
-AWS_ACCESS_KEY_ID := $(shell sed '1q;d' aws-keys)
-AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
+AWS_ACCESS_KEY_ID := $(shell head -n 1 aws-keys)
+AWS_SECRET_ACCESS_KEY := $(shell tail -n 1 aws-keys)
 
 ALL_BINS := mapper-shingle reducer-all-pairs reducer-sum mapper-cluster reducer-cluster reducer-doc-size reducer-common-shingle
 
 # TODO: Add more tests
 # TODO: Hadoop configuration options (See Hani's thesis and "Hadoop: The Definitive Guide")
-# TODO: figure out why sequencefileformat doesn't work (output not compressed. if compression type set to BLOCK, second reducer craps out)
 
 all: $(ALL_BINS)
 
@@ -92,7 +95,7 @@ test: $(ALL_BINS)
 	@for i in $(TESTS); do \
 		test=$${i%.*}; \
 		tmp="$$test".tmp; \
-		cat $$i | $(MAKE) -s CONTENT_TAG_NAME=body local | cut -f2- > $$tmp; \
+		cat $$i | $(MAKE) -s CONTENT_TAG_NAME=body COMMON_DOCID_PREFIX="" local | cut -f2- > $$tmp; \
 		diff -u "$$test".out $$tmp \
 			&& echo PASSED: `basename $$test` \
 			&& rm "$$tmp" \
@@ -100,7 +103,7 @@ test: $(ALL_BINS)
 	done
 
 local: $(ALL_BINS)
-	./mapper-shingle $(CONTENT_TAG_NAME) \
+	./mapper-shingle $(CONTENT_TAG_NAME) $(COMMON_DOCID_PREFIX) \
 		| sort \
 		| ./reducer-common-shingle \
 		| sort \
@@ -111,16 +114,16 @@ local: $(ALL_BINS)
 		| ./reducer-sum \
 		| ./mapper-cluster \
 		| sort \
-		| ./reducer-cluster
+		| ./reducer-cluster $(COMMON_DOCID_PREFIX)
 
 local-debug: $(ALL_BINS)
-	./mapper-shingle $(CONTENT_TAG_NAME) | sort > out/mapper-shingle.out
+	./mapper-shingle $(CONTENT_TAG_NAME) $(COMMON_DOCID_PREFIX) | sort > out/mapper-shingle.out
 	./reducer-common-shingle < out/mapper-shingle.out | sort > out/reducer-common-shingle.out
 	./reducer-doc-size < out/reducer-common-shingle.out | sort > out/reducer-doc-size.out
 	./reducer-all-pairs < out/reducer-doc-size.out | sort > out/reducer-all-pairs.out
 	./reducer-sum < out/reducer-all-pairs.out > out/reducer-sum.out
 	./mapper-cluster < out/reducer-sum.out | sort > out/mapper-cluster.out
-	./reducer-cluster < out/mapper-cluster.out > out/reducer-cluster.out
+	./reducer-cluster $(COMMON_DOCID_PREFIX) < out/mapper-cluster.out > out/reducer-cluster.out
 
 
 ################################################################################
@@ -156,27 +159,25 @@ stop:
 
 run: job5
 
-# Third job: Output clusters (of size > 1) of docs that are near-duplicates.
+# TODO: specify that we only want one reduce task
 job5: job4
 	$(EMR) -j $(JOB_ID) \
 		--stream \
-		--step-name "<docId pair, # common shingles> --> clusters of similar docs" \
+		--step-name "clustering" \
 		--mapper $(S3_BIN)/mapper-cluster \
-		--reducer $(S3_BIN)/reducer-cluster \
-		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j4 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j5 \
+		--reducer "$(S3_BIN)/reducer-cluster $(COMMON_DOCID_PREFIX)" \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)/j4 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)/j5 \
 		--args "-D,mapred.task.timeout=3000000" \
 		--args "-D,mapred.output.compress=true"
-	@echo "\nJob started! Final output will be in $(S3_OUTPUT)/$(S3_OUTDIR)-j5"
+	@echo "\nJob started! Final output will be in $(S3_OUTPUT)/$(S3_OUTDIR)/j5"
 
-# Second job: Just a reduce that sums all the docId pairs that share shingles,
-# so we get <docId pair, # of common shingles>
 job4: job3
 	$(EMR) -j $(JOB_ID) \
 		--stream \
-		--step-name "<docId pair, 1> --> <docId pair, # common shingles>" \
-		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j4 \
+		--step-name "reducer-sum" \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)/j3 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)/j4 \
 		--mapper cat \
 		--reducer $(S3_BIN)/reducer-sum \
 		--args "-D,mapred.output.compress=true" \
@@ -186,13 +187,12 @@ job4: job3
 		#--args "-D,io.sort.factor=100" \
 		#--args "-D,mapred.reduce.parallel.copies=50"
 
-# TODO: comment
 job3: job2
 	$(EMR) -j $(JOB_ID) \
 		--stream \
-		--step-name "<docId pair, 1> --> <docId pair, # common shingles>" \
-		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
+		--step-name "reducer-all-pairs" \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)/j2 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)/j3 \
 		--mapper cat \
 		--reducer $(S3_BIN)/reducer-all-pairs \
 		--args "-D,mapred.output.compress=true" \
@@ -202,13 +202,12 @@ job3: job2
 		#--args "-D,io.sort.factor=100" \
 		#--args "-D,mapred.reduce.parallel.copies=50"
 
-# TODO: comment
 job2: job1
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "reducer-doc-size" \
-		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)/j1 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)/j2 \
 		--mapper cat \
 		--reducer $(S3_BIN)/reducer-doc-size \
 		--args "-D,mapred.output.compress=true" \
@@ -218,14 +217,13 @@ job2: job1
 		#--args "-D,io.sort.factor=100" \
 		#--args "-D,mapred.reduce.parallel.copies=50"
 
-# TODO: comment
 job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
-		--step-name "docs --> <docId pair, 1>" \
-		--mapper "$(S3_BIN)/mapper-shingle $(CONTENT_TAG_NAME)" \
+		--step-name "mapper-shingle and reducer-common-shingle" \
+		--mapper "$(S3_BIN)/mapper-shingle $(CONTENT_TAG_NAME) $(COMMON_DOCID_PREFIX)" \
 		$(foreach dir,$(S3_INPUT),--args "-input,$(dir)") \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)/j1 \
 		--reducer $(S3_BIN)/reducer-common-shingle \
 		--args "-D,mapred.output.compress=true" \
 		--args "-D,mapred.compress.map.output=true" \
@@ -256,8 +254,8 @@ start:
 		| tee /dev/tty > job-id
 
 # This is to be run on the Hadoop master instance
+# Hadoop is so stupid to require 3 steps for this...
 bin-up: $(ALL_BINS)
-	# Hadoop is so stupid to require 3 steps for this...
 	hadoop fs -rmr $(S3_BIN)
 	hadoop fs -mkdir $(S3_BIN)
 	hadoop fs -put $^ $(S3_BIN)

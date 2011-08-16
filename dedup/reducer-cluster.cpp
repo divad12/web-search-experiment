@@ -6,7 +6,12 @@
 #include <vector>
 
 ////////////////////////////////////////////////////////////////////////////////
-// A document in the union-find data structure.
+// TODO: Global variables used for efficiency (so we don't pass things into and
+// out of functions. Refactor to be a class and make things member functions.
+static std::string commonDocIdPrefix = "";
+
+////////////////////////////////////////////////////////////////////////////////
+// A node in the union-find data structure.
 class Doc {
  public:
   explicit Doc(Doc* parent) : parent_(parent), size_(1), accumJaccard_(0), numEdges_(0) {}
@@ -46,6 +51,8 @@ Doc* Doc::findRep() {
   }
 }
 
+// The disjoint-set union-find data structure, augmented with sum of edge
+// weights (in order to compute avg similarity of a cluster).
 class DocSet {
  public:
   void addEdge(const std::string& doc1, const std::string& doc2, float jaccard);
@@ -103,14 +110,19 @@ void emitClusters(const DocSet::ClusterMap& clusters) {
       if (it2 != cluster.begin()) {
         printf(", ");
       }
-      printf("%s", it2->c_str());
+      printf("%s%s", commonDocIdPrefix.c_str(), it2->c_str());
     }
     printf("\n");
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-int main() {
+int main(int argc, char** argv) {
+  // Check for the cmd line args
+  if (argc == 2) {
+    commonDocIdPrefix = argv[1];
+  }
+
   char doc1[1000], doc2[1000];
   float jaccard;
   DocSet docSet;

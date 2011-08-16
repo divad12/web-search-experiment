@@ -1,5 +1,5 @@
-// Reducer-doc-size: Generate <shingle,doc-size> pairs, with size of sketch
-// info appended to each docID
+// Generate <shingle,doc-size> pairs, with size of sketch info appended to each
+// docID
 // <docId, shingle> --> <shingle, docId-size>
 
 #include <cassert>
@@ -43,9 +43,6 @@ int main() {
   }
 
   emitShinglesWithDocSizes(shingleSet, prevKey);
-
-  // TODO: do a preliminary reduce2 (sum) on this machine before this data is
-  // uploaded to S3. This does not seem possible with Hadoop streaming.
 
   return 0;
 }

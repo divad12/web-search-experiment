@@ -1,4 +1,5 @@
 // For every shingle, emit all pairs of documents that share that shingle.
+// <shingle, docId-size> --> <docId-size-docId-size, 1>
 
 #include <cassert>
 #include <cstdio>
@@ -41,9 +42,6 @@ int main() {
     }
 
     emitAllPairs(docSet);
-
-    // TODO: do a preliminary reduce2 (sum) on this machine before this data is
-    // uploaded to S3. This does not seem possible with Hadoop streaming.
 
     return 0;
 }

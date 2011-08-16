@@ -1,6 +1,6 @@
 // Mapper for clustering (finding disjoint sets of similar documents)
-// <docId pair, # common shingles> --> weighted bi-directional edges of
-// similiarity graph
+// <docId pair, # common shingles> --> weighted undirected edges of similiarity
+// graph
 
 #include <cstdio>
 #include <string>
@@ -12,10 +12,10 @@
 using dedup::DOC_ID_SEP;
 using dedup::DOC_SIZE_SEP;
 
-// Emits pairs <doc1, doc2> and <doc2, doc1> if doc1 and doc2 are
-// near-duplicates. This is a weighted undirected edge in our similarity graph.
-// Appends the Jaccard similarity of doc1 and doc2 as the weight, for use by
-// the reducer to generate avg cluster similarity info.
+// Emits a docId pair if the two docs are near-duplicates This is a weighted
+// undirected edge in our similarity graph. Appends the Jaccard similarity of
+// doc1 and doc2 as the weight, for use by the reducer to generate avg cluster
+// similarity info.
 void emitEdge(const std::string& key, int intersection) {
     static char doc1[1000], doc2[1000];
     static int size1, size2;

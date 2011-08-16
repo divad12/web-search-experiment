@@ -1,5 +1,5 @@
-// Reducer-shingle-threshold: Filter out those shingles shared by too many
-// documents
+// Applies the common shingles optimization: Filter out those shingles shared
+// by too many documents
 // <shingle, docId> --> <docId, shingle>
 
 #include <cstdio>
@@ -38,9 +38,6 @@ int main() {
   }
 
   emitFilteredShingles(docSet, prevKey.c_str());
-
-  // TODO: do a preliminary reduce2 (sum) on this machine before this data is
-  // uploaded to S3. This does not seem possible with Hadoop streaming.
 
   return 0;
 }
