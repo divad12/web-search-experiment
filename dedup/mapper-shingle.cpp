@@ -130,19 +130,13 @@ void emitKeyValuePairs(const std::string& doc) {
     }
   }
 
-  // Get the document ID string concatenated with the # of shingles we are
-  // outputting.
+  // Now emit an unbiased deterministic sample of <shingle, docId> pairs.
   std::string docId = getDocId(doc);
-  docId += DOC_SIZE_SEP;
-  docId += numToStr(std::min(shingleSet.size(), SKETCH_SIZE));
-  const char* docIdCstr = docId.c_str();
-
-  // Now emit an unbiased deterministic sample of <shingle, docId + size> pairs.
   size_t emitted = 0;
   for (ShingleSet::iterator it = shingleSet.begin();
       it != shingleSet.end() && emitted < SKETCH_SIZE; ++it, ++emitted) {
     // Base64-encode the shingle hash value to save space.
-    printf("%s\t%s\n", base64Encode(*it).c_str(), docIdCstr);
+    printf("%s\t%s\n", base64Encode(*it).c_str(), docId.c_str());
   }
 }
 

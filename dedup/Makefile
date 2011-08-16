@@ -7,11 +7,11 @@
 ################################################################################
 
 # Name of this entire jobflow (when you start up instances until you stop them)
-JOBFLOW_NAME := "4-m2.4xlarge-CatB"
+JOBFLOW_NAME := "sct-fix2-experiment-2"
 
 # Number of instances, including master and slaves. If > 1, only slaves will
 # run the map reduce binaries.
-NUM_INSTANCES := 5
+NUM_INSTANCES := 3
 
 # For info on Amazon EC2 instance types, please see
 # http://aws.amazon.com/elasticmapreduce/pricing/ and
@@ -31,23 +31,7 @@ CONTENT_TAG_NAME := cached
 
 # The s3 input directory(-ies) where the gzipped input documents to
 # de-duplicate are uploaded.
-S3_INPUT := \
-	s3://clueweb3/en0000 \
-	s3://clueweb3/en0001 \
-	s3://clueweb3/en0002 \
-	s3://clueweb3/en0003 \
-	s3://clueweb3/en0004 \
-	s3://clueweb3/en0005 \
-	s3://clueweb3/en0006 \
-	s3://clueweb3/en0007 \
-	s3://clueweb3/en0008 \
-	s3://clueweb3/en0009 \
-	s3://clueweb3/en0010 \
-	s3://clueweb3/en0011 \
-	s3://clueweb3/enwp00 \
-	s3://clueweb3/enwp01 \
-	s3://clueweb3/enwp02 \
-	s3://clueweb3/enwp03 # "CatB"
+S3_INPUT := s3://clueweb3/en0000
 #S3_INPUT := s3://clueweb/en0000  # 2 gb of the clueweb 09 collection
 #S3_INPUT := s3://clueweb3/en0000  # 3 gb of the clueweb 09 collection, updated format (has <cached> tag)
 #S3_INPUT := s3://smucker-mr/clueweb/00.trectext.gz  # 23 mb of clueweb for testing purposes
@@ -90,7 +74,7 @@ JOB_ID = $(shell cat job-id)
 AWS_ACCESS_KEY_ID := $(shell sed '1q;d' aws-keys)
 AWS_SECRET_ACCESS_KEY := $(shell sed '2q;d' aws-keys)
 
-ALL_BINS := mapper1 reducer1 reducer2 mapper-cluster reducer-cluster
+ALL_BINS := mapper-shingle reducer-all-pairs reducer-sum mapper-cluster reducer-cluster reducer-doc-size reducer-common-shingle
 
 # TODO: Add more tests
 # TODO: Hadoop configuration options (See Hani's thesis and "Hadoop: The Definitive Guide")
@@ -116,20 +100,26 @@ test: $(ALL_BINS)
 	done
 
 local: $(ALL_BINS)
-	./mapper1 $(CONTENT_TAG_NAME) \
+	./mapper-shingle $(CONTENT_TAG_NAME) \
 		| sort \
-		| ./reducer1 \
+		| ./reducer-common-shingle \
 		| sort \
-		| ./reducer2 \
+		| ./reducer-doc-size \
+		| sort \
+		| ./reducer-all-pairs \
+		| sort \
+		| ./reducer-sum \
 		| ./mapper-cluster \
 		| sort \
 		| ./reducer-cluster
 
 local-debug: $(ALL_BINS)
-	./mapper1 $(CONTENT_TAG_NAME) | sort > out/mapper1.out
-	./reducer1 < out/mapper1.out | sort > out/reducer1.out
-	./reducer2 < out/reducer1.out > out/reducer2.out
-	./mapper-cluster < out/reducer2.out | sort > out/mapper-cluster.out
+	./mapper-shingle $(CONTENT_TAG_NAME) | sort > out/mapper-shingle.out
+	./reducer-common-shingle < out/mapper-shingle.out | sort > out/reducer-common-shingle.out
+	./reducer-doc-size < out/reducer-common-shingle.out | sort > out/reducer-doc-size.out
+	./reducer-all-pairs < out/reducer-doc-size.out | sort > out/reducer-all-pairs.out
+	./reducer-sum < out/reducer-all-pairs.out > out/reducer-sum.out
+	./mapper-cluster < out/reducer-sum.out | sort > out/mapper-cluster.out
 	./reducer-cluster < out/mapper-cluster.out > out/reducer-cluster.out
 
 
@@ -164,31 +154,31 @@ stop:
 	$(EMR) -j $(JOB_ID) --terminate
 	rm job-id
 
-run: job3
+run: job5
 
 # Third job: Output clusters (of size > 1) of docs that are near-duplicates.
-job3: job2
+job5: job4
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "<docId pair, # common shingles> --> clusters of similar docs" \
 		--mapper $(S3_BIN)/mapper-cluster \
 		--reducer $(S3_BIN)/reducer-cluster \
-		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j4 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j5 \
 		--args "-D,mapred.task.timeout=3000000" \
 		--args "-D,mapred.output.compress=true"
-	@echo -e "\nJob started! Final output will be in $(S3_OUTPUT)/$(S3_OUTDIR)-j3"
+	@echo "\nJob started! Final output will be in $(S3_OUTPUT)/$(S3_OUTDIR)-j5"
 
 # Second job: Just a reduce that sums all the docId pairs that share shingles,
 # so we get <docId pair, # of common shingles>
-job2: job1
+job4: job3
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "<docId pair, 1> --> <docId pair, # common shingles>" \
-		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
-		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j4 \
 		--mapper cat \
-		--reducer $(S3_BIN)/reducer2 \
+		--reducer $(S3_BIN)/reducer-sum \
 		--args "-D,mapred.output.compress=true" \
 		--args "-D,mapred.compress.map.output=true" \
 		--args "-D,mapred.task.timeout=3000000" \
@@ -196,18 +186,47 @@ job2: job1
 		#--args "-D,io.sort.factor=100" \
 		#--args "-D,mapred.reduce.parallel.copies=50"
 
-# First job: a map-reduce that takes in documents and outputs <docId pair, 1>
-# for all pairs of documents that share a shingle, for each shingle they share
-# We use a hack (pipe to sort then reducer2) as a local combiner, because
-# hadoop 0.2 still requires java class for combiner
+# TODO: comment
+job3: job2
+	$(EMR) -j $(JOB_ID) \
+		--stream \
+		--step-name "<docId pair, 1> --> <docId pair, # common shingles>" \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j3 \
+		--mapper cat \
+		--reducer $(S3_BIN)/reducer-all-pairs \
+		--args "-D,mapred.output.compress=true" \
+		--args "-D,mapred.compress.map.output=true" \
+		--args "-D,mapred.task.timeout=3000000" \
+		#--args "-D,io.sort.mb=1500" \
+		#--args "-D,io.sort.factor=100" \
+		#--args "-D,mapred.reduce.parallel.copies=50"
+
+# TODO: comment
+job2: job1
+	$(EMR) -j $(JOB_ID) \
+		--stream \
+		--step-name "reducer-doc-size" \
+		--input $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
+		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j2 \
+		--mapper cat \
+		--reducer $(S3_BIN)/reducer-doc-size \
+		--args "-D,mapred.output.compress=true" \
+		--args "-D,mapred.compress.map.output=true" \
+		--args "-D,mapred.task.timeout=3000000" \
+		#--args "-D,io.sort.mb=1500" \
+		#--args "-D,io.sort.factor=100" \
+		#--args "-D,mapred.reduce.parallel.copies=50"
+
+# TODO: comment
 job1: build-on-master
 	$(EMR) -j $(JOB_ID) \
 		--stream \
 		--step-name "docs --> <docId pair, 1>" \
-		--mapper "$(S3_BIN)/mapper1 $(CONTENT_TAG_NAME)" \
+		--mapper "$(S3_BIN)/mapper-shingle $(CONTENT_TAG_NAME)" \
 		$(foreach dir,$(S3_INPUT),--args "-input,$(dir)") \
 		--output $(S3_OUTPUT)/$(S3_OUTDIR)-j1 \
-		--reducer "$(S3_BIN)/reducer1 | sort | $(S3_BIN)/reducer2" \
+		--reducer $(S3_BIN)/reducer-common-shingle \
 		--args "-D,mapred.output.compress=true" \
 		--args "-D,mapred.compress.map.output=true" \
 		--args "-D,mapred.task.timeout=1800000" \
@@ -255,25 +274,14 @@ build-on-master: $(ALL_BINS)
 # Hadoop streaming binaries
 
 mapper-reducer: mapper-reducer.cpp
-	$(CC) $(CFLAGS) -o $@ $^
-
 mapper-cluster: mapper-cluster.cpp
-	$(CC) $(CFLAGS) -o $@ $^
-
-reducer2: reducer2.cpp
-	$(CC) $(CFLAGS) -o $@ $^
-
-reducer1: reducer1.cpp
-	$(CC) $(CFLAGS) -o $@ $^
-
-mapper1: mapper1.cpp constants.h utils.o rabin-hash-64.o 
-	$(CC) $(CFLAGS) -o $@ $^
-
+reducer-doc-size: reducer-doc-size.cpp constants.h utils.o
+reducer-common-shingle: reducer-common-shingle.cpp constants.h
+reducer-sum: reducer-sum.cpp
+reducer-all-pairs: reducer-all-pairs.cpp
+mapper-shingle: mapper-shingle.cpp constants.h utils.o rabin-hash-64.o
 utils: utils.cpp utils.h
-	$(CC) $(CFLAGS) -c -o $@ $^
-
 rabin-hash-64: rabin-hash-64.cpp rabin-hash-64.h
-	$(CC) $(CFLAGS) -c -o $@ $^
 
 clean:
 	rm -rfv *.tmp *.o $(ALL_BINS)

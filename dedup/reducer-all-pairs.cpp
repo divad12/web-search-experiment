@@ -1,6 +1,6 @@
-// Reducer1: For every shingle, emit all pairs of documents that share that
-// shingle.
+// For every shingle, emit all pairs of documents that share that shingle.
 
+#include <cassert>
 #include <cstdio>
 #include <iostream>
 #include <set>
@@ -13,10 +13,7 @@ typedef std::set<std::string> StringSet;
 ////////////////////////////////////////////////////////////////////////////////
 void emitAllPairs(const StringSet& docSet) {
     if (docSet.size() < 2) return;  // No pairs to emit
-    // Shingle too common usually means mechanically generated and little
-    // effect on RR. Since they'll explode quadratically, we can't afford to
-    // emit them.
-    if (docSet.size() > dedup::COMMON_SHINGLE_THRESHOLD) return;
+    assert(docSet.size() <= dedup::COMMON_SHINGLE_THRESHOLD);
 
     for (StringSet::iterator it1 = docSet.begin();
             it1 != docSet.end(); ++it1) {
