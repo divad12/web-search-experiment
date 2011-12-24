@@ -78,7 +78,7 @@ class RabinHashFunction64 {
     static const unsigned long long DEFAULT_IRREDUCIBLE_POLY = 0x000000000000001BL;
 
     static const int P_DEGREE = 64;
-    static const unsigned long long X_P_DEGREE = 1L << (P_DEGREE - 1);
+    static const unsigned long long X_P_DEGREE = 1ULL << (P_DEGREE - 1);
 
     unsigned long long P;
     unsigned long long table32[256], table40[256], table48[256], table56[256],
